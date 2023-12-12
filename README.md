@@ -12,8 +12,11 @@
 
 - https://arxiv.org/pdf/2302.09664.pdf
 - https://github.com/sylinrl/calibratedmath
+- https://arxiv.org/pdf/2308.16175.pdf
 
 ### Local Vector storage for Embeddings
 
 - https://python.langchain.com/docs/modules/data_connection/vectorstores/
 - https://github.com/facebookresearch/faiss
+
+
