@@ -1,33 +1,32 @@
 import torch
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from transformers import AutoTokenizer, DebertaForSequenceClassification
+
+device = "mps"
 
 tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-large-mnli")
-model = AutoModelForSequenceClassification.from_pretrained("microsoft/deberta-large-mnli").to("mps")
+model = DebertaForSequenceClassification.from_pretrained("microsoft/deberta-large-mnli").to(device)
 
 def compute_mean_similarity(y : str, yi : str) -> float:
   
-  p = compute_similarity(y, yi)
-  p1 = compute_similarity(yi, y)
+  p = compute_probabilities(y, yi)
+  p1 = compute_probabilities(yi, y)
   
-  #si = (1-p + 1-p1) / 2
-  return 0
+  si = (1-p + 1-p1) / 2
+  return si
     
 
-def compute_similarity(x: str, y: str):
+def compute_probabilities(x: str, y: str):
 
   sequence = x + " [SEP] " + y
-  
   encoded_input = tokenizer.encode(sequence, padding=True)
   
-  prediction = model(torch.tensor(torch.tensor([encoded_input]), device="mps"))['logits']
-
-  predicted_label = torch.argmax(prediction, dim=1)
+  outputs = model((torch.tensor([encoded_input]).to(device).clone().detach()))
+  # prediction = outputs['logits']
   
-  #p_contradiction = probabilities[0, tokenizer.convert_tokens_to_ids("contradiction")]
+  # predicted_label = torch.argmax(prediction, dim=1)
+  predicted_probability = torch.softmax(outputs[0], dim=1)[0].tolist()  
   
-  print(predicted_label)
-  print("semantically different" if 0 in predicted_label else "semantically equals")
+  # print("Contradiction:", predicted_probability[2], "\n")
+  # print("semantically different" if 0 in predicted_label else "semantically equals", "\n")
   
-  
-  
-compute_mean_similarity("the capital of France is Paris", "The France's Capital is Paris")
+  return 1-predicted_probability[2]

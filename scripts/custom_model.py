@@ -1,5 +1,5 @@
-from openai import OpenAI
-from openai_model_enum import OpenAIModelEnum
+from openai import AsyncOpenAI
+from utils import OpenAIModelEnum, self_reflection_answers_mapping
 from build_prompts import *
 import re
 from nli import compute_mean_similarity
@@ -7,19 +7,22 @@ from nli import compute_mean_similarity
 class CustomModel:
   
   
-  def __init__(self, api_key: str, model: OpenAIModelEnum, alpha=0.8, k=5) -> None:
-      openai = OpenAI(api_key=api_key)
+  def __init__(self, api_key: str, model: OpenAIModelEnum, alpha=0.8, beta=0.7, k=5) -> None:
+      openai = AsyncOpenAI(api_key=api_key)
       
       self.model = model.value
       self.llm = openai.chat.completions
       
       self.alpha = alpha
+      self.beta = beta
       self.k = k
       
-      
-  def ask(self, question):
     
-    original_answer = self.llm.create(
+      
+  async def ask(self, question):
+    
+    print("# Original Answer\n")
+    original_answer = await self.llm.create(
       model=self.model,
       temperature=0,
       messages=[
@@ -31,37 +34,55 @@ class CustomModel:
     )
     
     original_answer = original_answer.choices[0].message.content
-    y = self.extract_cot_answer(original_answer)
+    confidence = await self.run_bsdetector(question, original_answer)
+      
+    return original_answer, confidence
+      
+      
+      
+  async def run_bsdetector(self, question, original_answer):
+    print("# Running BSDetector\n")
+    observed_consistency = await self.observe_consistency(question, original_answer)
+    self_reported_certainty = await self.self_reflection(question, original_answer)
     
-    # Producing Diverse Output
-    multiple_outputs = self.observe_consistency(question, self.k)
+    confidence = self.beta * observed_consistency + (1 - self.beta) * self_reported_certainty
+    return confidence
+      
+      
+      
+  async def observe_consistency(self, question: str, original_answer) -> list[str]:
+    print("# Observing consistency:")
+    sampled_multiple_outputs = await self.sample_multiple_outputs(question)
     
-    # Measuring Similarity between Sampled and Original Answer
     observed_consistency = 0
-    for raw_output in multiple_outputs:
+    for raw_output in sampled_multiple_outputs:
       
       # Extract answer from templated response
-      yi = self.extract_cot_answer(raw_output)
-      si = compute_mean_similarity(y, yi)
+      print(raw_output)
+      print("-----")
+      yi = self.extract_llm_answer(raw_output)[0]
+      si = compute_mean_similarity(original_answer, yi)
       
       # Indicator function
-      ri = 1 if y == yi else 0
+      ri = 1 if original_answer == yi else 0
       
       # Similarity Score
       oi = self.alpha * si + (1-self.alpha)*ri
       observed_consistency += oi
-      
-    return y, observed_consistency/self.k
-      
-      
-  def observe_consistency(self, question: str, k=5) -> list[str]:
     
+    observed_consistency = observed_consistency/self.k 
+    print("# Observed consistency: " + str(observed_consistency) + "\n")
+    return observed_consistency
+  
+  
+  
+  async def sample_multiple_outputs(self, question: str):
+    print("# Sampling multiple outputs:\n")
     answers = []
-    for _ in range(0,k,1):
-      
+    for i in range(0,self.k,1):
+      print(i, ",")
       prompt = build_observed_consistency_prompt(question)
-      print(prompt)
-      response = self.llm.create(
+      response = await self.llm.create(
         model=self.model,
         temperature=1,
         messages=[
@@ -71,34 +92,43 @@ class CustomModel:
           },
         ],
       )
-      
       answers.append(response.choices[0].message.content)
-      
+    print(",")
     return answers
   
   
-  def self_reflection(self, question: str, proposed_answer: str):
+  
+  async def self_reflection(self, question: str, proposed_answer: str) -> float:
+    print("# Self Reflection:")
+    prompt = build_self_reflection_certainty_prompt(question, proposed_answer)
     
-    response = self.llm.create(
-        model=self.model,
-        temperature=1,
-        messages=[
-          {
-              "role": "user",
-              "content": build_self_reflection_certainty_prompt(question, proposed_answer)
-          },
-        ],
-      )
+    response = await self.llm.create(
+      model=self.model,
+      temperature=1,
+      messages=[
+        {
+            "role": "user",
+            "content": prompt
+        },
+      ],
+    )
       
-    return response.choices[0].message.content
+    answers = self.extract_llm_answer(response.choices[0].message.content)[0]
+    
+    self_reflection = 0  
+    for a in answers:
+      self_reflection += self_reflection_answers_mapping[a]
+
+    self_reflection = self_reflection/len(answers)
+    print(self_reflection)
+    print("\n")
+    return self_reflection/len(answers)
   
   
-  def extract_cot_answer(self, response: str):
+  
+  def extract_llm_answer(self, response: str) -> list[str]:
     regexp = r"answer:\s*(.+)"
     
-    match = re.search(regexp, response)
-
-    if match:
-        return match.group(1)
-    else:
-        return ""
+    match = re.findall(regexp, response)
+    return match
+      

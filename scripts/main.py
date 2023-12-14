@@ -1,8 +1,9 @@
+import asyncio
 from dotenv import load_dotenv
 from os import environ
 
 from custom_model import CustomModel
-from openai_model_enum import OpenAIModelEnum
+from utils import OpenAIModelEnum
 
 if __name__ == "__main__":
   
@@ -11,7 +12,12 @@ if __name__ == "__main__":
   
   model = CustomModel(
     api_key=openai_api_key, 
-    model=OpenAIModelEnum.GPT_3_5_TURBO
+    model=OpenAIModelEnum.GPT_3_5_TURBO,
   )
   
-  model.ask("What is 2+2?")
+  answer, confidence = asyncio.run(
+    model.ask("A tower is made out of 4 blue blocks, twice as many yellow blocks, and an unknown number of red blocks. If there are 32 blocks in the tower in total, how many red blocks are there?")
+  )
+  
+  print("Answer: ", answer)
+  print("Confidence: ", confidence)
