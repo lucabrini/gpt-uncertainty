@@ -8,5 +8,8 @@ class OpenAIModelEnum(Enum):
 self_reflection_answers_mapping = {
   "A" : 1.0,
   "B" : 0.0,
-  "C" : 0.5
+  "C" : 0.5,
+  "a" : 1.0,
+  "b" : 0.0,
+  "c" : 0.5
 }

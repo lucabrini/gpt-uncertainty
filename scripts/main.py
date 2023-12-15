@@ -16,7 +16,7 @@ if __name__ == "__main__":
   )
   
   answer, confidence = asyncio.run(
-    model.ask("A tower is made out of 4 blue blocks, twice as many yellow blocks, and an unknown number of red blocks. If there are 32 blocks in the tower in total, how many red blocks are there?")
+    model.ask("What's the capital of France")
   )
   
   print("Answer: ", answer)

@@ -1,0 +1,3 @@
+[submodule "20q-gpt-game"]
+	path = 20q-gpt-game
+	url = https://github.com/lucabrini/20q-chatgpt

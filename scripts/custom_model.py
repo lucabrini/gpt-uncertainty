@@ -27,7 +27,7 @@ class CustomModel:
       temperature=0,
       messages=[
         {
-            "role": "user",
+            "role": "system",
             "content": question
         },
       ],
@@ -55,6 +55,7 @@ class CustomModel:
     sampled_multiple_outputs = await self.sample_multiple_outputs(question)
     
     observed_consistency = 0
+    print("Similarities")
     for raw_output in sampled_multiple_outputs:
       
       # Extract answer from templated response
@@ -62,6 +63,7 @@ class CustomModel:
       print("-----")
       yi = self.extract_llm_answer(raw_output)[0]
       si = compute_mean_similarity(original_answer, yi)
+      print(si)
       
       # Indicator function
       ri = 1 if original_answer == yi else 0
@@ -87,7 +89,7 @@ class CustomModel:
         temperature=1,
         messages=[
           {
-              "role": "user",
+              "role": "system",
               "content": prompt
           },
         ],
@@ -107,11 +109,13 @@ class CustomModel:
       temperature=1,
       messages=[
         {
-            "role": "user",
+            "role": "system",
             "content": prompt
         },
       ],
     )
+    
+    print(response)
       
     answers = self.extract_llm_answer(response.choices[0].message.content)[0]
     
