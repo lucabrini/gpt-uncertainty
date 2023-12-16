@@ -6,8 +6,10 @@ device = "mps"
 tokenizer = AutoTokenizer.from_pretrained("microsoft/deberta-large-mnli")
 model = DebertaForSequenceClassification.from_pretrained("microsoft/deberta-large-mnli").to(device)
 
-def compute_mean_similarity(y : str, yi : str) -> float:
+def compute_mean_similarity(context: str, y : str, yi : str) -> float:
   
+  y = context + y
+  yi = context + yi
   p = compute_probabilities(y, yi)
   p1 = compute_probabilities(yi, y)
   

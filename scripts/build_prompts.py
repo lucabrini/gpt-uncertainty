@@ -1,5 +1,8 @@
 from string import Template
 
+def build_original_question_prompt(question: str):
+  return build_observed_consistency_prompt(question)
+
 def build_observed_consistency_prompt(question: str):
   template = Template(
     """
@@ -16,11 +19,11 @@ def build_observed_consistency_prompt(question: str):
 def build_self_reflection_certainty_prompt(question: str, proposed_answer: str):
   template = Template(
       """
-        Answer to the following bullets point separately.
+        Answer to the following bullets point.
         
         1. Question: [$question], Proposed Answer: [$proposed_answer]. 
           Is the proposed answer: 
-          - (A) Correct 
+          - (A) Correct (if the proposed answer is similar to yours)
           - (B) Incorrect 
           - (C) I am not sure. 
           
@@ -30,7 +33,7 @@ def build_self_reflection_certainty_prompt(question: str, proposed_answer: str):
         
         2. Question: [$question], Proposed Answer: [$proposed_answer]. 
           Are you really sure the proposed answer is correct? Choose again: 
-          - (A) Correct 
+          - (A) Correct (if the proposed answer is similar to yours)
           - (B) Incorrect 
           - (C) I am not sure. 
           

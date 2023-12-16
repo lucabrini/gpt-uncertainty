@@ -13,10 +13,11 @@ if __name__ == "__main__":
   model = CustomModel(
     api_key=openai_api_key, 
     model=OpenAIModelEnum.GPT_3_5_TURBO,
+    debug=False
   )
   
   answer, confidence = asyncio.run(
-    model.ask("What's the capital of France")
+    model.ask("What's the capital of Italy?")
   )
   
   print("Answer: ", answer)
