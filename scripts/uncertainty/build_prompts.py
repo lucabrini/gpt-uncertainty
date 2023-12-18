@@ -6,9 +6,9 @@ def build_original_question_prompt(question: str):
 def build_observed_consistency_prompt(question: str):
   template = Template(
     """
-      Strictly use the following template to provide answer, answer key must be lowercase: 
+      Strictly use the following template to provide response, response key must be lowercase: 
         explanation: [insert step-by-step analysis], 
-        answer: [provide your answer]
+        response: [provide your response]
           
       Question: [$question]
     """
@@ -27,9 +27,9 @@ def build_self_reflection_certainty_prompt(question: str, proposed_answer: str):
           - (B) Incorrect 
           - (C) I am not sure. 
           
-          The output should strictly use the following template, answer key must be lowercase: 
+          The output should strictly use the following template, response key must be lowercase: 
             explanation: [insert analysis], 
-            answer: [choose one letter from among choices A through C, without parenthesis or anything else]
+            response: [choose one letter from among choices A through C, without parenthesis or anything else]
         
         2. Question: [$question], Proposed Answer: [$proposed_answer]. 
           Are you really sure the proposed answer is correct? Choose again: 
@@ -37,9 +37,9 @@ def build_self_reflection_certainty_prompt(question: str, proposed_answer: str):
           - (B) Incorrect 
           - (C) I am not sure. 
           
-          The output should strictly use the following template, answer key must be lowercase: 
+          The output should strictly use the following template, response key must be lowercase: 
             explanation: [insert analysis], 
-            answer: [choose one letter from among choices A through C, without parenthesis or anything else. The letter must be uppercase]
+            response: [choose one letter from among choices A through C, without parenthesis or anything else. The letter must be uppercase]
       """
     )
 

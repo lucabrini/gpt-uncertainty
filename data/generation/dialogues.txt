@@ -1,0 +1,156 @@
+******************
+target = dalmatian
+answerer: This is the list of candidates: dog, bear, flamingo, hawk, toucan, dalmatian, hippopotamus, chick.
+questioner: Is the item you have from the animal kingdom?
+answerer: Yes.
+questioner: Does the item you have belong to the bird category?
+answerer: No.
+questioner: Is the item you have a mammal?
+answerer: Yes.
+questioner: Is the item you have a domesticated animal?
+answerer: Yes.
+questioner: Is the item you have known for its unique coat pattern?
+answerer: Yes.
+questioner: Is the item you have a Dalmatian?
+answerer: Yes! That's correct.
+******************
+target = skunk
+answerer: This is the list of candidates: puffin, cow, boar, owl, eagle, skunk, pelican, bear.
+questioner: Is the item you have in mind a bird?
+answerer: No.
+questioner: Is the item you have in mind a mammal?
+answerer: Yes.
+questioner: Does the mammal you have in mind live primarily on land?
+answerer: Yes.
+questioner: Is the mammal you have in mind large in size?
+answerer: No.
+questioner: Does the mammal you have in mind have a distinctive smell?
+answerer: Yes.
+questioner: Is the mammal you have in mind a skunk?
+answerer: Yes! That's correct.
+******************
+target = hippopotamus
+answerer: This is the list of candidates: boar, squirrel, pheasant, swan, hippopotamus, flamingo, tiger, peacock.
+questioner: Is your item a bird?
+answerer: No.
+questioner: Is your item a mammal?
+answerer: Yes.
+questioner: Is your item a large mammal?
+answerer: Yes.
+questioner: Is your item a carnivorous mammal?
+answerer: No.
+questioner: Is your item a herbivorous mammal?
+answerer: Yes.
+questioner: Is your item a herbivorous mammal that lives in water?
+answerer: Yes.
+questioner: Is your item a hippopotamus?
+answerer: Yes! That's correct.
+******************
+target = duck
+answerer: This is the list of candidates: flamingo, pheasant, duck, ostrich, platypus, otter, piglet, puppy.
+questioner: Is your item a bird?
+answerer: Yes.
+questioner: Is your item a water bird?
+answerer: Yes.
+questioner: Does your item have long legs?
+answerer: No.
+questioner: Does your item have webbed feet?
+answerer: Yes.
+questioner: Is your item a duck?
+answerer: Yes! That's correct.
+******************
+target = duck
+answerer: This is the list of candidates: weasel, eagle, pheasant, cheetah, bison, hawk, otter, duck.
+questioner: Is your item a bird?
+answerer: Yes.
+questioner: Is your item a bird of prey?
+answerer: No.
+questioner: Is your item a duck?
+answerer: Yes! That's correct.
+******************
+target = pheasant
+answerer: This is the list of candidates: pheasant, dog, duck, parrot, deer, pigeon, bison, dolphin.
+questioner: Is the item on the list a bird?
+answerer: Yes.
+questioner: Is the item on the list a water bird?
+answerer: No.
+questioner: Does the item on the list have wings?
+answerer: Yes.
+questioner: Is the item on the list a domesticated bird?
+answerer: No.
+questioner: Is the item on the list commonly found in forests?
+answerer: Yes.
+questioner: Does the item on the list have a long tail?
+answerer: Yes.
+questioner: Is the item on the list primarily known for its colorful plumage?
+answerer: Yes.
+questioner: Is the item on the list a pheasant?
+answerer: Yes! That's correct. Well done!
+******************
+target = platypus
+answerer: This is the list of candidates: otter, pantsuit, nightshirt, platypus, seal, gazelle, coverall, suit.
+questioner: Is the item you have in mind a type of clothing?
+answerer: No.
+questioner: Is the item you have in mind an animal?
+answerer: Yes.
+questioner: Does the animal you have in mind live primarily in water?
+answerer: Yes.
+questioner: Is the animal you have in mind known for its playful behavior?
+answerer: No.
+questioner: Is the animal you have in mind a mammal?
+answerer: Yes.
+questioner: Is the mammal you have in mind known for its duck-billed snout?
+answerer: Yes.
+questioner: The item you have in mind is a platypus.
+answerer: Yes! That's correct. Well done!
+******************
+target = platypus
+answerer: This is the list of candidates: coyote, undershirt, skunk, platypus, beaver, jumpsuit, turtleneck, leotard.
+questioner: Is the item you have assigned an animal?
+answerer: Yes.
+questioner: Does the animal you have assigned have a distinctive smell?
+answerer: No.
+questioner: Does the animal you have assigned have fur or feathers?
+answerer: Yes.
+questioner: Is the animal you have assigned capable of flying?
+answerer: No.
+questioner: Is the animal you have assigned primarily a water-dweller?
+answerer: Yes.
+questioner: Is the animal you have assigned known for its flat tail?
+answerer: Yes.
+questioner: Is the animal you have assigned a beaver?
+answerer: No.
+questioner: Is the animal you have assigned a platypus?
+answerer: Yes! That's correct. Well done!
+******************
+target = mongoose
+answerer: This is the list of candidates: mongoose, muff, platypus, bikini, wetsuit, beaver, jersey, badger.
+questioner: Is the item on the list a living creature?
+answerer: Yes.
+questioner: Is the item on the list a mammal?
+answerer: Yes.
+questioner: Does the item on the list have fur?
+answerer: Yes.
+questioner: Does the item on the list lay eggs?
+answerer: No.
+questioner: Is the item on the list a platypus?
+answerer: No.
+questioner: Is the item on the list a beaver?
+answerer: No.
+questioner: Is the item on the list a badger?
+answerer: No.
+questioner: Is the item on the list a mongoose?
+answerer: Yes! That's correct.
+******************
+target = suit
+answerer: This is the list of candidates: suit, badger, hoodie, man, mole, raincoat, monkey, sweater.
+questioner: Is the item living?
+answerer: No.
+questioner: Is the item an article of clothing?
+answerer: Yes.
+questioner: Is the item typically worn on the upper body?
+answerer: Yes.
+questioner: Is the item typically worn in formal settings?
+answerer: Yes.
+questioner: Is the item a suit?
+answerer: Yes! That's correct.
