@@ -1,11 +1,8 @@
-from dotenv import load_dotenv
+import csv
 import os
 import time
-import random
 import re 
-import argparse
 from functools import wraps
-import json
 import openai
 
 from uncertainty.custom_model import LLModelWrapper
@@ -64,8 +61,8 @@ def get_prompts(candidates, target, stepwise=False):
     oracle = ([{'role': "system", 'content': "You are playing an interactive game with the user, in which you are assigned one item from a list "\
                                                 "of candidates."\
                                                 "\nThe user will have to guess which one it is by asking yes/no questions, and "\
-                                                "you have to respond to each question only with 'yes' or 'no'."\
-                                                "\nIf the user correctly guesses your assigned item, respond with 'Yes! That's correct.'."\
+                                                "you have to stricly respond to each question only with 'yes' or 'no' ."\
+                                                "\nRespond with 'Yes! That's correct' only if the user guesses your assigned item."\
                                                 f"\nThe item assigned to you is {target}."}])
     return questioner, oracle
 
@@ -85,48 +82,80 @@ def generate_dialogues_openai(model: LLModelWrapper, target_list_candidates, num
 
     stepwise = False
 
+    csv_header = ['target', 'question', 'answer', 'question_confidence', 'question_observed_consistency', 'question_self_reflection', 'answer_confidence', 'answer_observed_consistency', 'answer_self_reflection', 'question_time', 'answer_time']
+    
+    with open(f'../data/generation/dialogues.csv', 'a', newline='') as f:
+        write = csv.writer(f)
+        write.writerow(csv_header)
+    
     for index, value in target_list_candidates.items():
 
         successful = False
         while not successful:
 
-            dialogue = []
-
+            dialogue_dump = []
+            
             target = value['target']
 
-            print("******************")
-            dialogue.append("******************")
-            print(f"target = {target}")
-            dialogue.append(f"target = {target}")
+            #print("******************")
+            dialogue_dump.append("******************")
+            #print(f"target = {target}")
+            dialogue_dump.append(f"target = {target}")
 
             # Initial prompts. Game rules
             questioner, oracle = get_prompts(", ".join(value['candidates']), target, stepwise=stepwise)
             
+            # This is the list of candidates:
             print('answerer: {}\t'.format(questioner[-1]['content'].strip()))
-            dialogue.append('answerer: {}'.format(questioner[-1]['content'].strip()))
+            dialogue_dump.append('answerer: {}'.format(questioner[-1]['content'].strip()))
 
             oracle_output = {"content" : ""}
             for interaction in range(20):
+                
+                
+                # Questioner: generating question
+                time_start = time.time()
                 questioner_output = openai_call(questioner)
+                time_end = time.time()
+                question_time = time_end - time_start
                 questioner.append({'role': 'assistant', 'content': re.sub(r"\n\n*", " ", questioner_output['content'])})
+                
                 try:
                     processed_questioner_output = questioner_output['content'].split("QUESTION:")[1].strip()
                 except IndexError:
                     processed_questioner_output = questioner_output['content']
                 
                 oracle.append({'role': 'user', 'content': processed_questioner_output})
-                print('questioner: {}\t'.format(questioner[-1]['content'].strip()))
-                dialogue.append('questioner: {}'.format(questioner[-1]['content'].strip()))
+                generated_question = questioner[-1]['content'].strip()
+                
+                print('questioner: {}\t'.format(generated_question))
+                dialogue_dump.append('questioner: {}'.format(generated_question))
+                
+                # Answerer: generating Yes/No response
+                time_start = time.time()
+                oracle_output, uncertainty_metrics = model.ask(
+                    question="This is the current dialogue: " + "\n".join(dialogue_dump[2:]) ,
+                    message_history=[oracle[0]]
+                )
+                time_end = time.time()
+                answer_time = time_end - time_start
+                # oracle_output = openai_call(oracle, oracle=True)
+                
+                questioner.append({'role': 'user', 'content': re.sub("\n", " ", oracle_output)})
+                oracle.append({'role': 'assistant', 'content': oracle_output})
+                
+                print('answerer: {}\t , (confidence: {}\f)'.format(questioner[-1]['content'].strip(), uncertainty_metrics["confidence"]))
+                dialogue_dump.append('answerer: {}'.format(questioner[-1]['content'].strip()))
+                
+                with open(f'../data/generation/dialogues.csv', 'a') as f:
+                    write = csv.writer(f)
+                    write.writerow([
+                        target, generated_question, oracle_output, 0,0,0,0, uncertainty_metrics["confidence"], uncertainty_metrics["observed_consistency"], uncertainty_metrics["self_reported_certainty"], question_time, answer_time
+                    ])
 
-                oracle_output = openai_call(oracle, oracle=True)
-                questioner.append({'role': 'user', 'content': re.sub("\n", " ", oracle_output['content'])})
-                oracle.append({'role': 'assistant', 'content': oracle_output['content']})
-                print('answerer: {}\t'.format(questioner[-1]['content'].strip()))
-                dialogue.append('answerer: {}'.format(questioner[-1]['content'].strip()))
-
-                if "correct" in oracle_output['content'].lower() and "yes" in oracle_output['content'].lower():
+                if "correct" in oracle_output.lower() and "yes" in oracle_output.lower():
                     with open(f'../data/generation/dialogues.txt', 'a') as f:
-                        for line in dialogue:
+                        for line in dialogue_dump:
                             f.write(f"{line}\n")
                     successful = True
                     break

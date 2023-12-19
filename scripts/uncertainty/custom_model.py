@@ -1,4 +1,4 @@
-from openai import AsyncOpenAI
+from openai import OpenAI
 import re
 
 from uncertainty.utils import OpenAIModelEnum, self_reflection_answers_mapping
@@ -9,7 +9,7 @@ class LLModelWrapper:
   
   
   def __init__(self, api_key: str, model: OpenAIModelEnum, alpha=0.8, beta=0.7, k=5, debug=False) -> None:
-      openai = AsyncOpenAI(api_key=api_key)
+      openai = OpenAI(api_key=api_key)
       
       self.model = model.value
       self.llm = openai.chat.completions
@@ -22,51 +22,53 @@ class LLModelWrapper:
       
     
       
-  async def ask(self, message={}, history=[]):
+  def ask(self, question, message_history=[], role="system"):
     
     self.debug_log("# Asking for the Original Answer\n")
-    
-    messages = history
-    
-    if len(message) != 0: 
-      messages.append(message)
-    
-    original_answer = await self.llm.create(
+    original_answer =  self.llm.create(
       model=self.model,
       temperature=0,
-      messages=messages
+      messages=[
+        *message_history,
+        {
+          "role" : role,
+          "content" : question
+        }
+      ]
     )
     
-    question = message["content"]
-    
     original_answer = original_answer.choices[0].message.content
-    confidence = await self.run_bsdetector(question, original_answer)
+    confidence, observed_consistency, self_reported_certainty = self.run_bsdetector(question, original_answer, message_history)
+    
+    uncertainity = {
+      "confidence" : confidence,
+      "observed_consistency" : observed_consistency,
+      "self_reported_certainty" : self_reported_certainty,
+    }
+    
+    return original_answer, uncertainity
       
-    return original_answer, confidence
       
       
-      
-  async def run_bsdetector(self, question, original_answer):
+  def run_bsdetector(self, question, original_answer, message_history):
     self.debug_log("# Running BSDetector")
-    observed_consistency = await self.observe_consistency(question, original_answer)
-    self_reported_certainty = await self.self_reflection(question, original_answer)
+    
+    observed_consistency = self.observe_consistency(question, original_answer, message_history)
+    self_reported_certainty = self.self_reflection(question, original_answer, message_history)
     
     confidence = self.beta * observed_consistency + (1 - self.beta) * self_reported_certainty
-    return confidence
+    return confidence, observed_consistency, self_reported_certainty
       
       
       
-  async def observe_consistency(self, question: str, original_answer) -> list[str]:
+  def observe_consistency(self, question: str, original_answer, message_history) -> list[str]:
     self.debug_log("\t Observing consistency:")
-    sampled_multiple_outputs = await self.sample_multiple_outputs(question)
+    sampled_multiple_answers = self.sample_multiple_outputs(question, message_history)
     
     observed_consistency = 0
     self.debug_log("\t\t Similarities")
-    for i in range(0, len(sampled_multiple_outputs), 1):
-      
-      raw_output = sampled_multiple_outputs[i]
-      # Extract answer from templated response
-      yi = self.extract_llm_answer(raw_output)[0]
+    for i, yi in enumerate(sampled_multiple_answers):
+    
       si = compute_mean_similarity(question, original_answer, yi)
       self.debug_log("\t\t\t  # " + str(i) + "\n\t\t\t\tAnswer: " + str(yi) + "\n\t\t\t\tSimilarity: " + str(si)  )
       
@@ -83,7 +85,7 @@ class LLModelWrapper:
   
   
   
-  async def sample_multiple_outputs(self, question: str):
+  def sample_multiple_outputs(self, question: str, message_history):
     self.debug_log("\t\t Sampling multiple outputs: ", end="")
     
     answers = []
@@ -91,10 +93,46 @@ class LLModelWrapper:
       self.debug_log(str(i) + "...", end="")
       
       prompt = build_observed_consistency_prompt(question)
-      response = await self.llm.create(
+      
+      success = False
+      while not success:
+        response = self.llm.create(
+          model=self.model,
+          temperature=1,
+          messages=[
+            *message_history,
+            {
+                "role": "system",
+                "content": prompt
+            },
+          ],
+        )
+      
+        try:
+          yi = self.extract_llm_answer(response.choices[0].message.content)[0]
+          success = True
+          answers.append(yi)
+        except IndexError:
+          pass
+    
+    self.debug_log("\n")
+    return answers
+  
+  
+  
+  def self_reflection(self, question: str, proposed_answer: str, message_history) -> float:
+    self.debug_log("# Self Reflection:")
+    
+    prompt = build_self_reflection_certainty_prompt(question, proposed_answer)
+    
+    self.debug_log("\t Asking the LLM about the proposed answer:")
+    
+    while True:
+      response = self.llm.create(
         model=self.model,
         temperature=1,
         messages=[
+          *message_history,
           {
               "role": "system",
               "content": prompt
@@ -102,43 +140,25 @@ class LLModelWrapper:
         ],
       )
       
-      answers.append(response.choices[0].message.content)
-    
-    self.debug_log("\n")
-    return answers
-  
-  
-  
-  async def self_reflection(self, question: str, proposed_answer: str) -> float:
-    self.debug_log("# Self Reflection:")
-    
-    prompt = build_self_reflection_certainty_prompt(question, proposed_answer)
-    
-    self.debug_log("\t Asking the LLM about the proposed answer:")
-    response = await self.llm.create(
-      model=self.model,
-      temperature=1,
-      messages=[
-        {
-            "role": "system",
-            "content": prompt
-        },
-      ],
-    )
-    
-    raw_response = response.choices[0].message.content
-    self.debug_log("\t\t", raw_response)
-    
+      raw_response = response.choices[0].message.content
+      self.debug_log("\t\t", raw_response)
+      
 
-    answers = self.extract_llm_answer(raw_response)
+      answers = self.extract_llm_answer(raw_response)
+      if(len(answers) != 0):
 
-    self_reflection = 0  
-    for a in answers:
-      self_reflection += self_reflection_answers_mapping[a]
+        self_reflection = 0  
+        try:
+          for a in answers:
+            self_reflection += self_reflection_answers_mapping[a]
+          break
+        except KeyError:
+          pass
+        
 
     self_reflection = self_reflection/len(answers)
     self.debug_log("\t Self Reflection: " + str(self_reflection))
-    return self_reflection/len(answers)
+    return self_reflection
   
   
   

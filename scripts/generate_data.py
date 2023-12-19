@@ -1,5 +1,3 @@
-
-import asyncio
 import json
 from os import environ
 from dotenv import load_dotenv
@@ -23,12 +21,6 @@ if __name__ == "__main__":
     debug=True
   )
   
-  answer, confidence = asyncio.run(
-    model.ask({
-      "role" : "user",
-      "content": "What's the capital of Italy?"
-    })
-  )
   
   with open(f"../data/game_sets/contrast_sets.json") as f:
     contrast_sets = json.load(f)
@@ -38,9 +30,3 @@ if __name__ == "__main__":
   target_list_candidates = get_lists_of_candidates(contrast_sets)
 
   generate_dialogues_openai(model, target_list_candidates, num_candidates)
-  
-  
-  
-  
-  print("Answer: ", answer)
-  print("Confidence: ", confidence)
