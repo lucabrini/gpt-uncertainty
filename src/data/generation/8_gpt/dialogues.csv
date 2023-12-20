@@ -1,0 +1,26 @@
+dialogue_id,intra_dialogue_id,target,question,answer,question_confidence,question_observed_consistency,question_self_reflection,answer_confidence,answer_observed_consistency,answer_self_reflection,question_time,answer_time
+0,0,dalmatian,Is the item you have a bird?,No.,0.40797,0.36853,0.5,0.88384,0.83406,1.0,13581,11936
+0,1,dalmatian,Is the item you have a mammal?,Yes.,0.61936,0.8848,0.0,0.19344,0.1692,0.25,11984,9400
+0,2,dalmatian,Is the item you have a carnivore?,No.,0.35305,0.39721,0.25,0.99615,0.9945,1.0,17439,10725
+0,3,dalmatian,Is the item you have a herbivore?,No.,0.64025,0.91465,0.0,0.69601,0.99429,0.0,31972,11760
+0,4,dalmatian,Is the item you have a domestic animal?,Yes.,0.55896,0.79852,0.0,0.5186,0.74086,0.0,14484,14174
+0,5,dalmatian,Is the item you have a dog?,Yes! That's correct.,0.88391,0.83416,1.0,0.54351,0.77645,0.0,12923,21956
+1,0,skunk,Is your item a bird?,No.,0.45154,0.64506,0.0,0.8833,0.83328,1.0,13773,8543
+1,1,skunk,Is your item a mammal?,Yes.,0.55148,0.78783,0.0,0.20448,0.07783,0.5,12172,9656
+1,2,skunk,Is your item a herbivore?,No.,0.31286,0.3398,0.25,0.5712,0.70886,0.25,11919,13361
+1,3,skunk,Is your item a carnivore?,Yes! That's correct.,0.62665,0.89522,0.0,0.68183,0.54547,1.0,12300,13069
+2,0,hippopotamus,Is the item on the list a bird?,No.,0.44563,0.42233,0.5,0.58379,0.83398,0.0,10419,11685
+2,1,hippopotamus,Is the item on the list a mammal?,Yes.,0.92776,0.8968,1.0,0.63943,0.48489,1.0,10505,15101
+2,2,hippopotamus,Is the item on the list a large mammal?,Yes.,0.5968,0.424,1.0,0.78539,0.69341,1.0,12727,11843
+2,3,hippopotamus,Is the item on the list a wild animal?,Yes.,0.41753,0.59647,0.0,0.57645,0.8235,0.0,14069,12690
+2,4,hippopotamus,Is the item on the list a herbivore?,Yes.,0.57009,0.60012,0.5,0.57052,0.81503,0.0,12321,13187
+2,5,hippopotamus,Is the item on the list a land animal?,answerer: Yes.,0.82279,0.74684,1.0,0.85136,0.78766,1.0,75852,19498
+2,6,hippopotamus,Is the item on the list a herbivorous land animal that is native to Africa?,answerer: Yes! That's correct.,0.18318,0.26169,0.0,0.85151,0.78788,1.0,14342,15248
+3,0,duck,Is the candidate a bird?,Yes.,0.65987,0.72839,0.5,0.52171,0.31673,1.0,18345,8946
+3,1,duck,Is the candidate a water bird?,answerer: Yes.,0.63565,0.4795,1.0,0.85528,0.79325,1.0,10717,11169
+3,2,duck,Is the candidate a long-legged bird?,No.,0.64414,0.49163,1.0,0.34889,0.49842,0.0,10416,17357
+3,3,duck,Is the candidate a small bird?,answerer: No.,0.40929,0.58469,0.0,0.55659,0.79513,0.0,12405,11337
+3,4,duck,Is the candidate known for its bright and vibrant feathers?,answerer: No.,0.6441,0.49158,1.0,0.85113,0.78733,1.0,14282,12104
+3,5,duck,Is the candidate primarily black in color?,No.,0.7133,0.59043,1.0,0.6473,0.92471,0.0,15515,14727
+3,6,duck,Is the candidate a type of poultry?,Yes! That's correct.,0.53893,0.76991,0.0,0.76746,0.6678,1.0,16556,15975
+4,0,duck,Question: Is the item you have selected a bird?,Yes.,0.56868,0.59812,0.5,0.33334,0.4762,0.0,15933,9399

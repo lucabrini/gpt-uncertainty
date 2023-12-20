@@ -26,7 +26,7 @@ if __name__ == "__main__":
     )
 
     game_set = "8_mcrae" if args.game_set == "8_mcrae_stepwise" else args.game_set
-    print(game_set)
+
     with open(f"./data/game_sets/{game_set}/contrast_sets.json") as f:
         contrast_sets = json.load(f)
     

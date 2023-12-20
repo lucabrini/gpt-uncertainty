@@ -22,12 +22,12 @@ class LLModelWrapper:
       
     
       
-  def ask(self, question, message_history=[], role="system"):
+  def ask(self, question, message_history=[], role="system", temperature=1):
     
     self.debug_log("# Asking for the Original Answer\n")
     original_answer =  self.llm.create(
       model=self.model,
-      temperature=0,
+      temperature=temperature,
       messages=[
         *message_history,
         {
