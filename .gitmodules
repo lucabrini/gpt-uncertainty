@@ -1,0 +1,3 @@
+[submodule "src/questions_game"]
+	path = src/questions_game
+	url = https://github.com/lucabrini/20q-chatgpt
