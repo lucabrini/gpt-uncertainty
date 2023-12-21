@@ -1,60 +1,24 @@
 ******************
 target = dalmatian
 answerer: This is the list of candidates: dog, bear, flamingo, hawk, toucan, dalmatian, hippopotamus, chick.
-questioner: Is the item you have a bird?
-answerer: No.
-questioner: Is the item you have a mammal?
+questioner: Is the item you have assigned an animal?
 answerer: Yes.
-questioner: Is the item you have a carnivore?
-answerer: No.
-questioner: Is the item you have a herbivore?
-answerer: No.
-questioner: Is the item you have a domestic animal?
+questioner: Is the animal you have assigned a mammal?
 answerer: Yes.
-questioner: Is the item you have a dog?
+questioner: Is the mammal you have assigned a carnivore?
+answerer: Yes.
+questioner: Is the carnivorous mammal you have assigned typically found in water?
+answerer: No.
+questioner: Does the carnivorous mammal you have assigned have spots on its body?
 answerer: Yes! That's correct.
 ******************
 target = skunk
 answerer: This is the list of candidates: puffin, cow, boar, owl, eagle, skunk, pelican, bear.
-questioner: Is your item a bird?
-answerer: No.
-questioner: Is your item a mammal?
-answerer: Yes.
-questioner: Is your item a herbivore?
-answerer: No.
-questioner: Is your item a carnivore?
-answerer: Yes! That's correct.
-******************
-target = hippopotamus
-answerer: This is the list of candidates: boar, squirrel, pheasant, swan, hippopotamus, flamingo, tiger, peacock.
 questioner: Is the item on the list a bird?
 answerer: No.
 questioner: Is the item on the list a mammal?
 answerer: Yes.
-questioner: Is the item on the list a large mammal?
-answerer: Yes.
-questioner: Is the item on the list a wild animal?
-answerer: Yes.
-questioner: Is the item on the list a herbivore?
-answerer: Yes.
-questioner: Is the item on the list a land animal?
-answerer: answerer: Yes.
-questioner: Is the item on the list a herbivorous land animal that is native to Africa?
-answerer: answerer: Yes! That's correct.
-******************
-target = duck
-answerer: This is the list of candidates: flamingo, pheasant, duck, ostrich, platypus, otter, piglet, puppy.
-questioner: Is the candidate a bird?
-answerer: Yes.
-questioner: Is the candidate a water bird?
-answerer: answerer: Yes.
-questioner: Is the candidate a long-legged bird?
+questioner: Is the item on the list larger than a person?
 answerer: No.
-questioner: Is the candidate a small bird?
-answerer: answerer: No.
-questioner: Is the candidate known for its bright and vibrant feathers?
-answerer: answerer: No.
-questioner: Is the candidate primarily black in color?
-answerer: No.
-questioner: Is the candidate a type of poultry?
+questioner: Is the item on the list a skunk?
 answerer: Yes! That's correct.
