@@ -22,7 +22,7 @@ if __name__ == "__main__":
     model = LLModelWrapper(
       api_key=openai_api_key, 
       model=OpenAIModelEnum.GPT_3_5_TURBO,
-      debug=False
+      debug=True
     )
 
     game_set = "8_mcrae" if args.game_set == "8_mcrae_stepwise" else args.game_set

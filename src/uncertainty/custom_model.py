@@ -25,7 +25,7 @@ class LLModelWrapper:
   def ask(self, question, message_history=[], role="system", temperature=1):
     
     self.debug_log("# Asking for the Original Answer\n")
-    original_answer =  self.llm.create(
+    original_answer = self.llm.create(
       model=self.model,
       temperature=temperature,
       messages=[
@@ -38,15 +38,9 @@ class LLModelWrapper:
     )
     
     original_answer = original_answer.choices[0].message.content
-    confidence, observed_consistency, self_reported_certainty = self.run_bsdetector(question, original_answer, message_history)
+    uncertainity_metrics = self.run_bsdetector(question, original_answer, message_history)
     
-    uncertainity = {
-      "confidence" : confidence,
-      "observed_consistency" : observed_consistency,
-      "self_reported_certainty" : self_reported_certainty,
-    }
-    
-    return original_answer, uncertainity
+    return original_answer, uncertainity_metrics
       
       
       
@@ -57,7 +51,14 @@ class LLModelWrapper:
     self_reported_certainty = self.self_reflection(question, original_answer, message_history)
     
     confidence = self.beta * observed_consistency + (1 - self.beta) * self_reported_certainty
-    return confidence, observed_consistency, self_reported_certainty
+    
+    uncertainity_metrics = {
+      "confidence" : confidence,
+      "observed_consistency" : observed_consistency,
+      "self_reported_certainty" : self_reported_certainty,
+    }
+    
+    return uncertainity_metrics
       
       
       
@@ -126,6 +127,12 @@ class LLModelWrapper:
     prompt = build_self_reflection_certainty_prompt(question, proposed_answer)
     
     self.debug_log("\t Asking the LLM about the proposed answer:")
+    
+    print( [*message_history,
+          {
+              "role": "system",
+              "content": prompt
+          },])
     
     while True:
       response = self.llm.create(

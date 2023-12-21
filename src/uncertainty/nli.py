@@ -31,4 +31,6 @@ def compute_probabilities(x: str, y: str):
   # print("Contradiction:", predicted_probability[2], "\n")
   # print("semantically different" if 0 in predicted_label else "semantically equals", "\n")
   
+  torch.mps.empty_cache()
+  
   return 1-predicted_probability[2]
