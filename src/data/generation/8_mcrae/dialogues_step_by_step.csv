@@ -1,0 +1,85 @@
+dialogue_id,intra_dialogue_id,target,question,answer,candidates,probability
+0,fox,0,Is your item a bird?,No.,"['elk', 'chicken', 'fox', 'partridge', 'hamster', 'buffalo']",0.16666666666666666
+0,fox,1,Is your item a mammal?,Yes.,"['elk', 'chicken', 'fox', 'partridge', 'hamster', 'buffalo']",0.16666666666666666
+0,fox,2,Is your item typically kept as a pet?,No.,"['elk', 'fox', 'buffalo']",0.3333333333333333
+0,fox,3,Is your item larger than a dog?,No.,"['elk', 'fox', 'buffalo']",0.3333333333333333
+0,fox,4,Is your item commonly found in forests or woodlands?,Yes.,"['elk', 'fox']",0.5
+1,fawn,0,Is the item you have assigned an animal?,Yes.,"['budgie', 'zebra', 'deer', 'penguin', 'pelican', 'sheep', 'fawn', 'ostrich']",0.125
+1,fawn,1,Can the animal you have assigned fly?,No.,"['deer', 'sheep', 'fawn']",0.3333333333333333
+1,fawn,2,Does the animal you have assigned have hooves?,Yes.,"['deer', 'sheep', 'fawn']",0.3333333333333333
+2,zebra,0,Is your item a bird?,No.,"['bear', 'zebra', 'walrus', 'otter']",0.25
+2,zebra,1,Is your item a mammal?,Yes.,"['bear', 'zebra', 'walrus', 'otter']",0.25
+2,zebra,2,Is your item a marine mammal?,No.,"['bear', 'otter']",0.5
+2,zebra,3,Is your item a land mammal?,Yes.,"['bear', 'otter']",0.5
+2,zebra,4,Is your item a carnivore?,Yes.,"['bear', 'otter']",0.5
+2,zebra,5,Is your item a large carnivore?,Yes.,"['bear', 'otter']",0.5
+2,zebra,6,Is your item a bear?,No.,['otter'],1.0
+2,zebra,7,Is your item a walrus?,No.,['otter'],1.0
+2,zebra,8,Is your item an otter?,No.,['otter'],1.0
+2,zebra,9,Is your item a vulture?,No.,['otter'],1.0
+3,rooster,0,Is the item you are thinking of a bird?,Yes.,"['peacock', 'budgie', 'turkey', 'rooster']",0.25
+3,rooster,1,Is the item you are thinking of a peacock?,No.,"['budgie', 'turkey', 'rooster']",0.3333333333333333
+3,rooster,2,Is the item you are thinking of a budgie?,No.,"['turkey', 'rooster']",0.5
+4,owl,0,Is the item you have a bird?,Yes.,"['falcon', 'eagle', 'owl', 'pigeon']",0.25
+4,owl,1,Is the item you have a bird of prey?,Yes.,"['falcon', 'eagle']",0.5
+4,owl,2,Is the item you have an eagle?,No.,['falcon'],1.0
+4,owl,3,Is the item you have a falcon?,No.,['falcon'],1.0
+5,falcon,0,Is your item a bird?,Yes.,"['falcon', 'peacock', 'owl', 'parakeet']",0.25
+5,falcon,1,Is your item a parakeet?,No.,"['falcon', 'peacock', 'owl']",0.3333333333333333
+5,falcon,2,Is your item an owl?,No.,"['falcon', 'peacock']",0.5
+6,hamster,0,Is the item you have an animal?,Yes.,"['chipmunk', 'bear', 'hamster', 'zebra']",0.25
+6,hamster,1,Does the animal you have belong to the rodent family?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,2,Is the animal you have commonly found in the wild?,No.,"['chipmunk', 'hamster']",0.5
+6,hamster,3,Is the animal you have commonly kept as a pet?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,4,Is the animal you have small in size?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,5,Is the animal you have known for its ability to climb trees?,No.,"['chipmunk', 'hamster']",0.5
+6,hamster,6,Is the animal you have known for its cheek pouches?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,8,I apologize for the mistake. Let me try again. Is the animal you have known for its ability to swim?,No.,"['chipmunk', 'hamster']",0.5
+6,hamster,9,I apologize again for the mistake. Let me try one more time. Is the animal you have small and fluffy?,Yes.,"['chipmunk', 'hamster']",0.5
+7,dolphin,0,Is the item something that is worn?,No.,"['dolphin', 'cougar', 'beaver', 'ox']",0.25
+7,dolphin,1,Is the item a living creature?,Yes.,"['dolphin', 'cougar', 'beaver', 'ox']",0.25
+7,dolphin,2,Does the creature live in water?,Yes.,['dolphin'],1.0
+7,dolphin,3,Is the creature a mammal?,Yes.,['dolphin'],1.0
+7,dolphin,4,Is the creature known for its intelligence?,Yes.,['dolphin'],1.0
+7,dolphin,5,Is the creature commonly found in oceans or seas?,Yes.,['dolphin'],1.0
+7,dolphin,6,"Is the creature typically larger in size, like a shark or a whale?",Yes.,['dolphin'],1.0
+8,deer,0,Is your item an animal?,Yes.,"['fawn', 'deer', 'gorilla', 'elephant']",0.25
+8,deer,1,Is your item a mammal?,Yes.,"['fawn', 'deer', 'gorilla', 'elephant']",0.25
+8,deer,2,Is your item a herbivore?,Yes.,"['fawn', 'deer']",0.5
+8,deer,3,Is your item a fawn?,No.,"['fawn', 'deer']",0.5
+9,boots,0,Is the item an animal?,No.,"['boots', 'cape', 'swimsuit', 'trousers']",0.25
+9,boots,1,Is the item a clothing accessory?,Yes.,"['boots', 'cape', 'trousers']",0.3333333333333333
+9,boots,2,Is the item worn on the lower body?,Yes.,['trousers'],1.0
+9,boots,3,Is the item typically worn on the legs?,Yes.,['trousers'],1.0
+9,boots,4,Is the item typically made of fabric?,Yes.,['trousers'],1.0
+9,boots,5,Is the item typically worn by males and females?,Yes.,['trousers'],1.0
+9,boots,6,Is the item typically worn in warm weather?,No.,['trousers'],1.0
+9,boots,7,Is the item typically worn as a protective covering?,Yes.,['trousers'],1.0
+9,boots,8,Is the item typically worn outdoors?,Yes.,['trousers'],1.0
+9,boots,9,Is the item typically worn to protect against rain or snow?,Yes.,['trousers'],1.0
+9,boots,10,Is the item a cape?,No.,['trousers'],1.0
+9,boots,11,Is the item a pair of trousers?,No.,['trousers'],1.0
+10,tie,0,Is the item you have an animal?,No.,"['belt', 'tie', 'scarf', 'blouse']",0.25
+10,tie,1,Is the item you have an accessory?,Yes.,"['belt', 'tie', 'scarf']",0.3333333333333333
+10,tie,2,Is the item you have worn around the neck?,Yes.,['scarf'],1.0
+10,tie,3,Is the item you have typically made of fabric?,Yes.,['scarf'],1.0
+10,tie,4,Is the item you have typically long and narrow in shape?,Yes.,['scarf'],1.0
+10,tie,5,Is the item you have typically worn for warmth?,Yes.,['scarf'],1.0
+10,tie,6,Is the item you have worn mainly during colder seasons?,Yes.,['scarf'],1.0
+10,tie,7,Is the item you have typically made of wool?,Yes.,['scarf'],1.0
+10,tie,8,Is the item you have commonly used to cover the neck and shoulders?,Yes.,['scarf'],1.0
+10,tie,9,Is the item you have typically patterned or plain in design?,It can be both patterned and plain.,['scarf'],1.0
+10,tie,10,Is the item you have commonly worn by both men and women?,Yes.,['scarf'],1.0
+10,tie,11,Is the item you have commonly seen in various colors?,Yes.,['scarf'],1.0
+10,tie,12,Is the item you have a scarf?,No.,['scarf'],1.0
+11,belt,0,Is the item an animal?,No.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,1,Is the item a piece of clothing?,Yes.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,2,Is the item typically worn on the upper body?,No.,"['belt', 'pajamas']",0.5
+11,belt,3,Is the item typically worn on the lower body?,Yes.,"['belt', 'pajamas']",0.5
+11,belt,4,Is the item typically worn by men?,No.,"['belt', 'pajamas']",0.5
+11,belt,5,Is the item typically worn by women?,Yes.,['pajamas'],1.0
+11,belt,6,Is the item typically worn as sleepwear?,No.,['pajamas'],1.0
+11,belt,7,Is the item typically worn as formal attire?,No.,['pajamas'],1.0
+11,belt,8,Is the item typically worn as casual attire?,Yes.,['pajamas'],1.0
+12,seal,0,Is your item a living organism?,Yes.,"['seal', 'hamster', 'chipmunk', 'deer']",0.25
+12,seal,1,Is your item a mammal?,Yes.,"['seal', 'hamster', 'chipmunk']",0.3333333333333333
