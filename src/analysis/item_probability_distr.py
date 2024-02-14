@@ -6,10 +6,6 @@ from string import Template
 from tqdm import tqdm
 import openai
 
-from uncertainty.custom_model import LLModelWrapper
-from uncertainty.utils import OpenAIModelEnum
-
-
 
 def main():
   load_dotenv()
@@ -28,10 +24,10 @@ def main():
   # Loading games sets. We need the candidates of each game set
   games_sets = open_game_sets(data_path % "game_sets")
   
-  current_dialogue_id = open_step_by_step_csv(data_path % "generation")
+  current_dialogue_id = open_dump_file(data_path % "generation")
   print(current_dialogue_id)
   # Opening dumped dialogues data
-  dumped_dialogues = open_dialogues(data_path % "generation", current_dialogue_id)
+  dumped_dialogues = open_dialogues_file(data_path % "generation", current_dialogue_id)
   
   history = []
   candidates = []
@@ -51,37 +47,30 @@ def main():
     question = row['question']
     answer = row['answer']
     
-    
-    # if("correct" not in answer): # Excluding last dialogue question / answer
     history.append(
-      f"-{question} {answer}"
+      f"- Question: {question} Answer: {answer}"
     )
+    
+    history_str = "\n".join(history)
+    print(history_str)
     
     scores = {}
     for candidate in candidates:
       
-      history_str = "\n".join(history)
-      
-      # BSD
-      # answer, uncertainty_metrics = model.ask(
-      #    question=f"CANDIDATE: {candidate}, \n DIALOGUE: {history_str}" ,
-      #    message_history=[build_prompt()] # Task prompt
-      # )
-      
       yes_counter = 0
-      for i in range(0, samples_number, 1):
+      for _ in range(0, samples_number, 1):
         
         response = openai.chat.completions.create(
           temperature=0,
           model='gpt-3.5-turbo',
           messages=[
-            {"role": "system", "content": build_prompt()},
-            {"role": "user", "content" : f"CANDIDATE: {candidate}, \n DIALOGUE: {history_str}"}
+            {"role": "system", "content": build_prompt(candidate, history_str)},
           ],
         ).choices[0].message.content
       
-        print(response)
+        print(candidate, response)
       
+        # TODO: regex to extract the ANSWER key and its value
         if("yes" in response.lower()):
           yes_counter += 1
         
@@ -95,7 +84,8 @@ def main():
     for candidate in candidates:
       normalized_scores[candidate] = scores[candidate] / scores_sum
     
-  
+    print(normalized_scores)
+    
     dump_row(
       data_path % "generation",
       dialogue_id,
@@ -103,28 +93,34 @@ def main():
       row["target"],
       question,
       answer,
-      distribution,
-      
+      scores,
+      normalized_scores,
     )
 
 
-def build_prompt():
-  prompt = (
-    "Given the dialogue of a 20 questions game and an item, you have to check if the item satisfies each <question, answer> in the given dialogue. You have to stricly respond only with 'yes' or 'no'."
-    "\n\n"
+def build_prompt(candidate, dialogue):  
+  template = Template(
+    "Given this dialogue: \n"
+    "$dialogue"
+    "\n"
+    "Is the dialogue true for this item? \n"
+    "Item: $candidate \n"
+    "\n"
     "The output must strictly use the following template: \n"
-    "EXPLANATION: [insert your analysis of each candidated items];"
-    "ANSWER: [yes, no]"
-    "\n\n"
-  )
+    "EXPLANATION: [insert your analysis]"
+    "ANSWER: [is the dialogue true] \n"
+  )  
   
-  return prompt
+  return template.substitute(candidate=candidate, dialogue=dialogue)
 
-def open_step_by_step_csv(data_path):
+def open_dump_file(data_path):
   try:
     with open(f"{data_path}/dialogues_step_by_step_distr.csv", 'r', newline='') as f:
       lines = f.readlines()
-      last_dialogue = int(lines[-1].split(",")[0])
+      if(len(lines) == 1):
+        last_dialogue = -1
+      else:
+        last_dialogue = int(lines[-1].split(",")[0])
   except FileNotFoundError:
     with open(f"{data_path}/dialogues_step_by_step_distr.csv", 'w', newline='') as f:
       write = csv.writer(f)
@@ -134,9 +130,8 @@ def open_step_by_step_csv(data_path):
         "target", # item assigned to user
         "question", # question made by the guesser
         "answer",
-        "candidates",
-        "probability",
-        "explanation"
+        "candidates_scores"
+        "p_distribuition",
       ])
       last_dialogue = -1
       
@@ -146,7 +141,7 @@ def open_game_sets(data_path):
   with open(f"{data_path}/contrast_sets.json") as f:
     return json.load(f)
   
-def open_dialogues(data_path, first_dialogue_id):
+def open_dialogues_file(data_path, first_dialogue_id):
   rows = []
   with open(f"{data_path}/dialogues.csv", newline='') as f:
     reader = csv.DictReader(f, delimiter=",")
@@ -156,25 +151,7 @@ def open_dialogues(data_path, first_dialogue_id):
     
   return rows
 
-def list_remaining_candidates(history, candidates):
-  history_str = "\n".join(history)
-  candidates_str = ", ".join(candidates)
-  prompt = build_prompt(candidates_str, history_str)
-
-  # Asking gpt to list out the remaining items
-  response = openai.chat.completions.create(
-    temperature=0,
-    model='gpt-3.5-turbo',
-    messages=[{'role': "system", 'content': prompt}],
-  ).choices[0].message.content
-
-  candidates = response.split("CANDIDATES: ")[1].split(", ")
-  explanation = response.split("EXPLANATION: ")[1]
-  
-  return candidates
-
-
-def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer, candidates, probability):
+def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer, candidate_scores, p_distribuition):
   with open(f"{data_path}/dialogues_step_by_step_distr.csv", 'a', newline='') as f:
     write = csv.writer(f)
     write.writerow([
@@ -183,8 +160,8 @@ def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer
       target, 
       question, 
       answer,
-      candidates,
-      probability
+      candidate_scores,
+      p_distribuition
     ])
 
 

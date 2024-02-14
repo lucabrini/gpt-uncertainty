@@ -1,1 +1,659 @@
-dialogue_id,intra_dialogue_id,target,question,answer,candidates,probability,explanation
+dialogue_id,intra_dialogue_id,target,question,answer,candidates,probability
+0,fox,0,Is your item a bird?,No.,"['elk', 'chicken', 'fox', 'hamster', 'buffalo']",0.2
+0,fox,1,Is your item a mammal?,Yes.,['buffalo'],1.0
+0,fox,2,Is your item typically kept as a pet?,No.,"['elk', 'fox', 'buffalo']",0.3333333333333333
+0,fox,3,Is your item larger than a dog?,No.,"['elk', 'fox', 'buffalo.']",0.3333333333333333
+0,fox,4,Is your item commonly found in forests or woodlands?,Yes.,"['elk', 'fox', 'buffalo']",0.3333333333333333
+0,fox,5,Is your item a fox?,Yes! That's correct.,['fox'],1.0
+1,fawn,0,Is the item you have assigned an animal?,Yes.,"['budgie', 'zebra', 'deer', 'penguin', 'pelican', 'sheep', 'fawn', 'ostrich']",0.125
+1,fawn,1,Can the animal you have assigned fly?,No.,"['zebra', 'deer', 'penguin', 'sheep', 'fawn', 'ostrich']",0.16666666666666666
+1,fawn,2,Does the animal you have assigned have hooves?,Yes.,"['deer', 'sheep', 'fawn']",0.3333333333333333
+1,fawn,3,Is the animal you have assigned a deer?,Yes! That's correct.,"['budgie', 'zebra', 'deer', 'penguin', 'pelican', 'sheep', 'fawn', 'ostrich\n\nFor the second question', 'we need to find all the animals that cannot fly. The animals that cannot fly from the candidates set are: deer', 'sheep.\n']",0.1
+2,zebra,0,Is your item a bird?,No.,"['bear', 'zebra', 'walrus', 'otter']",0.25
+2,zebra,1,Is your item a mammal?,Yes.,"['bear', 'zebra', 'walrus', 'otter']",0.25
+2,zebra,2,Is your item a marine mammal?,No.,"['bear', 'otter.']",0.5
+2,zebra,3,Is your item a land mammal?,Yes.,"['bear', 'otter']",0.5
+2,zebra,4,Is your item a carnivore?,Yes.,"['bear', 'otter']",0.5
+2,zebra,5,Is your item a large carnivore?,Yes.,['bear'],1.0
+2,zebra,6,Is your item a bear?,No.,"['pelican', 'vulture', 'chickadee', 'finch', 'bear', 'zebra', 'walrus', 'otter']",0.125
+2,zebra,7,Is your item a walrus?,No.,['otter'],1.0
+2,zebra,8,Is your item an otter?,No.,"['pelican', 'vulture', 'chickadee', 'finch']",0.25
+2,zebra,9,Is your item a vulture?,No.,['zebra'],1.0
+2,zebra,10,Is your item a zebra?,Yes! That's correct.,['zebra'],1.0
+3,rooster,0,Is the item you are thinking of a bird?,Yes.,"['peacock', 'budgie', 'turkey', 'rooster']",0.25
+3,rooster,1,Is the item you are thinking of a peacock?,No.,"['budgie', 'turkey', 'rooster.']",0.3333333333333333
+3,rooster,2,Is the item you are thinking of a budgie?,No.,"['platypus', 'pig', 'turkey', 'beaver', 'deer', 'rooster']",0.16666666666666666
+3,rooster,3,Is the item you are thinking of a rooster?,Yes! That's correct.,['rooster'],1.0
+4,owl,0,Is the item you have a bird?,Yes.,"['falcon', 'eagle', 'owl', 'pigeon']",0.25
+4,owl,1,Is the item you have a bird of prey?,Yes.,"['falcon', 'eagle']",0.5
+4,owl,2,Is the item you have an eagle?,No.,['falcon'],1.0
+4,owl,3,Is the item you have a falcon?,No.,"['owl', 'pigeon', 'chimp']",0.3333333333333333
+4,owl,4,Is the item you have an owl?,Yes! That's correct.,['owl'],1.0
+5,falcon,0,Is your item a bird?,Yes.,"['falcon', 'peacock', 'owl', 'parakeet']",0.25
+5,falcon,1,Is your item a parakeet?,No.,"['falcon', 'peacock', 'owl']",0.3333333333333333
+5,falcon,2,Is your item an owl?,No.,['falcon'],1.0
+5,falcon,3,Is your item a falcon?,Yes! That's correct.,['falcon'],1.0
+6,hamster,0,Is the item you have an animal?,Yes.,"['chipmunk', 'bear', 'hamster', 'zebra']",0.25
+6,hamster,1,Does the animal you have belong to the rodent family?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,2,Is the animal you have commonly found in the wild?,No.,['chipmunk'],1.0
+6,hamster,3,Is the animal you have commonly kept as a pet?,Yes.,"['chipmunk', 'hamster.']",0.5
+6,hamster,4,Is the animal you have small in size?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,5,Is the animal you have known for its ability to climb trees?,No.,"['chipmunk', 'hamster']",0.5
+6,hamster,6,Is the animal you have known for its cheek pouches?,Yes.,['chipmunk'],1.0
+6,hamster,7,The item you have is a chipmunk.,"No, that's not correct.",['hamster'],1.0
+6,hamster,8,I apologize for the mistake. Let me try again. Is the animal you have known for its ability to swim?,No.,['hamster'],1.0
+6,hamster,9,I apologize again for the mistake. Let me try one more time. Is the animal you have small and fluffy?,Yes.,"['chipmunk', 'hamster']",0.5
+6,hamster,10,The item you have is a hamster.,Yes! That's correct. Well done!,['hamster'],1.0
+7,dolphin,0,Is the item something that is worn?,No.,"['dolphin', 'cougar', 'beaver', 'ox']",0.25
+7,dolphin,1,Is the item a living creature?,Yes.,"['dolphin', 'cougar', 'beaver', 'ox']",0.25
+7,dolphin,2,Does the creature live in water?,Yes.,"['dolphin', 'beaver']",0.5
+7,dolphin,3,Is the creature a mammal?,Yes.,"['dolphin', 'beaver']",0.5
+7,dolphin,4,Is the creature known for its intelligence?,Yes.,['dolphin'],1.0
+7,dolphin,5,Is the creature commonly found in oceans or seas?,Yes.,"['dolphin', 'beaver.']",0.5
+7,dolphin,6,"Is the creature typically larger in size, like a shark or a whale?",Yes.,['None'],1.0
+7,dolphin,7,Is the creature a dolphin?,Yes! That's correct.,['dolphin'],1.0
+8,deer,0,Is your item an animal?,Yes.,"['fawn', 'deer', 'gorilla', 'elephant']",0.25
+8,deer,1,Is your item a mammal?,Yes.,"['fawn', 'deer', 'gorilla', 'elephant']",0.25
+8,deer,2,Is your item a herbivore?,Yes.,"['fawn', 'deer']",0.5
+8,deer,3,Is your item a fawn?,No.,"['deer', 'gorilla', 'elephant']",0.3333333333333333
+8,deer,4,Is your item a deer?,Yes! That's correct.,['deer'],1.0
+9,boots,0,Is the item an animal?,No.,"['boots', 'cape', 'swimsuit', 'trousers']",0.25
+9,boots,1,Is the item a clothing accessory?,Yes.,"['cape', 'swimsuit']",0.5
+9,boots,2,Is the item worn on the lower body?,Yes.,"['boots', 'trousers']",0.5
+9,boots,3,Is the item typically worn on the legs?,Yes.,"['boots', 'trousers']",0.5
+9,boots,4,Is the item typically made of fabric?,Yes.,['trousers'],1.0
+9,boots,5,Is the item typically worn by males and females?,Yes.,['trousers'],1.0
+9,boots,6,Is the item typically worn in warm weather?,No.,['trousers'],1.0
+9,boots,7,Is the item typically worn as a protective covering?,Yes.,"['boots', 'trousers']",0.5
+9,boots,8,Is the item typically worn outdoors?,Yes.,['trousers'],1.0
+9,boots,9,Is the item typically worn to protect against rain or snow?,Yes.,"['boots', 'trousers']",0.5
+9,boots,10,Is the item a cape?,No.,"['boots', 'fawn', 'seal', 'otter', 'porcupine.']",0.2
+9,boots,11,Is the item a pair of trousers?,No.,['boots'],1.0
+9,boots,12,Is the item a pair of boots?,Yes! That's correct.,['boots'],1.0
+10,tie,0,Is the item you have an animal?,No.,"['belt', 'tie', 'scarf', 'pig', 'blouse']",0.2
+10,tie,1,Is the item you have an accessory?,Yes.,"['belt', 'tie', 'scarf']",0.3333333333333333
+10,tie,2,Is the item you have worn around the neck?,Yes.,"['tie', 'scarf']",0.5
+10,tie,3,Is the item you have typically made of fabric?,Yes.,"['tie', 'scarf']",0.5
+10,tie,4,Is the item you have typically long and narrow in shape?,Yes.,"['tie', 'scarf']",0.5
+10,tie,5,Is the item you have typically worn for warmth?,Yes.,['scarf'],1.0
+10,tie,6,Is the item you have worn mainly during colder seasons?,Yes.,"['scarf', 'tie']",0.5
+10,tie,7,Is the item you have typically made of wool?,Yes.,"['scarf', 'tie']",0.5
+10,tie,8,Is the item you have commonly used to cover the neck and shoulders?,Yes.,"['scarf', 'tie']",0.5
+10,tie,9,Is the item you have typically patterned or plain in design?,It can be both patterned and plain.,['scarf'],1.0
+10,tie,10,Is the item you have commonly worn by both men and women?,Yes.,"['scarf', 'tie']",0.5
+10,tie,11,Is the item you have commonly seen in various colors?,Yes.,['scarf'],1.0
+10,tie,12,Is the item you have a scarf?,No.,['tie'],1.0
+10,tie,13,"My apologies for the misunderstanding. Based on the given information, the item you have is a tie.",Yes! That's correct. Well done! The item assigned to me is indeed a tie.,['tie'],1.0
+11,belt,0,Is the item an animal?,No.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,1,Is the item a piece of clothing?,Yes.,"['belt', 'pajamas', 'tie', 'blouse.']",0.25
+11,belt,2,Is the item typically worn on the upper body?,No.,"['belt', 'pajamas']",0.5
+11,belt,3,Is the item typically worn on the lower body?,Yes.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,4,Is the item typically worn by men?,No.,['blouse'],1.0
+11,belt,5,Is the item typically worn by women?,Yes.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,6,Is the item typically worn as sleepwear?,No.,"['belt', 'tie', 'blouse']",0.3333333333333333
+11,belt,7,Is the item typically worn as formal attire?,No.,"['belt', 'pajamas', 'tie', 'blouse.']",0.25
+11,belt,8,Is the item typically worn as casual attire?,Yes.,"['belt', 'pajamas', 'tie', 'blouse']",0.25
+11,belt,9,Is the item a belt?,Yes! That's correct.,['belt'],1.0
+12,seal,0,Is your item a living organism?,Yes.,"['seal', 'hamster', 'chipmunk', 'deer']",0.25
+12,seal,1,Is your item a mammal?,Yes.,"['seal', 'hamster', 'chipmunk', 'deer']",0.25
+12,seal,2,Is your item a domesticated animal?,No.,"['seal', 'deer.']",0.5
+12,seal,3,Is your item a small animal?,No.,"['seal', 'hamster', 'chipmunk', 'deer.']",0.25
+12,seal,4,Does your item have antlers?,No.,['deer'],1.0
+12,seal,5,Is your item a seal?,Yes! That's correct.,['seal'],1.0
+13,bear,0,Is the item you have in mind an animal?,Yes.,"['goat', 'bear', 'squirrel', 'zebra', 'crowbar']",0.2
+13,bear,1,Does the animal you have in mind have stripes?,No.,"['goat', 'bear', 'squirrel', 'crowbar', 'rocket.']",0.2
+13,bear,2,Is the animal you have in mind a mammal?,Yes.,"['goat', 'bear']",0.5
+13,bear,3,Is the mammal you have in mind commonly found in the wild?,Yes.,['bear'],1.0
+13,bear,4,Is the mammal you have in mind larger than a human?,Yes.,"['bear', 'zebra']",0.5
+13,bear,5,Is the mammal you have in mind a herbivore?,No.,['bear'],1.0
+13,bear,6,Is the mammal you have in mind a predator?,Yes.,['bear'],1.0
+13,bear,7,Is the mammal you have in mind known for its agility and climbing skills?,No.,['bear'],1.0
+13,bear,8,Is the mammal you have in mind known for its strength and power?,Yes.,['bear'],1.0
+13,bear,9,Is the mammal you have in mind a bear?,Yes! That's correct.,['bear'],1.0
+14,seal,0,Is the item you have in mind an animal?,Yes.,"['goat', 'seal', 'walrus', 'cougar']",0.25
+14,seal,1,Does the animal you have in mind live in the water?,Yes.,"['seal', 'walrus']",0.5
+14,seal,2,Is the animal you have in mind a marine mammal?,Yes.,"['seal', 'walrus']",0.5
+14,seal,3,Is the animal you have in mind a walrus?,No.,"['seal', 'walrus']",0.5
+14,seal,4,Is the animal you have in mind a seal?,Yes! That's correct.,['seal'],1.0
+15,missile,0,Is the item alive?,No.,"['missile', 'stick', 'shotgun', 'bomb']",0.25
+15,missile,1,Does the item explode?,Yes.,"['missile', 'bomb', 'shotgun']",0.3333333333333333
+15,missile,2,Is the item smaller than a breadbox?,No.,"['missile', 'bomb']",0.5
+15,missile,3,Is the item used as a weapon?,Yes.,"['missile', 'bomb']",0.5
+15,missile,4,Is the item typically used by the military?,Yes.,['missile'],1.0
+15,missile,5,Is the item a missile?,Yes! That's correct.,['missile'],1.0
+16,spear,0,Is the item an animal?,No.,"['spear', 'pistol', 'dagger', 'shotgun']",0.25
+16,spear,1,Is the item a weapon?,Yes.,"['spear', 'pistol', 'dagger', 'shotgun']",0.25
+16,spear,2,Is the item handheld?,Yes.,"['spear', 'pistol', 'dagger', 'shotgun.']",0.25
+16,spear,3,Is the item commonly used in close combat?,Yes.,"['spear', 'pistol', 'dagger', 'shotgun']",0.25
+16,spear,4,Is the item a dagger?,No.,"['spear', 'pistol', 'dagger', 'shotgun.']",0.25
+16,spear,5,Is the item a sword?,No.,"['spear', 'pistol', 'dagger', 'shotgun.']",0.25
+16,spear,6,Is the item a spear?,Yes! That's correct.,['spear'],1.0
+17,stick,0,Is the item alive?,No.,"['harpoon', 'stick', 'buffalo', 'cow', 'walrus', 'whip', 'seal', 'knife']",0.125
+17,stick,1,Is the item used for hunting?,Yes.,"['harpoon', 'stick', 'whip', 'knife']",0.25
+17,stick,2,Is the item made of wood?,Yes.,"['harpoon', 'stick']",0.5
+17,stick,3,Is the item long and narrow?,Yes.,"['harpoon', 'stick']",0.5
+17,stick,4,Is the item a harpoon?,No.,"['stick', 'whip']",0.5
+17,stick,5,Is the item a whip?,No.,['stick'],1.0
+17,stick,6,Is the item a stick?,Yes! That's correct.,['stick'],1.0
+18,caribou,0,Is the item an animal?,Yes.,"['hamster', 'porcupine', 'elephant', 'caribou']",0.25
+18,caribou,1,Is the item a mammal?,Yes.,"['hamster', 'porcupine', 'elephant', 'caribou.']",0.25
+18,caribou,2,Is the item smaller than a human?,No.,"['elephant', 'caribou']",0.5
+18,caribou,3,Is the item typically found in the wild?,Yes.,"['porcupine', 'elephant', 'caribou.']",0.3333333333333333
+18,caribou,4,Is the item larger than a car?,Yes.,"['elephant', 'caribou']",0.5
+18,caribou,5,Is the item a herbivore?,Yes.,"['elephant', 'caribou']",0.5
+18,caribou,6,Is the item an elephant?,No.,['caribou'],1.0
+18,caribou,7,Is the item a caribou?,Yes! That's correct.,['caribou'],1.0
+19,zebra,0,Is the item you have chosen an animal?,Yes.,"['whale', 'sheep', 'zebra', 'otter']",0.25
+19,zebra,1,Does the animal you have chosen live in the water?,No.,"['sheep', 'zebra', 'otter']",0.3333333333333333
+19,zebra,2,Is the animal you have chosen a mammal?,Yes.,"['sheep', 'zebra']",0.5
+19,zebra,3,Is the mammal you have chosen a herbivore?,No.,"['whale', 'zebra', 'otter']",0.3333333333333333
+19,zebra,4,Is the mammal you have chosen a large land-dwelling animal?,Yes.,"['whale', 'zebra.']",0.5
+19,zebra,5,Is the mammal you have chosen a member of the horse family?,No.,"['whale', 'sheep', 'zebra']",0.3333333333333333
+19,zebra,6,Is the mammal you have chosen known for having distinctive black and white stripes?,Yes! That's correct.,['zebra'],1.0
+20,cow,0,Is the item you have an animal?,Yes.,"['beaver', 'deer', 'seal', 'cow']",0.25
+20,cow,1,Does the animal you have live in water?,No.,"['beaver', 'deer', 'cow']",0.3333333333333333
+20,cow,2,Is the animal you have commonly found in forests?,No.,"['beaver', 'deer', 'seal', 'cow']",0.16666666666666666
+20,cow,3,Is the animal you have typically found on farms?,Yes.,['cow'],1.0
+20,cow,4,Is the animal you have larger than a human?,Yes.,"['beaver', 'deer', 'seal', 'cow']",0.16666666666666666
+20,cow,5,Does the animal you have four legs?,Yes.,['cow'],1.0
+20,cow,6,Is the animal you have typically used for milk or meat production?,Yes.,['cow'],1.0
+20,cow,7,Is the animal you have a cow?,Yes! That's correct.,['deer'],1.0
+21,avocado,0,Is the item you have in mind an animal?,No.,"['avocado', 'strawberry', 'pineapple', 'tangerine']",0.25
+21,avocado,1,Is the item you have in mind a fruit?,Yes.,"['avocado', 'strawberry', 'pineapple', 'tangerine.']",0.25
+21,avocado,2,Is the item you have in mind a citrus fruit?,No.,"['avocado', 'strawberry', 'pineapple', 'tangerine.']",0.25
+21,avocado,3,Is the item you have in mind a tropical fruit?,Yes.,['pineapple'],1.0
+21,avocado,4,Is the item you have in mind a pineapple?,No.,['avocado'],1.0
+21,avocado,5,Is the item you have in mind a tangerine?,No.,"['avocado', 'strawberry']",0.5
+21,avocado,6,Is the item you have in mind an avocado?,Yes! That's correct.,['avocado'],1.0
+22,cherry,0,Is the item you have an animal?,No.,"['apple', 'pear', 'cherry', 'grapefruit']",0.25
+22,cherry,1,Is the item you have a fruit?,Yes.,"['apple', 'pear', 'cherry', 'grapefruit']",0.25
+22,cherry,2,Is the item you have a citrus fruit?,No.,"['apple', 'pear', 'cherry']",0.3333333333333333
+22,cherry,3,Is the item you have a small fruit?,Yes.,"['apple', 'pear']",0.5
+22,cherry,4,Is the item you have red in color?,Yes.,['None'],1.0
+22,cherry,5,Is the item you have round in shape?,Yes.,"['apple', 'cherry']",0.5
+22,cherry,6,Is the item you have a cherry?,Yes! That's correct.,['cherry'],1.0
+23,tomato,0,Is the item you have an animal?,No.,"['tomato', 'rhubarb', 'tangerine', 'cranberry']",0.25
+23,tomato,1,Is the item you have a fruit or vegetable?,Yes.,"['tomato', 'rhubarb', 'tangerine', 'cranberry']",0.25
+23,tomato,2,Is the item you have a citrus fruit?,No.,"['tomato', 'rhubarb', 'tangerine', 'cranberry']",0.25
+23,tomato,3,Is the item you have red in color?,Yes.,"['tomato', 'cranberry']",0.5
+23,tomato,4,Is the item you have commonly used in cooking or recipes?,Yes.,['tomato'],1.0
+23,tomato,5,Is the item you have known for its tart taste?,No.,"['tomato', 'rhubarb', 'cranberry']",0.3333333333333333
+23,tomato,6,Is the item you have often eaten raw?,Yes.,"['tomato', 'rhubarb', 'cranberry']",0.3333333333333333
+23,tomato,7,Is the item you have commonly used in salads?,Yes.,['rhubarb'],1.0
+23,tomato,8,Is the item you have small and spherical in shape?,Yes.,"['tomato', 'cranberry']",0.5
+23,tomato,9,Is the item you have a cranberry?,No.,['tomato'],1.0
+23,tomato,10,Is the item you have a tomato?,Yes! That's correct.,['tomato'],1.0
+24,mink,0,Is the item you have an animal?,Yes.,"['mink', 'cow', 'whale', 'squirrel']",0.25
+24,mink,1,Is the item you have a mammal?,Yes.,"['mink', 'cow', 'whale']",0.3333333333333333
+24,mink,2,Is the item you have a land mammal?,Yes.,"['mink', 'cow', 'squirrel']",0.3333333333333333
+24,mink,3,Is the item you have a herbivore?,No.,['cow'],1.0
+24,mink,4,Is the item you have a carnivorous land mammal?,Yes.,['squirrel'],1.0
+24,mink,5,Is the item you have a mammal that is typically found in the ocean?,No.,['mink'],1.0
+24,mink,6,Is the item you have a large carnivorous land mammal?,No.,"['mink', 'squirrel.']",0.5
+24,mink,7,Is the item you have a small carnivorous land mammal?,Yes.,"['mink', 'squirrel.']",0.5
+24,mink,8,Is the item you have a member of the weasel family?,Yes.,['mink'],1.0
+24,mink,9,Is the item you have a mink?,Yes! That's correct.,['mink'],1.0
+25,gorilla,0,Is the item you have in mind an animal?,Yes.,"['walrus', 'gorilla', 'sheep', 'dolphin']",0.25
+25,gorilla,1,Is the animal you are thinking of a mammal?,Yes.,"['walrus', 'gorilla', 'sheep']",0.3333333333333333
+25,gorilla,2,Is the mammal you are thinking of a land-dwelling animal?,Yes.,"['gorilla', 'sheep']",0.5
+25,gorilla,3,Is the animal you are thinking of a herbivore?,No.,['walrus'],1.0
+25,gorilla,4,Is the mammal you are thinking of a large animal?,Yes.,['gorilla'],1.0
+25,gorilla,5,Is the mammal you are thinking of known for its intelligence?,Yes.,"['gorilla', 'sheep']",0.5
+25,gorilla,6,Is the mammal you are thinking of typically found in the water?,No.,"['gorilla', 'sheep']",0.5
+25,gorilla,7,Is the mammal you are thinking of often associated with jungles or forests?,Yes.,['gorilla'],1.0
+25,gorilla,8,Is the mammal you are thinking of a gorilla?,Yes! That's correct.,['gorilla'],1.0
+26,elk,0,Is your item an animal?,Yes.,"['otter', 'seal', 'elk', 'lion']",0.25
+26,elk,1,Is your animal aquatic?,No.,"['elk', 'lion']",0.5
+26,elk,2,Is your animal a mammal?,Yes.,"['otter', 'seal', 'elk', 'lion']",0.25
+26,elk,3,Is your animal a herbivore?,Yes.,"['otter', 'elk']",0.5
+26,elk,4,Is your animal larger than a dog?,Yes.,"['elk', 'lion']",0.5
+26,elk,5,Is your animal found in Africa?,No.,"['elk', 'lion']",0.5
+26,elk,6,Is your animal larger than a horse?,Yes.,"['elk', 'lion']",0.5
+26,elk,7,Is your animal a herbivorous mammal larger than a horse that is found in North America?,Yes! That's correct.,['elk'],1.0
+27,pumpkin,0,Is the item you have an animal?,No.,"['pumpkin', 'mushroom', 'cauliflower', 'peas']",0.25
+27,pumpkin,1,Is the item you have a plant?,Yes.,"['pumpkin', 'mushroom', 'cauliflower', 'peas']",0.14285714285714285
+27,pumpkin,2,Is the item you have a fruit or vegetable?,Yes.,"['pumpkin', 'mushroom', 'cauliflower', 'peas']",0.25
+27,pumpkin,3,Is the item you have a fruit?,No.,"['pumpkin', 'mushroom', 'cauliflower', 'peas.']",0.25
+27,pumpkin,4,Is the item you have a vegetable?,Yes.,"['pumpkin', 'mushroom', 'cauliflower', 'peas.']",0.25
+27,pumpkin,5,Is the item you have a leafy green vegetable?,No.,"['gorilla', 'pumpkin', 'mushroom', 'cauliflower', 'peas']",0.125
+27,pumpkin,6,Is the item you have a root vegetable?,No.,"['gorilla', 'pumpkin', 'mushroom', 'cauliflower', 'peas']",0.125
+27,pumpkin,7,"Is the item you have a vegetable from the brassica family? (such as broccoli, cabbage, or kale)",No.,"['pumpkin', 'mushroom', 'cauliflower']",0.3333333333333333
+27,pumpkin,8,Is the item you have a legume vegetable? (such as peas or beans),No.,"['pumpkin', 'mushroom', 'cauliflower', 'peas']",0.14285714285714285
+27,pumpkin,9,Is the item you have a mushroom?,No.,"['pumpkin', 'cauliflower', 'peas]",0.16666666666666666
+27,pumpkin,10,Is the item you have a cauliflower?,No.,"['gorilla', 'pumpkin', 'mushroom', 'cauliflower', 'peas']",0.125
+27,pumpkin,11,Is the item you have a pumpkin?,Yes! That's correct.,['pumpkin'],1.0
+28,beans,0,Is the item you are thinking of a food item?,Yes.,"['radish', 'beans', 'potato', 'pig', 'beets']",0.2
+28,beans,1,Is the item you are thinking of a plant-based food item?,Yes.,"['radish', 'beans', 'potato', 'beets']",0.14285714285714285
+28,beans,2,Is the item you are thinking of a root vegetable?,No.,"['beans', 'potato']",0.5
+28,beans,3,Is the item you are thinking of a leafy vegetable?,No.,"['radish', 'beans', 'potato', 'beets']",0.25
+28,beans,4,"Is the item you are thinking of a legume? (e.g., beans, peas, lentils)",Yes! That's correct.,['beans'],1.0
+29,potato,0,Is the item a vegetable?,Yes.,"['eggplant', 'onions', 'pumpkin', 'potato']",0.25
+29,potato,1,Is the item a root vegetable?,Yes.,"['onions', 'potato.']",0.5
+29,potato,2,Is the item a potato?,Yes! That's correct.,['potato'],1.0
+30,penguin,0,Is the item an article of clothing?,No.,"['trousers', 'cloak', 'boots', 'sweater']",0.25
+30,penguin,1,Is the item a bird?,Yes.,"['buzzard', 'bluejay', 'vulture', 'penguin']",0.25
+30,penguin,2,Does the item have a black and white coloration?,Yes.,"['buzzard', 'penguin']",0.5
+30,penguin,3,Is the item a penguin?,Yes! That's correct.,['penguin'],1.0
+31,stork,0,Is the item you have in mind a bird?,Yes.,"['eagle', 'parakeet', 'woodpecker', 'stork']",0.25
+31,stork,1,Is the item you have in mind a bird of prey?,No.,"['parakeet', 'woodpecker', 'stork']",0.3333333333333333
+31,stork,2,Is the item you have in mind a parakeet?,No.,"['eagle', 'parakeet', 'woodpecker', 'stork']",0.25
+31,stork,3,Is the item you have in mind a woodpecker?,No.,"['eagle', 'parakeet', 'woodpecker', 'stork']",0.25
+31,stork,4,Is the item you have in mind a stork?,Yes! That's correct.,['stork'],1.0
+32,hawk,0,Is your item a bird?,Yes.,"['hawk', 'peacock', 'falcon', 'budgie']",0.25
+32,hawk,1,Does your item have colorful and flamboyant feathers?,No.,['peacock'],1.0
+32,hawk,2,Is your item a bird of prey?,Yes.,"['peacock']",1.0
+32,hawk,3,Does your item have a hooked beak?,Yes.,"['hawk', 'falcon']",0.5
+32,hawk,4,Is your item a falcon?,No.,"['hawk', 'peacock', 'falcon', 'budgie']",0.25
+32,hawk,5,Is your item a hawk?,Yes! That's correct.,['hawk'],1.0
+33,bra,0,Is the item you have a bird?,No.,"['chickadee', 'eagle', 'owl', 'raven']",0.14285714285714285
+33,bra,1,Is the item you have an article of clothing?,Yes.,"['skirt', 'leotards', 'bra', 'boots']",0.25
+33,bra,2,Is the item you have worn on the upper body?,Yes.,"['skirt', 'leotards', 'bra']",0.3333333333333333
+33,bra,3,Is the item you have typically worn by women?,Yes.,"['skirt', 'leotards', 'bra']",0.3333333333333333
+33,bra,4,Is the item you have typically worn as an undergarment?,Yes.,"['leotards', 'bra']",0.5
+33,bra,5,Is the item you have smaller than a T-shirt?,Yes.,"['chickadee', 'eagle', 'owl', 'raven']",0.14285714285714285
+33,bra,6,Is the item you have worn to support or enhance the breasts?,Yes.,['bra'],1.0
+33,bra,7,Is the item you have a bra?,Yes! That's correct.,['bra'],1.0
+34,belt,0,Is the item you have a living thing?,No.,"['rooster', 'belt', 'pajamas', 'slippers', 'woodpecker', 'parakeet', 'partridge', 'tie']",0.125
+34,belt,1,Is the item you have an accessory?,Yes.,"['belt', 'tie']",0.5
+34,belt,2,Can the item be worn around the waist?,Yes.,['belt'],1.0
+34,belt,3,Is the item typically made of cloth?,No.,"['belt', 'tie']",0.5
+34,belt,4,Is the item made of leather?,Yes.,"['belt', 'tie']",0.5
+34,belt,5,Is the item typically used to hold up pants or a skirt?,Yes.,['belt'],1.0
+34,belt,6,Is the item primarily used by men?,No.,"['belt', 'tie']",0.5
+34,belt,7,Is the item typically worn with formal attire?,"It can be worn with formal attire, but it is not limited to formal attire.",['belt'],1.0
+34,belt,8,Is the item a belt?,Yes! That's correct.,['belt'],1.0
+35,bra,0,Is the item alive?,No.,"['penguin', 'shoes', 'goose', 'tie', 'peacock', 'belt', 'oriole', 'bra']",0.125
+35,bra,1,Is the item a type of clothing?,Yes.,"['shoes', 'tie', 'belt', 'bra']",0.25
+35,bra,2,Is the item usually worn on the upper body?,Yes.,"['tie', 'belt', 'bra']",0.3333333333333333
+35,bra,3,Is the item typically worn by men?,No.,['peacock'],1.0
+35,bra,4,Is the item typically worn by women?,Yes.,['bra'],1.0
+35,bra,5,Does the item cover the chest area?,Yes.,['bra'],1.0
+35,bra,6,Is the item typically worn for special occasions or events?,"It can be, but it is also commonly worn for everyday purposes.","['tie', 'bra']",0.5
+35,bra,7,Is the item typically made of fabric?,Yes.,"['tie', 'bra']",0.5
+35,bra,8,Does the item have straps?,Yes.,['bra'],1.0
+35,bra,9,Is the item typically worn under clothing?,Yes.,['bra'],1.0
+35,bra,10,"Based on your responses, the item assigned to you is a bra.",Yes! That's correct. Well done!,['bra'],1.0
+36,penguin,0,Is the item you have assigned a living creature?,Yes.,"['duck', 'rooster', 'penguin', 'budgie']",0.25
+36,penguin,1,Does the item you have assigned have wings?,Yes.,"['duck', 'budgie']",0.5
+36,penguin,2,Is the item you have assigned able to fly?,No.,"['duck', 'rooster', 'budgie']",0.3333333333333333
+36,penguin,3,"Based on your responses, the item you have assigned is a penguin.",Yes! That's correct. Well done!,['penguin'],1.0
+37,penguin,0,Is the item a living creature?,Yes.,"['starling', 'pelican', 'penguin', 'ostrich']",0.25
+37,penguin,1,Is the item a bird?,Yes.,"['starling', 'pelican']",0.5
+37,penguin,2,Does the item have wings?,Yes.,"['starling', 'pelican', 'penguin', 'ostrich']",0.25
+37,penguin,3,Is the item typically found in water?,Yes.,"['pelican', 'penguin']",0.5
+37,penguin,4,Is the item a pelican?,No.,"['starling', 'penguin', 'ostrich']",0.3333333333333333
+37,penguin,5,Is the item a starling?,No.,"['pelican', 'penguin']",0.5
+37,penguin,6,Is the item a penguin?,Yes! That's correct.,"['shotgun', 'starling', 'pelican', 'rifle', 'penguin', 'ostrich']",0.16666666666666666
+38,seagull,0,Is the candidate you have in mind a bird?,Yes.,"['stork', 'chickadee', 'owl', 'seagull']",0.25
+38,seagull,1,Is the candidate you have in mind a stork?,No.,"['stork', 'chickadee', 'owl', 'seagull']",0.25
+38,seagull,2,Is the candidate you have in mind an owl?,No.,"['chickadee', 'seagull']",0.5
+38,seagull,3,Is the candidate you have in mind a chickadee?,No.,"['stork', 'chickadee', 'owl', 'seagull']",0.25
+38,seagull,4,Is the candidate you have in mind a seagull?,Yes! That's correct.,['seagull'],1.0
+39,whip,0,Is the item alive?,No.,"['whip', 'stick', 'catapult', 'bazooka']",0.25
+39,whip,1,Is the item a household object?,No.,"['whip', 'stick', 'catapult', 'bazooka']",0.25
+39,whip,2,Is the item usually made of metal?,No.,"['whip', 'stick', 'catapult', 'bazooka']",0.25
+39,whip,3,Is the item typically used for hunting or defense?,No.,"['whip', 'stick', 'budgie', 'rooster', 'catapult', 'pheasant', 'peacock', 'bazooka']",0.125
+39,whip,4,Does the item have feathers?,No.,"['whip', 'stick', 'budgie', 'rooster', 'catapult', 'pheasant', 'peacock', 'bazooka']",0.125
+39,whip,5,"Is the item a long, thin object?",Yes.,"['whip', 'stick']",0.5
+39,whip,6,Is the item typically used for hitting or striking something?,Yes.,"['whip', 'stick']",0.5
+39,whip,7,Is the item a whip?,Yes! That's correct.,['whip'],1.0
+40,bomb,0,Is the item living?,No.,"['rifle', 'grenade', 'stone', 'turkey', 'flamingo', 'bomb', 'robin', 'penguin']",0.125
+40,bomb,1,Is the item a weapon?,Yes.,"['rifle', 'grenade', 'bomb']",0.3333333333333333
+40,bomb,2,Is the item explosive?,Yes.,"['grenade', 'bomb']",0.5
+40,bomb,3,Does the item have a long range?,No.,"['grenade', 'bomb']",0.5
+40,bomb,4,Is the item handheld?,Yes.,"['grenade', 'bomb']",0.5
+40,bomb,5,Is the item commonly used by military personnel?,Yes.,['grenade'],1.0
+40,bomb,6,Is the item a grenade?,No.,"['rifle', 'grenade', 'stone', 'turkey', 'flamingo', 'bomb', 'robin', 'penguin']",0.1
+40,bomb,7,Is the item a bomb?,Yes! That's correct.,['bomb'],1.0
+41,stick,0,Is your item a living creature?,No.,"['whip', 'stick', 'sword', 'tomahawk']",0.25
+41,stick,1,Is your item made of wood?,Yes.,"['whip', 'stick', 'sword', 'tomahawk']",0.25
+41,stick,2,Is your item a stick?,Yes! That's correct.,['stick'],1.0
+42,budgie,0,Is the item you have an animal?,Yes.,"['budgie', 'finch', 'crow', 'raven']",0.25
+42,budgie,1,Is the animal you have a bird?,Yes.,"['budgie', 'finch', 'crow', 'raven']",0.25
+42,budgie,2,Is the bird you have a pet?,Yes.,"['budgie', 'finch']",0.5
+42,budgie,3,Is the bird you have smaller than a crow?,Yes.,"['budgie', 'finch']",0.5
+42,budgie,4,Is the bird you have commonly kept as a pet a budgie?,Yes! That's correct.,['budgie'],1.0
+43,dove,0,Is the item you have an animal?,Yes.,"['swan', 'buzzard', 'dove', 'robin']",0.25
+43,dove,1,Does the item you have feathers?,Yes.,"['swan', 'buzzard', 'dove', 'robin']",0.25
+43,dove,2,Is the item you have a bird?,Yes.,"['swan', 'buzzard', 'dove', 'robin.']",0.25
+43,dove,3,Is the item you have a songbird?,No.,"['swan', 'buzzard', 'dove', 'robin']",0.25
+43,dove,4,Is the item you have a bird of prey?,No.,"['swan', 'dove']",0.5
+43,dove,5,Is the item you have a water bird?,No.,"['dove', 'robin.']",0.5
+43,dove,6,Is the item you have a land bird?,Yes.,"['swan', 'buzzard', 'dove', 'strawberry', 'robin.']",0.2
+43,dove,7,Is the item you have a small land bird?,Yes.,['robin'],1.0
+43,dove,8,Is the item you have a robin?,No.,['dove'],1.0
+43,dove,9,Is the item you have a dove?,Yes! That's correct.,['dove'],1.0
+44,woodpecker,0,Is the item you have a fruit?,No.,"['woodpecker', 'stork', 'swan', 'canary']",0.25
+44,woodpecker,1,Is the item you have a bird?,Yes.,"['woodpecker', 'stork', 'swan', 'canary']",0.25
+44,woodpecker,2,Is the item you have a water bird?,No.,"['woodpecker', 'stork', 'canary']",0.3333333333333333
+44,woodpecker,3,Is the item you have a bird of prey?,No.,"['woodpecker', 'stork', 'canary.']",0.3333333333333333
+44,woodpecker,4,Is the item you have a small bird?,No.,"['pineapple', 'rhubarb', 'woodpecker', 'stork', 'swan', 'canary']",0.1111111111111111
+44,woodpecker,5,Is the item you have a stork?,No.,"['pineapple', 'rhubarb', 'woodpecker', 'stork', 'swan', 'canary']",0.1111111111111111
+44,woodpecker,6,Is the item you have a woodpecker?,Yes! That's correct.,['woodpecker'],1.0
+45,rhubarb,0,Is the item an animal?,No.,"['rhubarb', 'cherry', 'apple', 'grapefruit']",0.25
+45,rhubarb,1,Is the item a fruit or vegetable?,Yes.,"['rhubarb', 'cherry', 'apple', 'grapefruit.']",0.25
+45,rhubarb,2,Is the item a fruit?,No.,"['falcon', 'owl', 'rhubarb', 'goose', 'cherry', 'apple', 'grapefruit']",0.14285714285714285
+45,rhubarb,3,Is the item a vegetable?,Yes.,['rhubarb'],1.0
+45,rhubarb,4,Is the item a leafy vegetable?,No.,"['cherry', 'apple', 'grapefruit']",0.3333333333333333
+45,rhubarb,5,Is the item a root vegetable?,No.,"['cherry', 'apple', 'grapefruit']",0.3333333333333333
+45,rhubarb,6,Is the item a vegetable that grows above the ground?,Yes.,"['rhubarb', 'cherry', 'apple', 'grapefruit.']",0.25
+45,rhubarb,7,Is the item red or orange in color?,No.,['rhubarb'],1.0
+45,rhubarb,8,Is the item green in color?,No.,"['rhubarb', 'cherry', 'apple', 'grapefruit.']",0.25
+45,rhubarb,9,Is the item yellow in color?,No.,"['apple', 'grapefruit']",0.5
+45,rhubarb,10,Is the item a purple or violet color?,No.,['rhubarb'],1.0
+45,rhubarb,11,Is the item brown in color?,No.,['rhubarb'],1.0
+45,rhubarb,12,Is the item white in color?,No.,['rhubarb'],1.0
+45,rhubarb,13,Is the item black in color?,No.,['rhubarb'],1.0
+45,rhubarb,14,Is the item a vegetable that is commonly yellowish-green in color?,No.,['rhubarb'],1.0
+45,rhubarb,15,Is the item a vegetable that is commonly purple in color?,No.,['rhubarb'],1.0
+45,rhubarb,16,"I apologize, but I am unable to determine the item based on the information provided. Could you please let me know the name of the vegetable?",Yes! That's correct. The item assigned to me is rhubarb.,['rhubarb'],1.0
+46,tangerine,0,Is the item you are thinking of a fruit?,Yes.,"['honeydew', 'avocado', 'banana', 'tangerine']",0.25
+46,tangerine,1,Is the fruit you are thinking of yellow?,No.,"['honeydew', 'banana']",0.5
+46,tangerine,2,Is the fruit you are thinking of round in shape?,Yes.,"['honeydew', 'avocado']",0.5
+46,tangerine,3,Is the fruit you are thinking of commonly eaten fresh?,Yes.,"['honeydew', 'avocado', 'banana', 'tangerine.']",0.25
+46,tangerine,4,Is the fruit you are thinking of smaller than an orange?,Yes.,"['honeydew', 'avocado', 'oriole']",0.3333333333333333
+46,tangerine,5,Is the fruit you are thinking of a banana?,No.,['tangerine'],1.0
+46,tangerine,6,Is the fruit you are thinking of a tangerine?,Yes! That's correct.,['tangerine'],1.0
+47,nectarine,0,Is the item a type of fruit?,Yes.,"['rhubarb', 'nectarine', 'prune', 'tomato']",0.25
+47,nectarine,1,Is the item a type of citrus fruit?,No.,"['rhubarb', 'nectarine', 'prune', 'tomato']",0.25
+47,nectarine,2,Is the item a type of stone fruit?,Yes.,"['nectarine', 'prune']",0.5
+47,nectarine,3,Is the item typically red or orange in color?,Yes.,['None'],1.0
+47,nectarine,4,"Is the item typically smaller in size, like a cherry or plum?",No.,"['nectarine', 'tomato.']",0.5
+47,nectarine,5,"Is the item typically larger in size, like a peach or nectarine?",Yes.,"['nectarine', 'prune']",0.5
+47,nectarine,6,Is the item a nectarine?,Yes! That's correct.,['nectarine'],1.0
+48,crow,0,Is the item you have a vegetable?,No.,"['chickadee', 'starling', 'buzzard', 'crow']",0.25
+48,crow,1,Is the item you have a bird?,Yes.,"['chickadee', 'starling', 'buzzard', 'crow']",0.25
+48,crow,2,Is the item you have a type of songbird?,No.,"['chickadee', 'starling', 'buzzard', 'crow.']",0.25
+48,crow,3,Is the item you have a type of bird of prey?,No.,"['chickadee', 'starling', 'buzzard', 'crow.']",0.25
+48,crow,4,Is the item you have a type of scavenger bird?,Yes.,"['crow', 'buzzard']",0.5
+48,crow,5,Is the item you have a type of crow?,Yes! That's correct.,['crow'],1.0
+49,blackbird,0,Is the item you're thinking of an animal?,Yes.,"['blackbird', 'budgie', 'buzzard', 'chicken']",0.25
+49,blackbird,1,Does the item you're thinking of have wings?,Yes.,"['blackbird', 'budgie', 'buzzard', 'chicken.']",0.25
+49,blackbird,2,Is the item you're thinking of a bird?,Yes.,"['blackbird', 'budgie']",0.5
+49,blackbird,3,Is the item you're thinking of a blackbird?,Yes! That's correct.,['blackbird'],1.0
+50,parakeet,0,Is your item an animal?,Yes.,"['rooster', 'duck', 'parakeet', 'crow']",0.25
+50,parakeet,1,Is your item a bird?,Yes.,"['rooster', 'duck', 'parakeet', 'crow.']",0.25
+50,parakeet,2,Does your item have feathers?,Yes.,"['rooster', 'duck', 'parakeet', 'crow']",0.25
+50,parakeet,3,Does your item make a distinct sound in the morning?,Yes.,"['rooster', 'crow']",0.5
+50,parakeet,4,Is your item a rooster?,No.,"['duck', 'parakeet', 'crow.']",0.3333333333333333
+50,parakeet,5,Is your item a duck?,No.,"['parakeet', 'crow.']",0.5
+50,parakeet,6,Is your item a parakeet?,Yes! That's correct.,['crow'],1.0
+51,potato,0,Is the item you have an animal?,No.,"['mushroom', 'peas', 'potato', 'onions']",0.25
+51,potato,1,Is the item you have a plant?,Yes.,"['mushroom', 'peas', 'potato', 'onions']",0.14285714285714285
+51,potato,2,Is the item you have a type of flowering plant?,No.,"['mushroom', 'peas', 'potato', 'onions']",0.25
+51,potato,3,Is the item you have a type of vegetable?,Yes.,"['mushroom', 'peas', 'potato', 'onions.']",0.25
+51,potato,4,Is the item you have a root vegetable?,Yes.,"['duck', 'mushroom', 'peas', 'pheasant', 'potato', 'emu', 'canary', 'onions']",0.09090909090909091
+51,potato,5,Is the item you have commonly used as a base ingredient for soups or stews?,Yes.,"['potato', 'onions.']",0.5
+51,potato,6,Is the item you have a potato?,Yes! That's correct.,['potato'],1.0
+52,corn,0,Is your item a living creature?,No.,"['robin', 'peas', 'crow', 'peacock', 'tomato', 'parsley', 'corn', 'pelican']",0.125
+52,corn,1,Is your item a vegetable?,Yes.,['tomato'],1.0
+52,corn,2,Is your item a green vegetable?,No.,"['parsley', 'corn']",0.5
+52,corn,3,Is your item a red vegetable?,No.,['tomato'],1.0
+52,corn,4,Is your item a yellow vegetable?,Yes.,['corn'],1.0
+52,corn,5,Is your item a corn?,Yes! That's correct.,['corn'],1.0
+53,avocado,0,Is the chosen item a bird?,No.,"['avocado', 'pumpkin', 'onions', 'potato.']",0.25
+53,avocado,1,Is the chosen item a vegetable?,No.,"['avocado', 'pumpkin', 'onions', 'potato.']",0.25
+53,avocado,2,Is the chosen item a fruit?,Yes.,"['avocado', 'pumpkin']",0.5
+53,avocado,3,Is the chosen item typically green?,Yes.,['avocado'],1.0
+53,avocado,4,Is the chosen item an avocado?,Yes! That's correct.,['avocado'],1.0
+54,0,cape,Is your item a piece of clothing?,Yes.,"['blouse', 'camisole', 'gown', 'cape']",0.25
+54,1,cape,Is your item worn on the upper body?,No.,['cape'],1.0
+54,2,cape,Is your item typically worn on the lower body?,No.,"['blouse', 'camisole', 'gown', 'cape.']",0.25
+54,3,cape,Is your item an accessory such as jewelry or a bag?,Yes.,['cape'],1.0
+54,4,cape,Is your item typically worn on the wrist?,No.,"['camisole', 'gown', 'cape']",0.3333333333333333
+54,5,cape,Is your item typically worn around the neck?,No.,"['blouse', 'camisole', 'gown', 'cape']",0.25
+54,6,cape,Is your item typically used to carry belongings?,No.,"['blouse', 'camisole', 'gown', 'cape.']",0.25
+54,7,cape,Is your item typically worn on the head?,No.,"['blouse', 'camisole', 'gown', 'cape']",0.14285714285714285
+54,8,cape,Is your item typically worn on the fingers?,No.,"['blouse', 'camisole', 'gown', 'cape']",0.25
+54,9,cape,Is your item typically worn on the feet or legs?,No.,"['blouse', 'camisole', 'gown', 'cape']",0.25
+54,10,cape,Is your item typically worn around the waist?,No.,"['blouse', 'camisole', 'gown', 'cape']",0.25
+54,11,cape,Is your item typically worn over the shoulder?,Yes.,['cape'],1.0
+54,12,cape,Is your item a cape?,Yes! That's correct.,['camisole'],1.0
+55,0,cape,Is the item you have in mind a piece of clothing?,Yes.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,1,cape,Is the item you have in mind worn on the upper body?,No.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,2,cape,Is the item you have in mind worn on the lower body?,No.,"['trousers', 'pants', 'cape.']",0.3333333333333333
+55,3,cape,Is the item you have in mind typically worn on the feet?,No.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,4,cape,Is the item you have in mind typically worn on the head?,No.,['cape'],1.0
+55,5,cape,Is the item you have in mind typically worn around the waist?,No.,['cape'],1.0
+55,6,cape,Does the item you have in mind typically cover a specific body part?,Yes.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,7,cape,Is the item you have in mind typically worn on the hands?,No.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,8,cape,Is the item you have in mind typically worn on the neck?,No.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,9,cape,Is the item you have in mind typically worn on the feet?,No.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,10,cape,Is the item you have in mind typically worn on the shoulders or back?,Yes.,"['trousers', 'pants', 'cape']",0.3333333333333333
+55,11,cape,Is the item you have in mind a cape?,Yes! That's correct.,['cape'],1.0
+56,0,trousers,Is the item you have an explosive device?,No.,"['trousers', 'tomahawk', 'camisole', 'cloak', 'catapult', 'robe']",0.16666666666666666
+56,1,trousers,Is the item you have a piece of clothing?,Yes.,"['trousers', 'camisole', 'cloak', 'robe']",0.25
+56,2,trousers,Is the item you have worn on the upper body?,No.,['camisole'],1.0
+56,3,trousers,Is the item you have worn on the lower body?,Yes.,"['trousers', 'camisole']",0.5
+56,4,trousers,Is the item you have typically worn by men?,Yes.,['trousers'],1.0
+56,5,trousers,Is the item you have a type of trousers?,Yes! That's correct.,['trousers'],1.0
+57,0,grenade,Is the item you have something you wear?,No.,"['axe', 'grenade', 'revolver', 'stone']",0.25
+57,1,grenade,Is the item you have a type of weapon?,Yes.,"['axe', 'grenade', 'revolver']",0.3333333333333333
+57,2,grenade,Is the item you have a projectile weapon?,Yes.,"['axe', 'grenade', 'revolver']",0.3333333333333333
+57,3,grenade,Is the item you have typically used for long-range attacks?,No.,"['axe', 'grenade', 'revolver', 'stone']",0.25
+57,4,grenade,Is the item you have typically used for close-range attacks?,Yes.,['grenade'],1.0
+57,5,grenade,Is the item you have a bladed weapon?,No.,"['revolver', 'grenade']",0.5
+57,6,grenade,Is the item you have a blunt weapon?,No.,['revolver'],1.0
+57,7,grenade,Is the item you have an explosive weapon?,Yes.,"['axe', 'grenade', 'revolver']",0.3333333333333333
+57,8,grenade,Is the item you have a handheld explosive weapon?,Yes.,['grenade'],1.0
+57,9,grenade,Is the item you have typically thrown or launched at a target?,Yes.,"['axe', 'grenade', 'revolver']",0.3333333333333333
+57,10,grenade,Is the item you have a grenade?,Yes! That's correct.,['grenade'],1.0
+58,0,spear,Is the item you have made of fabric?,No.,"['stick', 'spear', 'catapult', 'cannon']",0.25
+58,1,spear,Is the item you have a weapon?,Yes.,"['stick', 'spear', 'catapult', 'cannon']",0.25
+58,2,spear,Is the item you have a long-range weapon?,Yes.,['cannon'],1.0
+58,3,spear,Is the item you have used for throwing projectiles?,Yes.,['None'],1.0
+58,4,spear,Is the item you have a catapult?,No.,"['spear', 'catapult', 'cannon.']",0.3333333333333333
+58,5,spear,Is the item you have a cannon?,No.,"['stick', 'spear']",0.5
+58,6,spear,Is the item you have a spear?,Yes! That's correct.,['spear'],1.0
+59,0,missile,Is the item you have assigned to the user something that can be worn?,No.,"['bomb', 'missile', 'rocket', 'stone']",0.25
+59,1,missile,Is the item you have assigned to the user something that can explode or cause damage?,Yes.,"['bomb', 'missile', 'rocket']",0.3333333333333333
+59,2,missile,Is the item you have assigned to the user something that is typically used for military purposes?,Yes.,"['missile', 'rocket']",0.5
+59,3,missile,Is the item you have assigned to the user a missile or a rocket?,Yes! That's correct.,['missile'],1.0
+60,0,swimsuit,Is your item a type of clothing?,Yes.,"['cloak', 'jacket', 'cape', 'swimsuit']",0.16666666666666666
+60,1,swimsuit,Is your item worn on the upper body?,No.,"['cloak', 'cape', 'swimsuit.']",0.3333333333333333
+60,2,swimsuit,Is your item worn on the lower body?,Yes.,"['cloak', 'jacket', 'cape', 'swimsuit']",0.25
+60,3,swimsuit,Is your item typically worn in colder weather?,No.,['swimsuit'],1.0
+60,4,swimsuit,Is your item typically worn in warmer weather?,Yes.,"['cloak', 'raisin', 'pumpkin', 'jacket', 'cape', 'swimsuit', 'prune', 'grapefruit.']",0.125
+60,5,swimsuit,Is your item typically worn at the beach or in a swimming pool?,Yes.,['swimsuit'],1.0
+60,6,swimsuit,Is your item a swimsuit?,Yes! That's correct.,['swimsuit'],1.0
+61,0,trousers,Is your item a clothing item?,Yes.,"['camisole', 'pants', 'pajamas', 'trousers']",0.25
+61,1,trousers,Is your item worn on the upper body?,No.,"['camisole', 'pajamas', 'trousers; pants', 'rhubarb', 'grapefruit', 'pumpkin', 'tomato.']",0.14285714285714285
+61,2,trousers,Is your item worn on the lower body?,Yes.,"['camisole', 'pants', 'pajamas', 'trousers']",0.25
+61,3,trousers,"Is your item usually made of a single material, like fabric or denim?",Yes.,['pants'],1.0
+61,4,trousers,Is your item typically long in length?,Yes.,['pants'],1.0
+61,5,trousers,Is your item specifically designed for formal occasions?,No.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,6,trousers,Is your item typically worn by women?,No.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,7,trousers,Is your item typically worn by both adults and children?,Yes.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,8,trousers,Is your item typically worn during colder seasons?,No.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,9,trousers,Is your item typically worn as part of a uniform?,"Sometimes, but not necessarily.","['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,10,trousers,Is your item typically worn as casual wear?,Yes.,"['camisole', 'pants', 'pajamas', 'trousers\n\n-Is your item worn on the upper body? No.\n']",0.25
+61,11,trousers,Is your item typically made of a thin and lightweight material?,No.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,12,trousers,Is your item typically made of a thicker and heavier material?,Yes.,"['pants', 'pajamas', 'trousers']",0.3333333333333333
+61,13,trousers,Is your item typically worn on the legs and covers them fully?,Yes.,"['pants', 'trousers']",0.5
+61,14,trousers,Is your item usually made of denim?,Yes.,"['pants', 'trousers']",0.5
+61,15,trousers,"Is your item typically referred to as ""jeans""?",Yes! That's correct.,"['pants', 'trousers']",0.5
+62,0,socks,Is your item something you wear?,Yes.,"['bra', 'socks', 'cloak', 'coat']",0.25
+62,1,socks,Is your item something worn on the upper body?,No.,"['socks', 'cloak', 'coat']",0.3333333333333333
+62,2,socks,Is your item something worn on the lower body?,No.,"['cloak', 'coat']",0.5
+62,3,socks,Is your item an accessory?,No.,"['avocado', 'honeydew', 'cantaloupe', 'pear']",0.25
+62,4,socks,Is your item a type of footwear?,Yes.,['socks'],1.0
+62,5,socks,Is your item specifically designed for sports or athletic activities?,No.,['socks'],1.0
+62,6,socks,Is your item meant to be worn indoors?,No.,"['bra', 'socks', 'cloak', 'coat.']",0.25
+62,7,socks,Is your item typically worn by men?,No.,['socks'],1.0
+62,8,socks,Is your item a type of sock?,Yes! That's correct.,['socks'],1.0
+63,0,apple,Is the item you have a fruit?,Yes.,"['cranberry', 'apple', 'pumpkin', 'plum']",0.25
+63,1,apple,Is the fruit you have red?,Yes.,"['cranberry', 'apple', 'plum']",0.3333333333333333
+63,2,apple,Is the fruit you have small and round?,Yes.,"['cranberry', 'apple']",0.5
+63,3,apple,Is the fruit you have commonly used in pies and desserts?,Yes.,"['cranberry', 'apple']",0.5
+63,4,apple,Is the fruit you have a cranberry?,No.,['apple'],1.0
+63,5,apple,Is the fruit you have commonly eaten raw?,Yes.,['apple'],1.0
+63,6,apple,Is the fruit you have an apple?,Yes! That's correct.,['apple'],1.0
+64,0,cherry,Is the item you have edible?,Yes.,"['coconut', 'cherry', 'peach', 'cranberry']",0.16666666666666666
+64,1,cherry,Is the item you have round in shape?,Yes.,"['coconut', 'cherry']",0.5
+64,2,cherry,Is the item you have a fruit?,Yes.,"['coconut', 'cherry']",0.5
+64,3,cherry,Is the item you have typically red in color?,Yes.,"['cherry', 'cranberry']",0.5
+64,4,cherry,Is the item you have a cranberry?,No.,['cherry'],1.0
+64,5,cherry,Is the item you have a cherry?,Yes! That's correct.,['cherry'],1.0
+65,0,coconut,Is the item you have edible?,Yes.,"['coconut', 'strawberry', 'pear', 'raisin']",0.25
+65,1,coconut,Is the item you have a fruit?,Yes.,"['coconut', 'strawberry', 'pear', 'raisin']",0.25
+65,2,coconut,Is the item you have small and round?,No.,"['coconut', 'pear', 'raisin']",0.3333333333333333
+65,3,coconut,Is the item you have typically worn on the body?,No.,['coconut'],1.0
+65,4,coconut,Is the item you have typically used to hold something together?,No.,"['coconut', 'strawberry']",0.5
+65,5,coconut,Is the item you have typically worn on the hands?,No.,"['coconut', 'strawberry', 'pear']",0.3333333333333333
+65,6,coconut,Is the item you have typically worn around the neck?,No.,"['coconut', 'strawberry', 'pear']",0.3333333333333333
+65,7,coconut,Is the item you have typically worn on the head?,No.,['coconut'],1.0
+65,8,coconut,"Based on your responses, the item you have is a skirt.","No, that's not correct.","['coconut', 'strawberry', 'belt', 'pear', 'tie', 'raisin', 'skirt']",0.14285714285714285
+65,9,coconut,I apologize for the incorrect guess. Could you please provide me with another hint or clarification that could help me narrow down the item you have?,Certainly! Here's another hint: The item I have is typically brown and has a hard outer shell.,"['coconut', 'strawberry', 'pear', 'belt', 'tie', 'raisin', 'skirt', 'mittens']",0.125
+65,10,coconut,"Thank you for the additional hint. Based on that, the item you have is most likely a coconut. Is that correct?",Yes! That's correct. Well done! The item I have is indeed a coconut.,['coconut'],1.0
+66,0,socks,Is the item you have in mind a type of footwear?,Yes.,['boots'],1.0
+66,1,socks,Is the item you have in mind boots?,No.,['socks'],1.0
+66,2,socks,Is the item you have in mind socks?,Yes! That's correct.,['socks'],1.0
+67,0,blouse,Is the item you have an edible vegetable?,No.,"['trousers', 'blouse', 'pants', 'slippers']",0.25
+67,1,blouse,Is the item you have a piece of clothing?,Yes.,"['trousers', 'blouse', 'pants', 'slippers']",0.25
+67,2,blouse,Is the item you have worn on the lower part of the body?,No.,"['trousers', 'blouse', 'pants', 'slippers']",0.25
+67,3,blouse,Is the item you have worn on the upper part of the body?,Yes.,"['trousers', 'blouse', 'pants', 'slippers']",0.25
+67,4,blouse,Is the item you have a type of shirt?,Yes.,['blouse'],1.0
+67,5,blouse,Is the item you have a women's blouse?,Yes! That's correct.,['blouse'],1.0
+68,0,swimsuit,Is the item you're thinking of something you wear?,Yes.,"['swimsuit', 'nightgown', 'shoes', 'camisole']",0.25
+68,1,swimsuit,Is the item you're thinking of worn on the upper part of the body?,No.,"['beans', 'pickle', 'beets', 'shoes', 'mushroom.']",0.2
+68,2,swimsuit,Is the item you're thinking of worn on the lower part of the body?,Yes.,"['swimsuit', 'beets', 'shoes', 'mushroom', 'camisole.']",0.2
+68,3,swimsuit,Is the item you're thinking of typically worn by women?,No.,"['swimsuit', 'shoes']",0.5
+68,4,swimsuit,Is the item you're thinking of typically worn by men?,Yes.,"['swimsuit', 'shoes']",0.5
+68,5,swimsuit,Is the item you're thinking of a type of footwear?,No.,['shoes'],1.0
+68,6,swimsuit,Is the item you're thinking of a type of bottoms or pants?,No.,['beets'],1.0
+68,7,swimsuit,Is the item you're thinking of a type of underwear or undergarment?,No.,['swimsuit.'],1.0
+68,8,swimsuit,Is the item you're thinking of a type of swimwear?,Yes! That's correct.,['swimsuit'],1.0
+69,0,broccoli,Is the item you have edible?,Yes.,"['peas', 'mushroom', 'cucumber', 'broccoli']",0.25
+69,1,broccoli,Is the item you have a vegetable?,Yes.,"['peas', 'mushroom', 'cucumber', 'broccoli']",0.25
+69,2,broccoli,Is the item you have green in color?,Yes.,"['peas', 'broccoli']",0.5
+69,3,broccoli,Is the item you have usually eaten raw?,No.,"['peas', 'cucumber', 'broccoli']",0.3333333333333333
+69,4,broccoli,Is the item you have usually cooked or boiled before eating?,Yes.,['broccoli'],1.0
+69,5,broccoli,Is the item you have a popular ingredient in soups and stews?,Yes.,['broccoli'],1.0
+69,6,broccoli,Is the item you have broccoli?,Yes! That's correct.,['broccoli'],1.0
+70,0,onions,Is the item you have edible?,Yes.,"['olive', 'potato', 'onions', 'pumpkin']",0.25
+70,1,onions,Is the item a vegetable?,Yes.,"['olive', 'potato', 'onions', 'pumpkin']",0.25
+70,2,onions,Is the item round and typically orange in color?,No.,"['olive', 'potato', 'onions', 'pumpkin']",0.25
+70,3,onions,Is the item commonly used in salads or as a topping for pizzas?,Yes.,"['olive', 'potato', 'onions', 'pumpkin\n\nFor the second question', 'since the item is a vegetable', 'we can eliminate olive and potato from the candidates. \n']",0.16666666666666666
+70,4,onions,Is the item typically green in color?,No.,"['olive', 'potato', 'onions']",0.3333333333333333
+70,5,onions,Is the item typically white or brown in color?,Yes.,['onion'],1.0
+70,6,onions,Is the item an onion?,Yes! That's correct.,['onions'],1.0
+71,0,cauliflower,Is the item you have in mind something that can be worn?,No.,"['shoes', 'tie', 'belt', 'bra\n\nCandidates: shoes', 'peas', 'beans', 'tie', 'cauliflower', 'belt', 'bra', 'cabbage.\nDialogue: \n-Is the item you have in mind something that can be worn? Yes.']",0.09090909090909091
+71,1,cauliflower,Is the item you have in mind a food?,Yes.,"['peas', 'beans', 'cauliflower', 'cabbage']",0.25
+71,2,cauliflower,Is the item you have in mind a vegetable?,Yes.,"['cauliflower', 'cabbage']",0.5
+71,3,cauliflower,Is the item you have in mind a member of the Brassica family?,Yes.,['cabbage'],1.0
+71,4,cauliflower,Is the item you have in mind cauliflower?,Yes! That's correct.,['cauliflower'],1.0
+72,0,spear,Is the item you have related to food?,No.,"['revolver', 'shotgun', 'stick', 'spear', 'pumpkin']",0.2
+72,1,spear,Is the item you have a weapon?,Yes.,"['revolver', 'shotgun']",0.5
+72,2,spear,Is the item you have a firearm?,No.,"['stick', 'spear']",0.5
+72,3,spear,Is the item you have a melee weapon?,Yes.,"['stick', 'spear']",0.5
+72,4,spear,Is the item you have a sharp object?,Yes.,['spear'],1.0
+72,5,spear,Is the item you have a stick?,No.,"['revolver', 'shotgun', 'stick', 'spear', 'pumpkin']",0.125
+72,6,spear,Is the item you have a spear?,Yes! That's correct.,['spear'],1.0
+73,0,grenade,Is the item you have in mind a fruit?,No.,"['gun', 'grenade', 'rocket', 'cannon']",0.25
+73,1,grenade,Is the item you have in mind a weapon?,Yes.,"['gun', 'grenade', 'rocket', 'cannon']",0.25
+73,2,grenade,Is the item you have in mind typically handheld?,Yes.,"['gun', 'grenade']",0.5
+73,3,grenade,Is the item you have in mind a firearm?,No.,"['gun', 'grenade']",0.5
+73,4,grenade,Is the item you have in mind an explosive device?,Yes.,"['grenade', 'rocket']",0.5
+73,5,grenade,Is the item you have in mind commonly used for military purposes?,Yes.,"['gun', 'grenade', 'rocket', 'cannon.']",0.25
+73,6,grenade,Is the item you have in mind a grenade?,Yes! That's correct.,"['gun', 'grenade', 'rocket', 'cannon.']",0.25
+74,0,bomb,Is your item a fruit?,No.,"['rock', 'bomb', 'pumpkin', 'stone', 'crossbow']",0.2
+74,1,bomb,Is your item a non-living object?,Yes.,"['bomb', 'crossbow']",0.5
+74,2,bomb,Is your item typically found outdoors?,Yes.,"['rock', 'bomb', 'stone', 'crossbow']",0.25
+74,3,bomb,Is your item commonly used for decorative purposes?,No.,"['rock', 'bomb', 'pumpkin', 'stone', 'crossbow.']",0.2
+74,4,bomb,Is your item made of natural materials?,No.,"['bomb', 'crossbow']",0.5
+74,5,bomb,Is your item made of metal?,Yes.,"['rock', 'bomb', 'crossbow']",0.3333333333333333
+74,6,bomb,Does your item have a sharp edge or point?,Yes.,"['bomb', 'crossbow']",0.5
+74,7,bomb,Is your item a crossbow?,No.,"['rock', 'bomb', 'pumpkin', 'stone', 'crossbow.']",0.2
+74,8,bomb,Is your item a bomb?,Yes! That's correct.,['bomb'],1.0
+76,0,rhubarb,Is the item you have an edible fruit?,No.,"['crowbar', 'pistol', 'rifle', 'whip']",0.25
+76,1,rhubarb,Is the item you have a tool or weapon?,No.,"['crowbar', 'pistol', 'rifle', 'whip']",0.25
+76,2,rhubarb,Is the item you have a living organism?,Yes.,"['rhubarb', 'peach', 'apple', 'plum', 'crowbar', 'pistol', 'rifle', 'whip.']",0.125
+76,3,rhubarb,Is the item you have a bird?,No.,"['rhubarb', 'whip']",0.5
+76,4,rhubarb,Is the item you have a plant?,Yes.,"['rhubarb', 'peach', 'apple', 'plum']",0.25
+76,5,rhubarb,Is the item you have a perennial plant?,Yes.,"['rhubarb', 'plum']",0.5
+76,6,rhubarb,Is the item you have used for culinary purposes?,Yes.,"['rhubarb', 'apple']",0.5
+76,7,rhubarb,Is the item you have commonly used as a vegetable?,Yes.,['rhubarb'],1.0
+76,8,rhubarb,Is the item you have rhubarb?,Yes! That's correct.,['rhubarb'],1.0
+77,0,tomato,Is your item edible?,Yes.,"['honeydew', 'tomato', 'grape', 'rhubarb']",0.25
+77,1,tomato,Is your item a fruit?,Yes.,"['honeydew', 'tomato', 'grape']",0.3333333333333333
+77,2,tomato,Is your item typically red or orange in color when ripe?,Yes.,"['tomato', 'grape']",0.5
+77,3,tomato,Is your item a tomato?,Yes! That's correct.,['tomato'],1.0
+78,0,missile,Is your item a type of food?,No.,"['catapult', 'bazooka', 'missile', 'slingshot']",0.25
+78,1,missile,Is your item a weapon?,Yes.,"['onions', 'pickle', 'beans', 'olive', 'catapult', 'bazooka', 'missile', 'slingshot.']",0.125
+78,2,missile,Is your item a projectile weapon?,Yes.,"['catapult', 'bazooka', 'missile', 'slingshot']",0.25
+78,3,missile,Is your item a long-range projectile weapon?,Yes.,"['bazooka', 'missile']",0.5
+78,4,missile,Is your item a missile?,Yes! That's correct.,['missile'],1.0
+79,0,rocket,Is your item a fruit or vegetable?,No.,"['rocket', 'pickle', 'cannon', 'crowbar', 'grenade.']",0.2
+79,1,rocket,Is your item a man-made object?,Yes.,"['rocket', 'cannon', 'crowbar', 'grenade']",0.25
+79,2,rocket,Is your item used for transportation?,Yes.,"['rocket', 'cannon', 'crowbar', 'grenade']",0.25
+79,3,rocket,Is your item capable of flying?,Yes.,['rocket'],1.0
+79,4,rocket,Is your item a rocket?,Yes! That's correct.,['rocket'],1.0
+80,0,axe,Is the item you have in mind an object?,Yes.,"['catapult', 'cannon', 'corn', 'pickle', 'bazooka', 'cucumber', 'potato', 'axe.']",0.125
+80,1,axe,Is the item you have in mind a weapon?,Yes.,"['catapult', 'cannon', 'bazooka', 'axe.']",0.25
+80,2,axe,Is the item you have in mind a projectile weapon?,No.,"['catapult', 'cannon', 'bazooka', 'axe']",0.25
+80,3,axe,Is the item you have in mind a melee weapon?,Yes.,['axe'],1.0
+80,4,axe,Is the item you have in mind primarily used for cutting or chopping?,Yes.,['axe'],1.0
+80,5,axe,Is the item you have in mind made of metal?,Yes.,['axe'],1.0
+80,6,axe,Is the item you have in mind an axe?,Yes! That's correct.,['axe'],1.0
+81,0,potato,Is your item an edible object?,Yes.,"['turnip', 'potato', 'mushroom', 'radish']",0.25
+81,1,potato,Is your item a vegetable?,Yes.,"['turnip', 'potato', 'mushroom', 'radish.']",0.25
+81,2,potato,Is your item commonly used in cooking?,Yes.,"['turnip', 'potato', 'mushroom', 'radish']",0.25
+81,3,potato,Is your item a root vegetable?,Yes.,"['turnip', 'potato', 'radish']",0.3333333333333333
+81,4,potato,Is your item a turnip?,No.,"['potato', 'radish']",0.5
+81,5,potato,Is your item a radish?,No.,"['stone', 'potato', 'harpoon', 'grenade', 'mushroom', 'rifle']",0.16666666666666666
+81,6,potato,Is your item a potato?,Yes! That's correct.,"['turnip', 'potato', 'radish\n\nFor the second question', 'since the item is a vegetable', 'we can eliminate the non-vegetable items from the candidates list. \n']",0.2
+82,0,peas,Is the item a food?,Yes.,"['cabbage', 'peas', 'beans', 'cauliflower']",0.25
+82,1,peas,Is the item a vegetable?,Yes.,"['cabbage', 'peas', 'beans', 'cauliflower']",0.25
+82,2,peas,Is the item green when it is fresh?,Yes.,"['cabbage', 'peas', 'beans', 'cauliflower']",0.25
+82,3,peas,Is the item round in shape?,No.,"['cabbage', 'peas', 'beans', 'cauliflower']",0.25
+82,4,peas,Is the item a cabbage?,No.,"['peas', 'beans', 'cauliflower']",0.3333333333333333
+82,5,peas,Is the item a cauliflower?,No.,"['peas', 'beans']",0.5
+82,6,peas,Is the item a pea?,Yes! That's correct.,['peas'],1.0
+83,0,mushroom,Is the item you have in mind a tool?,No.,"['mushroom', 'onions', 'broccoli', 'carrot']",0.25
+83,1,mushroom,Is the item you have in mind edible?,Yes.,"['mushroom', 'onions', 'broccoli', 'carrot']",0.25
+83,2,mushroom,Is the item you have in mind a vegetable?,No.,"['mushroom', 'onions']",0.5
+83,3,mushroom,Is the item you have in mind a type of fungi?,Yes.,['mushroom'],1.0
+83,4,mushroom,Is the item you have in mind commonly used in cooking?,Yes.,['mushroom'],1.0
+83,5,mushroom,Is the item you have in mind often used as a seasoning or flavor enhancer?,Yes.,['mushroom'],1.0
+83,6,mushroom,Is the item you have in mind commonly referred to as a mushroom?,Yes! That's correct.,['mushroom'],1.0
+84,0,lime,Is the item you have a type of fruit?,Yes.,"['grapefruit', 'banana', 'lime']",0.3333333333333333
+84,1,lime,Is the item you have a type of citrus fruit?,Yes.,"['grapefruit', 'banana', 'lime']",0.3333333333333333
+84,2,lime,Is the item you have yellow in color when it is ripe?,No.,"['grapefruit', 'lime']",0.5
+84,3,lime,Is the item you have green in color when it is ripe?,Yes.,['zucchini'],1.0
+84,4,lime,Is the item you have typically sour in taste?,Yes.,['None'],1.0
+84,5,lime,"Based on your answers, the item you have is a lime.",Yes! That's correct. Well done!,['lime'],1.0
+85,0,banana,Is the item a type of fruit?,Yes.,"['banana', 'tangerine', 'cranberry', 'peach']",0.25
+85,1,banana,Is the item a small fruit?,No.,"['banana', 'cranberry', 'peach']",0.3333333333333333
+85,2,banana,Is the item orange in color?,No.,"['banana', 'tangerine', 'cranberry', 'peach']",0.25
+85,3,banana,Is the item a type of berry?,No.,"['banana', 'tangerine', 'cranberry', 'peach.']",0.25
+85,4,banana,Is the item commonly eaten raw?,Yes.,"['banana', 'cranberry', 'peach']",0.3333333333333333
+85,5,banana,Is the item typically yellow in color when ripe?,Yes.,"['banana', 'peach']",0.5
+85,6,banana,Is the item a banana?,Yes! That's correct.,['banana'],1.0
+86,0,coconut,Is the item you're thinking of a fruit?,Yes.,"['lemon', 'orange', 'raspberry', 'coconut']",0.25
+86,1,coconut,Is the item you're thinking of citrus?,No.,"['lemon', 'orange']",0.5
+86,2,coconut,Is the item you're thinking of red or purple in color?,No.,"['lemon', 'orange', 'raspberry', 'coconut', 'beets']",0.2
+86,3,coconut,Is the item you're thinking of round in shape?,Yes.,"['lemon', 'orange', 'raspberry', 'coconut']",0.25
+86,4,coconut,Is the item you're thinking of small in size?,No.,['coconut'],1.0
+86,5,coconut,Is the item you're thinking of yellow in color?,Yes.,['lemon'],1.0
+86,6,coconut,Is the item you're thinking of often used in cooking or baking?,Yes.,"['lemon', 'coconut']",0.5
+86,7,coconut,Is the item you're thinking of a lemon?,No.,"['beets', 'beans', 'mushroom', 'coconut', 'raspberry', 'radish']",0.16666666666666666
+86,8,coconut,Is the item you're thinking of a coconut?,Yes! That's correct.,['coconut'],1.0
+87,0,carrot,Is the item a vegetable?,Yes.,"['zucchini', 'beans', 'lettuce', 'carrot']",0.25
+87,1,carrot,Is the item green?,No.,"['zucchini', 'lettuce']",0.5
+87,2,carrot,Is the item orange?,Yes.,['carrot'],1.0
+87,3,carrot,Is the item round in shape?,No.,"['zucchini', 'beans', 'lettuce', 'carrot']",0.25
+87,4,carrot,Is the item a carrot?,Yes! That's correct.,['carrot'],1.0
+88,0,pickle,Is the item you have in mind a fruit?,No.,"['radish', 'beans', 'zucchini', 'pickle']",0.25
+88,1,pickle,Is the item you have in mind a vegetable?,Yes.,"['radish', 'beans', 'zucchini', 'pickle.']",0.25
+88,2,pickle,Is the item you have in mind a root vegetable?,No.,"['beans', 'zucchini', 'pickle', 'pineapple', 'peach']",0.2
+88,3,pickle,Is the item you have in mind a leafy vegetable?,No.,"['radish', 'beans', 'zucchini', 'pickle']",0.14285714285714285
+88,4,pickle,Is the item you have in mind a vegetable that grows on a vine?,No.,"['beans', 'zucchini', 'pickle', 'peach']",0.25
+88,5,pickle,Is the item you have in mind a vegetable that grows above the ground?,Yes.,"['beans', 'zucchini', 'pickle']",0.3333333333333333
+88,6,pickle,Is the item you have in mind green in color?,Yes.,"['beans', 'zucchini', 'pickle', 'pineapple']",0.25
+88,7,pickle,Is the item you have in mind a zucchini?,No.,['beans'],1.0
+88,8,pickle,Is the item you have in mind a pickle?,Yes! That's correct.,['pickle'],1.0
+89,0,onions,Is the item you have in mind a vegetable?,Yes.,"['beans', 'onions', 'beets', 'pickle']",0.25
+89,1,onions,Is the item you have in mind a root vegetable?,Yes.,"['onions', 'beets']",0.5
+89,2,onions,Is the item you have in mind commonly used as a vegetable in cooking?,Yes.,"['beets', 'onions']",0.5
+89,3,onions,Is the item you have in mind known for its strong odor when cooked?,Yes.,"['onions', 'beets']",0.5
+89,4,onions,Is the item you have in mind onions?,Yes! That's correct.,['onions'],1.0

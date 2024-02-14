@@ -3,10 +3,10 @@ import json
 import os
 import re
 from dotenv import load_dotenv
-import openai
+
 from questions_game.scripts.generate_dialogues import generate_dialogues_openai, get_lists_of_candidates
-from uncertainty.utils import OpenAIModelEnum
-from uncertainty.custom_model import LLModelWrapper
+from bsd_detector.utils import OpenAIModelEnum
+from bsd_detector.custom_model import LLModelWrapper
 
 if __name__ == "__main__":
     
