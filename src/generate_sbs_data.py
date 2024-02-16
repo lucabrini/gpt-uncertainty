@@ -35,30 +35,36 @@ def main(start_dialogue_id, last_dialogue_id):
   # Grouping rows by dialogue_id
   dialogues = build_dialogues(raw_dumped_dialogues, start_dialogue_id)
 
-  for dial in tqdm(dialogues, desc="Step by step analysis", unit="item"):
-    
-    dialogue_id = dial['id']
-    candidates = games_sets[dialogue_id]['items']
+  with tqdm(total=len(dialogues), desc="SBS Analysis", unit="item") as pbar:
+    for dial in dialogues:
       
-    for intra_dial in dial["intra_dialogue"]:
-      question = intra_dial['question']
-      answer = intra_dial['answer']
-      history.append(qa_to_str(question, answer))
+      dialogue_id = dial['id']
+      candidates = games_sets[dialogue_id]['items']
         
-      results = compute_item_probability(history, candidates, openai_api_key)
-    
-      dump_row(
-        data_path % "generation",
-        dialogue_id,
-        intra_dial["id"],
-        dial["target"],
-        question,
-        answer,
-        results["scores"],
-        results["normalized_scores"],
-      )
-    
-    history = []
+      for intra_dial in dial["intra_dialogue"]:
+        
+        pbar.set_description(f"SBS Analysis - Dialogue:{dialogue_id}.{intra_dial['id']}")
+        
+        question = intra_dial['question']
+        answer = intra_dial['answer']
+        history.append(qa_to_str(question, answer))
+          
+        results = compute_item_probability(history, candidates, openai_api_key)
+      
+        dump_row(
+          data_path % "generation",
+          dialogue_id,
+          intra_dial["id"],
+          dial["target"],
+          question,
+          answer,
+          results["scores"],
+          results["normalized_scores"],
+          results["explanations"]
+        )
+      
+      history = []
+      pbar.update(1)
     
 # Grouping rows by dialogue_id
 def build_dialogues(dumped_dialogues, current_dialogue_id):
@@ -114,8 +120,9 @@ def open_dump_file(data_path):
         "target", # item assigned to user
         "question", # question made by the guesser
         "answer",
-        "candidates_scores"
+        "candidates_scores",
         "p_distribuition",
+        "explanations"
       ])
       
   return last_dialogue, last_intra_dialogue_id
@@ -140,7 +147,17 @@ def load_game_dialogues(data_path, first_dialogue_id, last_dialogue_id=-1):
   return rows
 
 
-def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer, candidate_scores, p_distribuition):
+def dump_row(
+  data_path,
+  dialogue_id,
+  intra_dialogue_id,
+  target,
+  question,
+  answer,
+  candidate_scores,
+  p_distribuition,
+  explanations
+):
   with open(f"{data_path}/dialogues_step_by_step_distr.csv", 'a', newline='') as f:
     write = csv.writer(f)
     write.writerow([
@@ -150,15 +167,16 @@ def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer
       question, 
       answer,
       candidate_scores,
-      p_distribuition
+      p_distribuition,
+      explanations
     ])
 
 
 if __name__ == "__main__":
   parser=argparse.ArgumentParser()
   
-  parser.add_argument("--start_dialogue_id")
-  parser.add_argument("--last_dialogue_id")
+  parser.add_argument("--start_dialogue_id", type=int)
+  parser.add_argument("--last_dialogue_id", type=int)
   
   args=parser.parse_args()
   
