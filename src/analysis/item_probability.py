@@ -11,44 +11,44 @@ def main():
   load_dotenv()
   openai_api_key = os.environ.get("OPENAI_API_KEY")
   data_path = "./src/data/%s/8_mcrae"
-  
+
   # Loading games sets. We need the candidates of each game set
   games_sets = open_game_sets(data_path % "game_sets")
-  
+
   current_dialogue_id = open_step_by_step_csv(data_path % "generation")
   print(current_dialogue_id)
   # Opening dumped dialogues data
   dumped_dialogues = open_dialogues(data_path % "generation", current_dialogue_id)
-  
+
   history = []
   candidates = []
-  
+
   for row in tqdm(dumped_dialogues, desc="Step by step analysis", unit="item"):
-    
+
     dialogue_id = row['dialogue_id']
-    
+
     # If we have a new dialogue, reset variables
     if(dialogue_id != current_dialogue_id):
       current_dialogue_id = dialogue_id
       history = []
       candidates = games_sets[current_dialogue_id]['items']
-      
-    # Reading each <question, answer> 
+
+    # Reading each <question, answer>
     question = row['question']
     answer = row['answer']
-    
-    
+
+
     # if("correct" not in answer): # Excluding last dialogue question / answer
     history.append(
       f"-{question} {answer}"
     )
-    
+
     remaining_candidates = list_remaining_candidates(history, candidates)
     #candidates = remaining_candidates
-    
+
     # Computing probability
     p = 1 / len(remaining_candidates)
-  
+
     dump_row(
       data_path % "generation",
       dialogue_id,
@@ -74,7 +74,7 @@ def build_prompt(candidates, dialogue_history):
     "Dialogue: \n"
     "$dialogue_history"
   ))
-  
+
   return template.substitute(
     candidates=candidates,
     dialogue_history=dialogue_history
@@ -95,18 +95,18 @@ def open_step_by_step_csv(data_path):
         "probability",
         "explanation"
       ])
-      
+
       last_dialogue = -1
     else:
       print(lines[-1].split(",")[0])
       last_dialogue = int(lines[-1].split(",")[0])
-      
+
   return last_dialogue
-    
+
 def open_game_sets(data_path):
   with open(f"{data_path}/contrast_sets.json") as f:
     return json.load(f)
-  
+
 def open_dialogues(data_path, first_dialogue_id):
   rows = []
   with open(f"{data_path}/dialogues.csv", newline='') as f:
@@ -114,7 +114,7 @@ def open_dialogues(data_path, first_dialogue_id):
     for row in reader:
       if(int(row["dialogue_id"]) >= first_dialogue_id):
         rows.append(row)
-    
+
   return rows
 
 def list_remaining_candidates(history, candidates):
@@ -131,7 +131,7 @@ def list_remaining_candidates(history, candidates):
 
   candidates = response.split("CANDIDATES: ")[1].split(", ")
   explanation = response.split("EXPLANATION: ")[1]
-  
+
   return candidates
 
 
@@ -139,10 +139,10 @@ def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer
   with open(f"{data_path}/dialogues_step_by_step.csv", 'a', newline='') as f:
     write = csv.writer(f)
     write.writerow([
-      dialogue_id, 
-      intra_dialogue_id, 
-      target, 
-      question, 
+      dialogue_id,
+      intra_dialogue_id,
+      target,
+      question,
       answer,
       candidates,
       probability
@@ -151,5 +151,3 @@ def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer
 
 if __name__ == "__main__":
   main()
-  
-  
