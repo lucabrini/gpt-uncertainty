@@ -1,9 +1,10 @@
 from openai import OpenAI
 import re
+from bsd_detector.build_prompts import build_observed_consistency_prompt, build_self_reflection_certainty_prompt
+from bsd_detector.nli import compute_mean_similarity
+from bsd_detector.utils import OpenAIModelEnum
 
-from uncertainty.utils import OpenAIModelEnum, self_reflection_answers_mapping
-from uncertainty.build_prompts import *
-from uncertainty.nli import compute_mean_similarity
+from utils import self_reflection_answers_mapping
 
 class LLModelWrapper:
   
