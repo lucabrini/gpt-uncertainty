@@ -28,13 +28,13 @@ Noi ci siamo concentrati sul calcolo empirico della seconda, utilizzando pipelin
 
 ### BSDetector
 
-*Jiuhai Chen, Jonas Mueller* (2023). **[Quantifying Uncertainty in Answers from any Language Model and Enhancing their Trustworthiness**](https://doi.org/10.48550/arXiv.2308.16175)
+*Jiuhai Chen, Jonas Mueller* (2023). [Quantifying Uncertainty in Answers from any Language Model and Enhancing their Trustworthiness](https://doi.org/10.48550/arXiv.2308.16175)
 
 L'approccio del BSDetector è stato scelto per il fatto che accedendo al modello gpt-3.5-turbo di OpenAI tramite API si ha accesso solo a pochi hyperparametri e alla risposta del modello. Altre informazioni come le distribuzioni di probabilità non sono accessibili.
 
 #### Funzionamento
 
-![[bsdetector_pipeline.png]]
+![bsdetector_pipeline](https://github.com/lucabrini/gpt-uncertainty/assets/86363063/dac4235c-791a-499c-b5a6-416ba4ae1000)
 
 ##### Observe Consistency
 
@@ -140,11 +140,11 @@ Per ogni gioco all'interno del game set vengono generati i dialoghi tra Question
 ```json
 [
 	{
-		'role': "system", 
-		'content': "You are playing an interactive game with the user, who is assigned an item from a list of candidates. Ask as few questions as possible to identify the item, making only one question at each turn.\n\nThe user can only respond with 'yes' or 'no'."
+		"role": "system", 
+		"content": "You are playing an interactive game with the user, who is assigned an item from a list of candidates. Ask as few questions as possible to identify the item, making only one question at each turn.\n\nThe user can only respond with 'yes' or 'no'."
 	},
 	{
-		'role': "user", 'content': f"This is the list of candidates: {candidates}."
+		"role": "user", "content": "This is the list of candidates: {candidates}."
 	}
 ]
 ```
@@ -152,8 +152,8 @@ Per ogni gioco all'interno del game set vengono generati i dialoghi tra Question
 #### Oracle
 ```json
 [{
-	'role': "system", 
-	'content': "You are playing an interactive game with the user, in which you are assigned one item from a list of candidates. \nThe user will have to guess which one it is by asking yes/no questions, and you have to stricly respond to each question only with 'yes' or 'no'.\nYou must respond with 'Yes! That's correct.' only if the user guesses exactly (letter by letter) your assigned item: .\nThe item assigned to you is {target}."
+	"role": "system", 
+	"content": "You are playing an interactive game with the user, in which you are assigned one item from a list of candidates. \nThe user will have to guess which one it is by asking yes/no questions, and you have to stricly respond to each question only with 'yes' or 'no'.\nYou must respond with 'Yes! That's correct.' only if the user guesses exactly (letter by letter) your assigned item: .\nThe item assigned to you is {target}."
 }]
 ```
 ## Il nostro lavoro
@@ -346,6 +346,7 @@ e le distribuzioni di probabilità per ogni coppia <domanda, risposta>
 | 3                 | seal   | Is your item a small animal?        | No.                  | {'shotgun': 0.1667, 'seal': 0.1667, 'hamster': 0.0, 'chipmunk': 0.0, 'deer': 0.1667, 'spear': 0.1667, 'rocket': 0.1667, 'tomahawk': 0.1667}    |
 | 4                 | seal   | Does your item have antlers?        | No.                  | {'shotgun': 0.1429, 'seal': 0.1429, 'hamster': 0.1429, 'chipmunk': 0.1429, 'deer': 0.0, 'spear': 0.1429, 'rocket': 0.1429, 'tomahawk': 0.1429} |
 | 5                 | seal   | Is your item a seal?                | Yes! That's correct. | {'shotgun': 0.0, 'seal': 1.0, 'hamster': 0.0, 'chipmunk': 0.0, 'deer': 0.0, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0}                      |
+
 Come possiamo notare all'istante 0 vengono esclusi i candidati:
 - shotgun
 - spear
@@ -370,3 +371,4 @@ Questo fenomeno si presenta in molti dei dialoghi analizzati. Ciò significa che
 - https://arxiv.org/pdf/2302.09664.pdf
 - https://github.com/sylinrl/calibratedmath
 - https://arxiv.org/pdf/2308.16175.pdf
+
