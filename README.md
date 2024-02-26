@@ -190,11 +190,14 @@ Ecco un esempio di dialogo tra Questioner e Oracle
 
 ### Step by Step analysis
 
-Un ulteriore approccio che abbiamo utilizzato, su spunto di ulteriori analisi del paper 20 questions game, è stato quello di verificare per ogni coppia <domanda, risposta> e per ogni item candidato, se questo potesse essere un candidato dell'insieme di coppie <domanda, risposta> ad un istante t ( con $t \in [0, \space dialogo.lunghezza]$ ).
+Un ulteriore approccio che abbiamo utilizzato, su spunto di ulteriori analisi del paper 20 questions game, è stato quello di verificare per ogni item candidato se questo soddisfasse ogni coppia <domanda, risposta> del dialogo $D_t$ ( con $t \in [0, \space dialogo.lunghezza]$ ). Questo ci consente di capire quali item vengono esclusi ad ogni passo $t$ del dialogo.
 
 Per farlo abbiamo utilizzato un ulteriore agente LLM che verifica, dato un dialogo $D_t$ (fino un certo istante t) e un item se quest'ultimo soddisfa tutte le coppie di <domanda, risposta> di $D_t$. Questa richiesta viene campionata $k=5$ volte e viene conteggiato il numero di occorrenze positive. 
 
-Un item i-esimo quindi, in un certo istante t, avrà associato uno score di probabilità: $$Sit = \frac{conteggi\_positivi}{k}$$
+Un item i-esimo quindi, in un certo istante t, avrà associato uno score di probabilità: 
+
+$$Sit = \frac{conteggi\_positivi}{k}$$
+
 Dopo aver calcolato tutti gli score e dopo averli normalizzati, viene inoltre calcolata la distribuzione di probabilità  tra tutti gli item candidati.
 
 #### Prompt
@@ -211,6 +214,8 @@ The output must strictly use the following template:"
 	ANSWER: [is the dialogue true, yes or no]
 """
 ```
+
+Dialogue è l'insieme delle coppie <domanda, risposta> fino ad un certo istante $t$
 
 ## Analisi dei risultati
 
@@ -357,6 +362,7 @@ GPT ha quindi escluso che questi item siano dei candidati. Tuttavia, come si pu�
 
 Questo fenomeno si presenta in molti dei dialoghi analizzati. Ciò significa che GPT tendenzialmente non considera le informazioni di cui è venuto a conoscenza negli step precedenti
 
+Un'altra cosa interessante da notare è che il Questioner indovina l'item seal senza che allo step precedente vi sia una forte diminuizione di incertezza: gli item hanno tutti infatti la stessa probabilità
 
 ## References
 
