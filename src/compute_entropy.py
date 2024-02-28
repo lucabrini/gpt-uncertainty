@@ -2,8 +2,8 @@ import csv
 import json
 import math
 
-data_path = "./src/data/generation/8_mcrae/dialogues_step_by_step_distr.csv"
-filename = "sbs_entropy"
+data_path = "./src/data/generation/8_mcrae/dialogues_step_by_step_distr_manual_corrected.csv"
+filename = "sbs_entropy_cleaned"
 
 def main():
   
@@ -17,23 +17,24 @@ def main():
       "entropy"
     ])
 
-  previous_distribuition = []
+  previous_scores= []
   for row in reader:
-      raw_distribuition = row["p_distribuition"].replace('\'', '"')
+      raw_scores = row["candidates_scores"].replace('\'', '"')
       
-      if len(raw_distribuition) != 0:
+      if len(raw_scores) != 0:
         
-        json_distribuition = json.loads(raw_distribuition)
-        distribuition = list(json_distribuition.values())
+        json_scores = json.loads(raw_scores)
+        
+        scores = list(json_scores.values())
         
         if(row["intra_dialogue_id"] == "0"):
-          previous_distribuition = distribuition
+          previous_scores = scores
         
-        #distribuition = exclude_candidates(distribuition, previous_distribuition)
-        previous_distribuition = distribuition
+        cleaned_distr, cleaned_scores = clean_scores(scores, previous_scores)
+        previous_scores = cleaned_scores
         
         entropy = 0
-        for c in distribuition:
+        for c in cleaned_distr:
           if(c != 0):
             entropy = entropy + c * math.log(c, 2)
         entropy = round(-1 * entropy, 4)
@@ -49,19 +50,31 @@ def main():
         ])
   rf.close()
       
-def exclude_candidates(current_distribuition, previous_distribuition):
+      
+# This functions takes as argument the previous (normalized) scores and the current ones readen from the csv
+# and excludes the current candidates (from the current scores) which have been excluded in the previous steps
+def clean_scores(current_scores, previous_scores, samples=5):
   
-  correct_distribuition = []
+  cleaned_scores = []
   
-  for i in range(0, len(current_distribuition), 1):
-    if(previous_distribuition[i] == 0):
-      correct_distribuition.append(0)
+  for i, ith_score in enumerate(current_scores):
+    if(previous_scores[i] == 0):
+      cleaned_scores.append(0)
     else:
-      correct_distribuition.append(current_distribuition[i])
-      
-  print(previous_distribuition)
-  print(current_distribuition)
-      
-  return correct_distribuition
+      cleaned_scores.append(ith_score)
 
+  scores_sum = 0
+  for ith_score in cleaned_scores:
+    scores_sum += ith_score
+    
+  cleaned_distribuition = []
+  for ith_score in cleaned_scores:
+    try:
+      normalized_ith_score = round(ith_score / scores_sum, 4)
+    except ZeroDivisionError :
+      normalized_ith_score = 0
+    cleaned_distribuition.append(normalized_ith_score)
+    
+  return cleaned_distribuition, cleaned_scores
+  
 main()

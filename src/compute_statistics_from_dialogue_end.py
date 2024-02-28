@@ -2,8 +2,8 @@
 import csv
 import numpy
 
-data_path = "./src/data/generation/8_mcrae/sbs_entropy.csv"
-filename = "entropy_statistics_from_dialogue_end"
+data_path = "./src/data/generation/8_mcrae/sbs_entropy_cleaned.csv"
+filename = "entropy_statistics_from_dialogue_end_cleaned"
 
 def main():
   dialogues_entropies, max_dialogue_length = group_by_dialogue_id()
