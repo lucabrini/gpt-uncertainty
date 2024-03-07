@@ -1,4 +1,4 @@
 .env
 ./venv/** 
-
+**/*.pyc
 launch.json
