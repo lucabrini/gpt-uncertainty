@@ -34,13 +34,15 @@ def main():
   games_sets = open_game_sets(f"{data_path}/contrast_sets.json" % "game_sets")
   last_dumped_dialogue_id , last_dumped_intra_dialogue_id = open_dump_sbs_file(dump_path)
 
-  raw_dumped_dialogues = load_game_dialogues( f"{data_path}/dialogues.csv" % "generation", 0)
+  raw_dumped_dialogues = load_game_dialogues( f"{data_path}/dialogues.csv" % "generation", first_dialogue_id=0, last_dialogue_id=54)
     
   # Grouping rows by dialogue_id
   all_dialogues = build_sbs_dialogues(raw_dumped_dialogues, games_sets, 0)
+  print(all_dialogues)
   
   # Filtering the dialogues with resurrected items
-  dialogues = []
+  dialogues = [d for d in all_dialogues if int(d['id']) in set(resurrected_dialogues)]
+  print(len(dialogues))
       
   generate_sbs_data(dialogues, dump_sbs_row(dump_path), 10)
   

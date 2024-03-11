@@ -35,7 +35,7 @@ def build_sbs_dialogues(dumped_dialogues, games_sets, current_dialogue_id):
   for row in dumped_dialogues:
     dialogue_id = row['dialogue_id']
     
-    if(int(dialogue_id) != current_dialogue_id):
+    if(int(dialogue_id) != int(current_dialogue_id)):
       dialogues.append({
         "id" :  str(current_dialogue_id), 
         "intra_dialogue" : intra_dialogue ,
