@@ -1,20 +1,21 @@
 
 import csv
+from generate_sbs_data import generate_sbs_data
 
-from utils import group_by_dialogue_id
+from utils import build_sbs_dialogues, dump_sbs_row, group_entropies_by_dialogue_id, load_game_dialogues, open_dump_sbs_file, open_game_sets
 
-
-data_path = "./src/data/generation/8_mcrae/sbs_entropy.csv"
-filename = ""
+data_path = "./src/data/%s/8_mcrae"
+sbs_path = f"{data_path}/sbs_entropy.csv" % "generation"
+dump_path = f"{data_path}/dialogues_step_by_step_resurr_distr.csv" % "generation"
 
 def main():
   
   # Read the step by step analisys and find the rows with resurrected items.
   # This happens when entropy of step t is bigger than the entropy of step t+1
-  rf = open(data_path, 'r', newline='')
+  rf = open(sbs_path, 'r', newline='')
   reader = csv.DictReader(rf, delimiter=",")
   
-  dialogues_entropies, max_dialogue_length = group_by_dialogue_id(reader)
+  dialogues_entropies, max_dialogue_length = group_entropies_by_dialogue_id(reader)
   print(dialogues_entropies)
   
   resurrected_dialogues = []
@@ -28,10 +29,19 @@ def main():
         is_resurrected = True
         resurrected_dialogues.append(dialogue_id)
         
-  print(len(resurrected_dialogues))
+  print(resurrected_dialogues)
         
-      
-      
+  games_sets = open_game_sets(f"{data_path}/contrast_sets.json" % "game_sets")
+  last_dumped_dialogue_id , last_dumped_intra_dialogue_id = open_dump_sbs_file(dump_path)
+
+  raw_dumped_dialogues = load_game_dialogues( f"{data_path}/dialogues.csv" % "generation", 0)
+    
+  # Grouping rows by dialogue_id
+  all_dialogues = build_sbs_dialogues(raw_dumped_dialogues, games_sets, 0)
   
+  # Filtering the dialogues with resurrected items
+  dialogues = []
+      
+  generate_sbs_data(dialogues, dump_sbs_row(dump_path), 10)
   
 main()

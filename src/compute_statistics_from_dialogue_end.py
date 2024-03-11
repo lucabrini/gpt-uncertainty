@@ -2,7 +2,7 @@
 import csv
 import numpy
 
-from utils import group_by_dialogue_id
+from utils import group_entropies_by_dialogue_id
 
 data_path = "./src/data/generation/8_mcrae/sbs_entropy_cleaned.csv"
 filename = "entropy_statistics_from_dialogue_end_cleaned"
@@ -11,7 +11,7 @@ def main():
   rf = open(data_path, 'r', newline='')
   reader = csv.DictReader(rf, delimiter=",")
   
-  dialogues_entropies, max_dialogue_length = group_by_dialogue_id(reader)
+  dialogues_entropies, max_dialogue_length = group_entropies_by_dialogue_id(reader)
   
   entropies_by_distances = []
   
@@ -41,8 +41,5 @@ def main():
       csv.writer(df).writerow([
        distance, std, mean
       ])
-    
-  
-
 
 main()

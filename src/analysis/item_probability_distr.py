@@ -32,11 +32,10 @@ def compute_item_probability(history, candidates, openai_api_key, samples=5):
           {"role": "system", "content": build_prompt(candidate, history)},
         ],
       ).choices[0].message.content
-    
-      # TODO: regex to extract the ANSWER key and its value
+
       explanation, answer = extract_explanation_and_answer(response)
       explanations[candidate].append(explanation)
-      
+      print(response)
       if("yes" in answer.lower()):
         yes_counter += 1
       
