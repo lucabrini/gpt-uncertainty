@@ -4,7 +4,7 @@ from tqdm import tqdm
 import argparse
 
 from analysis.item_probability_distr import compute_item_probability
-from utils import build_sbs_dialogues, dump_sbs_row, load_game_dialogues, open_dump_sbs_file, open_game_sets, qa_to_str
+from utils import group_dialogues_by_id, dump_sbs_row, load_game_dialogues, open_dump_sbs_file, open_game_sets, qa_to_str
 
 # Configuration
 load_dotenv()
@@ -84,6 +84,6 @@ if __name__ == "__main__":
   )
     
   # Grouping rows by dialogue_id
-  dialogues = build_sbs_dialogues(raw_dumped_dialogues, games_sets, start_dialogue_id)
+  dialogues = group_dialogues_by_id(raw_dumped_dialogues, games_sets, start_dialogue_id)
   
   generate_sbs_data(dialogues, dump_sbs_row(dump_path))

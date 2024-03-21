@@ -2,8 +2,10 @@ import csv
 import json
 import math
 
-data_path = "./src/data/generation/8_mcrae/dialogues_step_by_step_distr_manual_corrected.csv"
-filename = "sbs_entropy_cleaned"
+data_path = "./src/data/generation/8_mcrae/dialogues_sbs_k_five_distr.csv"
+filename = "sbs_entropy_k_five"
+
+to_clean = False
 
 def main():
   
@@ -20,21 +22,26 @@ def main():
   previous_scores= []
   for row in reader:
       raw_scores = row["candidates_scores"].replace('\'', '"')
+      raw_distribuition = row["p_distribuition"].replace('\'', '"')
       
       if len(raw_scores) != 0:
         
         json_scores = json.loads(raw_scores)
+        json_distribuition = json.loads(raw_distribuition)
         
         scores = list(json_scores.values())
+        distr = list(json_distribuition.values())
         
         if(row["intra_dialogue_id"] == "0"):
           previous_scores = scores
+          previous_distr = distr
         
-        cleaned_distr, cleaned_scores = clean_scores(scores, previous_scores)
-        previous_scores = cleaned_scores
+        if(to_clean):
+          distr, scores = clean_scores(scores, previous_scores)
+          previous_scores = scores
         
         entropy = 0
-        for c in cleaned_distr:
+        for c in distr:
           if(c != 0):
             entropy = entropy + c * math.log(c, 2)
         entropy = round(-1 * entropy, 4)

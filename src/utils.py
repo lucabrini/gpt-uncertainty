@@ -1,6 +1,10 @@
 import csv
 import json
 
+def has_resurrected_items(dialogue_entropies):
+  for i in range(0, len(dialogue_entropies) - 1 ):
+      if(dialogue_entropies[i] < dialogue_entropies[i+1]):
+        return True
 
 def group_entropies_by_dialogue_id(reader: csv.DictReader):
   
@@ -10,7 +14,6 @@ def group_entropies_by_dialogue_id(reader: csv.DictReader):
   entropies = {}
   
   for row in reader:
-    print(row)
     dialogue_id = row["dialogue_id"]
     if(dialogue_id != ''):
       dialogue_id = int(dialogue_id)
@@ -27,8 +30,8 @@ def group_entropies_by_dialogue_id(reader: csv.DictReader):
   return entropies, max_length + 1
 
     
-# Grouping rows by dialogue_id
-def build_sbs_dialogues(dumped_dialogues, games_sets, current_dialogue_id):
+# Grouping dialogues rows by dialogue_id
+def group_dialogues_by_id(dumped_dialogues, games_sets, current_dialogue_id):
   dialogues = []
   intra_dialogue = []
 
@@ -57,7 +60,6 @@ def build_sbs_dialogues(dumped_dialogues, games_sets, current_dialogue_id):
     })
     
   return dialogues
-      
       
 def open_dump_sbs_file(filepath):
   last_intra_dialogue_id = -1
@@ -125,3 +127,33 @@ def qa_to_str(question, answer):
 def open_game_sets(filepath):
   with open(filepath) as f:
     return json.load(f)
+  
+# Grouping sbs distr by dialogue_id
+def group_sbs_data_by_dialogue_id(reader: csv.DictReader):
+  
+  dialogues = []
+  dialogue_steps = []
+  
+  current_dialogue_id = 0
+  for row in reader:
+    dialogue_id = row["dialogue_id"]
+    
+    if(dialogue_id != ''):
+      dialogue_id = int(dialogue_id)
+      intra_dialogue_id = int(row["intra_dialogue_id"])
+      
+      if(dialogue_id != current_dialogue_id):
+        dialogues.append({
+          "dialogue_id" : current_dialogue_id,
+          "intra_dialogues" : dialogue_steps
+        })
+        
+        current_dialogue_id = dialogue_id
+        dialogue_steps = []
+      
+      dialogue_steps.append({
+        "intra_dialogue_id" : intra_dialogue_id,
+        "p_distribuition" : json.loads(row["p_distribuition"].replace('\'', '"'))
+      })
+    
+  return dialogues

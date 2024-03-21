@@ -2,11 +2,11 @@
 import csv
 from generate_sbs_data import generate_sbs_data
 
-from utils import build_sbs_dialogues, dump_sbs_row, group_entropies_by_dialogue_id, load_game_dialogues, open_dump_sbs_file, open_game_sets
+from utils import group_dialogues_by_id, dump_sbs_row, group_entropies_by_dialogue_id, load_game_dialogues, open_dump_sbs_file, open_game_sets
 
 data_path = "./src/data/%s/8_mcrae"
 sbs_path = f"{data_path}/sbs_entropy.csv" % "generation"
-dump_path = f"{data_path}/dialogues_step_by_step_resurr_distr.csv" % "generation"
+dump_path = f"{data_path}/dialogues_sbs_k_ten_distr.csv" % "generation"
 
 def main():
   
@@ -37,7 +37,7 @@ def main():
   raw_dumped_dialogues = load_game_dialogues( f"{data_path}/dialogues.csv" % "generation", first_dialogue_id=0, last_dialogue_id=54)
     
   # Grouping rows by dialogue_id
-  all_dialogues = build_sbs_dialogues(raw_dumped_dialogues, games_sets, 0)
+  all_dialogues = group_dialogues_by_id(raw_dumped_dialogues, games_sets, 0)
   print(all_dialogues)
   
   # Filtering the dialogues with resurrected items

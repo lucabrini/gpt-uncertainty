@@ -4,7 +4,7 @@ import numpy
 
 from utils import group_entropies_by_dialogue_id
 
-data_path = "./src/data/generation/8_mcrae/sbs_entropy_cleaned.csv"
+data_path = "./src/data/generation/8_mcrae/sbs_entropy_k_five.csv"
 filename = "entropy_statistics_from_dialogue_end_cleaned"
 
 def main():
