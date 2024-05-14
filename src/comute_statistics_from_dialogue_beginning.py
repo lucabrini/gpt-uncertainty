@@ -3,9 +3,8 @@ import numpy
 
 from utils import group_entropies_by_dialogue_id
 
-data_path = "./data/generation/8_mcrae/sbs_entropy_k_ten_cleaned.csv"
-filename = "entropy_k_ten_statistics_from_dialogue_beginning_cleaned"
-
+data_path = "./src/data/generation/8_mcrae/sbs_entropy_k_twenty.csv"
+filename = "entropy_k_twenty_statistics_from_dialogue_beginning"
 
 def main():
     rf = open(data_path, 'r', newline='')
@@ -22,7 +21,7 @@ def main():
         for step_index, step_entropy in enumerate(dialogue_entropy):
             entropies_by_distances[step_index].append(step_entropy)
 
-    with open(f"./data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
+    with open(f"./src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
         csv.writer(df).writerow([
             "distance",
             "mean",
@@ -34,7 +33,7 @@ def main():
         mean = numpy.mean(entropies_by_distance)
         print(distance, std, mean)
 
-        with open(f"./data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
+        with open(f"./src/data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
             csv.writer(df).writerow([
                 distance, std, mean
             ])
