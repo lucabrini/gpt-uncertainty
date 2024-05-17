@@ -37,18 +37,21 @@ def group_dialogues_by_id(dumped_dialogues, games_sets, current_dialogue_id):
 
   for row in dumped_dialogues:
     dialogue_id = row['dialogue_id']
-    
+
+    if (int(dialogue_id) == int(current_dialogue_id)):
+      current_target = row["target"]
+
     if(int(dialogue_id) != int(current_dialogue_id)):
       dialogues.append({
         "id" :  str(current_dialogue_id), 
-        "intra_dialogue" : intra_dialogue ,
-        "target" : row["target"],
+        "intra_dialogue" : intra_dialogue,
+        "target" : current_target,
         "candidates" : games_sets[str(current_dialogue_id)]['items']
       })
       current_dialogue_id = dialogue_id
       
       intra_dialogue = []
-      
+
     # Reading each <question, answer> 
     question = row['question']
     answer = row['answer']

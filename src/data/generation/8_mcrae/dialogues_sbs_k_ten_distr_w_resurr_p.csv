@@ -1,333 +1,711 @@
 0,0,"{'elk': 0.25, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 0.25, 'partridge': 0.0, 'hamster': 0.25, 'buffalo': 0.25, 'resurrected_items_p': 0}",[],0
 0,1,"{'elk': 0.2273, 'robin': 0.0, 'starling': 0.0, 'fox': 0.2273, 'partridge': 0.0, 'hamster': 0.2273, 'buffalo': 0.2273, 'resurrected_items_p': 0.0909}",['chicken'],0.0909
-0,2,"{'elk': 0.2703, 'chicken': 0.0811, 'robin': 0.0, 'starling': 0.0, 'fox': 0.2703, 'partridge': 0.0, 'hamster': 0.1081, 'buffalo': 0.2703, 'resurrected_items_p': 0}",[],0
-0,3,"{'elk': 0.0435, 'chicken': 0.0435, 'robin': 0.0, 'fox': 0.4348, 'hamster': 0.3043, 'buffalo': 0.0435, 'resurrected_items_p': 0.1305}","['starling', 'partridge']",0.1305
-0,4,"{'elk': 0.3226, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0323, 'fox': 0.3226, 'partridge': 0.0, 'hamster': 0.2903, 'buffalo': 0.0323, 'resurrected_items_p': 0}",[],0
-0,5,"{'elk': 0.1667, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 0.8333, 'partridge': 0.0, 'hamster': 0.0, 'buffalo': 0.0, 'resurrected_items_p': 0}",[],0
+0,2,"{'elk': 0.2439, 'chicken': 0.0976, 'robin': 0.0, 'starling': 0.0, 'fox': 0.2439, 'partridge': 0.0, 'hamster': 0.1707, 'buffalo': 0.2439, 'resurrected_items_p': 0}",[],0
+0,3,"{'elk': 0.1071, 'chicken': 0.0714, 'robin': 0.0, 'fox': 0.3571, 'partridge': 0.0, 'hamster': 0.3571, 'buffalo': 0.0357, 'resurrected_items_p': 0.0714}",['starling'],0.0714
+0,4,"{'elk': 0.3226, 'chicken': 0.0323, 'robin': 0.0, 'starling': 0.0, 'fox': 0.3226, 'partridge': 0.0, 'hamster': 0.2903, 'buffalo': 0.0323, 'resurrected_items_p': 0}",[],0
+0,5,"{'elk': 0.0, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 1.0, 'partridge': 0.0, 'hamster': 0.0, 'buffalo': 0.0, 'resurrected_items_p': 0}",[],0
+1,0,"{'budgie': 0.125, 'zebra': 0.125, 'deer': 0.125, 'penguin': 0.125, 'pelican': 0.125, 'sheep': 0.125, 'fawn': 0.125, 'ostrich': 0.125, 'resurrected_items_p': 0}",[],0
+1,1,"{'budgie': 0.0541, 'zebra': 0.1351, 'deer': 0.1351, 'penguin': 0.1351, 'pelican': 0.1351, 'sheep': 0.1351, 'fawn': 0.1351, 'ostrich': 0.1351, 'resurrected_items_p': 0}",[],0
+1,2,"{'budgie': 0.0333, 'zebra': 0.1667, 'deer': 0.1667, 'penguin': 0.1, 'pelican': 0.05, 'sheep': 0.1667, 'fawn': 0.1667, 'ostrich': 0.15, 'resurrected_items_p': 0}",[],0
+1,3,"{'budgie': 0.0, 'zebra': 0.0, 'deer': 0.5, 'penguin': 0.0, 'pelican': 0.0, 'sheep': 0.0, 'fawn': 0.5, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
 2,0,"{'pelican': 0.0, 'bear': 0.25, 'zebra': 0.25, 'walrus': 0.25, 'vulture': 0.0, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.25, 'resurrected_items_p': 0}",[],0
-2,1,"{'pelican': 0.0, 'bear': 0.2439, 'zebra': 0.2439, 'walrus': 0.2439, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2439, 'resurrected_items_p': 0.0244}",['vulture'],0.0244
-2,2,"{'pelican': 0.0, 'bear': 0.2381, 'zebra': 0.2381, 'walrus': 0.2381, 'vulture': 0.0476, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2381, 'resurrected_items_p': 0}",[],0
-2,3,"{'bear': 0.2857, 'zebra': 0.2857, 'walrus': 0.0286, 'vulture': 0.0857, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2857, 'resurrected_items_p': 0.0286}",['pelican'],0.0286
-2,4,"{'pelican': 0.0, 'bear': 0.4167, 'zebra': 0.0, 'walrus': 0.0, 'vulture': 0.375, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2083, 'resurrected_items_p': 0}",[],0
-2,5,"{'pelican': 0.0, 'bear': 0.5, 'zebra': 0.0, 'walrus': 0.0, 'vulture': 0.5, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.0, 'resurrected_items_p': 0}",[],0
-2,6,"{'pelican': 0.0, 'bear': 0.0, 'vulture': 0.3889, 'chickadee': 0.0, 'resurrected_items_p': 0.6112}","['zebra', 'walrus', 'finch', 'otter']",0.6112
-2,7,"{'pelican': 0.0, 'zebra': 0.0909, 'walrus': 0.0, 'vulture': 0.4091, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.4545, 'resurrected_items_p': 0.0455}",['bear'],0.0455
-2,8,"{'pelican': 0.0, 'bear': 0.3333, 'zebra': 0.0, 'walrus': 0.0, 'vulture': 0.4667, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2, 'resurrected_items_p': 0}",[],0
-2,9,"{'pelican': 0.0, 'bear': 0.3, 'walrus': 0.0, 'vulture': 0.0, 'finch': 0.0, 'otter': 0.5, 'resurrected_items_p': 0.2}","['zebra', 'chickadee']",0.2
-2,10,"{'pelican': 0.0, 'bear': 0.0, 'zebra': 0.8333, 'walrus': 0.0, 'chickadee': 0.0, 'otter': 0.0, 'resurrected_items_p': 0.1666}","['vulture', 'finch']",0.1666
-3,0,"{'peacock': 0.2174, 'platypus': 0.0, 'budgie': 0.2174, 'pig': 0.0, 'turkey': 0.2174, 'beaver': 0.1304, 'deer': 0.0, 'rooster': 0.2174, 'resurrected_items_p': 0}",[],0
-3,1,"{'peacock': 0.0, 'platypus': 0.0, 'budgie': 0.3333, 'pig': 0.0, 'turkey': 0.3333, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.3333, 'resurrected_items_p': 0}",[],0
-3,2,"{'budgie': 0.2273, 'pig': 0.0, 'turkey': 0.2273, 'deer': 0.0, 'rooster': 0.2273, 'resurrected_items_p': 0.3182}","['peacock', 'platypus', 'beaver']",0.3182
-3,3,"{'peacock': 0.0, 'platypus': 0.0, 'budgie': 0.0909, 'pig': 0.0, 'turkey': 0.0, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.9091, 'resurrected_items_p': 0}",[],0
+2,1,"{'bear': 0.2222, 'zebra': 0.2222, 'walrus': 0.2222, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2222, 'resurrected_items_p': 0.1111}","['pelican', 'vulture']",0.1111
+2,2,"{'pelican': 0.0, 'bear': 0.2174, 'zebra': 0.2174, 'walrus': 0.2174, 'vulture': 0.1304, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2174, 'resurrected_items_p': 0}",[],0
+2,3,"{'pelican': 0.0, 'bear': 0.2727, 'zebra': 0.2424, 'walrus': 0.0303, 'vulture': 0.1515, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.303, 'resurrected_items_p': 0}",[],0
+2,4,"{'pelican': 0.0, 'bear': 0.36, 'zebra': 0.12, 'walrus': 0.08, 'vulture': 0.36, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.08, 'resurrected_items_p': 0}",[],0
+2,5,"{'pelican': 0.0, 'bear': 0.5882, 'zebra': 0.0588, 'walrus': 0.0, 'vulture': 0.1176, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2353, 'resurrected_items_p': 0}",[],0
+2,6,"{'pelican': 0.0, 'bear': 0.0, 'zebra': 0.125, 'vulture': 0.5, 'chickadee': 0.0, 'otter': 0.1875, 'resurrected_items_p': 0.1875}","['walrus', 'finch']",0.1875
+2,7,"{'pelican': 0.0, 'bear': 0.0, 'zebra': 0.0, 'walrus': 0.0588, 'vulture': 0.4118, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.5294, 'resurrected_items_p': 0}",[],0
+2,8,"{'pelican': 0.0, 'zebra': 0.0, 'walrus': 0.0, 'vulture': 0.5, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.3125, 'resurrected_items_p': 0.1875}",['bear'],0.1875
+2,9,"{'pelican': 0.0, 'bear': 0.2, 'walrus': 0.0, 'vulture': 0.0, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.6, 'resurrected_items_p': 0.2}",['zebra'],0.2
+2,10,"{'pelican': 0.0, 'bear': 0.0909, 'zebra': 0.9091, 'walrus': 0.0, 'vulture': 0.0, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.0, 'resurrected_items_p': 0}",[],0
+3,0,"{'peacock': 0.25, 'platypus': 0.0, 'budgie': 0.25, 'pig': 0.0, 'turkey': 0.25, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.25, 'resurrected_items_p': 0}",[],0
+3,1,"{'peacock': 0.0, 'budgie': 0.303, 'pig': 0.0, 'turkey': 0.303, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.303, 'resurrected_items_p': 0.0909}",['platypus'],0.0909
+3,2,"{'platypus': 0.025, 'budgie': 0.2, 'pig': 0.0, 'turkey': 0.25, 'deer': 0.0, 'rooster': 0.25, 'resurrected_items_p': 0.275}","['peacock', 'beaver']",0.275
+3,3,"{'peacock': 0.0, 'platypus': 0.0, 'budgie': 0.0, 'pig': 0.0, 'turkey': 0.1667, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.8333, 'resurrected_items_p': 0}",[],0
 4,0,"{'falcon': 0.25, 'eagle': 0.25, 'fawn': 0.0, 'owl': 0.25, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.25, 'chimp': 0.0, 'resurrected_items_p': 0}",[],0
 4,1,"{'falcon': 0.2703, 'eagle': 0.2703, 'fawn': 0.0, 'owl': 0.2703, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.1892, 'chimp': 0.0, 'resurrected_items_p': 0}",[],0
-4,2,"{'falcon': 0.3125, 'eagle': 0.0937, 'owl': 0.3125, 'platypus': 0.0, 'pigeon': 0.2187, 'chimp': 0.0, 'resurrected_items_p': 0.0624}","['fawn', 'beaver']",0.0624
-4,3,"{'falcon': 0.2857, 'eagle': 0.2857, 'fawn': 0.0, 'owl': 0.2857, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.0857, 'resurrected_items_p': 0.0571}",['chimp'],0.0571
-4,4,"{'falcon': 0.0417, 'eagle': 0.1667, 'owl': 0.4167, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.3333, 'chimp': 0.0, 'resurrected_items_p': 0.0417}",['fawn'],0.0417
+4,2,"{'falcon': 0.3125, 'eagle': 0.125, 'owl': 0.3125, 'platypus': 0.0, 'pigeon': 0.1875, 'chimp': 0.0, 'resurrected_items_p': 0.0624}","['fawn', 'beaver']",0.0624
+4,3,"{'falcon': 0.2703, 'eagle': 0.2432, 'fawn': 0.0, 'owl': 0.2703, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.1892, 'resurrected_items_p': 0.027}",['chimp'],0.027
+4,4,"{'falcon': 0.05, 'eagle': 0.2, 'fawn': 0.0, 'owl': 0.5, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.2, 'chimp': 0.05, 'resurrected_items_p': 0}",[],0
 5,0,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.25, 'cheetah': 0.0, 'peacock': 0.25, 'owl': 0.25, 'parakeet': 0.25, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
-5,1,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.303, 'cheetah': 0.0, 'peacock': 0.303, 'owl': 0.303, 'parakeet': 0.0909, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
-5,2,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.25, 'cheetah': 0.0, 'peacock': 0.25, 'owl': 0.25, 'parakeet': 0.2, 'resurrected_items_p': 0.05}",['giraffe'],0.05
-5,3,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.9091, 'cheetah': 0.0, 'peacock': 0.0, 'owl': 0.0, 'parakeet': 0.0909, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
+5,1,"{'hamster': 0.0, 'falcon': 0.2778, 'cheetah': 0.0, 'peacock': 0.2778, 'owl': 0.2778, 'parakeet': 0.1111, 'giraffe': 0.0, 'resurrected_items_p': 0.0556}",['fawn'],0.0556
+5,2,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.25, 'peacock': 0.25, 'owl': 0.225, 'parakeet': 0.225, 'giraffe': 0.0, 'resurrected_items_p': 0.05}",['cheetah'],0.05
+5,3,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.5882, 'cheetah': 0.0, 'peacock': 0.1176, 'owl': 0.1765, 'parakeet': 0.1176, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
 6,0,"{'chipmunk': 0.25, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.25, 'hamster': 0.25, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.25, 'resurrected_items_p': 0}",[],0
 6,1,"{'chipmunk': 0.5, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
-6,2,"{'chipmunk': 0.1667, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.8333, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
-6,3,"{'chipmunk': 0.3889, 'leotards': 0.0, 'mittens': 0.0, 'hamster': 0.5556, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.0556}",['bear'],0.0556
+6,2,"{'chipmunk': 0.0, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 1.0, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,3,"{'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5556, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.4444}",['chipmunk'],0.4444
 6,4,"{'chipmunk': 0.4737, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5263, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
-6,5,"{'chipmunk': 0.7, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.3, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
-6,6,"{'chipmunk': 0.2778, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5556, 'boots': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.1667}",['gown'],0.1667
+6,5,"{'chipmunk': 0.4167, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5833, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,6,"{'chipmunk': 0.1333, 'leotards': 0.0, 'bear': 0.0, 'hamster': 0.6, 'boots': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.2667}","['mittens', 'gown']",0.2667
+6,7,"{'chipmunk': 0.0, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 1.0, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,8,"{'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.9, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.1}",['chipmunk'],0.1
+6,9,"{'chipmunk': 0.0, 'leotards': 0.0, 'bear': 0.0, 'hamster': 0.8571, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.1429}",['mittens'],0.1429
+6,10,"{'chipmunk': 0.0, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 1.0, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+7,0,"{'dolphin': 0.25, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.25, 'beaver': 0.25, 'bra': 0.0, 'ox': 0.25, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,1,"{'dolphin': 0.2286, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.2857, 'beaver': 0.2, 'bra': 0.0, 'ox': 0.2857, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,2,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,3,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,4,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,5,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,6,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,0,"{'dolphin': 0.25, 'trousers': 0.0, 'shoes': 0.0, 'bra': 0.0, 'pants': 0.0, 'resurrected_items_p': 0.75}","['cougar', 'beaver', 'ox']",0.75
+7,1,"{'dolphin': 0.2581, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.3226, 'beaver': 0.129, 'bra': 0.0, 'ox': 0.2903, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,2,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,3,"{'dolphin': 0.4737, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5263, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,4,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,5,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,6,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,7,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+8,0,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,1,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,2,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,3,"{'shoes': 0.0, 'fawn': 0.0556, 'deer': 0.2222, 'belt': 0.0, 'gorilla': 0.3889, 'bra': 0.0, 'elephant': 0.3333, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,4,"{'shoes': 0.0, 'fawn': 0.4118, 'deer': 0.5882, 'belt': 0.0, 'gorilla': 0.0, 'bra': 0.0, 'elephant': 0.0, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+9,0,"{'boots': 0.2564, 'fawn': 0.0, 'seal': 0.0, 'cape': 0.2308, 'otter': 0.0, 'swimsuit': 0.2564, 'porcupine': 0.0, 'trousers': 0.2564, 'resurrected_items_p': 0}",[],0
+9,1,"{'boots': 0.2, 'fawn': 0.0, 'cape': 0.2, 'otter': 0.0, 'swimsuit': 0.2, 'porcupine': 0.0, 'trousers': 0.2, 'resurrected_items_p': 0.2}",['seal'],0.2
+0,0,"{'elk': 0.25, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 0.25, 'partridge': 0.0, 'hamster': 0.25, 'buffalo': 0.25, 'resurrected_items_p': 0}",[],0
+0,1,"{'elk': 0.2326, 'robin': 0.0, 'starling': 0.0, 'fox': 0.2326, 'partridge': 0.0, 'hamster': 0.2326, 'buffalo': 0.2326, 'resurrected_items_p': 0.0698}",['chicken'],0.0698
+0,2,"{'elk': 0.25, 'chicken': 0.05, 'robin': 0.0, 'fox': 0.25, 'partridge': 0.0, 'hamster': 0.175, 'buffalo': 0.25, 'resurrected_items_p': 0.025}",['starling'],0.025
+0,3,"{'elk': 0.0882, 'chicken': 0.1765, 'robin': 0.0, 'starling': 0.0882, 'fox': 0.2941, 'partridge': 0.0, 'hamster': 0.2941, 'buffalo': 0.0588, 'resurrected_items_p': 0}",[],0
+0,4,"{'elk': 0.3125, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 0.3125, 'partridge': 0.0, 'hamster': 0.2187, 'buffalo': 0.1562, 'resurrected_items_p': 0}",[],0
+0,5,"{'elk': 0.0909, 'chicken': 0.0, 'robin': 0.0, 'starling': 0.0, 'fox': 0.9091, 'partridge': 0.0, 'hamster': 0.0, 'buffalo': 0.0, 'resurrected_items_p': 0}",[],0
+1,0,"{'budgie': 0.125, 'zebra': 0.125, 'deer': 0.125, 'penguin': 0.125, 'pelican': 0.125, 'sheep': 0.125, 'fawn': 0.125, 'ostrich': 0.125, 'resurrected_items_p': 0}",[],0
+1,1,"{'budgie': 0.0541, 'zebra': 0.1351, 'deer': 0.1351, 'penguin': 0.1351, 'pelican': 0.1351, 'sheep': 0.1351, 'fawn': 0.1351, 'ostrich': 0.1351, 'resurrected_items_p': 0}",[],0
+1,2,"{'budgie': 0.0169, 'zebra': 0.1695, 'deer': 0.1695, 'penguin': 0.1017, 'pelican': 0.0678, 'sheep': 0.1695, 'fawn': 0.1695, 'ostrich': 0.1356, 'resurrected_items_p': 0}",[],0
+1,3,"{'budgie': 0.0, 'zebra': 0.0, 'deer': 0.4545, 'penguin': 0.0455, 'pelican': 0.0, 'sheep': 0.0455, 'fawn': 0.4545, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
+2,0,"{'pelican': 0.0, 'bear': 0.2564, 'zebra': 0.2308, 'walrus': 0.2564, 'vulture': 0.0, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2564, 'resurrected_items_p': 0}",[],0
+2,1,"{'pelican': 0.0, 'bear': 0.2273, 'zebra': 0.2273, 'walrus': 0.2273, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2273, 'resurrected_items_p': 0.0909}",['vulture'],0.0909
+2,2,"{'pelican': 0.0, 'bear': 0.2273, 'zebra': 0.2273, 'walrus': 0.2273, 'vulture': 0.0909, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2273, 'resurrected_items_p': 0}",[],0
+2,3,"{'pelican': 0.0, 'bear': 0.2778, 'zebra': 0.2778, 'walrus': 0.0833, 'vulture': 0.0833, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2778, 'resurrected_items_p': 0}",[],0
+2,4,"{'pelican': 0.0, 'bear': 0.4167, 'zebra': 0.125, 'walrus': 0.0417, 'vulture': 0.4167, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.0, 'resurrected_items_p': 0}",[],0
+2,5,"{'pelican': 0.0, 'bear': 0.6, 'zebra': 0.0, 'walrus': 0.0, 'vulture': 0.3333, 'chickadee': 0.0, 'finch': 0.0, 'resurrected_items_p': 0.0667}",['otter'],0.0667
+2,6,"{'pelican': 0.0, 'bear': 0.0, 'vulture': 0.3333, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.4, 'resurrected_items_p': 0.2667}","['zebra', 'walrus']",0.2667
+2,7,"{'pelican': 0.0, 'bear': 0.0, 'zebra': 0.0, 'walrus': 0.0625, 'vulture': 0.5, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.4375, 'resurrected_items_p': 0}",[],0
+2,8,"{'pelican': 0.0, 'zebra': 0.0, 'walrus': 0.2, 'vulture': 0.4, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.2, 'resurrected_items_p': 0.2}",['bear'],0.2
+2,9,"{'pelican': 0.0, 'bear': 0.3571, 'walrus': 0.1429, 'vulture': 0.0714, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.3571, 'resurrected_items_p': 0.0714}",['zebra'],0.0714
+2,10,"{'pelican': 0.0, 'bear': 0.0, 'zebra': 1.0, 'walrus': 0.0, 'vulture': 0.0, 'chickadee': 0.0, 'finch': 0.0, 'otter': 0.0, 'resurrected_items_p': 0}",[],0
+3,0,"{'peacock': 0.2439, 'platypus': 0.0, 'budgie': 0.2439, 'pig': 0.0, 'turkey': 0.2439, 'beaver': 0.0244, 'deer': 0.0, 'rooster': 0.2439, 'resurrected_items_p': 0}",[],0
+3,1,"{'peacock': 0.0, 'budgie': 0.303, 'pig': 0.0, 'turkey': 0.303, 'beaver': 0.0, 'deer': 0.0, 'rooster': 0.303, 'resurrected_items_p': 0.0909}",['platypus'],0.0909
+3,2,"{'platypus': 0.0256, 'budgie': 0.1795, 'pig': 0.0, 'turkey': 0.2564, 'deer': 0.0, 'rooster': 0.2564, 'resurrected_items_p': 0.28200000000000003}","['peacock', 'beaver']",0.28200000000000003
+3,3,"{'peacock': 0.0, 'platypus': 0.0, 'budgie': 0.0, 'pig': 0.0, 'turkey': 0.0, 'beaver': 0.0, 'deer': 0.0, 'rooster': 1.0, 'resurrected_items_p': 0}",[],0
+4,0,"{'falcon': 0.25, 'eagle': 0.25, 'fawn': 0.0, 'owl': 0.25, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.25, 'chimp': 0.0, 'resurrected_items_p': 0}",[],0
+4,1,"{'falcon': 0.2632, 'eagle': 0.2632, 'fawn': 0.0, 'owl': 0.2632, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.2105, 'chimp': 0.0, 'resurrected_items_p': 0}",[],0
+4,2,"{'falcon': 0.2647, 'eagle': 0.1471, 'owl': 0.2941, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.2059, 'resurrected_items_p': 0.0882}","['fawn', 'chimp']",0.0882
+4,3,"{'falcon': 0.2941, 'eagle': 0.2647, 'fawn': 0.0, 'owl': 0.2941, 'platypus': 0.0, 'beaver': 0.0, 'pigeon': 0.1176, 'chimp': 0.0294, 'resurrected_items_p': 0}",[],0
+4,4,"{'falcon': 0.0, 'eagle': 0.2381, 'owl': 0.4762, 'platypus': 0.0, 'pigeon': 0.1905, 'chimp': 0.0, 'resurrected_items_p': 0.0952}","['fawn', 'beaver']",0.0952
+5,0,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.25, 'cheetah': 0.0, 'peacock': 0.25, 'owl': 0.25, 'parakeet': 0.25, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
+5,1,"{'falcon': 0.2778, 'cheetah': 0.0, 'peacock': 0.2778, 'owl': 0.2778, 'parakeet': 0.0278, 'giraffe': 0.0, 'resurrected_items_p': 0.1389}","['fawn', 'hamster']",0.1389
+5,2,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.2703, 'cheetah': 0.0, 'peacock': 0.2703, 'owl': 0.2703, 'parakeet': 0.1892, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
+5,3,"{'fawn': 0.0, 'hamster': 0.0, 'falcon': 0.5556, 'cheetah': 0.0, 'peacock': 0.0, 'owl': 0.1667, 'parakeet': 0.2778, 'giraffe': 0.0, 'resurrected_items_p': 0}",[],0
+6,0,"{'chipmunk': 0.25, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.25, 'hamster': 0.25, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.25, 'resurrected_items_p': 0}",[],0
+6,1,"{'chipmunk': 0.4762, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0476, 'hamster': 0.4762, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,2,"{'chipmunk': 0.0909, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.9091, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,3,"{'chipmunk': 0.4444, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5556, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,4,"{'chipmunk': 0.4444, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5556, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,5,"{'chipmunk': 0.4375, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.5625, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
+6,6,"{'chipmunk': 0.2143, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.6429, 'boots': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.1429}",['gown'],0.1429
 6,7,"{'chipmunk': 0.0, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 1.0, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
 6,8,"{'chipmunk': 0.0, 'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 1.0, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0}",[],0
-6,9,"{'chipmunk': 0.0, 'leotards': 0.0, 'bear': 0.0, 'hamster': 0.8889, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.1111}",['mittens'],0.1111
+6,9,"{'chipmunk': 0.0, 'leotards': 0.0, 'bear': 0.0, 'hamster': 0.8, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.2}",['mittens'],0.2
 6,10,"{'leotards': 0.0, 'mittens': 0.0, 'bear': 0.0, 'hamster': 0.9091, 'boots': 0.0, 'gown': 0.0, 'zebra': 0.0, 'resurrected_items_p': 0.0909}",['chipmunk'],0.0909
+7,0,"{'dolphin': 0.25, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.25, 'beaver': 0.25, 'bra': 0.0, 'ox': 0.25, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,1,"{'dolphin': 0.2353, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.2941, 'beaver': 0.1765, 'bra': 0.0, 'ox': 0.2941, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,2,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,3,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,4,"{'dolphin': 0.5, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.5, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,5,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,6,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+7,7,"{'dolphin': 1.0, 'trousers': 0.0, 'shoes': 0.0, 'cougar': 0.0, 'beaver': 0.0, 'bra': 0.0, 'ox': 0.0, 'pants': 0.0, 'resurrected_items_p': 0}",[],0
+8,0,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,1,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,2,"{'shoes': 0.0, 'fawn': 0.25, 'deer': 0.25, 'belt': 0.0, 'gorilla': 0.25, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,3,"{'shoes': 0.0, 'fawn': 0.1667, 'deer': 0.1667, 'belt': 0.0, 'gorilla': 0.4167, 'bra': 0.0, 'elephant': 0.25, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+8,4,"{'shoes': 0.0, 'fawn': 0.3889, 'deer': 0.5556, 'belt': 0.0, 'gorilla': 0.0, 'elephant': 0.0, 'tie': 0.0, 'resurrected_items_p': 0.0556}",['bra'],0.0556
+9,0,"{'boots': 0.2703, 'fawn': 0.0, 'seal': 0.0, 'cape': 0.1892, 'otter': 0.0, 'swimsuit': 0.2703, 'porcupine': 0.0, 'trousers': 0.2703, 'resurrected_items_p': 0}",[],0
+9,1,"{'boots': 0.2041, 'fawn': 0.0, 'cape': 0.2041, 'otter': 0.0, 'swimsuit': 0.2041, 'porcupine': 0.0, 'trousers': 0.2041, 'resurrected_items_p': 0.1837}",['seal'],0.1837
+9,2,"{'boots': 0.2632, 'fawn': 0.0, 'seal': 0.0, 'cape': 0.2105, 'otter': 0.0, 'swimsuit': 0.2632, 'porcupine': 0.0, 'trousers': 0.2632, 'resurrected_items_p': 0}",[],0
+9,3,"{'boots': 0.1786, 'cape': 0.0357, 'swimsuit': 0.1429, 'trousers': 0.1786, 'resurrected_items_p': 0.46430000000000005}","['fawn', 'seal', 'otter', 'porcupine']",0.46430000000000005
+9,4,"{'boots': 0.3913, 'fawn': 0.1739, 'seal': 0.0, 'cape': 0.0, 'otter': 0.0, 'swimsuit': 0.0, 'porcupine': 0.0, 'trousers': 0.4348, 'resurrected_items_p': 0}",[],0
+9,5,"{'boots': 0.1613, 'fawn': 0.1613, 'trousers': 0.1613, 'resurrected_items_p': 0.5161}","['seal', 'cape', 'otter', 'swimsuit', 'porcupine']",0.5161
+9,6,"{'boots': 0.1818, 'fawn': 0.1091, 'seal': 0.1818, 'cape': 0.1636, 'otter': 0.0727, 'swimsuit': 0.1091, 'porcupine': 0.0, 'trousers': 0.1818, 'resurrected_items_p': 0}",[],0
+9,7,"{'boots': 0.1695, 'fawn': 0.1695, 'seal': 0.1186, 'cape': 0.1695, 'otter': 0.0678, 'swimsuit': 0.1356, 'porcupine': 0.0, 'trousers': 0.1695, 'resurrected_items_p': 0}",[],0
+9,8,"{'boots': 0.1923, 'fawn': 0.1923, 'seal': 0.1154, 'cape': 0.1731, 'otter': 0.0577, 'swimsuit': 0.0769, 'porcupine': 0.0, 'trousers': 0.1923, 'resurrected_items_p': 0}",[],0
+9,9,"{'boots': 0.25, 'fawn': 0.2, 'seal': 0.05, 'cape': 0.25, 'otter': 0.0, 'swimsuit': 0.0, 'porcupine': 0.0, 'trousers': 0.25, 'resurrected_items_p': 0}",[],0
+9,10,"{'boots': 0.3448, 'fawn': 0.069, 'seal': 0.069, 'cape': 0.0, 'otter': 0.0, 'porcupine': 0.0, 'trousers': 0.3448, 'resurrected_items_p': 0.1724}",['swimsuit'],0.1724
+9,11,"{'boots': 0.2778, 'fawn': 0.1111, 'seal': 0.1389, 'cape': 0.0, 'swimsuit': 0.1667, 'porcupine': 0.0, 'trousers': 0.2778, 'resurrected_items_p': 0.0278}",['otter'],0.0278
+9,12,"{'boots': 0.3226, 'fawn': 0.1935, 'seal': 0.3226, 'cape': 0.0, 'otter': 0.0, 'swimsuit': 0.0, 'porcupine': 0.0, 'trousers': 0.1613, 'resurrected_items_p': 0}",[],0
+10,0,"{'cougar': 0.0, 'belt': 0.2564, 'otter': 0.0, 'tie': 0.2308, 'scarf': 0.2564, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.2564, 'resurrected_items_p': 0}",[],0
+10,1,"{'belt': 0.1587, 'otter': 0.0, 'tie': 0.1587, 'scarf': 0.1587, 'blouse': 0.1587, 'resurrected_items_p': 0.365}","['cougar', 'seal', 'pig']",0.365
+10,2,"{'cougar': 0.1071, 'belt': 0.0, 'tie': 0.1786, 'scarf': 0.1786, 'seal': 0.1429, 'pig': 0.1429, 'blouse': 0.1786, 'resurrected_items_p': 0.0714}",['otter'],0.0714
+10,3,"{'cougar': 0.0333, 'belt': 0.0, 'otter': 0.0, 'tie': 0.3333, 'scarf': 0.3333, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.3, 'resurrected_items_p': 0}",[],0
+10,4,"{'cougar': 0.0, 'otter': 0.0, 'tie': 0.3448, 'scarf': 0.3448, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0.3104}","['belt', 'seal']",0.3104
+10,5,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.5, 'scarf': 0.5, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,6,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.5, 'scarf': 0.5, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,7,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.5, 'scarf': 0.5, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,8,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.4444, 'scarf': 0.5556, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,9,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.4737, 'scarf': 0.5263, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,10,"{'cougar': 0.0, 'belt': 0.0, 'tie': 0.4167, 'scarf': 0.4167, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0.16670000000000001}","['otter', 'seal']",0.16670000000000001
+10,11,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 0.4762, 'scarf': 0.4762, 'seal': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0.0476}",['pig'],0.0476
+10,12,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 1.0, 'scarf': 0.0, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+10,13,"{'cougar': 0.0, 'belt': 0.0, 'otter': 0.0, 'tie': 1.0, 'scarf': 0.0, 'seal': 0.0, 'pig': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
 11,0,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.2564, 'donkey': 0.0, 'platypus': 0.0, 'pajamas': 0.2564, 'tie': 0.2308, 'blouse': 0.2564, 'resurrected_items_p': 0}",[],0
-11,1,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.2439, 'donkey': 0.0, 'pajamas': 0.2439, 'tie': 0.2439, 'blouse': 0.2439, 'resurrected_items_p': 0.0244}",['platypus'],0.0244
-11,2,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.4762, 'donkey': 0.0, 'platypus': 0.0, 'pajamas': 0.2857, 'tie': 0.2381, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
-11,3,"{'belt': 0.1875, 'platypus': 0.0, 'pajamas': 0.2083, 'tie': 0.1667, 'resurrected_items_p': 0.4375}","['walrus', 'chimp', 'donkey', 'blouse']",0.4375
-11,4,"{'walrus': 0.1481, 'chimp': 0.1667, 'belt': 0.1852, 'donkey': 0.0741, 'pajamas': 0.1852, 'tie': 0.1481, 'blouse': 0.037, 'resurrected_items_p': 0.0556}",['platypus'],0.0556
-11,5,"{'walrus': 0.2128, 'chimp': 0.1702, 'belt': 0.1915, 'donkey': 0.1277, 'platypus': 0.0213, 'pajamas': 0.2128, 'tie': 0.0426, 'blouse': 0.0213, 'resurrected_items_p': 0}",[],0
-11,6,"{'walrus': 0.1277, 'chimp': 0.2128, 'belt': 0.2128, 'donkey': 0.0851, 'platypus': 0.1489, 'pajamas': 0.1915, 'tie': 0.0, 'blouse': 0.0213, 'resurrected_items_p': 0}",[],0
-11,7,"{'walrus': 0.2, 'chimp': 0.2222, 'belt': 0.2222, 'donkey': 0.0889, 'platypus': 0.0222, 'pajamas': 0.1778, 'blouse': 0.0222, 'resurrected_items_p': 0.0444}",['tie'],0.0444
-11,8,"{'walrus': 0.1818, 'chimp': 0.2045, 'belt': 0.2273, 'donkey': 0.0455, 'platypus': 0.0455, 'pajamas': 0.2273, 'tie': 0.0455, 'blouse': 0.0227, 'resurrected_items_p': 0}",[],0
-11,9,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.7692, 'donkey': 0.0, 'platypus': 0.0769, 'pajamas': 0.1538, 'tie': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+11,1,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.2381, 'donkey': 0.0, 'pajamas': 0.2381, 'tie': 0.2381, 'blouse': 0.2381, 'resurrected_items_p': 0.0476}",['platypus'],0.0476
+11,2,"{'walrus': 0.0, 'chimp': 0.0, 'belt': 0.4348, 'platypus': 0.0, 'pajamas': 0.1739, 'tie': 0.3478, 'blouse': 0.0, 'resurrected_items_p': 0.0435}",['donkey'],0.0435
+11,3,"{'belt': 0.1765, 'donkey': 0.0196, 'pajamas': 0.1961, 'tie': 0.1176, 'resurrected_items_p': 0.49019999999999997}","['walrus', 'chimp', 'platypus', 'blouse']",0.49019999999999997
+11,4,"{'walrus': 0.1887, 'chimp': 0.1887, 'belt': 0.1887, 'donkey': 0.0755, 'platypus': 0.0189, 'pajamas': 0.1887, 'tie': 0.1509, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+11,5,"{'walrus': 0.2381, 'chimp': 0.2143, 'belt': 0.1667, 'donkey': 0.0476, 'platypus': 0.0, 'pajamas': 0.2381, 'tie': 0.0476, 'resurrected_items_p': 0.0476}",['blouse'],0.0476
+11,6,"{'walrus': 0.1765, 'chimp': 0.1961, 'belt': 0.1961, 'donkey': 0.0784, 'pajamas': 0.1961, 'tie': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0.1569}",['platypus'],0.1569
+11,7,"{'walrus': 0.1373, 'chimp': 0.1961, 'belt': 0.1961, 'donkey': 0.098, 'platypus': 0.0392, 'pajamas': 0.1569, 'resurrected_items_p': 0.1764}","['tie', 'blouse']",0.1764
+11,8,"{'walrus': 0.186, 'chimp': 0.2093, 'belt': 0.2326, 'donkey': 0.0, 'platypus': 0.093, 'pajamas': 0.2093, 'tie': 0.0698, 'blouse': 0.0, 'resurrected_items_p': 0}",[],0
+11,9,"{'walrus': 0.0, 'chimp': 0.1429, 'belt': 0.7143, 'platypus': 0.0, 'pajamas': 0.0714, 'tie': 0.0, 'blouse': 0.0, 'resurrected_items_p': 0.0714}",['donkey'],0.0714
 12,0,"{'shotgun': 0.0, 'seal': 0.25, 'hamster': 0.25, 'chipmunk': 0.25, 'deer': 0.25, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
 12,1,"{'shotgun': 0.0, 'seal': 0.25, 'hamster': 0.25, 'chipmunk': 0.25, 'deer': 0.25, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
-12,2,"{'shotgun': 0.0, 'seal': 0.303, 'hamster': 0.0909, 'chipmunk': 0.303, 'deer': 0.303, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
-12,3,"{'shotgun': 0.0, 'seal': 0.5882, 'hamster': 0.0, 'chipmunk': 0.0, 'deer': 0.4118, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
-12,4,"{'seal': 0.45, 'hamster': 0.0, 'deer': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0.55}","['shotgun', 'chipmunk', 'spear']",0.55
+12,2,"{'shotgun': 0.0, 'seal': 0.2632, 'hamster': 0.2105, 'chipmunk': 0.2632, 'deer': 0.2632, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
+12,3,"{'shotgun': 0.0, 'seal': 0.5556, 'hamster': 0.0, 'chipmunk': 0.0, 'deer': 0.4444, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
+12,4,"{'shotgun': 0.0, 'seal': 0.3571, 'deer': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0.6429}","['hamster', 'chipmunk', 'spear']",0.6429
 12,5,"{'shotgun': 0.0, 'seal': 1.0, 'hamster': 0.0, 'chipmunk': 0.0, 'deer': 0.0, 'spear': 0.0, 'rocket': 0.0, 'tomahawk': 0.0, 'resurrected_items_p': 0}",[],0
 13,0,"{'goat': 0.25, 'bear': 0.25, 'squirrel': 0.25, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.25, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
-13,1,"{'goat': 0.2778, 'bear': 0.2778, 'squirrel': 0.2778, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.1667}",['grenade'],0.1667
+13,1,"{'goat': 0.2941, 'bear': 0.2941, 'squirrel': 0.2941, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.1176}",['grenade'],0.1176
 13,2,"{'goat': 0.3333, 'bear': 0.3333, 'squirrel': 0.3333, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
-13,3,"{'goat': 0.3333, 'bear': 0.3333, 'squirrel': 0.3333, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
-13,4,"{'goat': 0.5, 'bear': 0.5, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
-13,5,"{'goat': 0.4, 'bear': 0.5, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.1}",['squirrel'],0.1
+13,3,"{'goat': 0.3226, 'bear': 0.3226, 'squirrel': 0.3226, 'grenade': 0.0, 'whip': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.0323}",['zebra'],0.0323
+13,4,"{'goat': 0.4348, 'bear': 0.4348, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.1304, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
+13,5,"{'goat': 0.4444, 'bear': 0.5556, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
 13,6,"{'goat': 0.0, 'bear': 1.0, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
-13,7,"{'bear': 0.4737, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.5264}","['goat', 'squirrel']",0.5264
-13,8,"{'goat': 0.3571, 'bear': 0.6429, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
+13,7,"{'bear': 0.5556, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0.4444}","['goat', 'squirrel']",0.4444
+13,8,"{'goat': 0.3333, 'bear': 0.6667, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
 13,9,"{'goat': 0.0, 'bear': 1.0, 'squirrel': 0.0, 'grenade': 0.0, 'whip': 0.0, 'zebra': 0.0, 'crowbar': 0.0, 'rocket': 0.0, 'resurrected_items_p': 0}",[],0
 14,0,"{'goat': 0.25, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.25, 'walrus': 0.25, 'missile': 0.0, 'cougar': 0.25, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
 14,1,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.5, 'walrus': 0.5, 'missile': 0.0, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
 14,2,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.5, 'walrus': 0.5, 'missile': 0.0, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
-14,3,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 1.0, 'walrus': 0.0, 'missile': 0.0, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
-14,4,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.625, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0.375}","['walrus', 'missile']",0.375
-15,0,"{'deer': 0.0, 'missile': 0.2326, 'stick': 0.2326, 'buffalo': 0.0698, 'sheep': 0.0, 'shotgun': 0.2326, 'bomb': 0.2326, 'cow': 0.0, 'resurrected_items_p': 0}",[],0
-15,1,"{'deer': 0.0, 'missile': 0.3125, 'stick': 0.0, 'buffalo': 0.0, 'sheep': 0.0, 'shotgun': 0.3125, 'bomb': 0.3125, 'resurrected_items_p': 0.0625}",['cow'],0.0625
-15,2,"{'missile': 0.1471, 'shotgun': 0.1471, 'bomb': 0.1471, 'cow': 0.1324, 'resurrected_items_p': 0.4265}","['deer', 'stick', 'buffalo', 'sheep']",0.4265
-15,3,"{'deer': 0.0196, 'missile': 0.1961, 'stick': 0.1765, 'buffalo': 0.1765, 'sheep': 0.0196, 'shotgun': 0.1961, 'bomb': 0.1961, 'cow': 0.0196, 'resurrected_items_p': 0}",[],0
+14,3,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.8571, 'walrus': 0.1429, 'missile': 0.0, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
+14,4,"{'goat': 0.0, 'tomahawk': 0.0, 'sword': 0.0, 'seal': 0.7692, 'walrus': 0.2308, 'missile': 0.0, 'cougar': 0.0, 'revolver': 0.0, 'resurrected_items_p': 0}",[],0
+15,0,"{'deer': 0.0, 'missile': 0.2439, 'stick': 0.2439, 'buffalo': 0.0244, 'sheep': 0.0, 'shotgun': 0.2439, 'bomb': 0.2439, 'cow': 0.0, 'resurrected_items_p': 0}",[],0
+15,1,"{'missile': 0.2778, 'stick': 0.0, 'buffalo': 0.0278, 'shotgun': 0.2778, 'bomb': 0.2778, 'cow': 0.0, 'resurrected_items_p': 0.1389}","['deer', 'sheep']",0.1389
+15,2,"{'deer': 0.0635, 'missile': 0.1587, 'buffalo': 0.0635, 'sheep': 0.1429, 'shotgun': 0.1111, 'bomb': 0.1429, 'resurrected_items_p': 0.3174}","['stick', 'cow']",0.3174
+15,3,"{'deer': 0.0182, 'missile': 0.1818, 'stick': 0.1818, 'buffalo': 0.0727, 'sheep': 0.0727, 'shotgun': 0.1818, 'bomb': 0.1818, 'cow': 0.1091, 'resurrected_items_p': 0}",[],0
 15,4,"{'deer': 0.0, 'missile': 0.3226, 'stick': 0.0323, 'buffalo': 0.0, 'sheep': 0.0, 'shotgun': 0.3226, 'bomb': 0.3226, 'cow': 0.0, 'resurrected_items_p': 0}",[],0
-15,5,"{'deer': 0.0, 'missile': 0.5, 'stick': 0.0, 'buffalo': 0.0, 'sheep': 0.0, 'shotgun': 0.05, 'bomb': 0.45, 'cow': 0.0, 'resurrected_items_p': 0}",[],0
+15,5,"{'deer': 0.0, 'missile': 0.5, 'stick': 0.0, 'buffalo': 0.0, 'sheep': 0.0, 'shotgun': 0.0, 'bomb': 0.5, 'cow': 0.0, 'resurrected_items_p': 0}",[],0
 16,0,"{'goat': 0.0, 'spear': 0.25, 'deer': 0.0, 'pistol': 0.25, 'gorilla': 0.0, 'lion': 0.0, 'dagger': 0.25, 'shotgun': 0.25, 'resurrected_items_p': 0}",[],0
-16,1,"{'goat': 0.0, 'spear': 0.2381, 'deer': 0.0, 'pistol': 0.2381, 'dagger': 0.2381, 'shotgun': 0.2381, 'resurrected_items_p': 0.0476}","['gorilla', 'lion']",0.0476
-16,2,"{'spear': 0.1515, 'pistol': 0.1515, 'gorilla': 0.0303, 'lion': 0.1364, 'dagger': 0.1515, 'shotgun': 0.1515, 'resurrected_items_p': 0.2273}","['goat', 'deer']",0.2273
-16,3,"{'goat': 0.12, 'spear': 0.12, 'deer': 0.04, 'pistol': 0.2, 'gorilla': 0.06, 'lion': 0.12, 'dagger': 0.2, 'shotgun': 0.14, 'resurrected_items_p': 0}",[],0
-16,4,"{'goat': 0.0, 'spear': 0.3571, 'deer': 0.0, 'pistol': 0.2143, 'gorilla': 0.0, 'lion': 0.0, 'dagger': 0.0714, 'shotgun': 0.3571, 'resurrected_items_p': 0}",[],0
-16,5,"{'goat': 0.0, 'spear': 0.6, 'deer': 0.0, 'pistol': 0.0667, 'gorilla': 0.0, 'lion': 0.0, 'dagger': 0.1333, 'shotgun': 0.2, 'resurrected_items_p': 0}",[],0
-16,6,"{'spear': 0.1818, 'pistol': 0.0182, 'dagger': 0.1636, 'shotgun': 0.0, 'resurrected_items_p': 0.6363}","['goat', 'deer', 'gorilla', 'lion']",0.6363
-17,0,"{'harpoon': 0.2174, 'stick': 0.2174, 'buffalo': 0.087, 'cow': 0.0, 'walrus': 0.0217, 'whip': 0.2174, 'seal': 0.0217, 'knife': 0.2174, 'resurrected_items_p': 0}",[],0
-17,1,"{'harpoon': 0.1562, 'stick': 0.1562, 'buffalo': 0.1562, 'cow': 0.0, 'walrus': 0.0781, 'whip': 0.1562, 'seal': 0.1406, 'knife': 0.1562, 'resurrected_items_p': 0}",[],0
-17,2,"{'harpoon': 0.2778, 'stick': 0.2778, 'buffalo': 0.0556, 'cow': 0.0, 'walrus': 0.0278, 'whip': 0.1944, 'seal': 0.0278, 'knife': 0.1389, 'resurrected_items_p': 0}",[],0
-17,3,"{'harpoon': 0.25, 'stick': 0.25, 'buffalo': 0.05, 'cow': 0.0, 'walrus': 0.05, 'whip': 0.25, 'seal': 0.025, 'knife': 0.125, 'resurrected_items_p': 0}",[],0
-17,4,"{'harpoon': 0.0833, 'stick': 0.2222, 'buffalo': 0.0833, 'cow': 0.0, 'walrus': 0.0833, 'whip': 0.1944, 'seal': 0.0833, 'knife': 0.25, 'resurrected_items_p': 0}",[],0
-17,5,"{'harpoon': 0.0, 'stick': 0.1538, 'buffalo': 0.0385, 'cow': 0.0, 'walrus': 0.1923, 'whip': 0.0, 'seal': 0.2308, 'knife': 0.3846, 'resurrected_items_p': 0}",[],0
-17,6,"{'stick': 0.3571, 'buffalo': 0.1071, 'cow': 0.0, 'walrus': 0.1429, 'whip': 0.0, 'seal': 0.2857, 'knife': 0.0, 'resurrected_items_p': 0.1071}",['harpoon'],0.1071
+16,1,"{'spear': 0.2041, 'deer': 0.0, 'pistol': 0.2041, 'dagger': 0.2041, 'shotgun': 0.2041, 'resurrected_items_p': 0.1836}","['goat', 'gorilla', 'lion']",0.1836
+16,2,"{'goat': 0.0741, 'spear': 0.1852, 'deer': 0.0, 'pistol': 0.1852, 'gorilla': 0.0185, 'lion': 0.1667, 'dagger': 0.1852, 'shotgun': 0.1852, 'resurrected_items_p': 0}",[],0
+16,3,"{'goat': 0.12, 'spear': 0.16, 'pistol': 0.2, 'gorilla': 0.1, 'lion': 0.06, 'dagger': 0.2, 'shotgun': 0.14, 'resurrected_items_p': 0.02}",['deer'],0.02
+16,4,"{'goat': 0.0345, 'spear': 0.3103, 'deer': 0.0345, 'pistol': 0.2414, 'gorilla': 0.0, 'lion': 0.0, 'dagger': 0.0345, 'shotgun': 0.3448, 'resurrected_items_p': 0}",[],0
+16,5,"{'goat': 0.0, 'spear': 0.5556, 'deer': 0.0, 'pistol': 0.3333, 'gorilla': 0.0, 'lion': 0.0, 'dagger': 0.1111, 'shotgun': 0.0, 'resurrected_items_p': 0}",[],0
+16,6,"{'spear': 0.1613, 'pistol': 0.1129, 'dagger': 0.129, 'shotgun': 0.0, 'resurrected_items_p': 0.5968}","['goat', 'deer', 'gorilla', 'lion']",0.5968
+17,0,"{'harpoon': 0.1887, 'stick': 0.1887, 'buffalo': 0.1509, 'cow': 0.0, 'walrus': 0.0, 'whip': 0.1887, 'seal': 0.0943, 'knife': 0.1887, 'resurrected_items_p': 0}",[],0
+17,1,"{'harpoon': 0.1639, 'stick': 0.1639, 'buffalo': 0.1639, 'cow': 0.0, 'whip': 0.1639, 'seal': 0.0984, 'knife': 0.1639, 'resurrected_items_p': 0.082}",['walrus'],0.082
+17,2,"{'harpoon': 0.2222, 'stick': 0.2222, 'buffalo': 0.0889, 'cow': 0.0, 'walrus': 0.0, 'whip': 0.2, 'seal': 0.0667, 'knife': 0.2, 'resurrected_items_p': 0}",[],0
+17,3,"{'harpoon': 0.2381, 'stick': 0.2381, 'buffalo': 0.0476, 'cow': 0.0, 'whip': 0.2381, 'seal': 0.0, 'knife': 0.1905, 'resurrected_items_p': 0.0476}",['walrus'],0.0476
+17,4,"{'harpoon': 0.0323, 'stick': 0.2258, 'buffalo': 0.0, 'cow': 0.0, 'walrus': 0.0968, 'whip': 0.2258, 'knife': 0.3226, 'resurrected_items_p': 0.0968}",['seal'],0.0968
+17,5,"{'harpoon': 0.0345, 'stick': 0.1724, 'cow': 0.0, 'walrus': 0.1724, 'whip': 0.0, 'seal': 0.2069, 'knife': 0.3448, 'resurrected_items_p': 0.069}",['buffalo'],0.069
+17,6,"{'harpoon': 0.0833, 'stick': 0.4167, 'buffalo': 0.0417, 'walrus': 0.0, 'whip': 0.0, 'seal': 0.3333, 'knife': 0.0833, 'resurrected_items_p': 0.0417}",['cow'],0.0417
 18,0,"{'hamster': 0.25, 'pumpkin': 0.0, 'porcupine': 0.25, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.25, 'caribou': 0.25, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
 18,1,"{'hamster': 0.25, 'pumpkin': 0.0, 'porcupine': 0.25, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.25, 'caribou': 0.25, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
-18,2,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.3333, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.0, 'caribou': 0.6667, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
-18,3,"{'pumpkin': 0.0, 'porcupine': 0.2941, 'strawberry': 0.0, 'grapefruit': 0.0, 'caribou': 0.2941, 'plum': 0.0, 'resurrected_items_p': 0.41169999999999995}","['hamster', 'elephant']",0.41169999999999995
-18,4,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.2857, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.3571, 'caribou': 0.3571, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
+18,2,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.1667, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.6667, 'caribou': 0.1667, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
+18,3,"{'pumpkin': 0.0, 'porcupine': 0.2632, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.2632, 'caribou': 0.2632, 'plum': 0.0, 'resurrected_items_p': 0.2105}",['hamster'],0.2105
+18,4,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.3103, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.3448, 'caribou': 0.3448, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
 18,5,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.3333, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.3333, 'caribou': 0.3333, 'plum': 0.0, 'resurrected_items_p': 0}",[],0
-18,6,"{'pumpkin': 0.0, 'porcupine': 0.4348, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.1304, 'caribou': 0.3913, 'plum': 0.0, 'resurrected_items_p': 0.0435}",['hamster'],0.0435
-18,7,"{'hamster': 0.0, 'porcupine': 0.2778, 'grapefruit': 0.0, 'elephant': 0.0, 'caribou': 0.5556, 'plum': 0.0, 'resurrected_items_p': 0.16670000000000001}","['pumpkin', 'strawberry']",0.16670000000000001
+18,6,"{'pumpkin': 0.0, 'porcupine': 0.4762, 'strawberry': 0.0, 'grapefruit': 0.0, 'elephant': 0.0, 'caribou': 0.4762, 'plum': 0.0, 'resurrected_items_p': 0.0476}",['hamster'],0.0476
+18,7,"{'hamster': 0.0, 'pumpkin': 0.0, 'porcupine': 0.1765, 'grapefruit': 0.0, 'elephant': 0.0, 'caribou': 0.5882, 'resurrected_items_p': 0.2352}","['strawberry', 'plum']",0.2352
 19,0,"{'whale': 0.25, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.25, 'zebra': 0.25, 'cranberry': 0.0, 'otter': 0.25, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
-19,1,"{'whale': 0.0, 'honeydew': 0.0, 'sheep': 0.3846, 'zebra': 0.3846, 'otter': 0.0769, 'tangerine': 0.0, 'resurrected_items_p': 0.1539}","['banana', 'cranberry']",0.1539
-19,2,"{'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.2778, 'zebra': 0.2222, 'cranberry': 0.0, 'otter': 0.25, 'tangerine': 0.0, 'resurrected_items_p': 0.25}",['whale'],0.25
-19,3,"{'whale': 0.2105, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.2632, 'zebra': 0.2632, 'cranberry': 0.0, 'otter': 0.2632, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
-19,4,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.4211, 'zebra': 0.5263, 'cranberry': 0.0, 'otter': 0.0526, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
-19,5,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.3846, 'zebra': 0.3462, 'cranberry': 0.0, 'otter': 0.2692, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
-19,6,"{'whale': 0.0, 'banana': 0.0, 'sheep': 0.0, 'zebra': 0.7143, 'cranberry': 0.0, 'otter': 0.2143, 'tangerine': 0.0, 'resurrected_items_p': 0.0714}",['honeydew'],0.0714
+19,1,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.4545, 'zebra': 0.4545, 'otter': 0.0, 'tangerine': 0.0, 'resurrected_items_p': 0.0909}",['cranberry'],0.0909
+19,2,"{'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.2941, 'zebra': 0.1765, 'cranberry': 0.0, 'tangerine': 0.0, 'resurrected_items_p': 0.5294}","['whale', 'otter']",0.5294
+19,3,"{'whale': 0.25, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.25, 'zebra': 0.25, 'cranberry': 0.0, 'otter': 0.25, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
+19,4,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.5, 'zebra': 0.5, 'cranberry': 0.0, 'otter': 0.0, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
+19,5,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.4, 'zebra': 0.4, 'cranberry': 0.0, 'tangerine': 0.0, 'resurrected_items_p': 0.2}",['otter'],0.2
+19,6,"{'whale': 0.0, 'honeydew': 0.0, 'banana': 0.0, 'sheep': 0.0, 'zebra': 0.9091, 'cranberry': 0.0, 'otter': 0.0909, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
 20,0,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.25, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.25, 'seal': 0.25, 'cow': 0.25, 'resurrected_items_p': 0}",[],0
-20,1,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.2593, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.3704, 'seal': 0.0, 'cow': 0.3704, 'resurrected_items_p': 0}",[],0
-20,2,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.0952, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.4286, 'seal': 0.0, 'cow': 0.4762, 'resurrected_items_p': 0}",[],0
-20,3,"{'cherry': 0.0, 'beaver': 0.0, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.2143, 'seal': 0.0, 'cow': 0.7143, 'resurrected_items_p': 0.0714}",['coconut'],0.0714
-20,4,"{'coconut': 0.0, 'cherry': 0.0, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.3333, 'seal': 0.0, 'cow': 0.4762, 'resurrected_items_p': 0.1905}",['beaver'],0.1905
+20,1,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.2333, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.3333, 'seal': 0.1, 'cow': 0.3333, 'resurrected_items_p': 0}",[],0
+20,2,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.1667, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.375, 'seal': 0.0417, 'cow': 0.4167, 'resurrected_items_p': 0}",[],0
+20,3,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.1333, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.2, 'seal': 0.0, 'cow': 0.6667, 'resurrected_items_p': 0}",[],0
+20,4,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.0526, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.4211, 'seal': 0.0, 'cow': 0.5263, 'resurrected_items_p': 0}",[],0
 20,5,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.0, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.2308, 'seal': 0.0, 'cow': 0.7692, 'resurrected_items_p': 0}",[],0
 20,6,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.0, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.0, 'seal': 0.0, 'cow': 1.0, 'resurrected_items_p': 0}",[],0
 20,7,"{'coconut': 0.0, 'cherry': 0.0, 'beaver': 0.0, 'grapefruit': 0.0, 'tomato': 0.0, 'deer': 0.0, 'seal': 0.0, 'cow': 1.0, 'resurrected_items_p': 0}",[],0
 21,0,"{'avocado': 0.25, 'cheetah': 0.0, 'strawberry': 0.25, 'fawn': 0.0, 'pineapple': 0.25, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.25, 'resurrected_items_p': 0}",[],0
-21,1,"{'avocado': 0.25, 'cheetah': 0.0, 'strawberry': 0.25, 'fawn': 0.0, 'pineapple': 0.25, 'deer': 0.0, 'tangerine': 0.225, 'resurrected_items_p': 0.025}",['giraffe'],0.025
-21,2,"{'avocado': 0.2564, 'strawberry': 0.2564, 'pineapple': 0.2051, 'giraffe': 0.0769, 'tangerine': 0.0, 'resurrected_items_p': 0.20500000000000002}","['cheetah', 'fawn', 'deer']",0.20500000000000002
-21,3,"{'avocado': 0.2857, 'cheetah': 0.0, 'strawberry': 0.2571, 'fawn': 0.0857, 'pineapple': 0.2857, 'giraffe': 0.0, 'deer': 0.0, 'resurrected_items_p': 0.0857}",['tangerine'],0.0857
-21,4,"{'avocado': 0.4167, 'cheetah': 0.0, 'strawberry': 0.4167, 'fawn': 0.0, 'pineapple': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.1667, 'resurrected_items_p': 0}",[],0
-21,5,"{'avocado': 0.3448, 'cheetah': 0.0, 'strawberry': 0.3103, 'fawn': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.1724, 'resurrected_items_p': 0.1724}",['pineapple'],0.1724
-21,6,"{'avocado': 0.9091, 'cheetah': 0.0, 'strawberry': 0.0, 'pineapple': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.0, 'resurrected_items_p': 0.0909}",['fawn'],0.0909
+21,1,"{'avocado': 0.2273, 'cheetah': 0.0, 'strawberry': 0.2273, 'pineapple': 0.2273, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.2273, 'resurrected_items_p': 0.0909}",['fawn'],0.0909
+21,2,"{'avocado': 0.2326, 'strawberry': 0.2326, 'fawn': 0.1628, 'pineapple': 0.2326, 'deer': 0.0, 'tangerine': 0.0698, 'resurrected_items_p': 0.0698}","['cheetah', 'giraffe']",0.0698
+21,3,"{'avocado': 0.2564, 'cheetah': 0.0, 'strawberry': 0.0769, 'fawn': 0.2051, 'pineapple': 0.2564, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.2051, 'resurrected_items_p': 0}",[],0
+21,4,"{'avocado': 0.4762, 'cheetah': 0.0, 'strawberry': 0.4762, 'fawn': 0.0, 'pineapple': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.0476, 'resurrected_items_p': 0}",[],0
+21,5,"{'avocado': 0.4545, 'cheetah': 0.0, 'strawberry': 0.3182, 'fawn': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.1364, 'resurrected_items_p': 0.0909}",['pineapple'],0.0909
+21,6,"{'avocado': 0.8333, 'cheetah': 0.0, 'strawberry': 0.0, 'fawn': 0.0, 'pineapple': 0.0, 'giraffe': 0.0, 'deer': 0.0, 'tangerine': 0.1667, 'resurrected_items_p': 0}",[],0
 22,0,"{'apple': 0.25, 'pear': 0.25, 'beaver': 0.0, 'cherry': 0.25, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.25, 'resurrected_items_p': 0}",[],0
-22,1,"{'apple': 0.2128, 'pear': 0.2128, 'cherry': 0.2128, 'platypus': 0.0, 'grapefruit': 0.2128, 'resurrected_items_p': 0.149}","['beaver', 'cougar', 'elephant']",0.149
-22,2,"{'apple': 0.1961, 'pear': 0.1961, 'beaver': 0.098, 'cherry': 0.1961, 'cougar': 0.0784, 'elephant': 0.0196, 'grapefruit': 0.1961, 'resurrected_items_p': 0.0196}",['platypus'],0.0196
-22,3,"{'apple': 0.2941, 'pear': 0.2941, 'beaver': 0.0588, 'cherry': 0.2941, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0588, 'resurrected_items_p': 0}",[],0
-22,4,"{'apple': 0.2857, 'pear': 0.2857, 'beaver': 0.0571, 'cherry': 0.2857, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0857, 'resurrected_items_p': 0}",[],0
-22,5,"{'apple': 0.3125, 'pear': 0.3125, 'beaver': 0.0, 'cherry': 0.3125, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0625, 'resurrected_items_p': 0}",[],0
-22,6,"{'apple': 0.0, 'pear': 0.0909, 'beaver': 0.0, 'cherry': 0.9091, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
-23,0,"{'tomato': 0.2381, 'giraffe': 0.0, 'rhubarb': 0.2381, 'hamster': 0.0, 'tangerine': 0.2381, 'mink': 0.0476, 'cranberry': 0.2381, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
-23,1,"{'tomato': 0.2041, 'giraffe': 0.0, 'rhubarb': 0.2041, 'tangerine': 0.2041, 'mink': 0.0408, 'cranberry': 0.2041, 'cheetah': 0.0, 'resurrected_items_p': 0.1429}",['hamster'],0.1429
-23,2,"{'tomato': 0.1837, 'rhubarb': 0.2041, 'hamster': 0.1837, 'tangerine': 0.0612, 'mink': 0.0408, 'cranberry': 0.1837, 'cheetah': 0.0, 'resurrected_items_p': 0.1429}",['giraffe'],0.1429
-23,3,"{'tomato': 0.2, 'giraffe': 0.0, 'rhubarb': 0.2222, 'hamster': 0.0889, 'tangerine': 0.0889, 'mink': 0.1778, 'cranberry': 0.2222, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
+22,1,"{'apple': 0.2083, 'pear': 0.2083, 'beaver': 0.0, 'cherry': 0.2083, 'platypus': 0.0, 'grapefruit': 0.2083, 'resurrected_items_p': 0.16660000000000003}","['cougar', 'elephant']",0.16660000000000003
+22,2,"{'apple': 0.1579, 'pear': 0.1754, 'cherry': 0.1754, 'cougar': 0.1053, 'elephant': 0.0, 'grapefruit': 0.1754, 'resurrected_items_p': 0.2105}","['beaver', 'platypus']",0.2105
+22,3,"{'apple': 0.3226, 'pear': 0.3226, 'beaver': 0.0, 'cherry': 0.3226, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0323, 'resurrected_items_p': 0}",[],0
+22,4,"{'apple': 0.2778, 'pear': 0.25, 'cherry': 0.2778, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.1667, 'resurrected_items_p': 0.0278}",['beaver'],0.0278
+22,5,"{'apple': 0.3226, 'pear': 0.2903, 'beaver': 0.0323, 'cherry': 0.3226, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0323, 'resurrected_items_p': 0}",[],0
+22,6,"{'apple': 0.0, 'pear': 0.0, 'beaver': 0.0, 'cherry': 1.0, 'cougar': 0.0, 'platypus': 0.0, 'elephant': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
+23,0,"{'tomato': 0.25, 'giraffe': 0.025, 'rhubarb': 0.25, 'hamster': 0.0, 'tangerine': 0.25, 'mink': 0.0, 'cranberry': 0.225, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
+23,1,"{'tomato': 0.2222, 'giraffe': 0.0, 'rhubarb': 0.2222, 'tangerine': 0.2222, 'mink': 0.0, 'cranberry': 0.2222, 'cheetah': 0.0, 'resurrected_items_p': 0.1111}",['hamster'],0.1111
+23,2,"{'tomato': 0.1818, 'rhubarb': 0.1818, 'hamster': 0.1455, 'tangerine': 0.0727, 'cranberry': 0.1818, 'cheetah': 0.0, 'resurrected_items_p': 0.2364}","['giraffe', 'mink']",0.2364
+23,3,"{'tomato': 0.2195, 'giraffe': 0.0, 'rhubarb': 0.2439, 'hamster': 0.0732, 'tangerine': 0.1463, 'mink': 0.0732, 'cranberry': 0.2439, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
 23,4,"{'tomato': 0.2857, 'giraffe': 0.0, 'rhubarb': 0.2857, 'hamster': 0.0, 'tangerine': 0.1429, 'mink': 0.0, 'cranberry': 0.2857, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
-23,5,"{'tomato': 0.25, 'rhubarb': 0.1, 'tangerine': 0.175, 'cranberry': 0.15, 'cheetah': 0.0, 'resurrected_items_p': 0.325}","['giraffe', 'hamster', 'mink']",0.325
-23,6,"{'tomato': 0.3846, 'giraffe': 0.0, 'rhubarb': 0.1538, 'hamster': 0.0385, 'tangerine': 0.1538, 'mink': 0.1154, 'cranberry': 0.1538, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
-23,7,"{'tomato': 0.3846, 'giraffe': 0.0, 'rhubarb': 0.3077, 'hamster': 0.0, 'tangerine': 0.0, 'mink': 0.0769, 'cranberry': 0.2308, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
-23,8,"{'tomato': 0.7692, 'giraffe': 0.0, 'rhubarb': 0.1538, 'hamster': 0.0, 'tangerine': 0.0, 'mink': 0.0, 'cranberry': 0.0769, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
-23,9,"{'tomato': 0.3571, 'giraffe': 0.0, 'rhubarb': 0.1786, 'hamster': 0.0, 'cranberry': 0.1071, 'cheetah': 0.0, 'resurrected_items_p': 0.3571}","['tangerine', 'mink']",0.3571
-23,10,"{'tomato': 0.3571, 'rhubarb': 0.0, 'tangerine': 0.0, 'mink': 0.1071, 'cranberry': 0.1786, 'cheetah': 0.0, 'resurrected_items_p': 0.3572}","['giraffe', 'hamster']",0.3572
+23,5,"{'tomato': 0.2308, 'giraffe': 0.0, 'rhubarb': 0.1795, 'hamster': 0.0, 'tangerine': 0.1282, 'cranberry': 0.2308, 'resurrected_items_p': 0.23070000000000002}","['mink', 'cheetah']",0.23070000000000002
+23,6,"{'tomato': 0.3226, 'rhubarb': 0.3226, 'hamster': 0.0, 'tangerine': 0.1613, 'mink': 0.129, 'cranberry': 0.0323, 'cheetah': 0.0, 'resurrected_items_p': 0.0323}",['giraffe'],0.0323
+23,7,"{'tomato': 0.4167, 'giraffe': 0.0, 'rhubarb': 0.125, 'hamster': 0.0, 'tangerine': 0.0, 'mink': 0.1667, 'cranberry': 0.2917, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
+23,8,"{'tomato': 0.8333, 'giraffe': 0.0, 'rhubarb': 0.0, 'hamster': 0.0, 'tangerine': 0.0, 'mink': 0.0, 'cranberry': 0.1667, 'cheetah': 0.0, 'resurrected_items_p': 0}",[],0
+23,9,"{'tomato': 0.4375, 'giraffe': 0.0, 'hamster': 0.0, 'cranberry': 0.0625, 'cheetah': 0.0, 'resurrected_items_p': 0.5}","['rhubarb', 'tangerine', 'mink']",0.5
+23,10,"{'tomato': 0.4762, 'giraffe': 0.0, 'rhubarb': 0.0, 'tangerine': 0.0, 'mink': 0.2381, 'cranberry': 0.1429, 'cheetah': 0.0, 'resurrected_items_p': 0.1429}",['hamster'],0.1429
 24,0,"{'mink': 0.25, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.25, 'radish': 0.0, 'whale': 0.25, 'celery': 0.0, 'squirrel': 0.25, 'resurrected_items_p': 0}",[],0
 24,1,"{'mink': 0.25, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.25, 'radish': 0.0, 'whale': 0.25, 'celery': 0.0, 'squirrel': 0.25, 'resurrected_items_p': 0}",[],0
 24,2,"{'mink': 0.3333, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.3333, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.3333, 'resurrected_items_p': 0}",[],0
-24,3,"{'mink': 0.4762, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.2857, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.2381, 'resurrected_items_p': 0}",[],0
-24,4,"{'mink': 0.5263, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'celery': 0.0, 'squirrel': 0.1053, 'resurrected_items_p': 0.3684}",['whale'],0.3684
-24,5,"{'mink': 0.7143, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.2857, 'celery': 0.0, 'squirrel': 0.0, 'resurrected_items_p': 0}",[],0
+24,3,"{'mink': 0.375, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.2917, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.3333, 'resurrected_items_p': 0}",[],0
+24,4,"{'mink': 0.6923, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'celery': 0.0, 'squirrel': 0.1538, 'resurrected_items_p': 0.1538}",['whale'],0.1538
+24,5,"{'mink': 0.6429, 'mushroom': 0.0, 'asparagus': 0.0, 'radish': 0.0, 'whale': 0.1429, 'celery': 0.0, 'squirrel': 0.0714, 'resurrected_items_p': 0.1429}",['cow'],0.1429
 24,6,"{'mink': 1.0, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.0, 'resurrected_items_p': 0}",[],0
 24,7,"{'mink': 0.5, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'resurrected_items_p': 0.5}",['squirrel'],0.5
-24,8,"{'mink': 0.9091, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.0, 'resurrected_items_p': 0.0909}",['mushroom'],0.0909
-24,9,"{'mink': 0.6, 'mushroom': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.0, 'squirrel': 0.0, 'resurrected_items_p': 0.39999999999999997}","['asparagus', 'celery']",0.39999999999999997
+24,8,"{'mink': 0.7143, 'asparagus': 0.0, 'cow': 0.0, 'radish': 0.0, 'whale': 0.0, 'celery': 0.0, 'squirrel': 0.2143, 'resurrected_items_p': 0.0714}",['mushroom'],0.0714
+24,9,"{'mink': 0.5263, 'mushroom': 0.0, 'asparagus': 0.0, 'cow': 0.0, 'whale': 0.0, 'squirrel': 0.0, 'resurrected_items_p': 0.4737}","['radish', 'celery']",0.4737
 25,0,"{'broccoli': 0.0, 'walrus': 0.25, 'gorilla': 0.25, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.25, 'dolphin': 0.25, 'resurrected_items_p': 0}",[],0
 25,1,"{'broccoli': 0.0, 'walrus': 0.25, 'gorilla': 0.25, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.25, 'dolphin': 0.25, 'resurrected_items_p': 0}",[],0
-25,2,"{'broccoli': 0.0, 'walrus': 0.0, 'gorilla': 0.3571, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.3571, 'dolphin': 0.2857, 'resurrected_items_p': 0}",[],0
+25,2,"{'broccoli': 0.0, 'walrus': 0.0, 'gorilla': 0.3846, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.3846, 'dolphin': 0.2308, 'resurrected_items_p': 0}",[],0
 25,3,"{'broccoli': 0.0, 'gorilla': 0.0, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.0526, 'dolphin': 0.4211, 'resurrected_items_p': 0.5263}",['walrus'],0.5263
-25,4,"{'broccoli': 0.0, 'walrus': 0.2593, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.3333, 'dolphin': 0.1481, 'resurrected_items_p': 0.2593}",['gorilla'],0.2593
-25,5,"{'broccoli': 0.0, 'walrus': 0.2121, 'gorilla': 0.303, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.2121, 'dolphin': 0.2727, 'resurrected_items_p': 0}",[],0
-25,6,"{'broccoli': 0.0, 'walrus': 0.25, 'gorilla': 0.3571, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.3571, 'dolphin': 0.0357, 'resurrected_items_p': 0}",[],0
+25,4,"{'broccoli': 0.0, 'walrus': 0.3333, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.2667, 'dolphin': 0.0, 'resurrected_items_p': 0.4}",['gorilla'],0.4
+25,5,"{'broccoli': 0.0, 'walrus': 0.3226, 'gorilla': 0.3226, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.0323, 'resurrected_items_p': 0.3226}",['dolphin'],0.3226
+25,6,"{'broccoli': 0.0, 'walrus': 0.2308, 'gorilla': 0.3462, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.3846, 'dolphin': 0.0385, 'resurrected_items_p': 0}",[],0
 25,7,"{'broccoli': 0.0, 'walrus': 0.0, 'gorilla': 1.0, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.0, 'dolphin': 0.0, 'resurrected_items_p': 0}",[],0
 25,8,"{'broccoli': 0.0, 'walrus': 0.0, 'gorilla': 1.0, 'mushroom': 0.0, 'potato': 0.0, 'peas': 0.0, 'sheep': 0.0, 'dolphin': 0.0, 'resurrected_items_p': 0}",[],0
 26,0,"{'otter': 0.25, 'seal': 0.25, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.25, 'lion': 0.25, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,1,"{'otter': 0.2105, 'seal': 0.2368, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.2632, 'lion': 0.2632, 'resurrected_items_p': 0.0263}",['pumpkin'],0.0263
+26,1,"{'otter': 0.1818, 'seal': 0.1515, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.303, 'lion': 0.303, 'resurrected_items_p': 0.0606}",['pumpkin'],0.0606
 26,2,"{'otter': 0.25, 'seal': 0.25, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.25, 'lion': 0.25, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,3,"{'otter': 0.2778, 'seal': 0.2778, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.2778, 'lion': 0.1667, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,4,"{'otter': 0.2941, 'seal': 0.1471, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.2647, 'lion': 0.2941, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,5,"{'otter': 0.1364, 'seal': 0.1818, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.4545, 'lion': 0.2273, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,6,"{'otter': 0.1071, 'seal': 0.3214, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.3571, 'lion': 0.2143, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-26,7,"{'otter': 0.3077, 'seal': 0.3077, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.3846, 'lion': 0.0, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
-27,0,"{'gorilla': 0.0476, 'pumpkin': 0.2381, 'mushroom': 0.2381, 'cauliflower': 0.2381, 'fawn': 0.0, 'peas': 0.2381, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0}",[],0
-27,1,"{'gorilla': 0.0, 'pumpkin': 0.1887, 'mushroom': 0.1887, 'cauliflower': 0.1887, 'fawn': 0.0, 'peas': 0.1887, 'resurrected_items_p': 0.2452}","['deer', 'cougar']",0.2452
-27,2,"{'gorilla': 0.0, 'pumpkin': 0.2778, 'mushroom': 0.1389, 'cauliflower': 0.2778, 'peas': 0.2778, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0.0278}",['fawn'],0.0278
-27,3,"{'pumpkin': 0.2, 'mushroom': 0.125, 'cauliflower': 0.25, 'fawn': 0.15, 'peas': 0.25, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0.025}",['gorilla'],0.025
-27,4,"{'gorilla': 0.0, 'pumpkin': 0.2, 'mushroom': 0.225, 'cauliflower': 0.25, 'fawn': 0.075, 'peas': 0.25, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0}",[],0
-27,5,"{'pumpkin': 0.1639, 'mushroom': 0.1639, 'cauliflower': 0.1639, 'fawn': 0.1148, 'peas': 0.1639, 'resurrected_items_p': 0.22949999999999998}","['gorilla', 'deer', 'cougar']",0.22949999999999998
-27,6,"{'gorilla': 0.0312, 'pumpkin': 0.1562, 'mushroom': 0.1562, 'cauliflower': 0.1562, 'fawn': 0.1406, 'peas': 0.1562, 'deer': 0.1094, 'cougar': 0.0937, 'resurrected_items_p': 0}",[],0
-27,7,"{'gorilla': 0.1364, 'pumpkin': 0.1515, 'mushroom': 0.1212, 'cauliflower': 0.1515, 'fawn': 0.1061, 'peas': 0.1515, 'deer': 0.0758, 'cougar': 0.1061, 'resurrected_items_p': 0}",[],0
-27,8,"{'gorilla': 0.1154, 'pumpkin': 0.1731, 'mushroom': 0.0769, 'cauliflower': 0.1346, 'fawn': 0.0577, 'peas': 0.1731, 'deer': 0.1538, 'cougar': 0.1154, 'resurrected_items_p': 0}",[],0
-27,9,"{'gorilla': 0.0364, 'pumpkin': 0.1818, 'mushroom': 0.0909, 'cauliflower': 0.1818, 'fawn': 0.0727, 'peas': 0.1818, 'deer': 0.1455, 'cougar': 0.1091, 'resurrected_items_p': 0}",[],0
-27,10,"{'gorilla': 0.0, 'pumpkin': 0.2273, 'mushroom': 0.1364, 'cauliflower': 0.0909, 'fawn': 0.1364, 'peas': 0.2045, 'deer': 0.1136, 'cougar': 0.0909, 'resurrected_items_p': 0}",[],0
-27,11,"{'pumpkin': 0.7143, 'mushroom': 0.0, 'cauliflower': 0.0, 'fawn': 0.0714, 'peas': 0.0, 'deer': 0.0714, 'cougar': 0.0, 'resurrected_items_p': 0.1429}",['gorilla'],0.1429
-28,0,"{'radish': 0.1449, 'whale': 0.0, 'beans': 0.1449, 'potato': 0.1449, 'bison': 0.1449, 'pig': 0.1304, 'beets': 0.1449, 'deer': 0.1449, 'resurrected_items_p': 0}",[],0
-28,1,"{'radish': 0.2326, 'whale': 0.0, 'beans': 0.2326, 'potato': 0.2326, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2326, 'deer': 0.0698, 'resurrected_items_p': 0}",[],0
-28,2,"{'radish': 0.2222, 'whale': 0.0, 'beans': 0.3704, 'potato': 0.1111, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2593, 'deer': 0.037, 'resurrected_items_p': 0}",[],0
-28,3,"{'radish': 0.2857, 'whale': 0.0, 'beans': 0.2857, 'potato': 0.1714, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2571, 'deer': 0.0, 'resurrected_items_p': 0}",[],0
-28,4,"{'radish': 0.1923, 'whale': 0.0, 'beans': 0.3846, 'potato': 0.1923, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2308, 'deer': 0.0, 'resurrected_items_p': 0}",[],0
-30,0,"{'trousers': 0.0, 'buzzard': 0.1695, 'cloak': 0.1525, 'bluejay': 0.1695, 'boots': 0.1695, 'vulture': 0.1695, 'penguin': 0.1695, 'sweater': 0.0, 'resurrected_items_p': 0}",[],0
-30,1,"{'trousers': 0.0, 'buzzard': 0.2703, 'cloak': 0.0, 'bluejay': 0.1892, 'boots': 0.0, 'vulture': 0.2703, 'penguin': 0.2703, 'sweater': 0.0, 'resurrected_items_p': 0}",[],0
-30,2,"{'trousers': 0.0, 'buzzard': 0.2439, 'cloak': 0.0, 'bluejay': 0.2439, 'vulture': 0.2439, 'penguin': 0.2439, 'sweater': 0.0, 'resurrected_items_p': 0.0244}",['boots'],0.0244
-30,3,"{'trousers': 0.0, 'buzzard': 0.0, 'cloak': 0.0, 'bluejay': 0.0, 'boots': 0.0, 'vulture': 0.0, 'penguin': 1.0, 'sweater': 0.0, 'resurrected_items_p': 0}",[],0
+26,3,"{'otter': 0.2727, 'seal': 0.303, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.303, 'lion': 0.1212, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
+26,4,"{'otter': 0.2632, 'seal': 0.2368, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.2632, 'lion': 0.2368, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
+26,5,"{'otter': 0.1429, 'seal': 0.3333, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.4762, 'lion': 0.0476, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
+26,6,"{'otter': 0.0645, 'seal': 0.3226, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.3226, 'lion': 0.2903, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
+26,7,"{'otter': 0.28, 'seal': 0.28, 'celery': 0.0, 'asparagus': 0.0, 'tomato': 0.0, 'elk': 0.4, 'lion': 0.04, 'pumpkin': 0.0, 'resurrected_items_p': 0}",[],0
+27,0,"{'gorilla': 0.0244, 'pumpkin': 0.2439, 'mushroom': 0.2439, 'cauliflower': 0.2439, 'fawn': 0.0, 'peas': 0.2439, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0}",[],0
+27,1,"{'gorilla': 0.0, 'pumpkin': 0.1961, 'mushroom': 0.1961, 'cauliflower': 0.1961, 'fawn': 0.0, 'peas': 0.1961, 'resurrected_items_p': 0.2156}","['deer', 'cougar']",0.2156
+27,2,"{'gorilla': 0.0, 'pumpkin': 0.3333, 'mushroom': 0.1, 'cauliflower': 0.3333, 'fawn': 0.0, 'peas': 0.2333, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0}",[],0
+27,3,"{'gorilla': 0.0, 'pumpkin': 0.2381, 'mushroom': 0.2381, 'cauliflower': 0.2381, 'peas': 0.2381, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0.0476}",['fawn'],0.0476
+27,4,"{'pumpkin': 0.2222, 'mushroom': 0.2222, 'cauliflower': 0.2222, 'fawn': 0.0889, 'peas': 0.2222, 'deer': 0.0, 'cougar': 0.0, 'resurrected_items_p': 0.0222}",['gorilla'],0.0222
+27,5,"{'gorilla': 0.0526, 'pumpkin': 0.1754, 'mushroom': 0.1754, 'cauliflower': 0.1754, 'fawn': 0.0526, 'peas': 0.1754, 'resurrected_items_p': 0.193}","['deer', 'cougar']",0.193
+27,6,"{'gorilla': 0.0794, 'pumpkin': 0.1429, 'mushroom': 0.1429, 'cauliflower': 0.1587, 'fawn': 0.127, 'peas': 0.1587, 'deer': 0.0635, 'cougar': 0.127, 'resurrected_items_p': 0}",[],0
+27,7,"{'gorilla': 0.1343, 'pumpkin': 0.1343, 'mushroom': 0.1343, 'cauliflower': 0.1493, 'fawn': 0.0896, 'peas': 0.1493, 'deer': 0.1045, 'cougar': 0.1045, 'resurrected_items_p': 0}",[],0
+27,8,"{'gorilla': 0.1509, 'pumpkin': 0.1887, 'mushroom': 0.1698, 'cauliflower': 0.1509, 'fawn': 0.1132, 'peas': 0.0755, 'deer': 0.0943, 'cougar': 0.0566, 'resurrected_items_p': 0}",[],0
+27,9,"{'gorilla': 0.04, 'pumpkin': 0.18, 'mushroom': 0.12, 'cauliflower': 0.16, 'fawn': 0.1, 'peas': 0.12, 'deer': 0.1, 'cougar': 0.18, 'resurrected_items_p': 0}",[],0
+27,10,"{'gorilla': 0.0, 'pumpkin': 0.2093, 'mushroom': 0.2093, 'cauliflower': 0.093, 'fawn': 0.0233, 'peas': 0.2326, 'deer': 0.1395, 'cougar': 0.093, 'resurrected_items_p': 0}",[],0
+27,11,"{'pumpkin': 0.7143, 'mushroom': 0.0, 'cauliflower': 0.0, 'fawn': 0.0714, 'peas': 0.0714, 'deer': 0.0714, 'cougar': 0.0, 'resurrected_items_p': 0.0714}",['gorilla'],0.0714
+28,0,"{'radish': 0.1562, 'whale': 0.0, 'beans': 0.1562, 'potato': 0.1562, 'bison': 0.1562, 'pig': 0.1406, 'beets': 0.1562, 'deer': 0.0781, 'resurrected_items_p': 0}",[],0
+28,1,"{'radish': 0.2381, 'whale': 0.0, 'beans': 0.2381, 'potato': 0.2381, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2381, 'deer': 0.0476, 'resurrected_items_p': 0}",[],0
+28,2,"{'radish': 0.2308, 'whale': 0.0, 'beans': 0.3846, 'potato': 0.1923, 'pig': 0.0, 'beets': 0.1538, 'deer': 0.0, 'resurrected_items_p': 0.0385}",['bison'],0.0385
+28,3,"{'radish': 0.2432, 'whale': 0.0, 'beans': 0.2703, 'potato': 0.2703, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2162, 'deer': 0.0, 'resurrected_items_p': 0}",[],0
+28,4,"{'radish': 0.1739, 'whale': 0.0, 'beans': 0.4348, 'potato': 0.1304, 'bison': 0.0, 'pig': 0.0, 'beets': 0.2609, 'deer': 0.0, 'resurrected_items_p': 0}",[],0
+29,0,"{'eggplant': 0.25, 'onions': 0.25, 'fawn': 0.0, 'chimp': 0.0, 'pumpkin': 0.25, 'platypus': 0.0, 'walrus': 0.0, 'potato': 0.25, 'resurrected_items_p': 0}",[],0
+29,1,"{'eggplant': 0.0323, 'onions': 0.3226, 'fawn': 0.0, 'chimp': 0.0, 'pumpkin': 0.3226, 'platypus': 0.0, 'walrus': 0.0, 'potato': 0.3226, 'resurrected_items_p': 0}",[],0
+29,2,"{'eggplant': 0.0, 'onions': 0.0, 'fawn': 0.0, 'chimp': 0.0, 'pumpkin': 0.0, 'platypus': 0.0, 'walrus': 0.0, 'potato': 1.0, 'resurrected_items_p': 0}",[],0
+30,0,"{'trousers': 0.0, 'buzzard': 0.1724, 'cloak': 0.1552, 'bluejay': 0.1724, 'boots': 0.1552, 'vulture': 0.1724, 'penguin': 0.1724, 'sweater': 0.0, 'resurrected_items_p': 0}",[],0
+30,1,"{'trousers': 0.0, 'buzzard': 0.2857, 'cloak': 0.0, 'bluejay': 0.2286, 'boots': 0.0, 'vulture': 0.2857, 'penguin': 0.2, 'sweater': 0.0, 'resurrected_items_p': 0}",[],0
+30,2,"{'trousers': 0.0, 'buzzard': 0.225, 'cloak': 0.0, 'bluejay': 0.25, 'boots': 0.0, 'vulture': 0.25, 'penguin': 0.25, 'resurrected_items_p': 0.025}",['sweater'],0.025
+30,3,"{'trousers': 0.0, 'buzzard': 0.0, 'cloak': 0.0, 'bluejay': 0.0, 'boots': 0.0, 'vulture': 0.0, 'penguin': 0.9091, 'sweater': 0.0909, 'resurrected_items_p': 0}",[],0
 31,0,"{'tie': 0.0, 'bra': 0.0, 'eagle': 0.25, 'parakeet': 0.25, 'woodpecker': 0.25, 'stork': 0.25, 'belt': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
-31,1,"{'eagle': 0.2326, 'parakeet': 0.2326, 'woodpecker': 0.093, 'stork': 0.2326, 'resurrected_items_p': 0.20940000000000003}","['tie', 'bra', 'belt', 'camisole']",0.20940000000000003
-31,2,"{'tie': 0.1406, 'bra': 0.1562, 'eagle': 0.1562, 'parakeet': 0.0313, 'woodpecker': 0.1562, 'stork': 0.1562, 'belt': 0.0938, 'camisole': 0.1094, 'resurrected_items_p': 0}",[],0
-31,3,"{'tie': 0.0833, 'bra': 0.0417, 'eagle': 0.125, 'parakeet': 0.1875, 'woodpecker': 0.1875, 'stork': 0.2083, 'belt': 0.0417, 'camisole': 0.125, 'resurrected_items_p': 0}",[],0
-31,4,"{'tie': 0.0, 'bra': 0.1538, 'eagle': 0.0, 'parakeet': 0.0, 'woodpecker': 0.0, 'stork': 0.7692, 'belt': 0.0769, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+31,1,"{'tie': 0.0, 'bra': 0.0, 'eagle': 0.2857, 'parakeet': 0.1429, 'woodpecker': 0.1714, 'stork': 0.2571, 'resurrected_items_p': 0.1429}","['belt', 'camisole']",0.1429
+31,2,"{'eagle': 0.1379, 'parakeet': 0.0517, 'woodpecker': 0.1724, 'stork': 0.1724, 'belt': 0.1552, 'camisole': 0.0862, 'resurrected_items_p': 0.2242}","['tie', 'bra']",0.2242
+31,3,"{'tie': 0.0392, 'bra': 0.0392, 'eagle': 0.098, 'parakeet': 0.1961, 'woodpecker': 0.1961, 'stork': 0.1961, 'belt': 0.1176, 'camisole': 0.1176, 'resurrected_items_p': 0}",[],0
+31,4,"{'tie': 0.0, 'bra': 0.2778, 'eagle': 0.0, 'parakeet': 0.1667, 'woodpecker': 0.0, 'stork': 0.5556, 'belt': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
 32,0,"{'hawk': 0.25, 'peacock': 0.25, 'falcon': 0.25, 'tie': 0.0, 'belt': 0.0, 'budgie': 0.25, 'bra': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
-32,1,"{'hawk': 0.2083, 'peacock': 0.0, 'falcon': 0.2083, 'budgie': 0.0208, 'shoes': 0.0, 'resurrected_items_p': 0.5625}","['tie', 'belt', 'bra']",0.5625
-32,2,"{'hawk': 0.4762, 'peacock': 0.0, 'falcon': 0.4762, 'tie': 0.0, 'belt': 0.0476, 'budgie': 0.0, 'bra': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
+32,1,"{'hawk': 0.2041, 'peacock': 0.0, 'falcon': 0.2041, 'budgie': 0.0408, 'resurrected_items_p': 0.551}","['tie', 'belt', 'bra', 'shoes']",0.551
+32,2,"{'hawk': 0.4167, 'peacock': 0.0, 'falcon': 0.4167, 'tie': 0.0833, 'belt': 0.0, 'budgie': 0.0417, 'bra': 0.0, 'shoes': 0.0417, 'resurrected_items_p': 0}",[],0
 32,3,"{'hawk': 0.5263, 'peacock': 0.0, 'falcon': 0.4737, 'tie': 0.0, 'belt': 0.0, 'budgie': 0.0, 'bra': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
 32,4,"{'hawk': 1.0, 'peacock': 0.0, 'falcon': 0.0, 'tie': 0.0, 'belt': 0.0, 'budgie': 0.0, 'bra': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
-32,5,"{'hawk': 0.8333, 'peacock': 0.0, 'falcon': 0.0, 'belt': 0.0, 'bra': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0.1666}","['tie', 'budgie']",0.1666
-33,0,"{'chickadee': 0.0, 'skirt': 0.303, 'eagle': 0.0, 'leotards': 0.1212, 'bra': 0.2727, 'boots': 0.303, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
-33,1,"{'chickadee': 0.0, 'skirt': 0.1887, 'leotards': 0.1887, 'bra': 0.1887, 'boots': 0.1887, 'resurrected_items_p': 0.24530000000000002}","['eagle', 'owl', 'raven']",0.24530000000000002
-33,2,"{'chickadee': 0.0, 'skirt': 0.0, 'eagle': 0.0312, 'leotards': 0.3125, 'bra': 0.3125, 'boots': 0.0, 'owl': 0.0312, 'raven': 0.3125, 'resurrected_items_p': 0}",[],0
-33,3,"{'chickadee': 0.0, 'eagle': 0.0, 'leotards': 0.2778, 'bra': 0.2778, 'boots': 0.0, 'owl': 0.0278, 'raven': 0.1667, 'resurrected_items_p': 0.25}",['skirt'],0.25
+32,5,"{'hawk': 0.7692, 'peacock': 0.0, 'tie': 0.0, 'belt': 0.0, 'budgie': 0.0, 'shoes': 0.0, 'resurrected_items_p': 0.2307}","['falcon', 'bra']",0.2307
+33,0,"{'chickadee': 0.0, 'skirt': 0.25, 'eagle': 0.0, 'leotards': 0.25, 'bra': 0.25, 'boots': 0.25, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
+33,1,"{'chickadee': 0.0, 'skirt': 0.1818, 'leotards': 0.1818, 'bra': 0.1818, 'boots': 0.1818, 'resurrected_items_p': 0.2727}","['eagle', 'owl', 'raven']",0.2727
+33,2,"{'chickadee': 0.0, 'skirt': 0.0, 'eagle': 0.0, 'leotards': 0.3226, 'bra': 0.3226, 'boots': 0.0, 'owl': 0.0323, 'raven': 0.3226, 'resurrected_items_p': 0}",[],0
+33,3,"{'chickadee': 0.0, 'eagle': 0.0, 'leotards': 0.3571, 'bra': 0.3571, 'boots': 0.0, 'owl': 0.0714, 'raven': 0.0357, 'resurrected_items_p': 0.1786}",['skirt'],0.1786
 33,4,"{'chickadee': 0.0, 'skirt': 0.0, 'eagle': 0.0, 'leotards': 0.5, 'bra': 0.5, 'boots': 0.0, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
-33,5,"{'chickadee': 0.0, 'skirt': 0.0, 'leotards': 0.3333, 'bra': 0.3333, 'boots': 0.0, 'resurrected_items_p': 0.3333}","['eagle', 'owl', 'raven']",0.3333
+33,5,"{'chickadee': 0.0, 'leotards': 0.2857, 'bra': 0.2857, 'boots': 0.0, 'resurrected_items_p': 0.42869999999999997}","['skirt', 'eagle', 'owl', 'raven']",0.42869999999999997
 33,6,"{'chickadee': 0.0, 'skirt': 0.0, 'eagle': 0.0, 'leotards': 0.5, 'bra': 0.5, 'boots': 0.0, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
-33,7,"{'chickadee': 0.0, 'skirt': 0.0, 'leotards': 0.0, 'bra': 0.9091, 'boots': 0.0, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0.0909}",['eagle'],0.0909
+33,7,"{'chickadee': 0.0, 'skirt': 0.0, 'eagle': 0.0, 'leotards': 0.0, 'bra': 1.0, 'boots': 0.0, 'owl': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
 34,0,"{'rooster': 0.0, 'belt': 0.25, 'pajamas': 0.25, 'slippers': 0.25, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.25, 'resurrected_items_p': 0}",[],0
-34,1,"{'rooster': 0.0, 'belt': 0.2273, 'pajamas': 0.2273, 'slippers': 0.2273, 'woodpecker': 0.0, 'parakeet': 0.0, 'tie': 0.2273, 'resurrected_items_p': 0.0909}",['partridge'],0.0909
-34,2,"{'belt': 0.2703, 'pajamas': 0.2703, 'slippers': 0.0541, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.027, 'tie': 0.2703, 'resurrected_items_p': 0.1081}",['rooster'],0.1081
-34,3,"{'rooster': 0.0, 'belt': 0.3846, 'pajamas': 0.1154, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.2308, 'tie': 0.2692, 'resurrected_items_p': 0}",[],0
-34,4,"{'rooster': 0.0, 'belt': 0.4762, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0476, 'tie': 0.4762, 'resurrected_items_p': 0}",[],0
-34,5,"{'belt': 0.7692, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.0769, 'resurrected_items_p': 0.1538}",['rooster'],0.1538
-34,6,"{'rooster': 0.0, 'belt': 0.8333, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'tie': 0.0, 'resurrected_items_p': 0.1667}",['partridge'],0.1667
-34,7,"{'rooster': 0.0, 'belt': 0.7692, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'resurrected_items_p': 0.2308}",['tie'],0.2308
+34,1,"{'rooster': 0.0, 'belt': 0.25, 'pajamas': 0.25, 'slippers': 0.25, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.25, 'resurrected_items_p': 0}",[],0
+34,2,"{'belt': 0.2778, 'pajamas': 0.2778, 'slippers': 0.0833, 'woodpecker': 0.0, 'parakeet': 0.0, 'tie': 0.2778, 'resurrected_items_p': 0.0834}","['rooster', 'partridge']",0.0834
+34,3,"{'rooster': 0.0, 'belt': 0.4348, 'pajamas': 0.0, 'slippers': 0.0435, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.1739, 'tie': 0.3478, 'resurrected_items_p': 0}",[],0
+34,4,"{'rooster': 0.0, 'belt': 0.4167, 'pajamas': 0.0, 'slippers': 0.0833, 'parakeet': 0.0, 'partridge': 0.0417, 'tie': 0.4167, 'resurrected_items_p': 0.0417}",['woodpecker'],0.0417
+34,5,"{'rooster': 0.0, 'belt': 1.0, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
+34,6,"{'belt': 0.9, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.0, 'resurrected_items_p': 0.1}",['rooster'],0.1
+34,7,"{'rooster': 0.0, 'belt': 0.5556, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'resurrected_items_p': 0.4444}",['tie'],0.4444
 34,8,"{'rooster': 0.0, 'belt': 1.0, 'pajamas': 0.0, 'slippers': 0.0, 'woodpecker': 0.0, 'parakeet': 0.0, 'partridge': 0.0, 'tie': 0.0, 'resurrected_items_p': 0}",[],0
-35,0,"{'penguin': 0.1091, 'shoes': 0.1818, 'goose': 0.0, 'tie': 0.1818, 'peacock': 0.1636, 'belt': 0.1818, 'oriole': 0.0, 'bra': 0.1818, 'resurrected_items_p': 0}",[],0
-35,1,"{'penguin': 0.0698, 'shoes': 0.2326, 'goose': 0.0, 'tie': 0.2326, 'peacock': 0.0, 'belt': 0.2326, 'oriole': 0.0, 'bra': 0.2326, 'resurrected_items_p': 0}",[],0
-35,2,"{'penguin': 0.1351, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2703, 'belt': 0.2703, 'oriole': 0.0, 'bra': 0.2703, 'resurrected_items_p': 0.0541}",['peacock'],0.0541
-35,3,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2381, 'peacock': 0.0, 'belt': 0.2857, 'bra': 0.381, 'resurrected_items_p': 0.0952}",['oriole'],0.0952
-35,4,"{'penguin': 0.0, 'shoes': 0.0, 'tie': 0.129, 'belt': 0.1613, 'oriole': 0.0645, 'bra': 0.3226, 'resurrected_items_p': 0.3226}","['goose', 'peacock']",0.3226
-35,5,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.4, 'bra': 0.4, 'resurrected_items_p': 0}",[],0
-35,6,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.3, 'belt': 0.0, 'oriole': 0.0, 'bra': 0.5, 'resurrected_items_p': 0.2}",['peacock'],0.2
-35,7,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2667, 'peacock': 0.0, 'belt': 0.0, 'bra': 0.6667, 'resurrected_items_p': 0.0667}",['oriole'],0.0667
-35,8,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.0909, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.0, 'bra': 0.9091, 'resurrected_items_p': 0}",[],0
-35,9,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2, 'peacock': 0.0, 'belt': 0.0, 'bra': 0.6667, 'resurrected_items_p': 0.1333}",['oriole'],0.1333
+35,0,"{'penguin': 0.1111, 'shoes': 0.1852, 'goose': 0.0, 'tie': 0.1852, 'peacock': 0.1481, 'belt': 0.1852, 'oriole': 0.0, 'bra': 0.1852, 'resurrected_items_p': 0}",[],0
+35,1,"{'penguin': 0.0909, 'shoes': 0.2273, 'goose': 0.0, 'tie': 0.2273, 'peacock': 0.0, 'belt': 0.2273, 'oriole': 0.0, 'bra': 0.2273, 'resurrected_items_p': 0}",[],0
+35,2,"{'penguin': 0.1143, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2857, 'belt': 0.2857, 'oriole': 0.0, 'bra': 0.2857, 'resurrected_items_p': 0.0286}",['peacock'],0.0286
+35,3,"{'penguin': 0.0, 'shoes': 0.0, 'tie': 0.3478, 'peacock': 0.0, 'belt': 0.2174, 'oriole': 0.0, 'bra': 0.3478, 'resurrected_items_p': 0.087}",['goose'],0.087
+35,4,"{'penguin': 0.0, 'goose': 0.1176, 'tie': 0.1176, 'belt': 0.2059, 'bra': 0.2941, 'resurrected_items_p': 0.2646}","['shoes', 'peacock', 'oriole']",0.2646
+35,5,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.2593, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.3704, 'bra': 0.3704, 'resurrected_items_p': 0}",[],0
+35,6,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.3, 'belt': 0.0, 'oriole': 0.15, 'bra': 0.5, 'resurrected_items_p': 0.05}",['peacock'],0.05
+35,7,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.125, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.25, 'bra': 0.625, 'resurrected_items_p': 0}",[],0
+35,8,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.0, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.0, 'bra': 1.0, 'resurrected_items_p': 0}",[],0
+35,9,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.0, 'bra': 0.8333, 'resurrected_items_p': 0.1667}",['tie'],0.1667
 35,10,"{'penguin': 0.0, 'shoes': 0.0, 'goose': 0.0, 'tie': 0.0, 'peacock': 0.0, 'belt': 0.0, 'oriole': 0.0, 'bra': 1.0, 'resurrected_items_p': 0}",[],0
 36,0,"{'rocket': 0.0, 'duck': 0.25, 'rooster': 0.25, 'penguin': 0.25, 'catapult': 0.0, 'spear': 0.0, 'cannon': 0.0, 'budgie': 0.25, 'resurrected_items_p': 0}",[],0
 36,1,"{'rocket': 0.0, 'duck': 0.3333, 'rooster': 0.3333, 'penguin': 0.0, 'catapult': 0.0, 'spear': 0.0, 'cannon': 0.0, 'budgie': 0.3333, 'resurrected_items_p': 0}",[],0
-36,2,"{'rocket': 0.0, 'duck': 0.2381, 'rooster': 0.2381, 'catapult': 0.0, 'budgie': 0.2381, 'resurrected_items_p': 0.2857}","['penguin', 'spear', 'cannon']",0.2857
-36,3,"{'rocket': 0.0, 'duck': 0.0, 'rooster': 0.25, 'penguin': 0.625, 'catapult': 0.0, 'spear': 0.0, 'cannon': 0.0, 'budgie': 0.125, 'resurrected_items_p': 0}",[],0
+36,2,"{'rocket': 0.0, 'duck': 0.2273, 'rooster': 0.2273, 'catapult': 0.0, 'spear': 0.0, 'budgie': 0.2273, 'resurrected_items_p': 0.3181}","['penguin', 'cannon']",0.3181
+36,3,"{'rocket': 0.0, 'duck': 0.0, 'rooster': 0.0909, 'penguin': 0.9091, 'catapult': 0.0, 'spear': 0.0, 'cannon': 0.0, 'budgie': 0.0, 'resurrected_items_p': 0}",[],0
 37,0,"{'shotgun': 0.0, 'starling': 0.25, 'pelican': 0.25, 'rifle': 0.0, 'penguin': 0.25, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.25, 'resurrected_items_p': 0}",[],0
 37,1,"{'shotgun': 0.0, 'starling': 0.25, 'pelican': 0.25, 'rifle': 0.0, 'penguin': 0.25, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.25, 'resurrected_items_p': 0}",[],0
-37,2,"{'shotgun': 0.0, 'starling': 0.3226, 'pelican': 0.3226, 'rifle': 0.0, 'penguin': 0.2581, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0968, 'resurrected_items_p': 0}",[],0
-37,3,"{'shotgun': 0.0, 'starling': 0.0, 'pelican': 0.8571, 'rifle': 0.0, 'penguin': 0.1429, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
-37,4,"{'shotgun': 0.0, 'pelican': 0.0, 'rifle': 0.0, 'penguin': 0.5263, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0.4737}",['starling'],0.4737
-37,5,"{'shotgun': 0.0, 'starling': 0.0, 'rifle': 0.0, 'penguin': 0.8889, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0.1111}",['pelican'],0.1111
-37,6,"{'pelican': 0.2941, 'penguin': 0.2941, 'ostrich': 0.0, 'resurrected_items_p': 0.41169999999999995}","['shotgun', 'starling', 'rifle', 'stone', 'rocket']",0.41169999999999995
+37,2,"{'shotgun': 0.0, 'starling': 0.3333, 'pelican': 0.3333, 'rifle': 0.0, 'penguin': 0.3333, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
+37,3,"{'shotgun': 0.0, 'starling': 0.1667, 'pelican': 0.8333, 'rifle': 0.0, 'penguin': 0.0, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
+37,4,"{'shotgun': 0.0, 'starling': 0.5, 'pelican': 0.0, 'rifle': 0.0, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0.5}",['penguin'],0.5
+37,5,"{'shotgun': 0.0, 'starling': 0.0, 'pelican': 0.0, 'rifle': 0.0, 'penguin': 1.0, 'stone': 0.0, 'rocket': 0.0, 'ostrich': 0.0, 'resurrected_items_p': 0}",[],0
+37,6,"{'starling': 0.0, 'penguin': 0.3448, 'ostrich': 0.0, 'resurrected_items_p': 0.6551000000000001}","['shotgun', 'pelican', 'rifle', 'stone', 'rocket']",0.6551000000000001
 38,0,"{'crowbar': 0.0, 'stork': 0.25, 'knife': 0.0, 'chickadee': 0.25, 'stick': 0.0, 'owl': 0.25, 'seagull': 0.25, 'axe': 0.0, 'resurrected_items_p': 0}",[],0
-38,1,"{'stork': 0.0571, 'knife': 0.0, 'chickadee': 0.2857, 'stick': 0.0, 'owl': 0.2571, 'seagull': 0.2857, 'axe': 0.0, 'resurrected_items_p': 0.1143}",['crowbar'],0.1143
-38,2,"{'crowbar': 0.0513, 'stork': 0.2564, 'knife': 0.0, 'chickadee': 0.2564, 'stick': 0.0, 'owl': 0.1795, 'seagull': 0.2564, 'axe': 0.0, 'resurrected_items_p': 0}",[],0
-38,3,"{'crowbar': 0.0, 'stork': 0.2439, 'knife': 0.0, 'chickadee': 0.2195, 'owl': 0.1951, 'seagull': 0.2439, 'axe': 0.0, 'resurrected_items_p': 0.0976}",['stick'],0.0976
-38,4,"{'crowbar': 0.0, 'stork': 0.2812, 'knife': 0.0, 'chickadee': 0.2812, 'stick': 0.125, 'owl': 0.0, 'seagull': 0.3125, 'axe': 0.0, 'resurrected_items_p': 0}",[],0
+38,1,"{'stork': 0.1143, 'chickadee': 0.2, 'owl': 0.2857, 'seagull': 0.2286, 'resurrected_items_p': 0.17149999999999999}","['crowbar', 'knife', 'stick', 'axe']",0.17149999999999999
+38,2,"{'crowbar': 0.0811, 'stork': 0.2432, 'knife': 0.0, 'chickadee': 0.2703, 'stick': 0.0, 'owl': 0.1351, 'seagull': 0.2703, 'axe': 0.0, 'resurrected_items_p': 0}",[],0
+38,3,"{'crowbar': 0.027, 'stork': 0.2703, 'knife': 0.0, 'chickadee': 0.2703, 'stick': 0.0, 'owl': 0.1892, 'seagull': 0.2432, 'axe': 0.0, 'resurrected_items_p': 0}",[],0
+38,4,"{'crowbar': 0.0, 'stork': 0.2, 'knife': 0.0, 'chickadee': 0.3333, 'owl': 0.0333, 'seagull': 0.3333, 'axe': 0.0, 'resurrected_items_p': 0.1}",['stick'],0.1
 39,0,"{'whip': 0.2128, 'stick': 0.2128, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.2128, 'pheasant': 0.0, 'peacock': 0.1489, 'bazooka': 0.2128, 'resurrected_items_p': 0}",[],0
-39,1,"{'whip': 0.2, 'stick': 0.2, 'rooster': 0.0, 'catapult': 0.2, 'peacock': 0.06, 'bazooka': 0.2, 'resurrected_items_p': 0.13999999999999999}","['budgie', 'pheasant']",0.13999999999999999
-39,2,"{'whip': 0.2273, 'stick': 0.2273, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.2273, 'pheasant': 0.0455, 'peacock': 0.0682, 'bazooka': 0.2045, 'resurrected_items_p': 0}",[],0
-39,3,"{'whip': 0.2041, 'stick': 0.2041, 'budgie': 0.0, 'catapult': 0.2041, 'pheasant': 0.0, 'peacock': 0.2041, 'bazooka': 0.1224, 'resurrected_items_p': 0.0612}",['rooster'],0.0612
-39,4,"{'whip': 0.2273, 'stick': 0.2273, 'budgie': 0.0, 'rooster': 0.0909, 'catapult': 0.2273, 'pheasant': 0.0, 'peacock': 0.0, 'bazooka': 0.2273, 'resurrected_items_p': 0}",[],0
-39,5,"{'whip': 0.25, 'stick': 0.25, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.25, 'pheasant': 0.0, 'bazooka': 0.225, 'resurrected_items_p': 0.025}",['peacock'],0.025
-39,6,"{'whip': 0.2857, 'stick': 0.2857, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.2857, 'pheasant': 0.0, 'peacock': 0.0, 'bazooka': 0.1429, 'resurrected_items_p': 0}",[],0
-39,7,"{'whip': 0.5263, 'stick': 0.2105, 'budgie': 0.0, 'catapult': 0.0, 'bazooka': 0.0, 'resurrected_items_p': 0.2631}","['rooster', 'pheasant', 'peacock']",0.2631
-40,0,"{'rifle': 0.1613, 'grenade': 0.1613, 'stone': 0.1613, 'turkey': 0.1613, 'flamingo': 0.0968, 'bomb': 0.1613, 'robin': 0.0, 'penguin': 0.0968, 'resurrected_items_p': 0}",[],0
-40,1,"{'rifle': 0.2128, 'grenade': 0.2128, 'stone': 0.2128, 'turkey': 0.1489, 'flamingo': 0.0, 'bomb': 0.2128, 'robin': 0.0, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
-40,2,"{'rifle': 0.1639, 'grenade': 0.1639, 'stone': 0.1639, 'turkey': 0.1475, 'bomb': 0.1639, 'penguin': 0.0, 'resurrected_items_p': 0.19669999999999999}","['flamingo', 'robin']",0.19669999999999999
-40,3,"{'rifle': 0.1786, 'grenade': 0.1786, 'stone': 0.1607, 'turkey': 0.1429, 'flamingo': 0.125, 'bomb': 0.1786, 'robin': 0.0179, 'resurrected_items_p': 0.0179}",['penguin'],0.0179
-40,4,"{'rifle': 0.1887, 'grenade': 0.1887, 'stone': 0.1698, 'turkey': 0.0755, 'flamingo': 0.1321, 'bomb': 0.1887, 'robin': 0.0566, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
-40,5,"{'rifle': 0.303, 'grenade': 0.303, 'stone': 0.0, 'turkey': 0.0, 'flamingo': 0.0303, 'bomb': 0.303, 'robin': 0.0606, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
-40,6,"{'rifle': 0.3333, 'grenade': 0.2778, 'stone': 0.0, 'turkey': 0.0, 'flamingo': 0.0, 'bomb': 0.3889, 'robin': 0.0, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
-40,7,"{'rifle': 0.08, 'grenade': 0.28, 'turkey': 0.0, 'flamingo': 0.0, 'bomb': 0.4, 'penguin': 0.0, 'resurrected_items_p': 0.24000000000000002}","['stone', 'robin']",0.24000000000000002
+39,1,"{'whip': 0.1887, 'stick': 0.1887, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.1887, 'peacock': 0.0943, 'bazooka': 0.1887, 'resurrected_items_p': 0.1509}",['pheasant'],0.1509
+39,2,"{'whip': 0.2222, 'stick': 0.2222, 'budgie': 0.0, 'catapult': 0.2222, 'pheasant': 0.0, 'peacock': 0.0444, 'bazooka': 0.2222, 'resurrected_items_p': 0.0667}",['rooster'],0.0667
+39,3,"{'whip': 0.2, 'stick': 0.2, 'budgie': 0.0, 'rooster': 0.08, 'catapult': 0.2, 'peacock': 0.16, 'bazooka': 0.14, 'resurrected_items_p': 0.02}",['pheasant'],0.02
+39,4,"{'whip': 0.2381, 'stick': 0.2381, 'budgie': 0.0, 'rooster': 0.0476, 'catapult': 0.2381, 'pheasant': 0.0, 'peacock': 0.0, 'bazooka': 0.2381, 'resurrected_items_p': 0}",[],0
+39,5,"{'whip': 0.25, 'stick': 0.25, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.25, 'pheasant': 0.0, 'peacock': 0.0, 'bazooka': 0.25, 'resurrected_items_p': 0}",[],0
+39,6,"{'whip': 0.2564, 'stick': 0.2564, 'budgie': 0.0, 'rooster': 0.0, 'catapult': 0.2564, 'pheasant': 0.0, 'peacock': 0.0, 'bazooka': 0.2308, 'resurrected_items_p': 0}",[],0
+39,7,"{'whip': 0.5263, 'stick': 0.2105, 'catapult': 0.0, 'peacock': 0.0, 'bazooka': 0.0, 'resurrected_items_p': 0.2631}","['budgie', 'rooster', 'pheasant']",0.2631
+40,0,"{'rifle': 0.1724, 'grenade': 0.1724, 'stone': 0.1724, 'turkey': 0.1552, 'flamingo': 0.1207, 'bomb': 0.1724, 'robin': 0.0, 'penguin': 0.0345, 'resurrected_items_p': 0}",[],0
+40,1,"{'rifle': 0.2174, 'grenade': 0.2174, 'stone': 0.2174, 'turkey': 0.1304, 'flamingo': 0.0, 'bomb': 0.2174, 'robin': 0.0, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
+40,2,"{'rifle': 0.1818, 'grenade': 0.1818, 'stone': 0.1818, 'turkey': 0.0909, 'bomb': 0.1818, 'penguin': 0.0, 'resurrected_items_p': 0.18180000000000002}","['flamingo', 'robin']",0.18180000000000002
+40,3,"{'rifle': 0.1667, 'grenade': 0.2083, 'stone': 0.1458, 'turkey': 0.0625, 'flamingo': 0.1458, 'bomb': 0.2083, 'robin': 0.0417, 'resurrected_items_p': 0.0208}",['penguin'],0.0208
+40,4,"{'rifle': 0.2045, 'grenade': 0.2273, 'stone': 0.2273, 'turkey': 0.0909, 'flamingo': 0.0, 'bomb': 0.2273, 'robin': 0.0227, 'penguin': 0.0, 'resurrected_items_p': 0}",[],0
+40,5,"{'rifle': 0.3448, 'grenade': 0.3103, 'stone': 0.0, 'turkey': 0.0, 'bomb': 0.3103, 'robin': 0.0, 'penguin': 0.0, 'resurrected_items_p': 0.0345}",['flamingo'],0.0345
+40,6,"{'rifle': 0.4091, 'grenade': 0.2273, 'turkey': 0.0, 'flamingo': 0.0, 'bomb': 0.3182, 'robin': 0.0, 'penguin': 0.0, 'resurrected_items_p': 0.0455}",['stone'],0.0455
+40,7,"{'rifle': 0.0833, 'grenade': 0.3333, 'stone': 0.0, 'flamingo': 0.0, 'bomb': 0.4167, 'penguin': 0.0, 'resurrected_items_p': 0.16670000000000001}","['turkey', 'robin']",0.16670000000000001
+41,0,"{'penguin': 0.0, 'whip': 0.25, 'woodpecker': 0.0, 'stick': 0.25, 'sword': 0.25, 'crow': 0.0, 'tomahawk': 0.25, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+41,1,"{'penguin': 0.0, 'whip': 0.2857, 'stick': 0.2857, 'sword': 0.0286, 'crow': 0.0, 'tomahawk': 0.2857, 'resurrected_items_p': 0.1143}","['woodpecker', 'pelican']",0.1143
+41,2,"{'penguin': 0.0, 'whip': 0.0952, 'woodpecker': 0.0, 'stick': 0.4762, 'sword': 0.0, 'crow': 0.0, 'tomahawk': 0.4286, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+42,0,"{'budgie': 0.25, 'finch': 0.25, 'grapefruit': 0.0, 'cranberry': 0.0, 'raisin': 0.0, 'crow': 0.25, 'pumpkin': 0.0, 'raven': 0.25, 'resurrected_items_p': 0}",[],0
+42,1,"{'budgie': 0.25, 'finch': 0.25, 'grapefruit': 0.0, 'cranberry': 0.0, 'raisin': 0.0, 'crow': 0.25, 'pumpkin': 0.0, 'raven': 0.25, 'resurrected_items_p': 0}",[],0
+42,2,"{'budgie': 0.303, 'finch': 0.303, 'grapefruit': 0.0, 'cranberry': 0.0, 'raisin': 0.0, 'crow': 0.0909, 'pumpkin': 0.0, 'raven': 0.303, 'resurrected_items_p': 0}",[],0
+42,3,"{'budgie': 0.3571, 'finch': 0.3571, 'grapefruit': 0.0, 'cranberry': 0.0, 'crow': 0.0, 'pumpkin': 0.0, 'raven': 0.2143, 'resurrected_items_p': 0.0714}",['raisin'],0.0714
+42,4,"{'budgie': 0.9091, 'finch': 0.0909, 'grapefruit': 0.0, 'cranberry': 0.0, 'raisin': 0.0, 'crow': 0.0, 'pumpkin': 0.0, 'raven': 0.0, 'resurrected_items_p': 0}",[],0
 43,0,"{'swan': 0.25, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.25, 'dove': 0.25, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.25, 'resurrected_items_p': 0}",[],0
 43,1,"{'swan': 0.25, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.25, 'dove': 0.25, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.25, 'resurrected_items_p': 0}",[],0
 43,2,"{'swan': 0.25, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.25, 'dove': 0.25, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.25, 'resurrected_items_p': 0}",[],0
-43,3,"{'swan': 0.2778, 'apple': 0.0, 'buzzard': 0.2222, 'dove': 0.1667, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.25, 'resurrected_items_p': 0.0833}",['peach'],0.0833
-43,4,"{'swan': 0.3571, 'peach': 0.0, 'buzzard': 0.1429, 'dove': 0.2143, 'strawberry': 0.0, 'robin': 0.1429, 'resurrected_items_p': 0.1428}","['apple', 'lime']",0.1428
-43,5,"{'swan': 0.1724, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.3448, 'dove': 0.2759, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.2069, 'resurrected_items_p': 0}",[],0
-43,6,"{'swan': 0.1724, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.3103, 'dove': 0.3448, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.1724, 'resurrected_items_p': 0}",[],0
-43,7,"{'swan': 0.087, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.087, 'dove': 0.4348, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.3913, 'resurrected_items_p': 0}",[],0
-43,8,"{'swan': 0.1111, 'apple': 0.0, 'buzzard': 0.2593, 'dove': 0.3704, 'lime': 0.0, 'robin': 0.1852, 'resurrected_items_p': 0.074}","['peach', 'strawberry']",0.074
-43,9,"{'swan': 0.1212, 'peach': 0.0303, 'buzzard': 0.0, 'dove': 0.303, 'strawberry': 0.0, 'robin': 0.2424, 'resurrected_items_p': 0.303}","['apple', 'lime']",0.303
-44,0,"{'pineapple': 0.0755, 'rhubarb': 0.1887, 'woodpecker': 0.1887, 'stork': 0.1698, 'swan': 0.1887, 'orange': 0.0, 'canary': 0.1887, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
-44,1,"{'pineapple': 0.0652, 'rhubarb': 0.0217, 'woodpecker': 0.2174, 'stork': 0.2174, 'swan': 0.2174, 'orange': 0.0, 'canary': 0.2174, 'resurrected_items_p': 0.0435}",['cherry'],0.0435
-44,2,"{'pineapple': 0.127, 'rhubarb': 0.1429, 'woodpecker': 0.1587, 'stork': 0.1587, 'swan': 0.1429, 'canary': 0.1587, 'cherry': 0.0635, 'resurrected_items_p': 0.0476}",['orange'],0.0476
-44,3,"{'pineapple': 0.0893, 'rhubarb': 0.1071, 'woodpecker': 0.1786, 'stork': 0.1786, 'swan': 0.1786, 'orange': 0.0179, 'canary': 0.1786, 'cherry': 0.0714, 'resurrected_items_p': 0}",[],0
-44,4,"{'pineapple': 0.0638, 'rhubarb': 0.1489, 'woodpecker': 0.2128, 'stork': 0.2128, 'swan': 0.2128, 'orange': 0.0213, 'canary': 0.0213, 'cherry': 0.1064, 'resurrected_items_p': 0}",[],0
-44,5,"{'pineapple': 0.0, 'rhubarb': 0.2045, 'woodpecker': 0.2273, 'stork': 0.0909, 'swan': 0.2273, 'orange': 0.0227, 'canary': 0.2273, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
-44,6,"{'rhubarb': 0.2903, 'woodpecker': 0.3226, 'stork': 0.0323, 'swan': 0.0, 'orange': 0.1613, 'canary': 0.0645, 'resurrected_items_p': 0.1291}","['pineapple', 'cherry']",0.1291
-45,0,"{'falcon': 0.1837, 'owl': 0.0, 'rhubarb': 0.2041, 'goose': 0.0, 'cherry': 0.2041, 'apple': 0.2041, 'rooster': 0.0, 'grapefruit': 0.2041, 'resurrected_items_p': 0}",[],0
-45,1,"{'falcon': 0.0, 'owl': 0.0, 'rhubarb': 0.2439, 'cherry': 0.2439, 'apple': 0.2439, 'rooster': 0.0, 'grapefruit': 0.2439, 'resurrected_items_p': 0.0244}",['goose'],0.0244
-45,2,"{'rhubarb': 0.2727, 'goose': 0.0, 'cherry': 0.0455, 'apple': 0.0455, 'grapefruit': 0.3636, 'resurrected_items_p': 0.2728}","['falcon', 'owl', 'rooster']",0.2728
-45,3,"{'falcon': 0.0, 'owl': 0.1333, 'rhubarb': 0.6667, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.1333, 'grapefruit': 0.0, 'resurrected_items_p': 0.0667}",['goose'],0.0667
-45,4,"{'owl': 0.1429, 'rhubarb': 0.1786, 'goose': 0.1607, 'rooster': 0.125, 'resurrected_items_p': 0.3929}","['falcon', 'cherry', 'apple', 'grapefruit']",0.3929
-45,5,"{'falcon': 0.1154, 'owl': 0.0769, 'rhubarb': 0.3846, 'goose': 0.3846, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.0385, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
-45,6,"{'falcon': 0.069, 'owl': 0.2069, 'rhubarb': 0.3448, 'goose': 0.3103, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.069, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
-45,7,"{'falcon': 0.1389, 'owl': 0.1389, 'rhubarb': 0.2778, 'goose': 0.2778, 'apple': 0.0, 'rooster': 0.0833, 'grapefruit': 0.0, 'resurrected_items_p': 0.0833}",['cherry'],0.0833
-45,8,"{'falcon': 0.2381, 'owl': 0.0714, 'rhubarb': 0.2381, 'goose': 0.1905, 'cherry': 0.0476, 'rooster': 0.1905, 'grapefruit': 0.0, 'resurrected_items_p': 0.0238}",['apple'],0.0238
-45,9,"{'falcon': 0.186, 'owl': 0.186, 'rhubarb': 0.2326, 'goose': 0.1628, 'cherry': 0.0233, 'apple': 0.0, 'rooster': 0.186, 'resurrected_items_p': 0.0233}",['grapefruit'],0.0233
-45,10,"{'falcon': 0.2105, 'owl': 0.1579, 'rhubarb': 0.2632, 'goose': 0.2105, 'cherry': 0.0526, 'apple': 0.0, 'rooster': 0.0789, 'grapefruit': 0.0263, 'resurrected_items_p': 0}",[],0
-45,11,"{'falcon': 0.2, 'owl': 0.225, 'rhubarb': 0.25, 'goose': 0.225, 'cherry': 0.0, 'rooster': 0.075, 'grapefruit': 0.0, 'resurrected_items_p': 0.025}",['apple'],0.025
-45,12,"{'falcon': 0.1628, 'owl': 0.1163, 'rhubarb': 0.2326, 'goose': 0.186, 'apple': 0.0465, 'rooster': 0.186, 'resurrected_items_p': 0.0698}","['cherry', 'grapefruit']",0.0698
-45,13,"{'falcon': 0.2308, 'owl': 0.1026, 'rhubarb': 0.1538, 'goose': 0.2308, 'cherry': 0.0513, 'apple': 0.0513, 'rooster': 0.1795, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
-45,14,"{'falcon': 0.25, 'owl': 0.1429, 'rhubarb': 0.25, 'goose': 0.2857, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.0714, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
-45,15,"{'falcon': 0.4348, 'owl': 0.0435, 'rhubarb': 0.2609, 'goose': 0.2174, 'cherry': 0.0, 'rooster': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0.0435}",['apple'],0.0435
-45,16,"{'falcon': 0.0, 'owl': 0.0, 'rhubarb': 0.875, 'goose': 0.0, 'apple': 0.0, 'rooster': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0.125}",['cherry'],0.125
-46,0,"{'honeydew': 0.1852, 'avocado': 0.1852, 'duck': 0.0185, 'penguin': 0.1667, 'turkey': 0.037, 'oriole': 0.037, 'banana': 0.1852, 'tangerine': 0.1852, 'resurrected_items_p': 0}",[],0
-46,1,"{'honeydew': 0.0714, 'avocado': 0.7143, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.2143, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
-46,2,"{'honeydew': 0.3125, 'avocado': 0.2813, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.0938, 'resurrected_items_p': 0.3125}",['tangerine'],0.3125
-46,3,"{'honeydew': 0.1, 'avocado': 0.4, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.2, 'tangerine': 0.3, 'resurrected_items_p': 0}",[],0
-46,4,"{'honeydew': 0.2, 'avocado': 0.0667, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.5333, 'tangerine': 0.2, 'resurrected_items_p': 0}",[],0
-46,5,"{'honeydew': 0.2593, 'avocado': 0.3333, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.1481, 'tangerine': 0.2593, 'resurrected_items_p': 0}",[],0
-46,6,"{'honeydew': 0.0, 'avocado': 0.0, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.0909, 'tangerine': 0.9091, 'resurrected_items_p': 0}",[],0
-47,0,"{'rhubarb': 0.0323, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.3226, 'prune': 0.3226, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.3226, 'resurrected_items_p': 0}",[],0
-47,1,"{'rhubarb': 0.2273, 'nectarine': 0.2273, 'prune': 0.2273, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2273, 'resurrected_items_p': 0.0909}","['peacock', 'budgie']",0.0909
-47,2,"{'rhubarb': 0.25, 'peacock': 0.0, 'budgie': 0.025, 'nectarine': 0.225, 'prune': 0.25, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.25, 'resurrected_items_p': 0}",[],0
-47,3,"{'rhubarb': 0.1892, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2703, 'prune': 0.2703, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2703, 'resurrected_items_p': 0}",[],0
-47,4,"{'rhubarb': 0.2857, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.0714, 'prune': 0.5, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.1429, 'resurrected_items_p': 0}",[],0
-47,5,"{'rhubarb': 0.2564, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2308, 'prune': 0.2564, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2564, 'resurrected_items_p': 0}",[],0
-47,6,"{'rhubarb': 0.0, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.625, 'prune': 0.375, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+43,3,"{'swan': 0.2571, 'apple': 0.0, 'buzzard': 0.2286, 'dove': 0.2, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.2571, 'resurrected_items_p': 0.0571}",['peach'],0.0571
+43,4,"{'swan': 0.2857, 'peach': 0.0, 'buzzard': 0.2, 'dove': 0.2857, 'lime': 0.0, 'strawberry': 0.0, 'robin': 0.1429, 'resurrected_items_p': 0.0857}",['apple'],0.0857
+43,5,"{'swan': 0.1935, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.2903, 'dove': 0.2581, 'strawberry': 0.0, 'robin': 0.2258, 'resurrected_items_p': 0.0323}",['lime'],0.0323
+43,6,"{'swan': 0.2581, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.2903, 'dove': 0.3226, 'lime': 0.0323, 'strawberry': 0.0, 'robin': 0.0968, 'resurrected_items_p': 0}",[],0
+43,7,"{'swan': 0.0435, 'apple': 0.0, 'peach': 0.0, 'buzzard': 0.087, 'dove': 0.4348, 'lime': 0.0435, 'strawberry': 0.0, 'robin': 0.3913, 'resurrected_items_p': 0}",[],0
+43,8,"{'swan': 0.25, 'apple': 0.0, 'buzzard': 0.25, 'dove': 0.3125, 'lime': 0.0, 'robin': 0.125, 'resurrected_items_p': 0.0624}","['peach', 'strawberry']",0.0624
+43,9,"{'swan': 0.0968, 'peach': 0.0645, 'buzzard': 0.0, 'dove': 0.3226, 'strawberry': 0.0, 'robin': 0.129, 'resurrected_items_p': 0.387}","['apple', 'lime']",0.387
+44,0,"{'pineapple': 0.0385, 'rhubarb': 0.1923, 'woodpecker': 0.1923, 'stork': 0.1923, 'swan': 0.1923, 'orange': 0.0, 'canary': 0.1923, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+44,1,"{'pineapple': 0.0625, 'rhubarb': 0.0625, 'woodpecker': 0.2083, 'stork': 0.2083, 'swan': 0.2083, 'orange': 0.0, 'canary': 0.2083, 'resurrected_items_p': 0.0417}",['cherry'],0.0417
+44,2,"{'pineapple': 0.0962, 'rhubarb': 0.1154, 'woodpecker': 0.1923, 'stork': 0.1731, 'swan': 0.1923, 'orange': 0.0, 'canary': 0.1923, 'cherry': 0.0385, 'resurrected_items_p': 0}",[],0
+44,3,"{'pineapple': 0.0392, 'rhubarb': 0.098, 'woodpecker': 0.1961, 'stork': 0.1961, 'swan': 0.1961, 'canary': 0.1961, 'cherry': 0.0, 'resurrected_items_p': 0.0784}",['orange'],0.0784
+44,4,"{'pineapple': 0.0263, 'rhubarb': 0.0526, 'woodpecker': 0.2632, 'stork': 0.2632, 'swan': 0.2632, 'orange': 0.0526, 'canary': 0.0, 'resurrected_items_p': 0.0789}",['cherry'],0.0789
+44,5,"{'pineapple': 0.0, 'rhubarb': 0.1163, 'woodpecker': 0.2326, 'stork': 0.1628, 'swan': 0.2326, 'orange': 0.0, 'cherry': 0.0233, 'resurrected_items_p': 0.2326}",['canary'],0.2326
+44,6,"{'pineapple': 0.0, 'rhubarb': 0.1852, 'woodpecker': 0.3704, 'stork': 0.0741, 'swan': 0.0, 'canary': 0.0, 'cherry': 0.2222, 'resurrected_items_p': 0.1481}",['orange'],0.1481
+45,0,"{'falcon': 0.1569, 'owl': 0.0, 'rhubarb': 0.1961, 'goose': 0.0, 'cherry': 0.1961, 'apple': 0.1961, 'rooster': 0.0588, 'grapefruit': 0.1961, 'resurrected_items_p': 0}",[],0
+45,1,"{'falcon': 0.0, 'owl': 0.0, 'rhubarb': 0.2222, 'cherry': 0.2222, 'apple': 0.2222, 'rooster': 0.0667, 'grapefruit': 0.2222, 'resurrected_items_p': 0.0444}",['goose'],0.0444
+45,2,"{'rhubarb': 0.3636, 'goose': 0.0, 'cherry': 0.0455, 'apple': 0.0, 'rooster': 0.0, 'grapefruit': 0.2727, 'resurrected_items_p': 0.3182}","['falcon', 'owl']",0.3182
+45,3,"{'falcon': 0.05, 'owl': 0.15, 'rhubarb': 0.5, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.0, 'grapefruit': 0.05, 'resurrected_items_p': 0.25}",['goose'],0.25
+45,4,"{'falcon': 0.0588, 'owl': 0.0, 'rhubarb': 0.2941, 'goose': 0.2941, 'grapefruit': 0.0294, 'resurrected_items_p': 0.3235}","['cherry', 'apple', 'rooster']",0.3235
+45,5,"{'falcon': 0.16, 'rhubarb': 0.4, 'goose': 0.36, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.04, 'grapefruit': 0.0, 'resurrected_items_p': 0.04}",['owl'],0.04
+45,6,"{'falcon': 0.0588, 'owl': 0.1765, 'rhubarb': 0.2941, 'goose': 0.2941, 'apple': 0.0, 'rooster': 0.1471, 'grapefruit': 0.0, 'resurrected_items_p': 0.0294}",['cherry'],0.0294
+45,7,"{'falcon': 0.1, 'owl': 0.0667, 'rhubarb': 0.3333, 'goose': 0.3333, 'cherry': 0.0333, 'apple': 0.0, 'rooster': 0.1, 'resurrected_items_p': 0.0333}",['grapefruit'],0.0333
+45,8,"{'falcon': 0.2727, 'owl': 0.0909, 'rhubarb': 0.1515, 'goose': 0.2424, 'cherry': 0.0606, 'apple': 0.0, 'rooster': 0.1818, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
+45,9,"{'falcon': 0.1389, 'owl': 0.1667, 'rhubarb': 0.2778, 'goose': 0.1944, 'cherry': 0.0, 'rooster': 0.1667, 'grapefruit': 0.0, 'resurrected_items_p': 0.0556}",['apple'],0.0556
+45,10,"{'falcon': 0.1875, 'owl': 0.1875, 'rhubarb': 0.2083, 'goose': 0.2083, 'apple': 0.0208, 'rooster': 0.1667, 'grapefruit': 0.0, 'resurrected_items_p': 0.0208}",['cherry'],0.0208
+45,11,"{'falcon': 0.1351, 'owl': 0.0, 'rhubarb': 0.2703, 'goose': 0.2703, 'cherry': 0.027, 'apple': 0.027, 'rooster': 0.2162, 'resurrected_items_p': 0.0541}",['grapefruit'],0.0541
+45,12,"{'falcon': 0.1212, 'rhubarb': 0.303, 'goose': 0.303, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.2121, 'grapefruit': 0.0, 'resurrected_items_p': 0.0606}",['owl'],0.0606
+45,13,"{'falcon': 0.125, 'owl': 0.175, 'rhubarb': 0.225, 'goose': 0.2, 'rooster': 0.125, 'grapefruit': 0.0, 'resurrected_items_p': 0.15}","['cherry', 'apple']",0.15
+45,14,"{'falcon': 0.0, 'owl': 0.1538, 'rhubarb': 0.4615, 'goose': 0.3846, 'cherry': 0.0, 'apple': 0.0, 'rooster': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
+45,15,"{'owl': 0.0, 'rhubarb': 0.3636, 'goose': 0.2727, 'cherry': 0.0, 'apple': 0.0, 'resurrected_items_p': 0.36369999999999997}","['falcon', 'rooster', 'grapefruit']",0.36369999999999997
+45,16,"{'falcon': 0.0, 'owl': 0.0, 'rhubarb': 0.9091, 'goose': 0.0, 'apple': 0.0, 'rooster': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0.0909}",['cherry'],0.0909
+46,0,"{'honeydew': 0.1887, 'avocado': 0.1887, 'duck': 0.0, 'penguin': 0.1321, 'turkey': 0.1132, 'oriole': 0.0, 'banana': 0.1887, 'tangerine': 0.1887, 'resurrected_items_p': 0}",[],0
+46,1,"{'honeydew': 0.1176, 'avocado': 0.5882, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.2941, 'tangerine': 0.0, 'resurrected_items_p': 0}",[],0
+46,2,"{'honeydew': 0.3571, 'avocado': 0.2143, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.1429, 'resurrected_items_p': 0.2857}",['tangerine'],0.2857
+46,3,"{'honeydew': 0.2667, 'avocado': 0.1333, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.5333, 'tangerine': 0.0667, 'resurrected_items_p': 0}",[],0
+46,4,"{'honeydew': 0.2174, 'avocado': 0.0435, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.4348, 'tangerine': 0.3043, 'resurrected_items_p': 0}",[],0
+46,5,"{'honeydew': 0.3448, 'avocado': 0.3448, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.1034, 'tangerine': 0.1724, 'resurrected_items_p': 0.0345}",['duck'],0.0345
+46,6,"{'honeydew': 0.0, 'avocado': 0.0, 'duck': 0.0, 'penguin': 0.0, 'turkey': 0.0, 'oriole': 0.0, 'banana': 0.4118, 'tangerine': 0.5882, 'resurrected_items_p': 0}",[],0
+47,0,"{'rhubarb': 0.1176, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2941, 'prune': 0.2941, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2941, 'resurrected_items_p': 0}",[],0
+47,1,"{'rhubarb': 0.2326, 'nectarine': 0.2326, 'prune': 0.2326, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2326, 'resurrected_items_p': 0.0698}","['peacock', 'budgie']",0.0698
+47,2,"{'rhubarb': 0.2308, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2564, 'prune': 0.2564, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2564, 'resurrected_items_p': 0}",[],0
+47,3,"{'rhubarb': 0.2432, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2703, 'prune': 0.2703, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2162, 'resurrected_items_p': 0}",[],0
+47,4,"{'rhubarb': 0.0, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.2222, 'prune': 0.4444, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.3333, 'resurrected_items_p': 0}",[],0
+47,5,"{'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.303, 'prune': 0.2424, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.2424, 'resurrected_items_p': 0.2121}",['rhubarb'],0.2121
+47,6,"{'rhubarb': 0.0, 'peacock': 0.0, 'budgie': 0.0, 'nectarine': 0.5263, 'prune': 0.4737, 'falcon': 0.0, 'hawk': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
 48,0,"{'asparagus': 0.0, 'chickadee': 0.1429, 'cucumber': 0.1429, 'starling': 0.1429, 'mushroom': 0.1429, 'buzzard': 0.1429, 'peas': 0.1429, 'crow': 0.1429, 'resurrected_items_p': 0}",[],0
 48,1,"{'asparagus': 0.0, 'chickadee': 0.25, 'cucumber': 0.0, 'starling': 0.25, 'mushroom': 0.0, 'buzzard': 0.25, 'peas': 0.0, 'crow': 0.25, 'resurrected_items_p': 0}",[],0
-48,2,"{'chickadee': 0.1667, 'starling': 0.2083, 'buzzard': 0.2083, 'crow': 0.2083, 'resurrected_items_p': 0.20829999999999999}","['asparagus', 'cucumber', 'mushroom', 'peas']",0.20829999999999999
-48,3,"{'asparagus': 0.0, 'chickadee': 0.1538, 'cucumber': 0.0256, 'starling': 0.2564, 'mushroom': 0.0513, 'buzzard': 0.2564, 'peas': 0.0, 'crow': 0.2564, 'resurrected_items_p': 0}",[],0
-48,4,"{'chickadee': 0.1296, 'cucumber': 0.037, 'starling': 0.1852, 'mushroom': 0.1111, 'buzzard': 0.1852, 'crow': 0.1852, 'resurrected_items_p': 0.1666}","['asparagus', 'peas']",0.1666
-48,5,"{'asparagus': 0.0, 'chickadee': 0.0, 'cucumber': 0.0417, 'starling': 0.0833, 'mushroom': 0.0417, 'buzzard': 0.4167, 'peas': 0.0, 'crow': 0.4167, 'resurrected_items_p': 0}",[],0
-50,0,"{'rooster': 0.2439, 'duck': 0.2439, 'pickle': 0.0, 'parakeet': 0.2439, 'crow': 0.2439, 'cucumber': 0.0244, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
+48,2,"{'chickadee': 0.125, 'starling': 0.1786, 'buzzard': 0.1786, 'crow': 0.1786, 'resurrected_items_p': 0.33930000000000005}","['asparagus', 'cucumber', 'mushroom', 'peas']",0.33930000000000005
+48,3,"{'asparagus': 0.0, 'chickadee': 0.0488, 'cucumber': 0.0732, 'starling': 0.2195, 'mushroom': 0.2195, 'buzzard': 0.1707, 'peas': 0.0244, 'crow': 0.2439, 'resurrected_items_p': 0}",[],0
+48,4,"{'chickadee': 0.1404, 'cucumber': 0.0702, 'starling': 0.1754, 'mushroom': 0.1228, 'buzzard': 0.1754, 'peas': 0.0, 'crow': 0.1754, 'resurrected_items_p': 0.1404}",['asparagus'],0.1404
+48,5,"{'asparagus': 0.0714, 'chickadee': 0.0, 'cucumber': 0.1786, 'starling': 0.0, 'mushroom': 0.0, 'buzzard': 0.3571, 'crow': 0.3571, 'resurrected_items_p': 0.0357}",['peas'],0.0357
+49,0,"{'blackbird': 0.25, 'budgie': 0.25, 'buzzard': 0.25, 'mushroom': 0.0, 'potato': 0.0, 'cauliflower': 0.0, 'chicken': 0.25, 'cucumber': 0.0, 'resurrected_items_p': 0}",[],0
+49,1,"{'blackbird': 0.25, 'budgie': 0.25, 'buzzard': 0.25, 'mushroom': 0.0, 'potato': 0.0, 'cauliflower': 0.0, 'chicken': 0.25, 'cucumber': 0.0, 'resurrected_items_p': 0}",[],0
+49,2,"{'blackbird': 0.25, 'budgie': 0.25, 'buzzard': 0.25, 'mushroom': 0.0, 'potato': 0.0, 'cauliflower': 0.0, 'chicken': 0.25, 'cucumber': 0.0, 'resurrected_items_p': 0}",[],0
+49,3,"{'blackbird': 0.7143, 'budgie': 0.0714, 'buzzard': 0.0, 'mushroom': 0.0, 'potato': 0.0, 'cauliflower': 0.0, 'chicken': 0.2143, 'cucumber': 0.0, 'resurrected_items_p': 0}",[],0
+50,0,"{'rooster': 0.25, 'duck': 0.25, 'pickle': 0.0, 'parakeet': 0.25, 'crow': 0.25, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
 50,1,"{'rooster': 0.25, 'duck': 0.25, 'pickle': 0.0, 'parakeet': 0.25, 'crow': 0.25, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
 50,2,"{'rooster': 0.25, 'duck': 0.25, 'pickle': 0.0, 'parakeet': 0.25, 'crow': 0.25, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
 50,3,"{'rooster': 0.25, 'duck': 0.25, 'pickle': 0.0, 'parakeet': 0.25, 'crow': 0.25, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
-50,4,"{'rooster': 0.0, 'duck': 0.36, 'pickle': 0.0, 'parakeet': 0.36, 'crow': 0.28, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
-50,5,"{'duck': 0.2414, 'pickle': 0.0, 'parakeet': 0.3448, 'crow': 0.3103, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0.1034}",['rooster'],0.1034
-50,6,"{'rooster': 0.0, 'duck': 0.3, 'pickle': 0.0, 'parakeet': 0.5, 'crow': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0.2}",['cucumber'],0.2
-51,0,"{'duck': 0.0, 'mushroom': 0.1754, 'peas': 0.1754, 'pheasant': 0.1754, 'potato': 0.1754, 'emu': 0.1053, 'canary': 0.0175, 'onions': 0.1754, 'resurrected_items_p': 0}",[],0
-51,1,"{'mushroom': 0.1562, 'peas': 0.1562, 'pheasant': 0.125, 'potato': 0.1562, 'emu': 0.0938, 'canary': 0.0313, 'onions': 0.1562, 'resurrected_items_p': 0.125}",['duck'],0.125
-51,2,"{'duck': 0.0, 'mushroom': 0.2564, 'peas': 0.2564, 'pheasant': 0.0, 'potato': 0.2564, 'emu': 0.0, 'canary': 0.0, 'onions': 0.2308, 'resurrected_items_p': 0}",[],0
-51,3,"{'mushroom': 0.15, 'peas': 0.1667, 'potato': 0.1333, 'onions': 0.15, 'resurrected_items_p': 0.4}","['duck', 'pheasant', 'emu', 'canary']",0.4
-51,4,"{'duck': 0.0526, 'mushroom': 0.0, 'peas': 0.1316, 'pheasant': 0.0, 'potato': 0.2368, 'emu': 0.1579, 'canary': 0.1579, 'onions': 0.2632, 'resurrected_items_p': 0}",[],0
-51,5,"{'duck': 0.0, 'peas': 0.2273, 'potato': 0.2273, 'emu': 0.0682, 'canary': 0.0455, 'onions': 0.2273, 'resurrected_items_p': 0.2045}","['mushroom', 'pheasant']",0.2045
+50,4,"{'rooster': 0.0, 'duck': 0.3571, 'pickle': 0.0, 'parakeet': 0.3571, 'crow': 0.2857, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
+50,5,"{'rooster': 0.0, 'duck': 0.2857, 'pickle': 0.0, 'parakeet': 0.3571, 'crow': 0.3571, 'cucumber': 0.0, 'onions': 0.0, 'beets': 0.0, 'resurrected_items_p': 0}",[],0
+50,6,"{'rooster': 0.0, 'duck': 0.2778, 'pickle': 0.0, 'parakeet': 0.5556, 'crow': 0.0, 'onions': 0.0, 'resurrected_items_p': 0.16670000000000001}","['cucumber', 'beets']",0.16670000000000001
+51,0,"{'duck': 0.0, 'mushroom': 0.1587, 'peas': 0.1587, 'pheasant': 0.1587, 'potato': 0.1587, 'emu': 0.127, 'canary': 0.0794, 'onions': 0.1587, 'resurrected_items_p': 0}",[],0
+51,1,"{'mushroom': 0.1852, 'peas': 0.1852, 'pheasant': 0.037, 'potato': 0.1852, 'emu': 0.0556, 'canary': 0.0556, 'onions': 0.1852, 'resurrected_items_p': 0.1111}",['duck'],0.1111
+51,2,"{'duck': 0.02, 'mushroom': 0.2, 'peas': 0.2, 'pheasant': 0.04, 'potato': 0.2, 'emu': 0.16, 'canary': 0.0, 'onions': 0.18, 'resurrected_items_p': 0}",[],0
+51,3,"{'duck': 0.0, 'mushroom': 0.2, 'peas': 0.18, 'pheasant': 0.0, 'potato': 0.14, 'emu': 0.18, 'onions': 0.18, 'resurrected_items_p': 0.12}",['canary'],0.12
+51,4,"{'mushroom': 0.0238, 'peas': 0.1667, 'potato': 0.2143, 'emu': 0.1429, 'canary': 0.0714, 'onions': 0.2381, 'resurrected_items_p': 0.14279999999999998}","['duck', 'pheasant']",0.14279999999999998
+51,5,"{'duck': 0.0, 'mushroom': 0.2353, 'peas': 0.1471, 'pheasant': 0.0, 'potato': 0.2941, 'emu': 0.0294, 'canary': 0.0, 'onions': 0.2941, 'resurrected_items_p': 0}",[],0
 51,6,"{'duck': 0.0, 'mushroom': 0.0, 'peas': 0.0, 'pheasant': 0.0, 'potato': 1.0, 'emu': 0.0, 'canary': 0.0, 'onions': 0.0, 'resurrected_items_p': 0}",[],0
-52,0,"{'robin': 0.0, 'peas': 0.2381, 'crow': 0.0, 'peacock': 0.0476, 'tomato': 0.2381, 'parsley': 0.2381, 'corn': 0.2381, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
-52,1,"{'peas': 0.2083, 'crow': 0.0, 'peacock': 0.0208, 'tomato': 0.2083, 'parsley': 0.2083, 'corn': 0.2083, 'pelican': 0.0, 'resurrected_items_p': 0.1458}",['robin'],0.1458
-52,2,"{'robin': 0.1765, 'peas': 0.2059, 'crow': 0.0, 'peacock': 0.0, 'tomato': 0.2941, 'parsley': 0.0294, 'corn': 0.2941, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
-52,3,"{'robin': 0.0333, 'peas': 0.3333, 'crow': 0.0, 'peacock': 0.0, 'tomato': 0.0667, 'parsley': 0.2333, 'corn': 0.3333, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
-52,4,"{'robin': 0.0, 'peas': 0.2581, 'crow': 0.0, 'tomato': 0.0968, 'parsley': 0.129, 'corn': 0.3226, 'resurrected_items_p': 0.1936}","['peacock', 'pelican']",0.1936
+52,0,"{'robin': 0.0, 'peas': 0.25, 'crow': 0.0, 'peacock': 0.0, 'tomato': 0.25, 'parsley': 0.25, 'corn': 0.25, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+52,1,"{'peas': 0.1923, 'crow': 0.0, 'tomato': 0.1923, 'parsley': 0.1923, 'corn': 0.1923, 'resurrected_items_p': 0.2307}","['robin', 'peacock', 'pelican']",0.2307
+52,2,"{'robin': 0.0556, 'peas': 0.25, 'crow': 0.0, 'peacock': 0.0278, 'tomato': 0.2222, 'parsley': 0.1667, 'corn': 0.2778, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+52,3,"{'robin': 0.0312, 'peas': 0.3125, 'crow': 0.0, 'peacock': 0.0312, 'tomato': 0.0937, 'parsley': 0.2187, 'corn': 0.3125, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+52,4,"{'robin': 0.0, 'peas': 0.2941, 'crow': 0.0, 'peacock': 0.2059, 'tomato': 0.2059, 'parsley': 0.0, 'corn': 0.2941, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
 52,5,"{'robin': 0.0, 'peas': 0.0, 'crow': 0.0, 'peacock': 0.0, 'tomato': 0.0, 'parsley': 0.0, 'corn': 1.0, 'pelican': 0.0, 'resurrected_items_p': 0}",[],0
+53,0,"{'blackbird': 0.0, 'owl': 0.0, 'sparrow': 0.0, 'avocado': 0.25, 'pumpkin': 0.25, 'onions': 0.25, 'hawk': 0.0, 'potato': 0.25, 'resurrected_items_p': 0}",[],0
+53,1,"{'blackbird': 0.0, 'sparrow': 0.0, 'avocado': 0.3226, 'pumpkin': 0.3226, 'onions': 0.0323, 'hawk': 0.0, 'potato': 0.2581, 'resurrected_items_p': 0.0645}",['owl'],0.0645
+53,2,"{'blackbird': 0.0, 'owl': 0.0, 'sparrow': 0.0, 'avocado': 0.4762, 'pumpkin': 0.4762, 'onions': 0.0476, 'hawk': 0.0, 'potato': 0.0, 'resurrected_items_p': 0}",[],0
+53,3,"{'blackbird': 0.0, 'owl': 0.0, 'sparrow': 0.0, 'avocado': 0.3846, 'pumpkin': 0.3077, 'onions': 0.2308, 'hawk': 0.0, 'resurrected_items_p': 0.0769}",['potato'],0.0769
+53,4,"{'blackbird': 0.0, 'owl': 0.0, 'sparrow': 0.0, 'avocado': 1.0, 'pumpkin': 0.0, 'onions': 0.0, 'hawk': 0.0, 'potato': 0.0, 'resurrected_items_p': 0}",[],0
+54,0,"{'blouse': 0.25, 'camisole': 0.25, 'tomahawk': 0.0, 'crowbar': 0.0, 'gown': 0.25, 'spear': 0.0, 'harpoon': 0.0, 'cape': 0.25, 'resurrected_items_p': 0}",[],0
+54,1,"{'blouse': 0.0, 'camisole': 0.0, 'gown': 0.1538, 'cape': 0.0769, 'resurrected_items_p': 0.7692}","['tomahawk', 'crowbar', 'spear', 'harpoon']",0.7692
+54,2,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.1429, 'crowbar': 0.5, 'gown': 0.0, 'spear': 0.3571, 'harpoon': 0.0, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+54,3,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.0, 'crowbar': 0.0, 'gown': 0.0, 'spear': 0.0, 'harpoon': 0.0, 'resurrected_items_p': 1.0}",['cape'],1.0
+54,4,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.0, 'gown': 0.0, 'spear': 0.0, 'harpoon': 0.0, 'cape': 0.25, 'resurrected_items_p': 0.75}",['crowbar'],0.75
+54,5,"{'blouse': 0.0, 'camisole': 0.0, 'crowbar': 0.0, 'gown': 0.0, 'spear': 0.0, 'harpoon': 0.0, 'cape': 0.0, 'resurrected_items_p': 1.0}",['tomahawk'],1.0
+54,6,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.1538, 'gown': 0.0, 'harpoon': 0.0, 'cape': 0.0, 'resurrected_items_p': 0.8461}","['crowbar', 'spear']",0.8461
+54,7,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.2857, 'crowbar': 0.2857, 'gown': 0.0, 'spear': 0.1429, 'harpoon': 0.0, 'resurrected_items_p': 0.2857}",['cape'],0.2857
+54,8,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.25, 'crowbar': 0.25, 'gown': 0.0, 'spear': 0.0, 'cape': 0.0, 'resurrected_items_p': 0.5}",['harpoon'],0.5
+54,9,"{'camisole': 0.0, 'tomahawk': 0.1667, 'crowbar': 0.3333, 'gown': 0.0, 'spear': 0.0, 'harpoon': 0.1667, 'resurrected_items_p': 0.3333}","['blouse', 'cape']",0.3333
+54,10,"{'blouse': 0.0, 'tomahawk': 0.2143, 'crowbar': 0.2857, 'gown': 0.0, 'harpoon': 0.1429, 'cape': 0.0714, 'resurrected_items_p': 0.2858}","['camisole', 'spear']",0.2858
+54,11,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.125, 'crowbar': 0.175, 'spear': 0.125, 'harpoon': 0.075, 'cape': 0.25, 'resurrected_items_p': 0.25}",['gown'],0.25
+54,12,"{'blouse': 0.0, 'camisole': 0.0, 'tomahawk': 0.0, 'crowbar': 0.25, 'gown': 0.125, 'spear': 0.0, 'harpoon': 0.0, 'cape': 0.625, 'resurrected_items_p': 0}",[],0
+55,0,"{'bazooka': 0.0, 'trousers': 0.2564, 'shield': 0.0, 'whip': 0.0, 'boots': 0.2308, 'crowbar': 0.0, 'pants': 0.2564, 'cape': 0.2564, 'resurrected_items_p': 0}",[],0
+55,1,"{'trousers': 0.1364, 'boots': 0.1364, 'crowbar': 0.0, 'pants': 0.3182, 'cape': 0.0, 'resurrected_items_p': 0.4092}","['bazooka', 'shield', 'whip']",0.4092
+55,2,"{'bazooka': 0.1562, 'trousers': 0.0, 'shield': 0.2813, 'whip': 0.0, 'boots': 0.3125, 'pants': 0.0, 'resurrected_items_p': 0.25}","['crowbar', 'cape']",0.25
+55,3,"{'bazooka': 0.2941, 'trousers': 0.0, 'shield': 0.2941, 'boots': 0.0, 'crowbar': 0.2353, 'pants': 0.0, 'cape': 0.0, 'resurrected_items_p': 0.1765}",['whip'],0.1765
+55,4,"{'bazooka': 0.1837, 'trousers': 0.0, 'shield': 0.2041, 'whip': 0.2041, 'boots': 0.0, 'crowbar': 0.2041, 'resurrected_items_p': 0.2041}","['pants', 'cape']",0.2041
+55,5,"{'bazooka': 0.1538, 'shield': 0.1923, 'whip': 0.1923, 'boots': 0.0, 'crowbar': 0.1923, 'pants': 0.0385, 'cape': 0.1923, 'resurrected_items_p': 0.0385}",['trousers'],0.0385
+55,6,"{'bazooka': 0.0426, 'trousers': 0.1277, 'shield': 0.2128, 'whip': 0.1702, 'boots': 0.0, 'crowbar': 0.1064, 'pants': 0.1277, 'cape': 0.2128, 'resurrected_items_p': 0}",[],0
+55,7,"{'bazooka': 0.0952, 'trousers': 0.0952, 'shield': 0.1429, 'whip': 0.1667, 'boots': 0.0, 'crowbar': 0.1429, 'pants': 0.119, 'cape': 0.2381, 'resurrected_items_p': 0}",[],0
+55,8,"{'bazooka': 0.0588, 'trousers': 0.1176, 'shield': 0.1961, 'whip': 0.1569, 'boots': 0.0, 'crowbar': 0.1569, 'pants': 0.1176, 'cape': 0.1961, 'resurrected_items_p': 0}",[],0
+55,9,"{'bazooka': 0.1, 'trousers': 0.08, 'shield': 0.2, 'whip': 0.14, 'boots': 0.0, 'crowbar': 0.18, 'pants': 0.1, 'cape': 0.2, 'resurrected_items_p': 0}",[],0
+55,10,"{'bazooka': 0.1515, 'trousers': 0.1212, 'shield': 0.1515, 'whip': 0.1515, 'boots': 0.0, 'crowbar': 0.1364, 'pants': 0.1364, 'cape': 0.1515, 'resurrected_items_p': 0}",[],0
+55,11,"{'bazooka': 0.0909, 'trousers': 0.0, 'shield': 0.0, 'whip': 0.0, 'boots': 0.0, 'crowbar': 0.0, 'pants': 0.0, 'cape': 0.9091, 'resurrected_items_p': 0}",[],0
+56,0,"{'trousers': 0.1429, 'tomahawk': 0.1429, 'bazooka': 0.1429, 'camisole': 0.1429, 'cloak': 0.1429, 'catapult': 0.1429, 'robe': 0.1429, 'bomb': 0.0, 'resurrected_items_p': 0}",[],0
+56,1,"{'trousers': 0.2041, 'tomahawk': 0.1224, 'bazooka': 0.0204, 'camisole': 0.2041, 'cloak': 0.2041, 'catapult': 0.0204, 'robe': 0.2041, 'resurrected_items_p': 0.0204}",['bomb'],0.0204
+56,2,"{'trousers': 0.3333, 'tomahawk': 0.1333, 'bazooka': 0.1, 'camisole': 0.0, 'cloak': 0.0, 'catapult': 0.3333, 'robe': 0.1, 'bomb': 0.0, 'resurrected_items_p': 0}",[],0
+56,3,"{'trousers': 0.1961, 'tomahawk': 0.1961, 'bazooka': 0.0, 'catapult': 0.1373, 'robe': 0.1569, 'resurrected_items_p': 0.3137}","['camisole', 'cloak', 'bomb']",0.3137
+56,4,"{'trousers': 0.25, 'tomahawk': 0.1, 'bazooka': 0.0, 'camisole': 0.0, 'cloak': 0.2, 'catapult': 0.075, 'robe': 0.25, 'bomb': 0.125, 'resurrected_items_p': 0}",[],0
+56,5,"{'trousers': 0.9091, 'tomahawk': 0.0, 'bazooka': 0.0, 'camisole': 0.0, 'cloak': 0.0, 'catapult': 0.0, 'robe': 0.0, 'bomb': 0.0909, 'resurrected_items_p': 0}",[],0
+57,0,"{'axe': 0.2381, 'trousers': 0.0, 'grenade': 0.2381, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.2381, 'stone': 0.2381, 'cape': 0.0476, 'resurrected_items_p': 0}",[],0
+57,1,"{'axe': 0.2326, 'trousers': 0.0, 'grenade': 0.2326, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.2326, 'stone': 0.2326, 'cape': 0.0698, 'resurrected_items_p': 0}",[],0
+57,2,"{'axe': 0.0645, 'trousers': 0.0, 'grenade': 0.3226, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.3226, 'stone': 0.2903, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+57,3,"{'axe': 0.2353, 'trousers': 0.0, 'grenade': 0.2647, 'pants': 0.0, 'revolver': 0.2647, 'stone': 0.0294, 'resurrected_items_p': 0.2059}","['boots', 'cape']",0.2059
+57,4,"{'axe': 0.2105, 'trousers': 0.0, 'grenade': 0.2632, 'boots': 0.0263, 'pants': 0.0, 'revolver': 0.2632, 'stone': 0.2368, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+57,5,"{'axe': 0.1842, 'trousers': 0.0, 'grenade': 0.2632, 'boots': 0.0, 'revolver': 0.2632, 'stone': 0.2632, 'cape': 0.0, 'resurrected_items_p': 0.0263}",['pants'],0.0263
+57,6,"{'axe': 0.0625, 'trousers': 0.0, 'grenade': 0.3125, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.3125, 'stone': 0.3125, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+57,7,"{'axe': 0.0, 'trousers': 0.0, 'grenade': 0.4348, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.4348, 'stone': 0.1304, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+57,8,"{'axe': 0.0, 'trousers': 0.0, 'grenade': 0.3571, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.3571, 'stone': 0.2857, 'cape': 0.0, 'resurrected_items_p': 0}",[],0
+57,9,"{'trousers': 0.0, 'grenade': 0.4545, 'boots': 0.0, 'pants': 0.0, 'revolver': 0.0455, 'stone': 0.4545, 'cape': 0.0, 'resurrected_items_p': 0.0455}",['axe'],0.0455
+57,10,"{'axe': 0.0, 'grenade': 0.5, 'boots': 0.0, 'revolver': 0.0, 'stone': 0.35, 'cape': 0.0, 'resurrected_items_p': 0.15000000000000002}","['trousers', 'pants']",0.15000000000000002
+58,0,"{'pants': 0.0, 'robe': 0.0, 'trousers': 0.0, 'stick': 0.25, 'spear': 0.25, 'camisole': 0.0, 'catapult': 0.25, 'cannon': 0.25, 'resurrected_items_p': 0}",[],0
+58,1,"{'pants': 0.0, 'robe': 0.0, 'trousers': 0.0, 'stick': 0.25, 'spear': 0.25, 'camisole': 0.0, 'catapult': 0.25, 'cannon': 0.25, 'resurrected_items_p': 0}",[],0
+58,2,"{'pants': 0.0, 'robe': 0.0, 'trousers': 0.0, 'stick': 0.25, 'spear': 0.25, 'camisole': 0.0, 'catapult': 0.25, 'cannon': 0.25, 'resurrected_items_p': 0}",[],0
+58,3,"{'pants': 0.0, 'robe': 0.0, 'trousers': 0.0, 'stick': 0.25, 'spear': 0.25, 'camisole': 0.0, 'catapult': 0.25, 'cannon': 0.25, 'resurrected_items_p': 0}",[],0
+58,4,"{'pants': 0.0, 'trousers': 0.0, 'stick': 0.25, 'spear': 0.1875, 'camisole': 0.0, 'catapult': 0.0625, 'cannon': 0.375, 'resurrected_items_p': 0.125}",['robe'],0.125
+58,5,"{'pants': 0.0, 'robe': 0.0, 'trousers': 0.0, 'stick': 0.3478, 'spear': 0.4348, 'camisole': 0.0, 'catapult': 0.0, 'cannon': 0.2174, 'resurrected_items_p': 0}",[],0
+58,6,"{'pants': 0.0, 'trousers': 0.0, 'stick': 0.1842, 'spear': 0.2632, 'cannon': 0.0, 'resurrected_items_p': 0.5526}","['robe', 'camisole', 'catapult']",0.5526
+59,0,"{'bra': 0.0, 'belt': 0.0, 'bomb': 0.25, 'tie': 0.0, 'missile': 0.25, 'rocket': 0.25, 'shoes': 0.0, 'stone': 0.25, 'resurrected_items_p': 0}",[],0
+59,1,"{'bra': 0.0, 'belt': 0.0, 'bomb': 0.25, 'tie': 0.0, 'missile': 0.25, 'rocket': 0.25, 'shoes': 0.0, 'stone': 0.25, 'resurrected_items_p': 0}",[],0
+59,2,"{'bra': 0.0, 'bomb': 0.2273, 'tie': 0.0, 'missile': 0.2273, 'rocket': 0.2273, 'shoes': 0.0, 'stone': 0.2273, 'resurrected_items_p': 0.0909}",['belt'],0.0909
+59,3,"{'bra': 0.0, 'belt': 0.0, 'bomb': 0.3125, 'tie': 0.0, 'missile': 0.3125, 'rocket': 0.3125, 'shoes': 0.0, 'stone': 0.0625, 'resurrected_items_p': 0}",[],0
+60,0,"{'cloak': 0.25, 'raisin': 0.0, 'jacket': 0.25, 'pumpkin': 0.0, 'cape': 0.25, 'swimsuit': 0.25, 'prune': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
+60,1,"{'cloak': 0.0, 'jacket': 0.0, 'cape': 0.1111, 'swimsuit': 0.1333, 'resurrected_items_p': 0.7555000000000001}","['raisin', 'pumpkin', 'prune', 'grapefruit']",0.7555000000000001
+60,2,"{'raisin': 0.0, 'pumpkin': 0.0238, 'cape': 0.2381, 'swimsuit': 0.2381, 'prune': 0.0238, 'grapefruit': 0.0, 'resurrected_items_p': 0.4762}","['cloak', 'jacket']",0.4762
+60,3,"{'cloak': 0.1111, 'jacket': 0.0, 'pumpkin': 0.0556, 'cape': 0.5556, 'swimsuit': 0.0556, 'prune': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0.2222}",['raisin'],0.2222
+60,4,"{'cloak': 0.1346, 'raisin': 0.1154, 'pumpkin': 0.0385, 'cape': 0.1923, 'swimsuit': 0.1731, 'resurrected_items_p': 0.34609999999999996}","['jacket', 'prune', 'grapefruit']",0.34609999999999996
+60,5,"{'cloak': 0.0, 'raisin': 0.1923, 'jacket': 0.0, 'pumpkin': 0.0385, 'cape': 0.2692, 'swimsuit': 0.3846, 'prune': 0.0769, 'grapefruit': 0.0385, 'resurrected_items_p': 0}",[],0
+60,6,"{'cloak': 0.0, 'raisin': 0.0, 'jacket': 0.0, 'pumpkin': 0.0, 'cape': 0.0, 'swimsuit': 1.0, 'prune': 0.0, 'grapefruit': 0.0, 'resurrected_items_p': 0}",[],0
+61,0,"{'camisole': 0.25, 'pants': 0.25, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.25, 'trousers': 0.25, 'pumpkin': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,1,"{'camisole': 0.0, 'pants': 0.2308, 'rhubarb': 0.0, 'pajamas': 0.0, 'trousers': 0.0, 'resurrected_items_p': 0.7693}","['grapefruit', 'pumpkin', 'tomato']",0.7693
+61,2,"{'pants': 0.2083, 'rhubarb': 0.0, 'grapefruit': 0.0417, 'pumpkin': 0.125, 'tomato': 0.0, 'resurrected_items_p': 0.6249}","['camisole', 'pajamas', 'trousers']",0.6249
+61,3,"{'camisole': 0.2381, 'pants': 0.2381, 'rhubarb': 0.0, 'grapefruit': 0.0476, 'pajamas': 0.2381, 'trousers': 0.2381, 'pumpkin': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,4,"{'camisole': 0.0, 'pants': 0.3103, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.3448, 'trousers': 0.3103, 'tomato': 0.0, 'resurrected_items_p': 0.0345}",['pumpkin'],0.0345
+61,5,"{'camisole': 0.0, 'pants': 0.3125, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.3125, 'trousers': 0.3125, 'pumpkin': 0.0, 'resurrected_items_p': 0.0625}",['tomato'],0.0625
+61,6,"{'pants': 0.2632, 'rhubarb': 0.0, 'pajamas': 0.2105, 'trousers': 0.2632, 'tomato': 0.0, 'resurrected_items_p': 0.2631}","['camisole', 'grapefruit', 'pumpkin']",0.2631
+61,7,"{'camisole': 0.1515, 'pants': 0.2727, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.303, 'trousers': 0.2121, 'pumpkin': 0.0606, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,8,"{'camisole': 0.0882, 'pants': 0.2647, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.2647, 'trousers': 0.2059, 'pumpkin': 0.1765, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,9,"{'camisole': 0.119, 'pants': 0.2381, 'rhubarb': 0.0, 'pajamas': 0.2381, 'trousers': 0.2381, 'pumpkin': 0.1429, 'tomato': 0.0, 'resurrected_items_p': 0.0238}",['grapefruit'],0.0238
+61,10,"{'camisole': 0.1707, 'pants': 0.2439, 'rhubarb': 0.0, 'grapefruit': 0.0244, 'pajamas': 0.1707, 'trousers': 0.2439, 'pumpkin': 0.1463, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,11,"{'camisole': 0.0571, 'pants': 0.2857, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.2286, 'trousers': 0.2857, 'pumpkin': 0.1429, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,12,"{'camisole': 0.0, 'pants': 0.3125, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.3125, 'trousers': 0.3125, 'pumpkin': 0.0625, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,13,"{'camisole': 0.0, 'pants': 0.3333, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.3333, 'trousers': 0.3333, 'pumpkin': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+61,14,"{'camisole': 0.0, 'pants': 0.3125, 'rhubarb': 0.0, 'pajamas': 0.3125, 'trousers': 0.3125, 'pumpkin': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0.0625}",['grapefruit'],0.0625
+61,15,"{'camisole': 0.0, 'pants': 0.4545, 'rhubarb': 0.0, 'grapefruit': 0.0, 'pajamas': 0.0909, 'trousers': 0.4545, 'pumpkin': 0.0, 'tomato': 0.0, 'resurrected_items_p': 0}",[],0
+62,0,"{'avocado': 0.0, 'honeydew': 0.0, 'bra': 0.25, 'socks': 0.25, 'cantaloupe': 0.0, 'pear': 0.0, 'cloak': 0.25, 'coat': 0.25, 'resurrected_items_p': 0}",[],0
+62,1,"{'bra': 0.0, 'socks': 0.303, 'cloak': 0.1818, 'coat': 0.0, 'resurrected_items_p': 0.5151}","['avocado', 'honeydew', 'cantaloupe', 'pear']",0.5151
+62,2,"{'avocado': 0.2143, 'honeydew': 0.2143, 'bra': 0.0, 'socks': 0.2381, 'cantaloupe': 0.1667, 'pear': 0.1667, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0}",[],0
+62,3,"{'avocado': 0.2941, 'honeydew': 0.0882, 'bra': 0.0, 'socks': 0.0588, 'cantaloupe': 0.2647, 'pear': 0.2647, 'coat': 0.0, 'resurrected_items_p': 0.0294}",['cloak'],0.0294
+62,4,"{'avocado': 0.0, 'honeydew': 0.0, 'bra': 0.0, 'socks': 1.0, 'cantaloupe': 0.0, 'pear': 0.0, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0}",[],0
+62,5,"{'bra': 0.0, 'socks': 0.7143, 'cantaloupe': 0.0, 'pear': 0.0, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0.2857}","['avocado', 'honeydew']",0.2857
+62,6,"{'avocado': 0.75, 'honeydew': 0.125, 'bra': 0.0, 'socks': 0.125, 'cantaloupe': 0.0, 'pear': 0.0, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0}",[],0
+62,7,"{'avocado': 0.3, 'honeydew': 0.0, 'bra': 0.0, 'socks': 0.7, 'cantaloupe': 0.0, 'pear': 0.0, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0}",[],0
+62,8,"{'avocado': 0.0, 'honeydew': 0.0, 'bra': 0.0, 'socks': 0.6667, 'cantaloupe': 0.0, 'cloak': 0.0, 'coat': 0.0, 'resurrected_items_p': 0.3333}",['pear'],0.3333
+63,0,"{'cranberry': 0.2439, 'pants': 0.0, 'boots': 0.0244, 'apple': 0.2439, 'pumpkin': 0.2439, 'plum': 0.2439, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0}",[],0
+63,1,"{'cranberry': 0.3226, 'pants': 0.0, 'boots': 0.0, 'apple': 0.3226, 'pumpkin': 0.0323, 'plum': 0.3226, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0}",[],0
+63,2,"{'cranberry': 0.3333, 'pants': 0.0, 'boots': 0.0, 'apple': 0.3333, 'pumpkin': 0.0, 'plum': 0.3333, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0}",[],0
+63,3,"{'cranberry': 0.25, 'pants': 0.0, 'boots': 0.0, 'apple': 0.3125, 'plum': 0.3125, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0.125}",['pumpkin'],0.125
+63,4,"{'cranberry': 0.0, 'pants': 0.0, 'boots': 0.0, 'apple': 0.3448, 'pumpkin': 0.3103, 'plum': 0.3448, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0}",[],0
+63,5,"{'cranberry': 0.0, 'pants': 0.0, 'boots': 0.0, 'apple': 0.4545, 'pumpkin': 0.0455, 'plum': 0.4545, 'trousers': 0.0, 'resurrected_items_p': 0.0455}",['bra'],0.0455
+63,6,"{'pants': 0.0, 'boots': 0.0, 'apple': 0.7692, 'pumpkin': 0.0, 'plum': 0.0, 'trousers': 0.0, 'bra': 0.0, 'resurrected_items_p': 0.2308}",['cranberry'],0.2308
+64,0,"{'coconut': 0.25, 'cherry': 0.25, 'robe': 0.0, 'scarf': 0.0, 'peach': 0.25, 'skirt': 0.0, 'cranberry': 0.25, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
+64,1,"{'coconut': 0.2381, 'cherry': 0.2381, 'robe': 0.0, 'peach': 0.2381, 'skirt': 0.0, 'cranberry': 0.2381, 'shoes': 0.0, 'resurrected_items_p': 0.0476}",['scarf'],0.0476
+64,2,"{'coconut': 0.25, 'cherry': 0.25, 'robe': 0.0, 'scarf': 0.0, 'peach': 0.25, 'skirt': 0.0, 'cranberry': 0.25, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
+64,3,"{'coconut': 0.0, 'cherry': 0.3333, 'robe': 0.0, 'scarf': 0.0, 'peach': 0.3333, 'skirt': 0.0, 'cranberry': 0.3333, 'shoes': 0.0, 'resurrected_items_p': 0}",[],0
+64,4,"{'cherry': 0.4167, 'robe': 0.0, 'scarf': 0.0, 'peach': 0.2083, 'skirt': 0.0, 'cranberry': 0.2917, 'shoes': 0.0, 'resurrected_items_p': 0.0833}",['coconut'],0.0833
+64,5,"{'coconut': 0.0909, 'cherry': 0.4545, 'scarf': 0.0, 'peach': 0.1364, 'cranberry': 0.1818, 'shoes': 0.0, 'resurrected_items_p': 0.1364}","['robe', 'skirt']",0.1364
+65,0,"{'coconut': 0.25, 'strawberry': 0.25, 'belt': 0.0, 'pear': 0.25, 'tie': 0.0, 'raisin': 0.25, 'skirt': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0}",[],0
+65,1,"{'coconut': 0.25, 'strawberry': 0.25, 'belt': 0.0, 'pear': 0.25, 'tie': 0.0, 'raisin': 0.25, 'skirt': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0}",[],0
+65,2,"{'coconut': 0.1, 'strawberry': 0.0, 'belt': 0.0, 'pear': 0.7, 'raisin': 0.0, 'skirt': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0.2}",['tie'],0.2
+65,3,"{'coconut': 0.0, 'belt': 0.0, 'pear': 0.75, 'tie': 0.0, 'raisin': 0.0, 'skirt': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0.25}",['strawberry'],0.25
+65,4,"{'strawberry': 0.12, 'belt': 0.0, 'pear': 0.4, 'tie': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0.48}","['coconut', 'raisin', 'skirt']",0.48
+65,5,"{'coconut': 0.12, 'strawberry': 0.28, 'pear': 0.36, 'tie': 0.0, 'raisin': 0.2, 'skirt': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0.04}",['belt'],0.04
+65,6,"{'coconut': 0.2195, 'strawberry': 0.1707, 'belt': 0.0, 'pear': 0.2439, 'raisin': 0.2195, 'mittens': 0.0, 'resurrected_items_p': 0.1464}","['tie', 'skirt']",0.1464
+65,7,"{'coconut': 0.1837, 'strawberry': 0.1837, 'pear': 0.2041, 'tie': 0.1224, 'raisin': 0.2041, 'skirt': 0.0204, 'resurrected_items_p': 0.0816}","['belt', 'mittens']",0.0816
+65,8,"{'coconut': 0.2326, 'strawberry': 0.093, 'belt': 0.186, 'pear': 0.1163, 'tie': 0.1395, 'raisin': 0.1628, 'skirt': 0.0, 'mittens': 0.0698, 'resurrected_items_p': 0}",[],0
+65,9,"{'coconut': 0.303, 'strawberry': 0.0, 'belt': 0.0, 'pear': 0.303, 'tie': 0.0303, 'raisin': 0.303, 'skirt': 0.0, 'mittens': 0.0606, 'resurrected_items_p': 0}",[],0
+65,10,"{'coconut': 0.5556, 'strawberry': 0.0, 'belt': 0.0, 'pear': 0.0, 'tie': 0.0, 'raisin': 0.0, 'mittens': 0.0, 'resurrected_items_p': 0.4444}",['skirt'],0.4444
+66,0,"{'mushroom': 0.0, 'cloak': 0.0, 'cucumber': 0.0, 'blouse': 0.0, 'socks': 0.5, 'olive': 0.0, 'zucchini': 0.0, 'boots': 0.5, 'resurrected_items_p': 0}",[],0
+66,1,"{'socks': 0.2273, 'boots': 0.0, 'resurrected_items_p': 0.7726999999999999}","['mushroom', 'cloak', 'cucumber', 'blouse', 'olive', 'zucchini']",0.7726999999999999
+66,2,"{'mushroom': 0.0, 'cloak': 0.0455, 'cucumber': 0.0, 'blouse': 0.0, 'socks': 0.4545, 'olive': 0.3636, 'zucchini': 0.0909, 'resurrected_items_p': 0.0455}",['boots'],0.0455
+67,0,"{'zucchini': 0.0, 'trousers': 0.2, 'onions': 0.0, 'potato': 0.2, 'blouse': 0.2, 'pants': 0.2, 'slippers': 0.2, 'rhubarb': 0.0, 'resurrected_items_p': 0}",[],0
+67,1,"{'zucchini': 0.0, 'trousers': 0.1739, 'potato': 0.0435, 'blouse': 0.2174, 'pants': 0.2174, 'slippers': 0.2174, 'resurrected_items_p': 0.1305}","['onions', 'rhubarb']",0.1305
+67,2,"{'trousers': 0.0, 'onions': 0.0263, 'potato': 0.2632, 'blouse': 0.2105, 'pants': 0.0, 'slippers': 0.2632, 'rhubarb': 0.1316, 'resurrected_items_p': 0.1053}",['zucchini'],0.1053
+67,3,"{'zucchini': 0.1176, 'trousers': 0.0, 'onions': 0.1765, 'potato': 0.0588, 'blouse': 0.5882, 'pants': 0.0, 'slippers': 0.0, 'rhubarb': 0.0588, 'resurrected_items_p': 0}",[],0
+67,4,"{'zucchini': 0.1786, 'trousers': 0.0, 'onions': 0.3214, 'potato': 0.1429, 'blouse': 0.3571, 'pants': 0.0, 'slippers': 0.0, 'rhubarb': 0.0, 'resurrected_items_p': 0}",[],0
+67,5,"{'zucchini': 0.1429, 'trousers': 0.0, 'onions': 0.0476, 'potato': 0.0476, 'blouse': 0.4762, 'slippers': 0.0, 'resurrected_items_p': 0.2857}","['pants', 'rhubarb']",0.2857
+68,0,"{'beans': 0.0, 'pickle': 0.0, 'swimsuit': 0.25, 'beets': 0.0, 'nightgown': 0.25, 'shoes': 0.25, 'mushroom': 0.0, 'camisole': 0.25, 'resurrected_items_p': 0}",[],0
+68,1,"{'beans': 0.0, 'swimsuit': 0.6154, 'beets': 0.0, 'nightgown': 0.0769, 'shoes': 0.2308, 'mushroom': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0.0769}",['pickle'],0.0769
+68,2,"{'pickle': 0.0, 'swimsuit': 0.2041, 'nightgown': 0.2041, 'shoes': 0.2041, 'resurrected_items_p': 0.38780000000000003}","['beans', 'beets', 'mushroom', 'camisole']",0.38780000000000003
+68,3,"{'beans': 0.0, 'swimsuit': 0.2121, 'beets': 0.1818, 'nightgown': 0.1515, 'shoes': 0.2121, 'mushroom': 0.0606, 'camisole': 0.1515, 'resurrected_items_p': 0.0303}",['pickle'],0.0303
+68,4,"{'beans': 0.0, 'pickle': 0.0, 'swimsuit': 0.4, 'beets': 0.0, 'nightgown': 0.0, 'shoes': 0.4, 'mushroom': 0.2, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+68,5,"{'beans': 0.0, 'swimsuit': 0.4444, 'nightgown': 0.0, 'shoes': 0.0, 'mushroom': 0.3333, 'camisole': 0.0, 'resurrected_items_p': 0.2222}","['pickle', 'beets']",0.2222
+68,6,"{'pickle': 0.087, 'swimsuit': 0.3043, 'beets': 0.0435, 'nightgown': 0.0, 'mushroom': 0.1739, 'camisole': 0.0, 'resurrected_items_p': 0.3913}","['beans', 'shoes']",0.3913
+68,7,"{'beans': 0.1538, 'pickle': 0.0385, 'swimsuit': 0.3462, 'beets': 0.0385, 'shoes': 0.3077, 'mushroom': 0.0, 'resurrected_items_p': 0.1154}","['nightgown', 'camisole']",0.1154
+68,8,"{'beans': 0.0625, 'pickle': 0.0937, 'swimsuit': 0.3125, 'beets': 0.0312, 'nightgown': 0.0, 'shoes': 0.1562, 'camisole': 0.2187, 'resurrected_items_p': 0.125}",['mushroom'],0.125
+69,0,"{'peas': 0.25, 'mushroom': 0.25, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.25, 'broccoli': 0.25, 'resurrected_items_p': 0}",[],0
+69,1,"{'peas': 0.25, 'mushroom': 0.25, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.25, 'broccoli': 0.25, 'resurrected_items_p': 0}",[],0
+69,2,"{'peas': 0.3125, 'mushroom': 0.0625, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.3125, 'broccoli': 0.3125, 'resurrected_items_p': 0}",[],0
+69,3,"{'peas': 0.3333, 'mushroom': 0.0, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.1667, 'broccoli': 0.5, 'resurrected_items_p': 0}",[],0
+69,4,"{'peas': 0.3448, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.0, 'broccoli': 0.3448, 'resurrected_items_p': 0.3103}",['mushroom'],0.3103
+69,5,"{'peas': 0.2174, 'mushroom': 0.3913, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.0, 'broccoli': 0.3913, 'resurrected_items_p': 0}",[],0
+69,6,"{'peas': 0.3158, 'mushroom': 0.1579, 'cloak': 0.0, 'coat': 0.0, 'scarf': 0.0, 'boots': 0.0, 'cucumber': 0.0, 'broccoli': 0.5263, 'resurrected_items_p': 0}",[],0
+70,0,"{'olive': 0.25, 'potato': 0.25, 'leotards': 0.0, 'onions': 0.25, 'pumpkin': 0.25, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+70,1,"{'olive': 0.0625, 'potato': 0.3125, 'leotards': 0.0, 'onions': 0.3125, 'pumpkin': 0.3125, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+70,2,"{'olive': 0.0, 'potato': 0.5294, 'leotards': 0.0, 'onions': 0.3529, 'pumpkin': 0.1176, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+70,3,"{'potato': 0.2727, 'leotards': 0.0, 'onions': 0.5455, 'pumpkin': 0.0, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0.1818}",['olive'],0.1818
+70,4,"{'olive': 0.2941, 'potato': 0.0588, 'leotards': 0.0, 'onions': 0.5882, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0.0588}",['pumpkin'],0.0588
+70,5,"{'olive': 0.1176, 'potato': 0.1765, 'leotards': 0.0, 'onions': 0.4706, 'pumpkin': 0.2353, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+70,6,"{'olive': 0.0, 'potato': 0.0, 'leotards': 0.0, 'onions': 1.0, 'pumpkin': 0.0, 'mittens': 0.0, 'nightgown': 0.0, 'camisole': 0.0, 'resurrected_items_p': 0}",[],0
+71,0,"{'shoes': 0.0, 'peas': 0.25, 'beans': 0.25, 'tie': 0.0, 'cauliflower': 0.25, 'belt': 0.0, 'bra': 0.0, 'cabbage': 0.25, 'resurrected_items_p': 0}",[],0
+71,1,"{'shoes': 0.0, 'peas': 0.25, 'beans': 0.25, 'tie': 0.0, 'cauliflower': 0.25, 'belt': 0.0, 'bra': 0.0, 'cabbage': 0.25, 'resurrected_items_p': 0}",[],0
+71,2,"{'shoes': 0.0, 'peas': 0.2174, 'beans': 0.2174, 'tie': 0.0, 'cauliflower': 0.2174, 'belt': 0.0, 'cabbage': 0.2174, 'resurrected_items_p': 0.1304}",['bra'],0.1304
+71,3,"{'shoes': 0.0, 'peas': 0.1837, 'beans': 0.2041, 'tie': 0.0, 'cauliflower': 0.2041, 'belt': 0.0, 'bra': 0.2041, 'cabbage': 0.2041, 'resurrected_items_p': 0}",[],0
+71,4,"{'shoes': 0.0, 'peas': 0.0, 'beans': 0.0, 'tie': 0.0, 'cauliflower': 0.5, 'belt': 0.0, 'bra': 0.45, 'cabbage': 0.05, 'resurrected_items_p': 0}",[],0
+72,0,"{'revolver': 0.1724, 'shotgun': 0.1724, 'raisin': 0.1552, 'grapefruit': 0.1379, 'stick': 0.1724, 'spear': 0.1724, 'pumpkin': 0.0172, 'prune': 0.0, 'resurrected_items_p': 0}",[],0
+72,1,"{'revolver': 0.2, 'shotgun': 0.2, 'raisin': 0.0, 'grapefruit': 0.0, 'stick': 0.2, 'spear': 0.2, 'pumpkin': 0.2, 'prune': 0.0, 'resurrected_items_p': 0}",[],0
+72,2,"{'revolver': 0.1569, 'shotgun': 0.1373, 'stick': 0.1961, 'spear': 0.1961, 'pumpkin': 0.1961, 'prune': 0.0, 'resurrected_items_p': 0.1176}","['raisin', 'grapefruit']",0.1176
+72,3,"{'revolver': 0.0208, 'shotgun': 0.0625, 'raisin': 0.0417, 'grapefruit': 0.0417, 'stick': 0.2083, 'spear': 0.2083, 'pumpkin': 0.2083, 'resurrected_items_p': 0.2083}",['prune'],0.2083
+72,4,"{'revolver': 0.0455, 'shotgun': 0.1515, 'raisin': 0.1515, 'grapefruit': 0.0758, 'stick': 0.1515, 'spear': 0.1515, 'pumpkin': 0.1364, 'prune': 0.1364, 'resurrected_items_p': 0}",[],0
+72,5,"{'revolver': 0.0526, 'shotgun': 0.1053, 'raisin': 0.1754, 'grapefruit': 0.0702, 'stick': 0.1228, 'spear': 0.1754, 'pumpkin': 0.1228, 'prune': 0.1754, 'resurrected_items_p': 0}",[],0
+72,6,"{'revolver': 0.0, 'shotgun': 0.0, 'raisin': 0.1636, 'grapefruit': 0.1636, 'stick': 0.1636, 'spear': 0.1818, 'pumpkin': 0.1818, 'prune': 0.1455, 'resurrected_items_p': 0}",[],0
+73,0,"{'olive': 0.1228, 'gun': 0.1754, 'raisin': 0.1754, 'grenade': 0.1754, 'cherry': 0.0, 'rocket': 0.1754, 'plum': 0.0, 'cannon': 0.1754, 'resurrected_items_p': 0}",[],0
+73,1,"{'olive': 0.12, 'gun': 0.2, 'raisin': 0.02, 'grenade': 0.2, 'cherry': 0.0, 'rocket': 0.2, 'cannon': 0.2, 'resurrected_items_p': 0.06}",['plum'],0.06
+73,2,"{'olive': 0.0781, 'gun': 0.1562, 'raisin': 0.0469, 'grenade': 0.1562, 'rocket': 0.1562, 'plum': 0.1562, 'cannon': 0.1562, 'resurrected_items_p': 0.0937}",['cherry'],0.0937
+73,3,"{'olive': 0.1455, 'gun': 0.1273, 'raisin': 0.1273, 'grenade': 0.1818, 'cherry': 0.1091, 'rocket': 0.1091, 'plum': 0.1455, 'cannon': 0.0545, 'resurrected_items_p': 0}",[],0
+73,4,"{'olive': 0.1818, 'gun': 0.0909, 'raisin': 0.1273, 'grenade': 0.1818, 'cherry': 0.0545, 'rocket': 0.1818, 'plum': 0.0, 'cannon': 0.1818, 'resurrected_items_p': 0}",[],0
+73,5,"{'olive': 0.0833, 'gun': 0.125, 'raisin': 0.0, 'grenade': 0.2083, 'cherry': 0.0833, 'rocket': 0.2083, 'cannon': 0.2083, 'resurrected_items_p': 0.0833}",['plum'],0.0833
+73,6,"{'olive': 0.0, 'gun': 0.0, 'raisin': 0.0, 'grenade': 1.0, 'cherry': 0.0, 'rocket': 0.0, 'plum': 0.0, 'cannon': 0.0, 'resurrected_items_p': 0}",[],0
+74,0,"{'apple': 0.0, 'rock': 0.2174, 'bomb': 0.2174, 'pumpkin': 0.0652, 'stone': 0.2174, 'grapefruit': 0.0652, 'crossbow': 0.2174, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+74,1,"{'rock': 0.1923, 'bomb': 0.1923, 'pumpkin': 0.1923, 'stone': 0.1923, 'grapefruit': 0.0, 'crossbow': 0.1923, 'cherry': 0.0, 'resurrected_items_p': 0.0385}",['apple'],0.0385
+74,2,"{'apple': 0.0, 'rock': 0.2083, 'bomb': 0.2083, 'pumpkin': 0.2083, 'stone': 0.1667, 'grapefruit': 0.0, 'crossbow': 0.2083, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+74,3,"{'apple': 0.0, 'rock': 0.2093, 'bomb': 0.2326, 'pumpkin': 0.0233, 'stone': 0.2326, 'grapefruit': 0.0, 'crossbow': 0.2326, 'resurrected_items_p': 0.0698}",['cherry'],0.0698
+74,4,"{'rock': 0.2381, 'bomb': 0.2381, 'pumpkin': 0.0238, 'stone': 0.2381, 'grapefruit': 0.0, 'crossbow': 0.2381, 'cherry': 0.0, 'resurrected_items_p': 0.0238}",['apple'],0.0238
+74,5,"{'apple': 0.0, 'rock': 0.2308, 'bomb': 0.3846, 'pumpkin': 0.0, 'stone': 0.0, 'grapefruit': 0.0, 'crossbow': 0.3846, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+74,6,"{'apple': 0.0, 'rock': 0.0, 'bomb': 0.5263, 'pumpkin': 0.0, 'stone': 0.0, 'grapefruit': 0.0, 'crossbow': 0.4737, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+74,7,"{'apple': 0.0, 'bomb': 0.6667, 'pumpkin': 0.0, 'grapefruit': 0.0, 'crossbow': 0.0, 'cherry': 0.0, 'resurrected_items_p': 0.3334}","['rock', 'stone']",0.3334
+74,8,"{'apple': 0.0, 'rock': 0.0, 'bomb': 1.0, 'pumpkin': 0.0, 'stone': 0.0, 'grapefruit': 0.0, 'crossbow': 0.0, 'cherry': 0.0, 'resurrected_items_p': 0}",[],0
+76,0,"{'rhubarb': 0.2, 'peach': 0.0, 'apple': 0.0, 'plum': 0.0, 'crowbar': 0.2, 'pistol': 0.2, 'rifle': 0.2, 'whip': 0.2, 'resurrected_items_p': 0}",[],0
+76,1,"{'rhubarb': 0.2128, 'peach': 0.0, 'apple': 0.0, 'plum': 0.0, 'crowbar': 0.2128, 'pistol': 0.1489, 'rifle': 0.2128, 'whip': 0.2128, 'resurrected_items_p': 0}",[],0
+76,2,"{'rhubarb': 1.0, 'peach': 0.0, 'apple': 0.0, 'plum': 0.0, 'crowbar': 0.0, 'pistol': 0.0, 'rifle': 0.0, 'whip': 0.0, 'resurrected_items_p': 0}",[],0
+76,3,"{'rhubarb': 0.2703, 'peach': 0.0, 'resurrected_items_p': 0.7298}","['apple', 'plum', 'crowbar', 'pistol', 'rifle', 'whip']",0.7298
+76,4,"{'rhubarb': 0.2941, 'apple': 0.2059, 'plum': 0.2059, 'crowbar': 0.0, 'pistol': 0.0, 'rifle': 0.0, 'whip': 0.0, 'resurrected_items_p': 0.2941}",['peach'],0.2941
+76,5,"{'rhubarb': 0.2941, 'peach': 0.2647, 'apple': 0.2353, 'plum': 0.1471, 'crowbar': 0.0, 'pistol': 0.0, 'rifle': 0.0, 'resurrected_items_p': 0.0588}",['whip'],0.0588
+76,6,"{'rhubarb': 0.25, 'peach': 0.25, 'apple': 0.2, 'plum': 0.25, 'pistol': 0.0, 'rifle': 0.0, 'whip': 0.0, 'resurrected_items_p': 0.05}",['crowbar'],0.05
+76,7,"{'rhubarb': 0.7143, 'peach': 0.0, 'apple': 0.0, 'plum': 0.2857, 'crowbar': 0.0, 'pistol': 0.0, 'rifle': 0.0, 'whip': 0.0, 'resurrected_items_p': 0}",[],0
+76,8,"{'rhubarb': 1.0, 'peach': 0.0, 'apple': 0.0, 'plum': 0.0, 'crowbar': 0.0, 'pistol': 0.0, 'rifle': 0.0, 'whip': 0.0, 'resurrected_items_p': 0}",[],0
+77,0,"{'knife': 0.0, 'honeydew': 0.25, 'tomato': 0.25, 'grape': 0.25, 'sword': 0.0, 'whip': 0.0, 'rhubarb': 0.25, 'stick': 0.0, 'resurrected_items_p': 0}",[],0
+77,1,"{'knife': 0.0, 'honeydew': 0.3125, 'tomato': 0.3125, 'grape': 0.3125, 'sword': 0.0, 'whip': 0.0, 'rhubarb': 0.0625, 'stick': 0.0, 'resurrected_items_p': 0}",[],0
+77,2,"{'knife': 0.0, 'honeydew': 0.0, 'tomato': 0.3448, 'grape': 0.3103, 'sword': 0.0, 'whip': 0.0, 'rhubarb': 0.3448, 'stick': 0.0, 'resurrected_items_p': 0}",[],0
+77,3,"{'knife': 0.0, 'honeydew': 0.0, 'tomato': 1.0, 'grape': 0.0, 'sword': 0.0, 'whip': 0.0, 'rhubarb': 0.0, 'stick': 0.0, 'resurrected_items_p': 0}",[],0
+78,0,"{'onions': 0.0426, 'pickle': 0.0, 'beans': 0.0, 'olive': 0.1064, 'catapult': 0.2128, 'bazooka': 0.2128, 'missile': 0.2128, 'slingshot': 0.2128, 'resurrected_items_p': 0}",[],0
+78,1,"{'onions': 0.0, 'beans': 0.0, 'olive': 0.04, 'catapult': 0.2, 'bazooka': 0.2, 'missile': 0.2, 'slingshot': 0.2, 'resurrected_items_p': 0.16}",['pickle'],0.16
+78,2,"{'onions': 0.0, 'pickle': 0.0408, 'olive': 0.0408, 'catapult': 0.2041, 'bazooka': 0.2041, 'missile': 0.2041, 'slingshot': 0.2041, 'resurrected_items_p': 0.102}",['beans'],0.102
+78,3,"{'pickle': 0.0, 'beans': 0.0682, 'olive': 0.0, 'catapult': 0.2273, 'bazooka': 0.2273, 'missile': 0.2273, 'slingshot': 0.2273, 'resurrected_items_p': 0.0227}",['onions'],0.0227
+78,4,"{'onions': 0.0213, 'beans': 0.0638, 'catapult': 0.2128, 'bazooka': 0.2128, 'missile': 0.2128, 'slingshot': 0.2128, 'resurrected_items_p': 0.0639}","['pickle', 'olive']",0.0639
+79,0,"{'rocket': 0.1475, 'pickle': 0.1639, 'cannon': 0.1639, 'crowbar': 0.1639, 'avocado': 0.0, 'grenade': 0.1639, 'radish': 0.0328, 'mushroom': 0.1639, 'resurrected_items_p': 0}",[],0
+79,1,"{'rocket': 0.1818, 'pickle': 0.1818, 'cannon': 0.1818, 'crowbar': 0.1818, 'avocado': 0.0, 'grenade': 0.1818, 'radish': 0.0, 'mushroom': 0.0909, 'resurrected_items_p': 0}",[],0
+79,2,"{'rocket': 0.2703, 'pickle': 0.1892, 'cannon': 0.2162, 'crowbar': 0.2162, 'avocado': 0.0, 'grenade': 0.027, 'radish': 0.0, 'mushroom': 0.0811, 'resurrected_items_p': 0}",[],0
+79,3,"{'rocket': 0.5, 'pickle': 0.0, 'cannon': 0.2, 'crowbar': 0.25, 'avocado': 0.0, 'grenade': 0.05, 'radish': 0.0, 'mushroom': 0.0, 'resurrected_items_p': 0}",[],0
+79,4,"{'rocket': 1.0, 'pickle': 0.0, 'cannon': 0.0, 'crowbar': 0.0, 'avocado': 0.0, 'grenade': 0.0, 'radish': 0.0, 'mushroom': 0.0, 'resurrected_items_p': 0}",[],0
+80,0,"{'catapult': 0.125, 'cannon': 0.125, 'corn': 0.125, 'pickle': 0.125, 'bazooka': 0.125, 'cucumber': 0.125, 'potato': 0.125, 'axe': 0.125, 'resurrected_items_p': 0}",[],0
+80,1,"{'catapult': 0.1961, 'cannon': 0.1961, 'corn': 0.1176, 'pickle': 0.0196, 'bazooka': 0.1961, 'cucumber': 0.0784, 'potato': 0.0, 'axe': 0.1961, 'resurrected_items_p': 0}",[],0
+80,2,"{'catapult': 0.15, 'cannon': 0.1667, 'corn': 0.1, 'pickle': 0.0667, 'bazooka': 0.1667, 'cucumber': 0.0333, 'axe': 0.1667, 'resurrected_items_p': 0.15}",['potato'],0.15
+80,3,"{'catapult': 0.2778, 'cannon': 0.25, 'corn': 0.0, 'pickle': 0.0, 'bazooka': 0.1667, 'cucumber': 0.0278, 'potato': 0.0, 'axe': 0.2778, 'resurrected_items_p': 0}",[],0
+80,4,"{'catapult': 0.1765, 'cannon': 0.1765, 'corn': 0.0, 'pickle': 0.0, 'bazooka': 0.0, 'cucumber': 0.0588, 'potato': 0.0, 'axe': 0.5882, 'resurrected_items_p': 0}",[],0
+80,5,"{'catapult': 0.1, 'cannon': 0.4, 'corn': 0.0, 'pickle': 0.0, 'bazooka': 0.0, 'cucumber': 0.0, 'potato': 0.0, 'axe': 0.5, 'resurrected_items_p': 0}",[],0
+80,6,"{'catapult': 0.0, 'cannon': 0.0, 'corn': 0.0, 'pickle': 0.0, 'bazooka': 0.0, 'cucumber': 0.0, 'potato': 0.0, 'axe': 1.0, 'resurrected_items_p': 0}",[],0
+81,0,"{'turnip': 0.25, 'stone': 0.0, 'potato': 0.25, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.25, 'radish': 0.25, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+81,1,"{'turnip': 0.25, 'stone': 0.0, 'potato': 0.25, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.25, 'radish': 0.25, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+81,2,"{'turnip': 0.25, 'stone': 0.0, 'potato': 0.25, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.25, 'radish': 0.25, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+81,3,"{'turnip': 0.3333, 'stone': 0.0, 'potato': 0.3333, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.0, 'radish': 0.3333, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+81,4,"{'turnip': 0.0, 'stone': 0.0, 'potato': 0.0, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.0, 'radish': 1.0, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+81,5,"{'turnip': 0.0, 'stone': 0.0, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.0, 'radish': 0.3333, 'rifle': 0.0, 'resurrected_items_p': 0.6667}",['potato'],0.6667
+81,6,"{'turnip': 0.0, 'stone': 0.0, 'potato': 1.0, 'harpoon': 0.0, 'grenade': 0.0, 'mushroom': 0.0, 'radish': 0.0, 'rifle': 0.0, 'resurrected_items_p': 0}",[],0
+82,0,"{'bomb': 0.0, 'cabbage': 0.25, 'stone': 0.0, 'peas': 0.25, 'beans': 0.25, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.25, 'resurrected_items_p': 0}",[],0
+82,1,"{'bomb': 0.0, 'cabbage': 0.25, 'stone': 0.0, 'peas': 0.25, 'beans': 0.25, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.25, 'resurrected_items_p': 0}",[],0
+82,2,"{'bomb': 0.0, 'cabbage': 0.25, 'stone': 0.0, 'peas': 0.25, 'beans': 0.25, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.25, 'resurrected_items_p': 0}",[],0
+82,3,"{'bomb': 0.0, 'cabbage': 0.2692, 'stone': 0.0, 'peas': 0.1923, 'beans': 0.2692, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.2692, 'resurrected_items_p': 0}",[],0
+82,4,"{'bomb': 0.0, 'cabbage': 0.1667, 'stone': 0.0, 'peas': 0.2778, 'beans': 0.2778, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.2778, 'resurrected_items_p': 0}",[],0
+82,5,"{'bomb': 0.0, 'cabbage': 0.1154, 'stone': 0.0, 'peas': 0.3846, 'beans': 0.3077, 'rock': 0.0, 'rifle': 0.0, 'cauliflower': 0.1923, 'resurrected_items_p': 0}",[],0
+82,6,"{'cabbage': 0.14, 'peas': 0.2, 'beans': 0.18, 'cauliflower': 0.0, 'resurrected_items_p': 0.4800000000000001}","['bomb', 'stone', 'rock', 'rifle']",0.4800000000000001
+83,0,"{'tomahawk': 0.1429, 'mushroom': 0.1429, 'axe': 0.0, 'stick': 0.1429, 'onions': 0.1429, 'whip': 0.1429, 'broccoli': 0.1429, 'carrot': 0.1429, 'resurrected_items_p': 0}",[],0
+83,1,"{'tomahawk': 0.1148, 'mushroom': 0.1639, 'axe': 0.0, 'stick': 0.1639, 'onions': 0.1639, 'whip': 0.0656, 'broccoli': 0.1639, 'carrot': 0.1639, 'resurrected_items_p': 0}",[],0
+83,2,"{'tomahawk': 0.1053, 'mushroom': 0.1754, 'axe': 0.0, 'stick': 0.1404, 'onions': 0.1754, 'whip': 0.1404, 'broccoli': 0.1754, 'carrot': 0.0877, 'resurrected_items_p': 0}",[],0
+83,3,"{'tomahawk': 0.2333, 'mushroom': 0.3, 'axe': 0.0, 'stick': 0.2, 'onions': 0.0667, 'whip': 0.0333, 'broccoli': 0.1667, 'carrot': 0.0, 'resurrected_items_p': 0}",[],0
+83,4,"{'tomahawk': 0.1034, 'mushroom': 0.3448, 'stick': 0.0, 'onions': 0.3103, 'whip': 0.0345, 'broccoli': 0.1724, 'carrot': 0.0, 'resurrected_items_p': 0.0345}",['axe'],0.0345
+83,5,"{'tomahawk': 0.2903, 'mushroom': 0.3226, 'axe': 0.0, 'stick': 0.0, 'onions': 0.3226, 'whip': 0.0323, 'broccoli': 0.0, 'resurrected_items_p': 0.0323}",['carrot'],0.0323
+83,6,"{'tomahawk': 0.0, 'mushroom': 1.0, 'axe': 0.0, 'stick': 0.0, 'onions': 0.0, 'whip': 0.0, 'broccoli': 0.0, 'carrot': 0.0, 'resurrected_items_p': 0}",[],0
+84,0,"{'celery': 0.1379, 'mushroom': 0.0, 'prune': 0.1724, 'grapefruit': 0.1724, 'banana': 0.1724, 'lime': 0.1724, 'zucchini': 0.1724, 'beans': 0.0, 'resurrected_items_p': 0}",[],0
+84,1,"{'celery': 0.0, 'mushroom': 0.0, 'prune': 0.2308, 'grapefruit': 0.3846, 'banana': 0.0, 'lime': 0.3846, 'zucchini': 0.0, 'beans': 0.0, 'resurrected_items_p': 0}",[],0
+84,2,"{'celery': 0.0, 'mushroom': 0.0, 'prune': 0.3333, 'grapefruit': 0.0, 'banana': 0.0, 'lime': 0.6667, 'zucchini': 0.0, 'beans': 0.0, 'resurrected_items_p': 0}",[],0
+84,3,"{'mushroom': 0.0, 'prune': 0.0, 'banana': 0.0, 'lime': 0.4545, 'beans': 0.0, 'resurrected_items_p': 0.5455}","['celery', 'grapefruit', 'zucchini']",0.5455
+84,4,"{'celery': 0.0, 'mushroom': 0.0, 'prune': 0.0, 'grapefruit': 0.5, 'banana': 0.0, 'lime': 0.5, 'zucchini': 0.0, 'beans': 0.0, 'resurrected_items_p': 0}",[],0
+84,5,"{'celery': 0.0, 'mushroom': 0.0, 'prune': 0.0, 'grapefruit': 0.0, 'banana': 0.0, 'lime': 1.0, 'zucchini': 0.0, 'beans': 0.0, 'resurrected_items_p': 0}",[],0
+85,0,"{'banana': 0.2083, 'beans': 0.0, 'tangerine': 0.2083, 'beets': 0.0, 'pickle': 0.1667, 'mushroom': 0.0, 'cranberry': 0.2083, 'peach': 0.2083, 'resurrected_items_p': 0}",[],0
+85,1,"{'banana': 0.4, 'beans': 0.0, 'tangerine': 0.0, 'beets': 0.0, 'pickle': 0.0, 'mushroom': 0.0, 'cranberry': 0.2, 'peach': 0.4, 'resurrected_items_p': 0}",[],0
+85,2,"{'banana': 0.2128, 'tangerine': 0.0, 'cranberry': 0.1702, 'peach': 0.1702, 'resurrected_items_p': 0.4468}","['beans', 'beets', 'pickle', 'mushroom']",0.4468
+85,3,"{'banana': 0.2174, 'beans': 0.1739, 'beets': 0.0, 'pickle': 0.2174, 'mushroom': 0.0652, 'cranberry': 0.087, 'peach': 0.2174, 'resurrected_items_p': 0.0217}",['tangerine'],0.0217
+85,4,"{'banana': 0.1724, 'beans': 0.1207, 'tangerine': 0.1379, 'beets': 0.0, 'pickle': 0.1724, 'mushroom': 0.069, 'cranberry': 0.1552, 'peach': 0.1724, 'resurrected_items_p': 0}",[],0
+85,5,"{'banana': 0.2703, 'beans': 0.0811, 'tangerine': 0.1892, 'beets': 0.0, 'pickle': 0.1622, 'mushroom': 0.027, 'cranberry': 0.0, 'peach': 0.2703, 'resurrected_items_p': 0}",[],0
+85,6,"{'banana': 1.0, 'beans': 0.0, 'tangerine': 0.0, 'beets': 0.0, 'pickle': 0.0, 'mushroom': 0.0, 'cranberry': 0.0, 'peach': 0.0, 'resurrected_items_p': 0}",[],0
+86,0,"{'lemon': 0.2222, 'beets': 0.0, 'orange': 0.2222, 'beans': 0.0444, 'mushroom': 0.0667, 'coconut': 0.2222, 'raspberry': 0.2222, 'radish': 0.0, 'resurrected_items_p': 0}",[],0
+86,1,"{'lemon': 0.1406, 'orange': 0.0625, 'beans': 0.1562, 'mushroom': 0.0156, 'coconut': 0.1562, 'raspberry': 0.1562, 'resurrected_items_p': 0.3124}","['beets', 'radish']",0.3124
+86,2,"{'lemon': 0.1167, 'beets': 0.0333, 'orange': 0.1667, 'beans': 0.1667, 'mushroom': 0.1333, 'coconut': 0.1667, 'raspberry': 0.0667, 'radish': 0.15, 'resurrected_items_p': 0}",[],0
+86,3,"{'lemon': 0.0984, 'beets': 0.1148, 'orange': 0.1148, 'beans': 0.1475, 'mushroom': 0.1148, 'coconut': 0.1639, 'raspberry': 0.0984, 'radish': 0.1475, 'resurrected_items_p': 0}",[],0
+86,4,"{'lemon': 0.1429, 'beets': 0.0571, 'orange': 0.1429, 'beans': 0.1143, 'mushroom': 0.1143, 'coconut': 0.1429, 'raspberry': 0.1429, 'radish': 0.1429, 'resurrected_items_p': 0}",[],0
+86,5,"{'lemon': 0.4, 'beets': 0.0, 'orange': 0.2, 'beans': 0.04, 'mushroom': 0.04, 'coconut': 0.2, 'raspberry': 0.12, 'radish': 0.0, 'resurrected_items_p': 0}",[],0
+86,6,"{'lemon': 0.2, 'orange': 0.2, 'beans': 0.16, 'mushroom': 0.18, 'coconut': 0.18, 'raspberry': 0.04, 'radish': 0.0, 'resurrected_items_p': 0.04}",['beets'],0.04
+86,7,"{'lemon': 0.1111, 'beets': 0.1389, 'orange': 0.1389, 'beans': 0.0694, 'mushroom': 0.125, 'coconut': 0.1389, 'raspberry': 0.1389, 'resurrected_items_p': 0.1389}",['radish'],0.1389
+86,8,"{'lemon': 0.375, 'beets': 0.0, 'orange': 0.125, 'beans': 0.0833, 'mushroom': 0.0, 'coconut': 0.4167, 'raspberry': 0.0, 'radish': 0.0, 'resurrected_items_p': 0}",[],0
+87,0,"{'zucchini': 0.2439, 'plum': 0.0, 'orange': 0.0, 'beans': 0.2439, 'pineapple': 0.0244, 'lettuce': 0.2439, 'carrot': 0.2439, 'lemon': 0.0, 'resurrected_items_p': 0}",[],0
+87,1,"{'zucchini': 0.0588, 'beans': 0.2941, 'pineapple': 0.0, 'lettuce': 0.2941, 'carrot': 0.2647, 'resurrected_items_p': 0.0882}","['plum', 'orange', 'lemon']",0.0882
+87,2,"{'zucchini': 0.0645, 'plum': 0.0, 'orange': 0.3226, 'beans': 0.1613, 'pineapple': 0.0, 'lettuce': 0.129, 'carrot': 0.3226, 'lemon': 0.0, 'resurrected_items_p': 0}",[],0
+87,3,"{'zucchini': 0.0, 'orange': 0.2941, 'beans': 0.0, 'lettuce': 0.0, 'carrot': 0.4706, 'lemon': 0.0, 'resurrected_items_p': 0.23529999999999998}","['plum', 'pineapple']",0.23529999999999998
+87,4,"{'zucchini': 0.0, 'plum': 0.0, 'orange': 0.5, 'beans': 0.0, 'pineapple': 0.0, 'lettuce': 0.0, 'carrot': 0.5, 'lemon': 0.0, 'resurrected_items_p': 0}",[],0
