@@ -4,8 +4,8 @@ import numpy
 
 from utils import group_entropies_by_dialogue_id
 
-data_path = "./src/data/generation/8_mcrae/sbs_entropy_k_five.csv"
-filename = "entropy_statistics_from_dialogue_end_cleaned"
+data_path = "./src/data/generation/8_mcrae/sbs_entropy_k_five_gpt4o_apocalypse_cleaned.csv"
+filename = "entropy_k_five_gpt4o_statistics_from_dialogue_end_apocalypse_cleaned"
 
 def main():
   rf = open(data_path, 'r', newline='')
@@ -22,14 +22,14 @@ def main():
     dialogue_length = len(dialogue_entropy)
     for step_index, step_entropy in enumerate(dialogue_entropy):
       distance_from_end = dialogue_length - step_index - 1
-      
-      entropies_by_distances[distance_from_end].append(step_entropy)
+      if step_entropy != -1.0:
+        entropies_by_distances[distance_from_end].append(step_entropy)
   
   with open(f"./src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
     csv.writer(df).writerow([
       "distance",
-      "mean",
-      "std"
+      "std",
+      "mean"
     ])
   
   for (distance, entropies_by_distance) in enumerate(entropies_by_distances):

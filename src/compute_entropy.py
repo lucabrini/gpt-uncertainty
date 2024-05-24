@@ -1,18 +1,21 @@
 import csv
 import json
 import math
+import numpy as np
 
-data_path = "./src/data/generation/8_mcrae/dialogues_sbs_k_five_distr.csv"
-filename = "sbs_entropy_k_five"
+data_path = ".src/data/generation/8_mcrae/dialogues_sbs_k_five_gpt4o.csv"
+filename = "sbs_entropy_k_five_gpt4o_cleaned"
 
-to_clean = False
+to_clean = True
+to_apocalypse = False
 
 def main():
   
   rf = open(data_path, 'r', newline='')
   reader = csv.DictReader(rf, delimiter=",")
+  zeros_list = np.zeros(8)
 
-  with open(f"./src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
+  with open(f".src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
     csv.writer(df).writerow([
       "dialogue_id",
       "intra_dialogue_id",
@@ -41,6 +44,13 @@ def main():
           previous_scores = scores
         
         entropy = 0
+        if np.array_equal(zeros_list, distr):
+          if to_apocalypse:
+             # set entropy to a invalid value to be able to filter it later
+            entropy = 1.0
+          else:
+            # otherwise, set entropy to max value
+            entropy = -3.0
         for c in distr:
           if(c != 0):
             entropy = entropy + c * math.log(c, 2)
@@ -49,7 +59,7 @@ def main():
       else:
         entropy = ''
         
-      with open(f"./src/data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
+      with open(f".src/data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
         csv.writer(df).writerow([
           row["dialogue_id"],
           row["intra_dialogue_id"],
