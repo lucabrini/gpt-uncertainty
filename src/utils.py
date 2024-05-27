@@ -156,7 +156,10 @@ def group_sbs_data_by_dialogue_id(reader: csv.DictReader):
       
       dialogue_steps.append({
         "intra_dialogue_id" : intra_dialogue_id,
-        "p_distribuition" : json.loads(row["p_distribuition"].replace('\'', '"'))
+        "p_distribuition" : json.loads(row["p_distribuition"].replace('\'', '"')),
+        "target" : row["target"],
+        "question" : row["question"],
+        "answer" : row["answer"],
       })
     
   return dialogues
