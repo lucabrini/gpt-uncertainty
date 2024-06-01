@@ -21,7 +21,7 @@ if __name__ == "__main__":
     
     model = LLModelWrapper(
       api_key=openai_api_key, 
-      model=OpenAIModelEnum.GPT_3_5_TURBO,
+      model=OpenAIModelEnum.GPT_4_O,
       debug=True
     )
 
@@ -35,4 +35,4 @@ if __name__ == "__main__":
     target_list_candidates = get_lists_of_candidates(contrast_sets)
     #print(target_list_candidates)
     
-    generate_dialogues_openai(model, target_list_candidates, game_set, num_candidates)
+    generate_dialogues_openai(model, target_list_candidates, game_set, num_candidates, bsd=False, outfile_name="dialogues-gpt-4o")
