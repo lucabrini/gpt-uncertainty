@@ -4,8 +4,8 @@ import numpy
 
 from utils import group_entropies_by_dialogue_id
 
-data_path = "./src/data/generation/8_mcrae/sbs_entropy_k_five_gpt4o_apocalypse_cleaned.csv"
-filename = "entropy_k_five_gpt4o_statistics_from_dialogue_end_apocalypse_cleaned"
+data_path = "./src/data/generation/8_mcrae/sbs_entropy(gpt4o)_k_five_gpt4o_apocalypse_cleaned.csv"
+filename = "entropy(gpt4o)_k_five_gpt4o_statistics_from_dialogue_end_apocalypse_cleaned"
 
 def main():
   rf = open(data_path, 'r', newline='')

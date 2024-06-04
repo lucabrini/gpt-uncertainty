@@ -299,7 +299,7 @@ dialogue_id,intra_dialogue_id,target,question,answer,question_confidence,questio
 63,3,apple,Is the item you're thinking of commonly associated with pies?,Yes.,,,,,,,477,419
 63,4,apple,Is the item you're thinking of orange in color?,No.,,,,,,,465,398
 63,5,apple,Is the item you're thinking of a pumpkin?,No.  Is the item you're thinking of an apple?,,,,,,,455,458
-63,6,apple,"Yes, you got it! Well done! 👏🍎",Yes! That's correct. 🍎 Great job guessing!,,,,,,,530,537
+63,6,apple,"Yes, you got it! Well done!",Yes! That's correct. Great job guessing!,,,,,,,530,537
 64,0,cherry,Is your item a fruit?,Yes.,,,,,,,387,380
 64,1,cherry,Is your item a cherry?,Yes! That's correct.,,,,,,,445,472
 65,0,coconut,Is your item something you can wear?,No.,,,,,,,702,401

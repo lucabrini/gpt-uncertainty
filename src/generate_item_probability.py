@@ -114,7 +114,7 @@ def build_prompt(candidates, dialogue_history):
   )
 
 def open_step_by_step_csv(data_path):
-  with open(f"{data_path}/dialogues_step_by_step.csv", 'w', newline='') as f:
+  with open(f"{data_path}/dialogues(gpt3)_valid_cand_gpt3.csv", 'w', newline='') as f:
     write = csv.writer(f)
     write.writerow([
       "dialogue_id", # enumeration of games dialogues
@@ -123,8 +123,8 @@ def open_step_by_step_csv(data_path):
       "question", # question made by the guesser
       "answer",
       "candidates",
-      "score"
-      "score_probability",
+      "candidates_scores"
+      "p_distribuition",
     ])
     
 def open_game_sets(data_path):
@@ -133,7 +133,7 @@ def open_game_sets(data_path):
   
 def open_dialogues(data_path):
   rows = []
-  with open(f"{data_path}/gpt-dialogues-gpt4.csv", newline='') as f:
+  with open(f"{data_path}/dialogues.csv", newline='') as f:
     reader = csv.DictReader(f, delimiter=",")
     for row in reader:
       rows.append(row)
@@ -148,7 +148,7 @@ def list_remaining_candidates(history, candidates):
   # Asking gpt to list out the remaining items
   response = openai.chat.completions.create(
     temperature=0,
-    model='gpt-4o',
+    model='gpt-3.5-turbo',
     messages=[{'role': "system", 'content': prompt}],
   ).choices[0].message.content
   
@@ -180,7 +180,7 @@ def remove_punctuation(text):
     return text.translate(str.maketrans('', '', string.punctuation))
 
 def dump_row(data_path, dialogue_id, intra_dialogue_id, target, question, answer, candidates, score, score_prob):
-  with open(f"{data_path}/dialogues_step_by_step.csv", 'a', newline='') as f:
+  with open(f"{data_path}/dialogues(gpt3)_valid_cand_gpt3.csv", 'a', newline='') as f:
     write = csv.writer(f)
     write.writerow([
       dialogue_id, 

@@ -3,10 +3,10 @@ import json
 import math
 import numpy as np
 
-data_path = ".src/data/generation/8_mcrae/dialogues_sbs_k_five_gpt4o.csv"
-filename = "sbs_entropy_k_five_gpt4o_cleaned"
+data_path = "./src/data/generation/8_mcrae/dialogues(gpt3)_k_five_sim_app_gpt3.csv"
+filename = "sbs_entropy(gpt3)_k_five_gpt3_sim_app_apocalypse_cleaned"
 
-to_clean = True
+to_clean = False
 to_apocalypse = False
 
 def main():
@@ -15,7 +15,7 @@ def main():
   reader = csv.DictReader(rf, delimiter=",")
   zeros_list = np.zeros(8)
 
-  with open(f".src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
+  with open(f"./src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
     csv.writer(df).writerow([
       "dialogue_id",
       "intra_dialogue_id",
@@ -59,7 +59,7 @@ def main():
       else:
         entropy = ''
         
-      with open(f".src/data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
+      with open(f"./src/data/generation/8_mcrae/{filename}.csv", "a", newline='') as df:
         csv.writer(df).writerow([
           row["dialogue_id"],
           row["intra_dialogue_id"],
