@@ -3,8 +3,8 @@ import numpy
 
 from utils import group_entropies_by_dialogue_id
 
-data_path = "./src/data/generation/8_mcrae/sbs_entropy(gpt4o)_k_five_gpt4o_apocalypse_cleaned.csv"
-filename = "entropy(gpt4o)_k_five_gpt4o_statistics_from_dialogue_beginning_apocalypse_cleaned"
+data_path = "./src/data/generation/8_mcrae/entropy(gpt4o)_app2_onllama3_k5_apocalypse_cleaned.csv"
+filename = "stat_entropy(gpt4o)_app2_onllama3_k5_apocalypse_cleaned_beginning"
 
 def main():
     rf = open(data_path, 'r', newline='')
