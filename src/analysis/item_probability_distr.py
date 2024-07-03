@@ -26,7 +26,7 @@ def compute_item_probability(history, candidates, openai_api_key=None, samples=5
     
     for _ in range(0, samples, 1):
       while True:
-        response = generate_response(model_name, candidate, history)
+        response = generate_response(model_name, candidate, history, temperature=0)
 
         explanation, answer = extract_explanation_and_answer(response)
         if len(answer.split()) == 1:
@@ -92,7 +92,7 @@ def extract_explanation_and_answer(response):
   
 def generate_response(model_name, candidate, history, temperature=0.2):
   if model_name == 'openai-gpt':
-        response = openai.ChatCompletion.create(
+        response = openai.chat.completions.create(
             temperature=temperature,
             model='gpt-3.5-turbo',
             messages=[

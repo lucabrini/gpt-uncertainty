@@ -13,7 +13,7 @@ openai_api_key = os.environ.get("OPENAI_API_KEY")
 samples_number = 5
 data_path = "./src/data/%s/8_mcrae"
 
-dump_path = f"{data_path}/dialogues(gpt4o)_app1_onllama3_k5.csv" % "generation"
+dump_path = f"{data_path}/dialogues(gpt3)_app1_on3_k5.csv" % "generation"
 
 def generate_sbs_data(dialogues, dump_row, samples=5):
   print(samples)
@@ -33,7 +33,8 @@ def generate_sbs_data(dialogues, dump_row, samples=5):
         answer = intra_dial['answer']
         history.append(qa_to_str(question, answer))
           
-        results = compute_item_probability(history, candidates, samples, model_name='ollama-llama3')
+        results = compute_item_probability(history, candidates, openai_api_key=openai_api_key, 
+                                           samples=samples, model_name='openai-gpt')
       
         dump_row(
           dialogue_id,
@@ -81,7 +82,7 @@ if __name__ == "__main__":
 
   # Opening dumped dialogues data
   raw_dumped_dialogues = load_game_dialogues(
-    f"{data_path}/gpt-dialogues-gpt4.csv" % "generation",
+    f"{data_path}/dialogues.csv" % "generation",
     start_dialogue_id,
     end_dialogue_id
   )
