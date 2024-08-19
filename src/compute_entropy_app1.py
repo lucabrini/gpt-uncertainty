@@ -47,14 +47,14 @@ def main():
         if np.array_equal(zeros_list, distr):
           if to_apocalypse:
              # set entropy to a invalid value to be able to filter it later
-            entropy = 1.0
+            entropy = -1.0
           else:
             # otherwise, set entropy to max value
-            entropy = -3.0
+            entropy = 3.0
         for c in distr:
           if(c != 0):
-            entropy = entropy + c * math.log(c, 2)
-        entropy = round(-1 * entropy, 4)
+            entropy = entropy - c * math.log(c,2)
+        entropy = round(entropy, 4)
         print(entropy)
       else:
         entropy = ''

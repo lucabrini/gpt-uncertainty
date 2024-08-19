@@ -5,7 +5,7 @@ import numpy as np
 import ast
 from collections import Counter
 
-data_path = "./src/data/generation/8_mcrae/dialogues(gpt3)_app2_onllama3_k5.csv"
+data_path = "data/generation/8_mcrae/dialogues(gpt3)_app2_onllama3_k5.csv"
 filename = "entropy(gpt3)_app2_onllama3_k5_apocalypse_cleaned"
 
 to_clean = True
@@ -16,7 +16,7 @@ def main():
     reader = csv.DictReader(rf, delimiter=",")
     zeros_list = np.zeros(8)
     
-    with open(f"./src/data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
+    with open(f"data/generation/8_mcrae/{filename}.csv", "w", newline='') as df:
         csv.writer(df).writerow([
             "dialogue_id",
             "intra_dialogue_id",

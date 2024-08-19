@@ -6,6 +6,9 @@ from collections import Counter
 from sklearn.metrics import log_loss
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib
+import numpy as np
 
 data_path = "data/generation/8_mcrae/dialogues(gpt3)_k_five_sim_app_gpt3.csv"
 filename = "sbs_entropy(gpt3)_k_five_gpt3_sim_app_apocalypse_cleaned"
@@ -35,12 +38,21 @@ def main():
 
     cross_entropy_column = []
 
+    correct_count = 0
+    tot = 0
+
     for row in reader:
+        tot += 1
         raw_scores = row["candidates_scores"].replace('\'', '"')
         raw_distribution = row["p_distribuition"].replace('\'', '"')
         row_k_candidates = row["candidates"].replace('\'', '"').replace('set()', '{None}')
         target = row["target"]
         dialogue_id = row["dialogue_id"]
+        question = row['question']
+
+        if target in question:
+            print("Correct! The item is ", target)
+            correct_count += 1
 
         if raw_scores and raw_distribution:
             try:
@@ -108,6 +120,9 @@ def main():
     else:
         df = cross_entropy_df
 
+    print("Number of correct guesses: ", correct_count)
+    print("Percetage of correct guesses: ", correct_count/tot * 100, "%")
+
     # Write the updated dataframe back to the file
     df.to_csv(f"data/generation/8_mcrae/{filename}.csv", index=False)
 
@@ -120,10 +135,6 @@ def main():
         print("The DataFrame does not contain the required columns 'entropy' and 'cross_entropy'.")
 
     if plot:
-        import matplotlib.pyplot as plt
-        import matplotlib
-        import numpy as np
-
         # Ensure a compatible backend is used
         matplotlib.use('Agg')
 
@@ -133,36 +144,75 @@ def main():
         mean_entropy_per_step = df.groupby('intra_dialogue_id')['entropy'].mean()
         std_entropy_per_step = df.groupby('intra_dialogue_id')['entropy'].std()
 
+        # Function to identify outliers using IQR
+        def identify_outliers(data):
+            Q1 = data.quantile(0.25)
+            Q3 = data.quantile(0.75)
+            IQR = Q3 - Q1
+            outliers = data[(data < (Q1 - 1.5 * IQR)) | (data > (Q3 + 1.5 * IQR))]
+            return outliers
+
+        # Identify outliers
+        cross_entropy_outliers = df.groupby('intra_dialogue_id')['cross_entropy'].apply(identify_outliers)
+        entropy_outliers = df.groupby('intra_dialogue_id')['entropy'].apply(identify_outliers)
+
+        # Remove outliers for mean and std computation
+        filtered_cross_entropy = df[~df.index.isin(cross_entropy_outliers.index)].groupby('intra_dialogue_id')[
+            'cross_entropy']
+        filtered_entropy = df[~df.index.isin(entropy_outliers.index)].groupby('intra_dialogue_id')['entropy']
+
+        mean_filtered_cross_entropy_per_step = filtered_cross_entropy.mean()
+        std_filtered_cross_entropy_per_step = filtered_cross_entropy.std()
+        mean_filtered_entropy_per_step = filtered_entropy.mean()
+        std_filtered_entropy_per_step = filtered_entropy.std()
+
+        # Print mean and std values for debugging
+        print("Mean Cross-Entropy per step (filtered):", mean_filtered_cross_entropy_per_step)
+        print("Std Cross-Entropy per step (filtered):", std_filtered_cross_entropy_per_step)
+        print("Mean Entropy per step (filtered):", mean_filtered_entropy_per_step)
+        print("Std Entropy per step (filtered):", std_filtered_entropy_per_step)
+
         # Create a range for x-axis (dialogue steps)
-        steps = range(len(mean_cross_entropy_per_step))
+        steps = range(len(mean_filtered_cross_entropy_per_step))
+
+        # Flatten the outliers for plotting
+        cross_entropy_outliers_flat = cross_entropy_outliers.explode().reset_index()
+        entropy_outliers_flat = entropy_outliers.explode().reset_index()
 
         # Plot the mean cross-entropy and entropy with standard deviation as confidence intervals
         plt.figure(figsize=(10, 6))
 
         # Plot mean cross-entropy
-        plt.plot(steps, mean_cross_entropy_per_step, marker='o', linestyle='-', color='b', label='Cross-Entropy')
+        plt.plot(steps, mean_filtered_cross_entropy_per_step, marker='o', linestyle='-', color='b',
+                 label='Cross-Entropy')
         plt.fill_between(steps,
-                         mean_cross_entropy_per_step - std_cross_entropy_per_step,
-                         mean_cross_entropy_per_step + std_cross_entropy_per_step,
+                         mean_filtered_cross_entropy_per_step - std_filtered_cross_entropy_per_step,
+                         mean_filtered_cross_entropy_per_step + std_filtered_cross_entropy_per_step,
                          color='b', alpha=0.2)
 
         # Plot mean entropy
-        plt.plot(steps, mean_entropy_per_step, marker='s', linestyle='-', color='r', label='Entropy')
+        plt.plot(steps, mean_filtered_entropy_per_step, marker='s', linestyle='-', color='r', label='Entropy')
         plt.fill_between(steps,
-                         mean_entropy_per_step - std_entropy_per_step,
-                         mean_entropy_per_step + std_entropy_per_step,
+                         mean_filtered_entropy_per_step - std_filtered_entropy_per_step,
+                         mean_filtered_entropy_per_step + std_filtered_entropy_per_step,
                          color='r', alpha=0.2)
+
+        # Plot outliers
+        plt.scatter(cross_entropy_outliers_flat['intra_dialogue_id'], cross_entropy_outliers_flat['cross_entropy'],
+                    color='b', s=10, label='Cross-Entropy Outliers')
+        plt.scatter(entropy_outliers_flat['intra_dialogue_id'], entropy_outliers_flat['entropy'], color='r', s=10,
+                    label='Entropy Outliers')
 
         plt.xlabel('Dialogue Step (intra_dialogue_id)')
         plt.ylabel('Mean Value')
-        plt.title('Mean Cross-Entropy and Entropy per Dialogue Step')
+        plt.title('Mean Cross-Entropy and Entropy per Dialogue Step (with Outliers)')
         plt.grid(True)
-        plt.xticks(steps)
+        plt.xticks(range(len(mean_filtered_cross_entropy_per_step)))
         plt.legend()
 
         plt.tight_layout()
 
-        plt.savefig('data/results/CE_and_entropy_' + filename + '.png')
+        plt.savefig('data/results/CE_and_entropy_with_outliers_' + filename + '.png')
 
 
 def calculate_cross_entropy(distribution, target, scores_dict):
@@ -183,7 +233,7 @@ def calculate_cross_entropy(distribution, target, scores_dict):
     true_distribution[target_index] = 1
 
     cross_entropy = log_loss([true_distribution], [distribution])
-    print(true_distribution, distribution, sum(distribution))
+    print(true_distribution, distribution, cross_entropy)
     return cross_entropy
 
 
