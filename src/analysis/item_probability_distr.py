@@ -29,14 +29,16 @@ def compute_item_probability(history, candidates, openai_api_key=None, samples=5
         response = generate_response(model_name, candidate, history, temperature=0)
 
         explanation, answer = extract_explanation_and_answer(response)
-        if len(answer.split()) == 1:
+
+        if answer is None or len(answer.split()) == 1:
            break
         else:
-           print(answer)
+           print(response)
+           print("\n", answer)
 
       explanations[candidate].append(explanation)
 
-      if("yes" in answer.lower()):
+      if answer is not None and "yes" in answer.lower():
         yes_counter += 1
       
       scores[candidate] = round(yes_counter / samples, 4)
@@ -80,8 +82,8 @@ def build_prompt(candidate, dialogue):
 
   
 def extract_explanation_and_answer(response):
-  regex = r"EXPLANATION:\s*(.*?)\s*ANSWER:\s*(.*)$"
-  match = re.search(regex, response, re.IGNORECASE | re.DOTALL)
+  regex = r"EXPLANATION:\s*(.*?)\s*ANSWER:\s*.*\b(yes|no)\b.*$"
+  match = re.search(regex, response, re.DOTALL)
   
   if match:
     explanation = match.group(1).strip()
@@ -94,7 +96,7 @@ def generate_response(model_name, candidate, history, temperature=0.2):
   if model_name == 'openai-gpt':
         response = openai.chat.completions.create(
             temperature=temperature,
-            model='gpt-3.5-turbo',
+            model='gpt-4o',
             messages=[
                 {"role": "system", "content": build_prompt(candidate, history)},
             ]
@@ -109,5 +111,4 @@ def generate_response(model_name, candidate, history, temperature=0.2):
             ])['message']['content']
   else:
         raise ValueError("Unsupported model name. Please use 'openai-gpt' or 'ollama-llama3'.")
-
   return response
