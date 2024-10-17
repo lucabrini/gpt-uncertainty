@@ -10,9 +10,9 @@ from utils import group_dialogues_by_id, dump_sbs_row, load_game_dialogues, open
 load_dotenv()
 
 openai_api_key = os.environ.get("OPENAI_API_KEY")
-samples_number = 5
+samples_number = 15
 model = "gpt3"
-dialogues = "gpt3"
+dialogues = "gpt4o"
 
 dialogues_path = f"dialogues-{dialogues}.csv"
 data_path = "./src/data/%s/8_mcrae"
@@ -22,10 +22,14 @@ if "gpt" in model:
 elif "llama" in model:
   model_path = "llama"
 
-dump_path = f"{data_path}/{model_path}/app1_{model}on{dialogues}_k{samples_number}.csv" % "generation"
+if "gpt" in dialogues:
+  dialogues_sub_path = 'gpt'
+elif "llama" in dialogues:
+  dialogues_sub_path = 'llama'
 
-def generate_sbs_data(dialogues, dump_row, samples=5):
-  print(samples)
+dump_path = f"{data_path}/{model_path}/dialogues/app1_{model}on{dialogues}_k{samples_number}.csv" % "generation"
+
+def generate_sbs_data(dialogues, dump_row, model_name, samples=5):
   history = []
 
   with tqdm(total=len(dialogues), desc="SBS Analysis", unit="item") as pbar:
@@ -43,7 +47,7 @@ def generate_sbs_data(dialogues, dump_row, samples=5):
         history.append(qa_to_str(question, answer))
           
         results = compute_item_probability(history, candidates, openai_api_key=openai_api_key, 
-                                           samples=samples, model_name='openai-gpt')
+                                           samples=samples, model_name=model_name)
       
         dump_row(
           dialogue_id,
@@ -91,13 +95,15 @@ if __name__ == "__main__":
 
   # Opening dumped dialogues data
   raw_dumped_dialogues = load_game_dialogues(
-    f"{data_path}/{model_path}/{dialogues_path}" % "generation",
+    f"{data_path}/{dialogues_sub_path}/dialogues/{dialogues_path}" % "generation",
     start_dialogue_id,
     end_dialogue_id
   )
   # Grouping rows by dialogue_id
   dialogues = group_dialogues_by_id(raw_dumped_dialogues, games_sets, start_dialogue_id)
 
-  print("Data path ", dump_path)
-  print("Dialogues length", len(dialogues))
-  generate_sbs_data(dialogues, dump_sbs_row(dump_path), samples=samples_number)
+  print("Data path: ", dump_path)
+  print("Dialogues path: ", dialogues_path)
+  print("Dialogues length: ", len(dialogues))
+  print("K sample: ", samples_number)
+  generate_sbs_data(dialogues, dump_sbs_row(dump_path), samples=samples_number, model_name=model)

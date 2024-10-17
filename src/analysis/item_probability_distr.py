@@ -4,7 +4,7 @@ import openai
 import ollama
 
     
-def compute_item_probability(history, candidates, openai_api_key=None, samples=5, model_name='ollama-llama3'):
+def compute_item_probability(history, candidates, openai_api_key=None, samples=5, model_name='llama3'):
   
   if openai_api_key:
     openai_client = openai.OpenAI(
@@ -93,22 +93,33 @@ def extract_explanation_and_answer(response):
       return None, None
   
 def generate_response(model_name, candidate, history, temperature=0.2):
-  if model_name == 'openai-gpt':
-        response = openai.chat.completions.create(
-            temperature=temperature,
-            model='gpt-4o',
-            messages=[
-                {"role": "system", "content": build_prompt(candidate, history)},
-            ]
-        ).choices[0].message.content
+    model_map = {
+        'gpt3': {'model': 'gpt-3.5-turbo', 'handler': openai_handler},
+        'gpt4': {'model': 'gpt4o', 'handler': openai_handler},
+        'llama': {'model': 'llama3', 'handler': ollama_handler}
+    }
 
-  elif model_name == 'ollama-llama3':
-        response = ollama.chat(model='llama3', options={"temperature": temperature}, messages=[
-              { 
-                 'role': 'system',
-                 'content': build_prompt(candidate, history),
-              },
-            ])['message']['content']
-  else:
-        raise ValueError("Unsupported model name. Please use 'openai-gpt' or 'ollama-llama3'.")
-  return response
+    if model_name not in model_map:
+        raise ValueError(f"Unsupported model name: {model_name}. Please use 'gpt3', 'gpt4', or 'llama'.")
+
+    model_info = model_map[model_name]
+    model = model_info['model']
+    handler = model_info['handler']
+
+    return handler(model, candidate, history, temperature)
+
+
+def openai_handler(model, candidate, history, temperature):
+    return openai.chat.completions.create(
+        temperature=temperature,
+        model=model,
+        messages=[{"role": "system", "content": build_prompt(candidate, history)}]
+    ).choices[0].message.content
+
+
+def ollama_handler(model, candidate, history, temperature):
+    return ollama.chat(
+        model=model, 
+        options={"temperature": temperature}, 
+        messages=[{"role": "system", "content": build_prompt(candidate, history)}]
+    )['message']['content']
