@@ -82,13 +82,13 @@ def build_prompt(candidate, dialogue):
 
   
 def extract_explanation_and_answer(response):
-  regex = r"EXPLANATION:\s*(.*?)\s*ANSWER:\s*.*\b(yes|no)\b.*$"
+  regex = r"EXPLANATION:\s*(.*?)\s*ANSWER:\s*.*\b([Yy][Ee][Ss]|[Nn][Oo])\b.*$"
   match = re.search(regex, response, re.DOTALL)
-  
+    
   if match:
-    explanation = match.group(1).strip()
-    answer = match.group(2).strip()
-    return explanation, answer
+      explanation = match.group(1).strip()
+      answer = match.group(2).strip().lower()  # Convertiamo la risposta in minuscolo per uniformità
+      return explanation, answer
   else:
       return None, None
   
@@ -106,7 +106,9 @@ def generate_response(model_name, candidate, history, temperature=0.2):
     model = model_info['model']
     handler = model_info['handler']
 
-    return handler(model, candidate, history, temperature)
+    response = handler(model, candidate, history, temperature)
+
+    return response
 
 
 def openai_handler(model, candidate, history, temperature):

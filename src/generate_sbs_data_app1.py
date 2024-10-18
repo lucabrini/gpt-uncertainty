@@ -10,7 +10,7 @@ from utils import group_dialogues_by_id, dump_sbs_row, load_game_dialogues, open
 load_dotenv()
 
 openai_api_key = os.environ.get("OPENAI_API_KEY")
-samples_number = 15
+samples_number = 20
 model = "gpt3"
 dialogues = "gpt4o"
 
@@ -106,4 +106,5 @@ if __name__ == "__main__":
   print("Dialogues path: ", dialogues_path)
   print("Dialogues length: ", len(dialogues))
   print("K sample: ", samples_number)
+  print("Model: ", model)
   generate_sbs_data(dialogues, dump_sbs_row(dump_path), samples=samples_number, model_name=model)
