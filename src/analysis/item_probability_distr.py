@@ -95,7 +95,7 @@ def extract_explanation_and_answer(response):
 def generate_response(model_name, candidate, history, temperature=0.2):
     model_map = {
         'gpt3': {'model': 'gpt-3.5-turbo', 'handler': openai_handler},
-        'gpt4': {'model': 'gpt4o', 'handler': openai_handler},
+        'gpt4': {'model': 'gpt-4o', 'handler': openai_handler},
         'llama': {'model': 'llama3', 'handler': ollama_handler}
     }
 

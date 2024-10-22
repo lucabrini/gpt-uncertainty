@@ -11,7 +11,7 @@ load_dotenv()
 
 openai_api_key = os.environ.get("OPENAI_API_KEY")
 samples_number = 20
-model = "gpt3"
+model = "gpt4"
 dialogues = "gpt4o"
 
 dialogues_path = f"dialogues-{dialogues}.csv"
