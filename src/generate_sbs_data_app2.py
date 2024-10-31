@@ -13,8 +13,8 @@ import string
 
 def main():
     load_dotenv()
-    samples = 15
-    model = "llama"
+    samples = 20
+    model = "gpt4"
     dialogues = "gpt4o"
 
     dialogues_path = f"dialogues-{dialogues}.csv"
@@ -35,7 +35,6 @@ def main():
 
     print("Data path: ", dump_path)
     print("Dialogues path: ", dialogues_path)
-    print("Dialogues length: ", len(dialogues))
     print("K sample: ", samples)
     print("Model: ", model)
 
@@ -46,6 +45,7 @@ def main():
 
     # Opening dumped dialogues data
     dumped_dialogues = open_dialogues(dialogues_dump_path)
+    print("Dialogues length: ", len(dumped_dialogues))
     # print(dumped_dialogues)
 
     open_step_by_step_csv(dump_path)
@@ -209,7 +209,6 @@ def list_remaining_candidates(model, history, candidates):
     while True:
         # Asking model to list out the remaining items
         response = generate_response(model, prompt)
-
         pattern = r"CANDIDATES: ([^;\n]+)"
         matches = re.findall(pattern, response)
         candidates = set()
@@ -222,9 +221,8 @@ def list_remaining_candidates(model, history, candidates):
             break
         else:
             print("Respo:", candidates)
-
-    explanation = response.split("EXPLANATION: ")[1]
-
+        
+    # explanation = response.split("EXPLANATION: ")[1]
     return candidates
 
 
